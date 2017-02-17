@@ -39,6 +39,7 @@ if (place_meeting(x, y + vspeed, Character_obj) == true)
     vspeed = 0;
 }
 
+/*
 //projectile collision should get moved onto the projectiles, doing it this way will destroy all instances
 //of a projectile upon collision. It will also make it easier to check for specific objects to collide with
 //and do different things depending on the object

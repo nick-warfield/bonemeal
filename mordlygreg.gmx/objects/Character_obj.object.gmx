@@ -107,7 +107,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>collision_character_scr</script>
+            <script>Collision_Character_scr</script>
           </argument>
           <argument>
             <kind>0</kind>

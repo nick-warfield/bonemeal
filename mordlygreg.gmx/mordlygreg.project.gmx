@@ -14,7 +14,6 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\collision_character_scr.gml</script>
     <scripts name="Initial D">
       <script>scripts\Inherit_scr.gml</script>
       <script>scripts\initialization_scr.gml</script>
@@ -34,7 +33,11 @@
         <script>scripts\Parry_scr.gml</script>
       </scripts>
     </scripts>
-    <scripts name="controllers">
+    <scripts name="Collisions">
+      <script>scripts\Collision_Projectile_scr.gml</script>
+      <script>scripts\Collision_Character_scr.gml</script>
+    </scripts>
+    <scripts name="Controllers">
       <script>scripts\controller_Player_i_scr.gml</script>
       <script>scripts\controller_sampleAI_i_scr.gml</script>
     </scripts>
