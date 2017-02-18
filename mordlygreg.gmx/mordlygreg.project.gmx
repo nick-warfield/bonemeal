@@ -35,7 +35,8 @@
       </scripts>
     </scripts>
     <scripts name="Collisions">
-      <script>scripts\Character_Collision_scr.gml</script>
+      <script>scripts\Character_Collision_v01_scr.gml</script>
+      <script>scripts\Character_Collision_v02_scr.gml</script>
       <script>scripts\Projectile_Collision_scr.gml</script>
     </scripts>
     <scripts name="Controllers">
@@ -43,6 +44,7 @@
       <script>scripts\SampleAI_Controller_scr.gml</script>
     </scripts>
     <scripts name="SCRATCH">
+      <script>scripts\Character_Collision_v03_scr.gml</script>
       <script>scripts\combatKit_Player_i_scr.gml</script>
       <script>scripts\movement_i_scr.gml</script>
     </scripts>

@@ -57,7 +57,6 @@ if(state[s_ACTIVE] == state[s_MOVE] && Input[DODGE])
 }
 
 
-
 //execute the script stored in the active state
 //show_debug_message(state[s_ACTIVE]);
 script_execute(state[s_ACTIVE]);

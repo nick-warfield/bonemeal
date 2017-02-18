@@ -14,6 +14,9 @@
         state[s_ATTACK4] = 0;
         state[s_ATTACK5] = 0;
         
+    //collision code
+        CollisionScript = Character_Collision_v03_scr;
+        
     //timing and cooldowns
         timeStamp[] = 0;
         cooldown[] = 0;
