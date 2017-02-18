@@ -20,6 +20,6 @@
   <width>32</width>
   <height>64</height>
   <frames>
-    <frame index="0">images\playa_spr_0.png</frame>
+    <frame index="0">images\Player_spr_0.png</frame>
   </frames>
 </sprite>

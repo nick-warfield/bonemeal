@@ -26,7 +26,7 @@
         ySpeed = 0;
         spd = 10;        //general speed multiplier
         facing = RIGHT;
-        bulletInst = bullet_obj;
+        bulletInst = Bullet_obj;
 
             
     //initialize input bools for controllers

@@ -96,7 +96,7 @@ InputID = NULL;
 
 
 //aim gun command
-    if (keyboard_check(vk_space) == true)
+    if (mouse_check_button(mb_right) == true)
     {
         Input[ATTACK3] = true;
         InputID = ATTACK3;
@@ -109,7 +109,7 @@ InputID = NULL;
 
 
 //fire gun command
-    if (keyboard_check_released(vk_space) == true)
+    if (mouse_check_button_pressed(mb_left) == true)
     {
         Input[ATTACK2] = true;
         InputID = ATTACK2;
@@ -122,7 +122,7 @@ InputID = NULL;
 
 
 //swing umbrella commmand
-    if (keyboard_check_pressed(ord('V')) == true)
+    if (keyboard_check_pressed(vk_space) == true)
     {
         Input[ATTACK1] = true;
         InputID = ATTACK1;

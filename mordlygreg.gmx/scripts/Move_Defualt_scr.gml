@@ -4,6 +4,7 @@ var xDir = 0;
 var yDir = 0;
 
 //movemnt jazz
+//gives priority to left and down movement, needs to change to equal priority
 if(Input[UP] == true)
 {
     yDir = -1;
@@ -14,6 +15,7 @@ if(Input[DOWN] == true)
     yDir = 1;
     facing = DOWN;
 }
+
 if(Input[RIGHT] == true)
 {
     xDir = 1;

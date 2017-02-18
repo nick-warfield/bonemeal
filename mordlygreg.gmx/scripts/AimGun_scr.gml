@@ -1,6 +1,12 @@
 //aim gun code
-show_debug_message("aiming");
+//show_debug_message("aiming");
 
+
+facing = point_direction(x, y, mouse_x, mouse_y);
+
+direction = facing;
+
+/*
 if(Input[DOWN] == false && Input[UP] == false && Input[RIGHT] == false && Input[LEFT] == false)
 {
     direction = facing;
@@ -31,7 +37,7 @@ else
 //facing = (facing1 + facing2 + facing3 + facing4) / 4;
 
 //facing = facing * 90;
-show_debug_message(facing);
-
+//show_debug_message(facing);
+*/
 hspeed = 0;
 vspeed = 0;

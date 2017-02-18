@@ -1,1 +1,0 @@
-Input[RIGHT] = true;
