@@ -37,6 +37,7 @@
     <scripts name="Collisions">
       <script>scripts\Character_Collision_v01_scr.gml</script>
       <script>scripts\Character_Collision_v02_scr.gml</script>
+      <script>scripts\Character_Collision_v05_scr.gml</script>
       <script>scripts\Projectile_Collision_scr.gml</script>
     </scripts>
     <scripts name="Controllers">
@@ -44,6 +45,7 @@
       <script>scripts\SampleAI_Controller_scr.gml</script>
     </scripts>
     <scripts name="SCRATCH">
+      <script>scripts\Character_Collision_v04_scr.gml</script>
       <script>scripts\Character_Collision_v03_scr.gml</script>
       <script>scripts\combatKit_Player_i_scr.gml</script>
       <script>scripts\movement_i_scr.gml</script>
@@ -57,7 +59,7 @@
       <object>objects\Player01_obj</object>
       <object>objects\Player02_obj</object>
       <objects name="Enemies">
-        <object>objects\Enemy_Sample_obj</object>
+        <object>objects\Enemy_obj</object>
       </objects>
     </objects>
     <objects name="Walls">

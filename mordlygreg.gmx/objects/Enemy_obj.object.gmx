@@ -50,7 +50,7 @@ Input[RIGHT] = true;
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Inherit_scr</script>
+            <script>SampleAI_Controller_scr</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -90,7 +90,7 @@ Input[RIGHT] = true;
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>SampleAI_Controller_scr</script>
+            <script>Inherit_scr</script>
           </argument>
           <argument>
             <kind>0</kind>

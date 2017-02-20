@@ -1,5 +1,6 @@
 
-if (hspeed == 0)
+if (place_meeting(x + hspeed, y + vspeed, Character_obj) 
+    || place_meeting(x + hspeed, y + vspeed, Wall_obj))
 {
     if(Input[RIGHT])
     {
