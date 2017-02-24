@@ -10,6 +10,7 @@
     <sprite>sprites\BlankTile01_spr</sprite>
     <sprite>sprites\Player_spr</sprite>
     <sprite>sprites\Bullet_spr</sprite>
+    <sprite>sprites\Bat_scr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -32,11 +33,10 @@
         <script>scripts\AimGun_scr.gml</script>
         <script>scripts\Block_scr.gml</script>
         <script>scripts\Parry_scr.gml</script>
+        <script>scripts\TookDamage_scr.gml</script>
       </scripts>
     </scripts>
     <scripts name="Collisions">
-      <script>scripts\Character_Collision_v01_scr.gml</script>
-      <script>scripts\Character_Collision_v02_scr.gml</script>
       <script>scripts\Character_Collision_v05_scr.gml</script>
       <script>scripts\Projectile_Collision_scr.gml</script>
     </scripts>
@@ -45,7 +45,9 @@
       <script>scripts\SampleAI_Controller_scr.gml</script>
     </scripts>
     <scripts name="SCRATCH">
+      <script>scripts\Character_Collision_v02_scr.gml</script>
       <script>scripts\Character_Collision_v04_scr.gml</script>
+      <script>scripts\Character_Collision_v01_scr.gml</script>
       <script>scripts\Character_Collision_v03_scr.gml</script>
       <script>scripts\combatKit_Player_i_scr.gml</script>
       <script>scripts\movement_i_scr.gml</script>
@@ -71,6 +73,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room1</room>
     <room>rooms\room0_rm</room>
   </rooms>
   <help>

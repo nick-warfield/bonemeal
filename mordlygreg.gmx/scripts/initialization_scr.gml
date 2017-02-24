@@ -13,8 +13,13 @@
         state[s_ATTACK3] = AimGun_scr;
         state[s_ATTACK4] = 0;
         state[s_ATTACK5] = 0;
+        state[s_DAMAGED] = TookDamage_scr;
         
-    //collision code
+    //Resource related variables
+        healthPoints = 10;
+        stamina = 100;
+        damage = 0;
+        knockBack = 0;
 
         
     //timing and cooldowns
@@ -27,7 +32,7 @@
         rolling = false;
         xSpeed = 0;             //movement vectors
         ySpeed = 0;
-        spd = 10;        //general speed multiplier
+        spd = 5;        //general speed multiplier
         facing = RIGHT;
         bulletInst = Bullet_obj;
 

@@ -62,6 +62,12 @@ if(state[s_ACTIVE] == state[s_MOVE] && Input[DODGE])
 script_execute(state[s_ACTIVE]);
 
 
+//kill object if hp runs out
+if (healthPoints <= 0)
+{
+    instance_destroy();
+}
+
 
 
 /*
