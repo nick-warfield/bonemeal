@@ -11,6 +11,7 @@
     <sprite>sprites\Player_spr</sprite>
     <sprite>sprites\Bullet_spr</sprite>
     <sprite>sprites\Bat_scr</sprite>
+    <sprite>sprites\BasicAttackCollision_spr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -56,6 +57,7 @@
   <objects name="objects">
     <object>objects\floor_obj</object>
     <object>objects\camera_obj</object>
+    <object>objects\SwingArc_obj</object>
     <objects name="Characters">
       <object>objects\Character_obj</object>
       <object>objects\Player01_obj</object>
