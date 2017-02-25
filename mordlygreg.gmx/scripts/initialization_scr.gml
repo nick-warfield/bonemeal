@@ -18,12 +18,12 @@
     //Resource related variables
         healthPoints = 10;
         stamina = 100;
-        damage = 0;
+        damage = 1;
         knockBack = 0;
 
         
     //timing and cooldowns
-        timeStamp[] = 0;
+        timeStamp[0] = 0;
         cooldown[] = 0;
 
     //movement variables

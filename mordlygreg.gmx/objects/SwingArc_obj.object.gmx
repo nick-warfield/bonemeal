@@ -81,14 +81,12 @@ if(current_time &gt;= timeStamp_local)
             <string>
 if (other.id != spawner)
 {
-show_debug_message(other);
-    other.healthPoints -= damage;
-    //if(other.healthPoints &lt;= 7)
-    //{ other = instance_destroy(); }
-
-    //instance_destroy();    
+    with(other)
+    {
+        script_execute(state[s_DAMAGED], damage);
+    }
 }
-//else { instance_destroy(); }
+
 </string>
           </argument>
         </arguments>
