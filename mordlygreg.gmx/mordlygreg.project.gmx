@@ -26,6 +26,7 @@
       <script>scripts\Default_StateMachine_v02_scr.gml</script>
       <scripts name="States">
         <script>scripts\Move_Defualt_scr.gml</script>
+        <script>scripts\Move_Bat_scr.gml</script>
         <script>scripts\Interact_scr.gml</script>
         <script>scripts\Idle_scr.gml</script>
         <script>scripts\Dodge_scr.gml</script>
@@ -44,6 +45,7 @@
     <scripts name="Controllers">
       <script>scripts\Player_Controller_scr.gml</script>
       <script>scripts\SampleAI_Controller_scr.gml</script>
+      <script>scripts\BatAI_Controller_scr.gml</script>
     </scripts>
     <scripts name="SCRATCH">
       <script>scripts\Character_Collision_v02_scr.gml</script>
