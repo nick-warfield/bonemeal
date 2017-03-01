@@ -24,7 +24,7 @@
         
     //timing and cooldowns
         timeStamp[0] = 0;
-        cooldown[] = 0;
+        timeStamp[1] = 1;
 
     //movement variables
         usingGun = false;       //bools
