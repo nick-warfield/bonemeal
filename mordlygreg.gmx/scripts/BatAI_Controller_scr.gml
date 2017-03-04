@@ -65,9 +65,10 @@ if (instance_exists(target))
     //hurt player if they get hit
     if (place_meeting(x, y, target) == true)
     {
+        var temp = id;
         with(target)
         {
-            script_execute(state[s_DAMAGED], 1);
+            script_execute(state[s_DAMAGED], 1, 45, temp);
             //show_debug_message(healthPoints);
         }
         
@@ -75,3 +76,5 @@ if (instance_exists(target))
         hit = true;
     }
 }
+
+//if (healthPoints <= 0) { instance_destroy(); }

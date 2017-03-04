@@ -11,20 +11,24 @@
         state[s_ATTACK1] = UmbrellaSwing_scr;
         state[s_ATTACK2] = FireGun_scr;
         state[s_ATTACK3] = AimGun_scr;
-        state[s_ATTACK4] = 0;
+        state[s_ATTACK4] = Reload_scr;
         state[s_ATTACK5] = 0;
         state[s_DAMAGED] = TookDamage_scr;
         
     //Resource related variables
-        healthPoints = 10;
+        healthPoints = 1000;
         stamina = 100;
         damage = 1;
         knockBack = 0;
+        ammunition = 6;
 
         
     //timing and cooldowns
         timeStamp[0] = 0;
-        timeStamp[1] = 1;
+        timeStamp[1] = 0;
+        timeStamp[2] = 0;
+        timeStamp[3] = 0;
+        timeStamp_stamina = 0;
 
     //movement variables
         usingGun = false;       //bools

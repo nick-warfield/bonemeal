@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>damage = 0;
+            <string>damage = 1;
 spawner = 0;
+knockback = 100;
 
 //time is in miliseconds, used for a timer
 timeStamp_local = current_time + 500;
@@ -79,11 +80,14 @@ if(current_time &gt;= timeStamp_local)
           <argument>
             <kind>1</kind>
             <string>
-if (other.id != spawner)
+if (other.id != spawner &amp;&amp; other.id == Character_obj)
 {
-    with(other)
+    scrub = other;
+    
+    var temp = id;
+    with(scrub)
     {
-        script_execute(state[s_DAMAGED], damage);
+        script_execute(state[s_DAMAGED], 1, 100, temp);
     }
 }
 

@@ -26,3 +26,5 @@ with (f)
     damage = 1;
 }
 show_debug_message("swing");
+
+stamina -= 10;

@@ -12,6 +12,7 @@
     <sprite>sprites\Bullet_spr</sprite>
     <sprite>sprites\Bat_scr</sprite>
     <sprite>sprites\BasicAttackCollision_spr</sprite>
+    <sprite>sprites\Fishman</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -36,6 +37,7 @@
         <script>scripts\Block_scr.gml</script>
         <script>scripts\Parry_scr.gml</script>
         <script>scripts\TookDamage_scr.gml</script>
+        <script>scripts\Reload_scr.gml</script>
       </scripts>
     </scripts>
     <scripts name="Collisions">

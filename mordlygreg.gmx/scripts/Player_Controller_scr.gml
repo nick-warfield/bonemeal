@@ -69,8 +69,8 @@ InputID = NULL;
     }
 
     
-//weapon cycle command
-    if (keyboard_check_pressed(vk_tab) == true)
+//reload command
+    if (keyboard_check_pressed(ord('R')) == true)
     {
         Input[ATTACK4] = true;
         InputID = ATTACK4;
