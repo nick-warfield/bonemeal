@@ -16,4 +16,4 @@ if (current_time > timeStamp[0])
 }
 
 //motion_add(-facing, knockback);
-//show_debug_message(healthPoints);
+show_debug_message(healthPoints);

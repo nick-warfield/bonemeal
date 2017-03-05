@@ -14,13 +14,13 @@ if (instance_exists(target))
     
     if (reset = false)
     {
-        if (i % 10 == 0)
+        if (frameCount % 10 == 0)
         {
             randx = random_range(x-100, x+100);
             randy = random_range(y-100, y+100);
         }
         
-        i++;
+        frameCount++;
         if (hit == false)
         {
             move_towards_point(randx, randy, spd/3); 
@@ -55,7 +55,7 @@ if (instance_exists(target))
         show_debug_message("RESET");
         reset = true;
         runOnce = true;
-        i = 0;
+        frameCount = 0;
         hit = false;
     }
     
@@ -77,4 +77,4 @@ if (instance_exists(target))
     }
 }
 
-//if (healthPoints <= 0) { instance_destroy(); }
+if (healthPoints <= 0) { instance_destroy(); }

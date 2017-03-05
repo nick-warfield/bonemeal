@@ -48,6 +48,7 @@
       <script>scripts\Player_Controller_scr.gml</script>
       <script>scripts\SampleAI_Controller_scr.gml</script>
       <script>scripts\BatAI_Controller_scr.gml</script>
+      <script>scripts\FishManAi_scr.gml</script>
     </scripts>
     <scripts name="SCRATCH">
       <script>scripts\Character_Collision_v02_scr.gml</script>
@@ -68,6 +69,8 @@
       <object>objects\Player02_obj</object>
       <objects name="Enemies">
         <object>objects\Enemy_obj</object>
+        <object>objects\Bat_obj</object>
+        <object>objects\Fishman_obj</object>
       </objects>
     </objects>
     <objects name="Walls">
