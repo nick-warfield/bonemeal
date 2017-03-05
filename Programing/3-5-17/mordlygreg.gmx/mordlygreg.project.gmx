@@ -67,7 +67,6 @@
       </scripts>
     </scripts>
   </scripts>
-  <shaders name="shaders"/>
   <objects name="objects">
     <object>objects\floor_obj</object>
     <object>objects\camera_obj</object>

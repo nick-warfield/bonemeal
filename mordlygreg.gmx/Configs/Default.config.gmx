@@ -651,7 +651,7 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="27">
+    <constants number="28">
       <constant name="NULL">-10</constant>
       <constant name="RIGHT">0</constant>
       <constant name="UP">1</constant>
@@ -666,6 +666,7 @@
       <constant name="ATTACK3">10</constant>
       <constant name="ATTACK4">11</constant>
       <constant name="ATTACK5">12</constant>
+      <constant name="PAUSE">13</constant>
       <constant name="s_ACTIVE">0</constant>
       <constant name="s_IDLE">1</constant>
       <constant name="s_MOVE">2</constant>
@@ -678,7 +679,7 @@
       <constant name="s_ATTACK3">9</constant>
       <constant name="s_ATTACK4">10</constant>
       <constant name="s_ATTACK5">11</constant>
-      <constant name="s_DAMAGED">12</constant>
+      <constant name="s_PAUSE">12</constant>
     </constants>
   </ConfigConstants>
 </Config>

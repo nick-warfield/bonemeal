@@ -3,7 +3,7 @@
     //state array
         state[s_ACTIVE] = Idle_scr;
         state[s_IDLE] = Idle_scr;
-        state[s_MOVE] = Move_Defualt_scr;
+        state[s_MOVE] = Move_Defualt_v01_scr;
         state[s_DODGE] = Dodge_scr;
         state[s_INTERACT] = Interact_scr;
         state[BLOCK] = Block_scr;
@@ -11,24 +11,22 @@
         state[s_ATTACK1] = UmbrellaSwing_scr;
         state[s_ATTACK2] = FireGun_scr;
         state[s_ATTACK3] = AimGun_scr;
-        state[s_ATTACK4] = Reload_scr;
+        state[s_ATTACK4] = 0;
         state[s_ATTACK5] = 0;
-        state[s_DAMAGED] = TookDamage_scr;
+        state[s_PAUSE] = Pause_scr;
         
-    //Resource related variables
-        healthPoints = 1000;
-        stamina = 100;
-        damage = 1;
-        knockBack = 0;
-        ammunition = 6;
+    //Sprite
+    image_speed = 0;
+    sprite_index = Player_Down_spr;
+    image_index = 0;
+    
+    //collision code
+    
 
         
     //timing and cooldowns
-        timeStamp[0] = 0;
-        timeStamp[1] = 0;
-        timeStamp[2] = 0;
-        timeStamp[3] = 0;
-        timeStamp_stamina = 0;
+        timeStamp[] = 0;
+        cooldown[] = 0;
 
     //movement variables
         usingGun = false;       //bools
@@ -36,8 +34,8 @@
         rolling = false;
         xSpeed = 0;             //movement vectors
         ySpeed = 0;
-        spd = 5;        //general speed multiplier
-        facing = RIGHT;
+        spd = 3;        //general speed multiplier
+        facing = DOWN;
         bulletInst = Bullet_obj;
 
             
@@ -49,7 +47,8 @@
         //6 block
         //7 parry
         //8-12 attacks
-        var j = 12;
+        //13 Pause
+        var j = 13;
         for (var i = 0; i < j; i = i + 1)
         {
             Input[i] = false;

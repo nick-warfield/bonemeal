@@ -10,4 +10,3 @@ bulletInst.speed = 30;
 bulletInst.image_angle = id.direction;
 bulletInst.direction = id.direction;
 
-stamina -= 25;

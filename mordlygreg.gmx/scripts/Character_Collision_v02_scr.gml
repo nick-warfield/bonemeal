@@ -1,9 +1,5 @@
 //collisions for Character objects
 
-//so hspeed and vspeed are updated after the step event no matter what
-//this is what was causing the collisions to be so buggy
-//will probably have to go through and redo everything in a collision update using my own variables
-
 //Character collisions
 //detect a collision with any character that is not this character
 if (place_meeting(x + hspeed, y, Character_obj) == true && Character_obj != id)

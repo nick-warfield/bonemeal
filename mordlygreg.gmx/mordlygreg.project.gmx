@@ -9,10 +9,15 @@
     <sprite>sprites\BlankTile_spr</sprite>
     <sprite>sprites\BlankTile01_spr</sprite>
     <sprite>sprites\Player_spr</sprite>
+    <sprite>sprites\Player_Up_spr</sprite>
+    <sprite>sprites\Player_Down_spr</sprite>
+    <sprite>sprites\Player_Left_spr</sprite>
+    <sprite>sprites\Player_Right_spr</sprite>
     <sprite>sprites\Bullet_spr</sprite>
-    <sprite>sprites\Bat_scr</sprite>
-    <sprite>sprites\BasicAttackCollision_spr</sprite>
-    <sprite>sprites\Fishman</sprite>
+    <sprite>sprites\sprite4</sprite>
+    <sprite>sprites\GreyBox_spr</sprite>
+    <sprite>sprites\Dialogue_spr</sprite>
+    <sprite>sprites\Sign_spr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -25,9 +30,9 @@
     <scripts name="State Machines">
       <script>scripts\Default_StateMachine_v01_scr.gml</script>
       <script>scripts\Default_StateMachine_v02_scr.gml</script>
+      <script>scripts\Default_StateMachine_v03_scr.gml</script>
       <scripts name="States">
-        <script>scripts\Move_Defualt_scr.gml</script>
-        <script>scripts\Move_Bat_scr.gml</script>
+        <script>scripts\Move_Defualt_v01_scr.gml</script>
         <script>scripts\Interact_scr.gml</script>
         <script>scripts\Idle_scr.gml</script>
         <script>scripts\Dodge_scr.gml</script>
@@ -36,53 +41,62 @@
         <script>scripts\AimGun_scr.gml</script>
         <script>scripts\Block_scr.gml</script>
         <script>scripts\Parry_scr.gml</script>
-        <script>scripts\TookDamage_scr.gml</script>
-        <script>scripts\Reload_scr.gml</script>
+        <script>scripts\Pause_scr.gml</script>
       </scripts>
     </scripts>
     <scripts name="Collisions">
+      <script>scripts\Character_Collision_v01_scr.gml</script>
+      <script>scripts\Character_Collision_v02_scr.gml</script>
       <script>scripts\Character_Collision_v05_scr.gml</script>
       <script>scripts\Projectile_Collision_scr.gml</script>
     </scripts>
     <scripts name="Controllers">
       <script>scripts\Player_Controller_scr.gml</script>
       <script>scripts\SampleAI_Controller_scr.gml</script>
-      <script>scripts\BatAI_Controller_scr.gml</script>
-      <script>scripts\FishManAi_scr.gml</script>
     </scripts>
     <scripts name="SCRATCH">
-      <script>scripts\Character_Collision_v02_scr.gml</script>
       <script>scripts\Character_Collision_v04_scr.gml</script>
-      <script>scripts\Character_Collision_v01_scr.gml</script>
       <script>scripts\Character_Collision_v03_scr.gml</script>
       <script>scripts\combatKit_Player_i_scr.gml</script>
       <script>scripts\movement_i_scr.gml</script>
+    </scripts>
+    <scripts name="Animations">
+      <scripts name="Player Animations">
+        <script>scripts\Player_Moving_Animations_scr.gml</script>
+        <script>scripts\Player_Idle_Animations_scr.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\floor_obj</object>
     <object>objects\camera_obj</object>
-    <object>objects\SwingArc_obj</object>
     <objects name="Characters">
       <object>objects\Character_obj</object>
       <object>objects\Player01_obj</object>
       <object>objects\Player02_obj</object>
       <objects name="Enemies">
         <object>objects\Enemy_obj</object>
-        <object>objects\Bat_obj</object>
-        <object>objects\Fishman_obj</object>
       </objects>
     </objects>
     <objects name="Walls">
       <object>objects\Wall_obj</object>
+      <object>objects\GreBox_Collisions_obj</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>
       <object>objects\Bullet_obj</object>
     </objects>
+    <object>objects\Pause_obj</object>
+    <object>objects\Speaker_obj</object>
+    <object>objects\Dialogue_obj</object>
+    <object>objects\Sign_obj</object>
+    <object>objects\EnemySpawn_obj</object>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\timeline0</timeline>
+  </timelines>
   <rooms name="rooms">
-    <room>rooms\room1</room>
+    <room>rooms\GreyBox_rm</room>
     <room>rooms\room0_rm</room>
   </rooms>
   <help>

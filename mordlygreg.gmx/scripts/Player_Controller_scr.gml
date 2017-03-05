@@ -11,10 +11,7 @@ InputID = NULL;
         InputID = UP;
     }
     else
-    {
-        Input[UP] = false;
-        
-    }
+    {Input[UP] = false;}
 
 
 //down command
@@ -22,12 +19,10 @@ InputID = NULL;
     {
         Input[DOWN] = true;
         InputID = DOWN;
+       
     }
-    else
-    {
-        Input[DOWN] = false;
-        
-    }
+    else 
+    {Input[DOWN] = false;}
 
 
 //left command
@@ -37,10 +32,7 @@ InputID = NULL;
         InputID = LEFT;
     }
     else
-    {
-        Input[LEFT] = false;
-        
-    }
+    {Input[LEFT] = false;}
 
 
 //right command
@@ -50,12 +42,9 @@ InputID = NULL;
         InputID = RIGHT;
     }
     else
-    {
-        Input[RIGHT] = false;
-        
-    }
-
+    {Input[RIGHT] = false;}
     
+
 //interact command
     if (keyboard_check_pressed(ord('E')) == true)
     {
@@ -69,8 +58,8 @@ InputID = NULL;
     }
 
     
-//reload command
-    if (keyboard_check_pressed(ord('R')) == true)
+//weapon cycle command
+    if (keyboard_check_pressed(vk_tab) == true)
     {
         Input[ATTACK4] = true;
         InputID = ATTACK4;
@@ -83,7 +72,7 @@ InputID = NULL;
 
 
 //dodge command
-    if (keyboard_check_pressed(vk_shift) == true)
+    if (keyboard_check_pressed(ord("J")) == true)
     {
         Input[DODGE] = true;
         InputID = DODGE;
@@ -154,3 +143,11 @@ InputID = NULL;
     {
         Input[PARRY] = false;
     }
+    
+//pause
+    if (keyboard_check_pressed(ord('P')) == true && Input[PAUSE] = false)
+        {
+            Input[PAUSE] = true;
+        } 
+     
+       

@@ -1792,10 +1792,8 @@
     <instance objName="Wall_obj" x="128" y="0" name="inst_048D4BC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_obj" x="64" y="0" name="inst_C70D4C4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_obj" x="32" y="0" name="inst_00CC87D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="camera_obj" x="-128" y="64" name="inst_90FD96A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Player01_obj" x="224" y="288" name="inst_E73A87AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Bat_obj" x="128" y="672" name="inst_8A6D5491" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Player02_obj" x="288" y="544" name="inst_2C7A7CD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="camera_obj" x="64" y="96" name="inst_90FD96A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Player02_obj" x="256" y="544" name="inst_2C7A7CD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -18,6 +18,7 @@ if (place_meeting(x + hspeed, y, Character_obj) == true && Character_obj != id)
     }
 }
 
+
 if (place_meeting(x, y + vspeed, Character_obj) == true && Character_obj != id)
 {
     otherChar = instance_place(x, y + vspeed, Character_obj);
