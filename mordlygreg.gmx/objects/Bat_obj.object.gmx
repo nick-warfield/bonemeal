@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>event_inherited()
 
+sprite_index = Bat_spr;
 image_speed = (1/6);
 
 </string>

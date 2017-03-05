@@ -15,6 +15,11 @@
         state[s_ATTACK5] = 0;
         state[s_DAMAGED] = TookDamage_scr;
         
+        
+    //Sprites
+        //sprite_index = Player_Down_spr;
+        image_index = 0;
+        
     //Resource related variables
         healthPoints = 1000;
         stamina = 100;

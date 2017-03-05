@@ -11,7 +11,7 @@
     <sprite>sprites\Dialogue_spr</sprite>
     <sprite>sprites\Sign_spr</sprite>
     <sprites name="Enemies">
-      <sprite>sprites\Fishman</sprite>
+      <sprite>sprites\Fishman_spr</sprite>
       <sprite>sprites\Bat_spr</sprite>
     </sprites>
     <sprites name="SCRATCH">

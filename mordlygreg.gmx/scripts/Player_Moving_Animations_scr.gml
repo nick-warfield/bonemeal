@@ -3,13 +3,13 @@
 switch (vspeed)
     {
     //MOVING UP
-    case -3:
+    case (-5):
     Player02_obj.sprite_index = Player_Up_spr;
     image_speed = .2;
     break;
     
     //MOVING DOWN
-    case 3:
+    case (5):
     Player02_obj.sprite_index = Player_Down_spr;
     image_speed = .2;
     break;
@@ -17,13 +17,13 @@ switch (vspeed)
 switch (hspeed)
     {
     //MOVING LEFT
-    case -3:
+    case (-5):
     Player02_obj.sprite_index = Player_Left_spr;
     image_speed = .2;
     break;
     
     //MOVING RIGHT
-    case 3:
+    case (5):
     Player02_obj.sprite_index = Player_Right_spr;
     image_speed = .2;
     break;

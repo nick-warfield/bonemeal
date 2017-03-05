@@ -45,7 +45,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>window_set_size(1024, 768);
+            <string>window_set_size(1440, 768);
 
 //room_goto(room1);
 </string>
