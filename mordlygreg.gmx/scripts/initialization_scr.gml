@@ -21,7 +21,7 @@
         image_index = 0;
         
     //Resource related variables
-        healthPoints = 6;
+        healthPoints = 600000000;
         stamina = 10000000000000000;
         damage = 1;
         knockBack = 0;
@@ -41,7 +41,7 @@
         rolling = false;
         xSpeed = 0;             //movement vectors
         ySpeed = 0;
-        spd = 5;        //general speed multiplier
+        spd = 3;        //general speed multiplier
         facing = RIGHT;
         bulletInst = Bullet_obj;
 

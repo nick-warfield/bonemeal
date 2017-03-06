@@ -84,8 +84,8 @@ if(state[s_ACTIVE] == state[s_MOVE] && Input[DODGE])
 }
 
 //stop player from doing anything if they run out of stamina
-if (stamina < 0)
-{ state[s_ACTIVE] = state[s_IDLE]; }
+//if (stamina < 0)
+//{ state[s_ACTIVE] = state[s_IDLE]; }
 
 
 //execute the script stored in the active state

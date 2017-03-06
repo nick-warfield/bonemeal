@@ -23,7 +23,7 @@ with (f)
         y = spawner.y + 48;
     }
     
-    damage = 1;
+    damage = 2;
 }
 
 if (direction == 0)

@@ -125,8 +125,8 @@
     <object>objects\EnemySpawn_obj</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\GreyBox_rm</room>
     <room>rooms\room1</room>
+    <room>rooms\GreyBox_rm</room>
     <room>rooms\room0_rm</room>
   </rooms>
   <help>
