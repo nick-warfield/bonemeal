@@ -25,6 +25,27 @@ with (f)
     
     damage = 1;
 }
-show_debug_message("swing");
+
+if (direction == 0)
+{
+    sprite_index = Mordley_Attk_Side_spr
+    image_xscale = 1;
+}
+else if (direction == 180)
+{
+    sprite_index = Mordley_Attk_Side_spr
+    image_xscale = -1;
+}
+else if (direction == 90)
+{
+    sprite_index = Mordley_Attk_Back_spr
+    image_xscale = 1;
+}
+else if (direction == 270)
+{
+    sprite_index = Mordley_Attk_Front_spr
+    image_xscale = 1;
+}
+
 
 stamina -= 10;

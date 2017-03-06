@@ -7,12 +7,26 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\GreyBox_spr</sprite>
-    <sprite>sprites\BasicAttackCollision_spr</sprite>
     <sprite>sprites\Dialogue_spr</sprite>
     <sprite>sprites\Sign_spr</sprite>
+    <sprites name="Mordley">
+      <sprite>sprites\BasicAttackCollision_spr</sprite>
+      <sprite>sprites\Mordley_Attk_Back_spr</sprite>
+      <sprite>sprites\Mordley_Attk_Side_spr</sprite>
+      <sprite>sprites\Mordley_Attk_Front_spr</sprite>
+      <sprite>sprites\Mordley_Back_spr</sprite>
+      <sprite>sprites\Mordley_Side_spr</sprite>
+      <sprite>sprites\Mordley_Front_spr</sprite>
+    </sprites>
     <sprites name="Enemies">
-      <sprite>sprites\Fishman_spr</sprite>
-      <sprite>sprites\Bat_spr</sprite>
+      <sprites name="Fishman">
+        <sprite>sprites\Fishman_Idle_spr</sprite>
+        <sprite>sprites\Fishman_Walk_Front_spr</sprite>
+        <sprite>sprites\Fishman_Walk_Side_spr</sprite>
+      </sprites>
+      <sprites name="Bat">
+        <sprite>sprites\Bat_spr</sprite>
+      </sprites>
     </sprites>
     <sprites name="SCRATCH">
       <sprite>sprites\Bullet_spr</sprite>
@@ -59,6 +73,7 @@
     </scripts>
     <scripts name="Animations">
       <script>scripts\Player_Moving_Animations_scr.gml</script>
+      <script>scripts\Fishman_Animation_scr.gml</script>
       <script>scripts\Player_Idle_Animations_scr.gml</script>
     </scripts>
     <scripts name="Collisions">
