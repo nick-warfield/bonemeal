@@ -21,8 +21,8 @@
         image_index = 0;
         
     //Resource related variables
-        healthPoints = 1000;
-        stamina = 100;
+        healthPoints = 6;
+        stamina = 10000000000000000;
         damage = 1;
         knockBack = 0;
         ammunition = 6;
