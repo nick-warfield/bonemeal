@@ -64,13 +64,6 @@
         {
             Input[i] = false;
         }
-        
-        
-        //used for switching state based on input
-        InputID = 0;
-        
-        //LastState can be used so one state can require another state before it
-        LastState = "NULL";
 
         
 /*

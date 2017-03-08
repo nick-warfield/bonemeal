@@ -86,6 +86,7 @@
     </scripts>
     <scripts name="Controllers">
       <script>scripts\Player_Controller_scr.gml</script>
+      <script>scripts\Player_Controller_v02_scr.gml</script>
       <script>scripts\SampleAI_Controller_scr.gml</script>
       <script>scripts\BatAI_Controller_scr.gml</script>
       <script>scripts\FishManAi_scr.gml</script>
@@ -99,6 +100,8 @@
       <script>scripts\movement_i_scr.gml</script>
     </scripts>
     <script>scripts\Pause_scr.gml</script>
+    <script>scripts\DetectController_scr.gml</script>
+    <script>scripts\DetectControllerv02_scr.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\floor_obj</object>
