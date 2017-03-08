@@ -37,7 +37,6 @@ if(Input[UP] || Input[DOWN] || Input[RIGHT] || Input[LEFT])
 if(Input[ATTACK1])
 {
     state[s_ACTIVE] = state[s_ATTACK1];
-    timeStamp_stamina = current_time + 2500;
 }
 
 //aim gun before firing
@@ -47,66 +46,57 @@ if(Input[ATTACK3])
 }
 
 //fire gun if aiming, .75 seconds between shots
-if(state[s_ACTIVE] == state[s_ATTACK3] && Input[ATTACK2] 
-   && current_time >= timeStamp[2] && ammunition > 0)
+if (state[s_ACTIVE] == state[s_ATTACK3] && Input[ATTACK2] 
+    && current_time >= timeStamp[2])
 {
-    state[s_ACTIVE] = state[s_ATTACK2];
-    ammunition--;
-    
+    //determines fire rate
     timeStamp[2] = current_time + 750;
-    timeStamp_stamina = current_time + 2500;
+    
+    //spawns bullet
+    state[s_ACTIVE] = state[s_ATTACK2];    
 }
 
-//reload gun, 3 second reload, player speed 1/3 while reloading
-if (ammunition < 6 && Input[ATTACK4] == true)
+//new reload, individual bullets
+if (Input[ATTACK4] == true && timeStamp[3] == 0)
 {
-    if (timeStamp[3] == 0)
-    {
-        spd /= 3;
-        timeStamp[3] = current_time + 3000;
-        show_debug_message("reload start");
-    }
+    state[s_ACTIVE] = state[s_ATTACK4];
+    spd /= 3;
+    timeStamp[3] = current_time + 500;
 }
 if (current_time >= timeStamp[3] && timeStamp[3] != 0)
 {
-    ammunition = 6;
     spd *= 3;
     timeStamp[3] = 0;
-    show_debug_message("reload_end");
 }
+
+//cycle command handled after script_execute(state[s_ACTIVE])
+
 
 
 //if player is moving and hits the dodge button, set state to dodge
 if(state[s_ACTIVE] == state[s_MOVE] && Input[DODGE])
 {
     state[s_ACTIVE] = state[s_DODGE];
-    timeStamp_stamina = current_time + 2500;
 }
-
-//stop player from doing anything if they run out of stamina
-//if (stamina < 0)
-//{ state[s_ACTIVE] = state[s_IDLE]; }
 
 
 //execute the script stored in the active state
-//show_debug_message(state[s_ACTIVE]);
 script_execute(state[s_ACTIVE]);
+
+
+//cycle chamber on button input or shoot
+if(Input[ATTACK5] == true || state[s_ACTIVE] == state[s_ATTACK2])
+{
+    //state[s_ACTIVE] = state[s_ATTACK5];
+    cylinderPosition += 1;
+    if (cylinderPosition >= 6) { cylinderPosition = 0; }
+    show_debug_message(cylinderPosition);
+    show_debug_message(cylinder[cylinderPosition]);
+}
 
 
 //kill object if hp runs out
 if (healthPoints <= 0)
 {
     instance_destroy();
-}
-
-
-//restore stamina if doing nothing
-if ((state[s_ACTIVE] == state[s_IDLE] || state[s_ACTIVE] == state[s_MOVE]) && current_time >= timeStamp_stamina)
-{
-    if (stamina < 100)
-    {
-        stamina += .5;
-    }
-    else if (stamina > 100)
-    { stamina = 100; }
 }

@@ -67,7 +67,6 @@ InputID = NULL;
         Input[INTERACT] = false;
         
     }
-
     
 //reload command
     if (keyboard_check_pressed(ord('R')) == true)
@@ -78,9 +77,19 @@ InputID = NULL;
     else
     {
         Input[ATTACK4] = false;
-        
     }
 
+//cycle cylinder command
+    if (keyboard_check_pressed(ord('T')) == true)
+    {
+        Input[ATTACK5] = true;
+        InputID = ATTACK5;
+    }
+    else
+    {
+        Input[ATTACK5] = false;
+    }
+    
 
 //dodge command
     if (keyboard_check_pressed(vk_shift) == true)

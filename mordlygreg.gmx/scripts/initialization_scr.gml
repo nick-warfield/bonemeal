@@ -9,7 +9,7 @@
         state[BLOCK] = Block_scr;
         state[PARRY] = Parry_scr;
         state[s_ATTACK1] = UmbrellaSwing_scr;
-        state[s_ATTACK2] = FireGun_scr;
+        state[s_ATTACK2] = FireGun_v02_scr;
         state[s_ATTACK3] = AimGun_scr;
         state[s_ATTACK4] = Reload_scr;
         state[s_ATTACK5] = 0;
@@ -21,12 +21,17 @@
         image_index = 0;
         
     //Resource related variables
-        healthPoints = 6;
-        stamina = 10000000000000000;
+        healthPoints = 600000000;
+        stamina = 1000000000;
         damage = 1;
         knockBack = 0;
         ammunition = 6;
-
+        for (i = 0; i < 6; i++)
+        {
+            cylinder[i] = Bullet_obj;
+        }
+        cylinderPosition = 1;
+        
         
     //timing and cooldowns
         timeStamp[0] = 0;
@@ -41,7 +46,7 @@
         rolling = false;
         xSpeed = 0;             //movement vectors
         ySpeed = 0;
-        spd = 5;        //general speed multiplier
+        spd = 3;        //general speed multiplier
         facing = RIGHT;
         bulletInst = Bullet_obj;
 
@@ -54,7 +59,7 @@
         //6 block
         //7 parry
         //8-12 attacks
-        var j = 12;
+        var j = 13;
         for (var i = 0; i < j; i = i + 1)
         {
             Input[i] = false;
