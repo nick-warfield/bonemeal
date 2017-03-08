@@ -50,8 +50,9 @@
     </scripts>
     <scripts name="State Machines">
       <script>scripts\Default_StateMachine_v01_scr.gml</script>
-      <script>scripts\Default_StateMachine_v03_scr.gml</script>
       <script>scripts\Default_StateMachine_v02_scr.gml</script>
+      <script>scripts\Default_StateMachine_v03_scr.gml</script>
+      <script>scripts\Default_StateMachine_v04_scr.gml</script>
       <scripts name="States">
         <scripts name="Movement">
           <script>scripts\Move_Defualt_scr.gml</script>
@@ -59,16 +60,19 @@
           <script>scripts\Move_Default_v02_scr.gml</script>
           <script>scripts\Move_Defualt_v01_scr.gml</script>
         </scripts>
+        <scripts name="Gun Stuff">
+          <script>scripts\FireGun_scr.gml</script>
+          <script>scripts\FireGun_v02_scr.gml</script>
+          <script>scripts\AimGun_scr.gml</script>
+          <script>scripts\Reload_scr.gml</script>
+        </scripts>
         <script>scripts\Interact_scr.gml</script>
         <script>scripts\Idle_scr.gml</script>
         <script>scripts\Dodge_scr.gml</script>
         <script>scripts\UmbrellaSwing_scr.gml</script>
-        <script>scripts\FireGun_scr.gml</script>
-        <script>scripts\AimGun_scr.gml</script>
         <script>scripts\Block_scr.gml</script>
         <script>scripts\Parry_scr.gml</script>
         <script>scripts\TookDamage_scr.gml</script>
-        <script>scripts\Reload_scr.gml</script>
       </scripts>
     </scripts>
     <scripts name="Animations">
@@ -125,8 +129,8 @@
     <object>objects\EnemySpawn_obj</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
     <room>rooms\GreyBox_rm</room>
+    <room>rooms\room1</room>
     <room>rooms\room0_rm</room>
   </rooms>
   <help>
