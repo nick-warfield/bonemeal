@@ -9,7 +9,7 @@
         state[BLOCK] = Block_scr;
         state[PARRY] = Parry_scr;
         state[s_ATTACK1] = UmbrellaSwing_scr;
-        state[s_ATTACK2] = FireGun_v02_scr;
+        state[s_ATTACK2] = FireGun_scr;
         state[s_ATTACK3] = AimGun_scr;
         state[s_ATTACK4] = Reload_scr;
         state[s_ATTACK5] = 0;
@@ -28,7 +28,7 @@
         ammunition = 6;
         for (i = 0; i < 6; i++)
         {
-            cylinder[i] = Bullet_obj;
+            cylinder[i] = SlowMo_Bullet_obj;
         }
         cylinderPosition = 1;
         

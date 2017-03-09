@@ -47,6 +47,7 @@
       <script>scripts\Inherit_scr.gml</script>
       <script>scripts\Initialization_scr.gml</script>
       <script>scripts\initialization_edit_template_scr.gml</script>
+      <script>scripts\Projectile_Initialization_scr.gml</script>
     </scripts>
     <scripts name="State Machines">
       <script>scripts\Default_StateMachine_v01_scr.gml</script>
@@ -98,10 +99,10 @@
       <script>scripts\Character_Collision_v03_scr.gml</script>
       <script>scripts\combatKit_Player_i_scr.gml</script>
       <script>scripts\movement_i_scr.gml</script>
+      <script>scripts\DetectController_scr.gml</script>
+      <script>scripts\DetectControllerv02_scr.gml</script>
     </scripts>
     <script>scripts\Pause_scr.gml</script>
-    <script>scripts\DetectController_scr.gml</script>
-    <script>scripts\DetectControllerv02_scr.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\floor_obj</object>
@@ -125,6 +126,7 @@
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>
       <object>objects\Bullet_obj</object>
+      <object>objects\SlowMo_Bullet_obj</object>
     </objects>
     <object>objects\Dialogue_obj</object>
     <object>objects\Speaker_obj</object>
@@ -132,8 +134,8 @@
     <object>objects\EnemySpawn_obj</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\GreyBox_rm</room>
     <room>rooms\room1</room>
+    <room>rooms\GreyBox_rm</room>
     <room>rooms\room0_rm</room>
   </rooms>
   <help>
