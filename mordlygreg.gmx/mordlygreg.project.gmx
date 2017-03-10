@@ -4,11 +4,34 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="Ambient">
+      <sound>sound\Crickets_Ambient_snd</sound>
+      <sound>sound\Howl01_Ambient_snd</sound>
+      <sound>sound\Howl02_Ambient_snd</sound>
+      <sound>sound\Bat_Ambient_snd</sound>
+    </sounds>
+    <sounds name="Gun">
+      <sound>sound\Cock_Gun_snd</sound>
+      <sound>sound\Empty_Gun_snd</sound>
+      <sound>sound\Reload_Gun_snd</sound>
+      <sound>sound\Shot01_Gun_snd</sound>
+      <sound>sound\Shot02_Gun_snd</sound>
+    </sounds>
+    <sounds name="Umbrella">
+      <sound>sound\Hit01_Umbrella_snd</sound>
+      <sound>sound\Hit02_Umbrella_snd</sound>
+      <sound>sound\Swing_Umbrella_snd</sound>
+    </sounds>
+    <sounds name="Enemy">
+      <sound>sound\Fishman_Cry_snd</sound>
+    </sounds>
+    <sounds name="Misc">
+      <sound>sound\Open_Shrine_snd</sound>
+      <sound>sound\Crate_Smash_snd</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
-    <sprite>sprites\GreyBox_spr</sprite>
-    <sprite>sprites\Dialogue_spr</sprite>
-    <sprite>sprites\Sign_spr</sprite>
     <sprites name="Mordley">
       <sprite>sprites\BasicAttackCollision_spr</sprite>
       <sprite>sprites\Mordley_Attk_Back_spr</sprite>
@@ -21,12 +44,76 @@
     <sprites name="Enemies">
       <sprites name="Fishman">
         <sprite>sprites\Fishman_Idle_spr</sprite>
-        <sprite>sprites\Fishman_Walk_Front_spr</sprite>
-        <sprite>sprites\Fishman_Walk_Side_spr</sprite>
+        <sprites name="Walk">
+          <sprite>sprites\Fishman_Walk_Front_spr</sprite>
+          <sprite>sprites\Fishman_Walk_Side_spr</sprite>
+          <sprite>sprites\Walk_Back_Fishman_spr</sprite>
+        </sprites>
+        <sprites name="Hurt">
+          <sprite>sprites\Hurt_Back_Fishman_spr</sprite>
+          <sprite>sprites\Hurt_Front_Fishman_spr</sprite>
+          <sprite>sprites\Hurt_Side_Fishman_spr</sprite>
+        </sprites>
       </sprites>
       <sprites name="Bat">
-        <sprite>sprites\Bat_spr</sprite>
+        <sprites name="Attack">
+          <sprite>sprites\Attack_Front_Bat_spr</sprite>
+          <sprite>sprites\Attack_Front_Fang_Bat_spr</sprite>
+          <sprite>sprites\Attack_Back_Bat_spr</sprite>
+          <sprite>sprites\Attack_Back_Fang_Bat_spr</sprite>
+          <sprite>sprites\Attack_Side_Bat_spr</sprite>
+          <sprite>sprites\Attack_Side_Fang_Bat_spr</sprite>
+        </sprites>
+        <sprites name="Hurt">
+          <sprite>sprites\Hurt_Side_Bat_spr</sprite>
+          <sprite>sprites\Hurt_Back_Bat_spr</sprite>
+          <sprite>sprites\Hurt_Front_Bat_spr</sprite>
+        </sprites>
+        <sprites name="Walk">
+          <sprite>sprites\Walk_Front_Bat_spr</sprite>
+          <sprite>sprites\Walk_Back_Bat_spr</sprite>
+          <sprite>sprites\Walk_Side_Bat_spr</sprite>
+        </sprites>
       </sprites>
+    </sprites>
+    <sprites name="Enviornment">
+      <sprite>sprites\Chair_spr</sprite>
+      <sprite>sprites\Mounds_spr</sprite>
+      <sprite>sprites\Pond_spr</sprite>
+      <sprites name="Trees">
+        <sprite>sprites\Spooky_Tree_spr</sprite>
+        <sprite>sprites\Green_Tree_spr</sprite>
+        <sprite>sprites\Brown_Tree_spr</sprite>
+        <sprite>sprites\Emerald_Tree_spr</sprite>
+        <sprite>sprites\Red_Tree_spr</sprite>
+        <sprite>sprites\Yellow_Tree_spr</sprite>
+      </sprites>
+      <sprites name="Candles">
+        <sprite>sprites\Candle_Blue_spr</sprite>
+        <sprite>sprites\Candle_Orange_spr</sprite>
+        <sprite>sprites\Candle_Red_spr</sprite>
+        <sprite>sprites\Candle_White_spr</sprite>
+      </sprites>
+      <sprites name="Flowerbed">
+        <sprite>sprites\Flowerbed_Blue_spr</sprite>
+        <sprite>sprites\Flowerbed_Orange_spr</sprite>
+        <sprite>sprites\Flowerbed_Red_spr</sprite>
+        <sprite>sprites\Flowerbed_White_spr</sprite>
+      </sprites>
+      <sprites name="Structures">
+        <sprite>sprites\Mansion_v01_spr</sprite>
+        <sprite>sprites\Gate_spr</sprite>
+        <sprite>sprites\Shrine_spr</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Effects">
+      <sprite>sprites\Fang_Front_Effect_spr</sprite>
+      <sprite>sprites\Fang_Side_Effect_spr</sprite>
+    </sprites>
+    <sprites name="Misc">
+      <sprite>sprites\GreyBox_spr</sprite>
+      <sprite>sprites\Dialogue_spr</sprite>
+      <sprite>sprites\Sign_spr</sprite>
     </sprites>
     <sprites name="SCRATCH">
       <sprite>sprites\Bullet_spr</sprite>
