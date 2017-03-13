@@ -6,9 +6,9 @@ if (instance_exists(target))
     if (theDistance <= (5*32) && reset == true)
     {
         //agitated state
-        timeStamp[0] = current_time + random_range(1000, 3000);
+        timeStamp[1] = current_time + random_range(1000, 3000);
         reset = false;
-        show_debug_message(timeStamp[0]);
+        show_debug_message(timeStamp[1]);
         //move_towards_point(target.xprevious, target.yprevious, spd);
     }
     
@@ -35,7 +35,7 @@ if (instance_exists(target))
     { speed = 0; }
     
     //charge player
-    if ((timeStamp[0] <= current_time || timeStamp[1] <= current_time) && reset == false)
+    if ((timeStamp[1] <= current_time || timeStamp[2] <= current_time) && reset == false)
     {
         if (runOnce == true)
         {
@@ -43,14 +43,14 @@ if (instance_exists(target))
             oldx = target.x;
             oldy = target.y;
             runOnce = false;
-            timeStamp[1] = current_time + 3000;
+            timeStamp[2] = current_time + 3000;
         }
         
         move_towards_point(target.x, target.y, spd);
     }
     
     //reset bat
-    if (timeStamp[1] <= current_time && runOnce == false)
+    if (timeStamp[2] <= current_time && runOnce == false)
     {
         show_debug_message("RESET");
         reset = true;
@@ -68,7 +68,7 @@ if (instance_exists(target))
         var temp = id;
         with(target)
         {
-            script_execute(state[s_DAMAGED], 1, 45, temp);
+            script_execute(state[s_DAMAGED], 1, 150, temp);
             //show_debug_message(healthPoints);
         }
         

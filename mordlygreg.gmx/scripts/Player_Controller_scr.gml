@@ -1,9 +1,6 @@
 //REQUIRES:
 //initialization_scr
 
-
-InputID = NULL;
-
 //up command
     if (keyboard_check(ord('W')) == true || keyboard_check(vk_up) == true)
     {

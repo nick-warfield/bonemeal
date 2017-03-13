@@ -13,7 +13,8 @@ if (current_time > timeStamp[0])
     
     //set a 1 second invulnerabiliy period
     timeStamp[0] = current_time + 1000;
+    
+    show_debug_message(healthPoints);
 }
 
 //motion_add(-facing, knockback);
-show_debug_message(healthPoints);

@@ -77,7 +77,6 @@
             keyboard_check_pressed(ord('R')) == true)
         {
             Input[ATTACK4] = true;
-            InputID = ATTACK4;
         }
         else
         {

@@ -48,4 +48,3 @@ else if (direction == 270)
 }
 
 
-stamina -= 10;

@@ -61,6 +61,48 @@ if(current_time &gt;= timeStamp_local)
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//collisions for projectiles
+
+var thing = collision_circle(x, y, 32, Character_obj, false, true);
+
+//only run collisions on objects that did not spawn the projectile
+if (thing != spawner)
+{
+    with (thing) { script_execute(TookDamage_scr, 2, 50, id); }
+}
+/*
+if (place_meeting(x, y, spawner) == false)
+{
+    //if character hit
+    if (place_meeting(x, y, Character_obj) == true)
+    {
+        with(instance_place(x, y, Character_obj))
+        {
+            script_execute(TookDamage_scr, 2, 50, id);
+        }
+    }
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="Character_obj">
       <action>
@@ -79,7 +121,7 @@ if(current_time &gt;= timeStamp_local)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>/*
 if (other.id != spawner &amp;&amp; other.id == Character_obj)
 {
     scrub = other;
@@ -87,7 +129,7 @@ if (other.id != spawner &amp;&amp; other.id == Character_obj)
     var temp = id;
     with(scrub)
     {
-        script_execute(state[s_DAMAGED], 1, 100, temp);
+        script_execute(state[s_DAMAGED], 3, 100, temp);
     }
 }
 
