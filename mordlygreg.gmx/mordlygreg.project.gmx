@@ -145,10 +145,13 @@
     <scripts name="State Machines">
       <script>scripts\Default_StateMachine_v04_scr.gml</script>
       <script>scripts\Mordley_SM_v05_scr.gml</script>
+      <script>scripts\Mordley_SM_v06_scr.gml</script>
     </scripts>
     <scripts name="States">
       <scripts name="Movement">
         <script>scripts\Move_v04_scr.gml</script>
+        <script>scripts\Move_v05_scr.gml</script>
+        <script>scripts\Movement_Update_scr.gml</script>
       </scripts>
       <scripts name="Gun Stuff">
         <script>scripts\FireGun_v02_scr.gml</script>
@@ -160,6 +163,7 @@
       <script>scripts\Interact_scr.gml</script>
       <script>scripts\Dodge_scr.gml</script>
       <script>scripts\TookDamage_scr.gml</script>
+      <script>scripts\TookDamage_v02_scr.gml</script>
       <script>scripts\Swing_scr.gml</script>
     </scripts>
     <scripts name="Animations">
@@ -171,8 +175,10 @@
       <script>scripts\Player_Idle_Animations_scr.gml</script>
     </scripts>
     <scripts name="Collisions">
+      <script>scripts\Character_Collision_v06_scr.gml</script>
       <script>scripts\Character_Collision_v05_scr.gml</script>
       <script>scripts\Projectile_Collision_scr.gml</script>
+      <script>scripts\Wall_Collisoin_scr.gml</script>
     </scripts>
     <scripts name="Controllers">
       <script>scripts\Player_Controller_scr.gml</script>
@@ -243,9 +249,9 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\GreyBox_rm</room>
     <room>rooms\room1</room>
     <room>rooms\room0_rm</room>
+    <room>rooms\GreyBox_rm</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

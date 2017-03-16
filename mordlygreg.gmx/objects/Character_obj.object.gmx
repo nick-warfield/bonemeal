@@ -147,7 +147,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Character_Collision_v05_scr</script>
+            <script>Movement_Update_scr</script>
           </argument>
           <argument>
             <kind>0</kind>
