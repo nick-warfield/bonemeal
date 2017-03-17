@@ -70,6 +70,7 @@ switch (State)
   case (s_ATTACK1):
     spd = 0;                         //stop player while swinging
     script_execute(Swing_scr);                  //swing in the direction the player is currently facing, not their current direction
+    script_execute(Parry_v02_scr);
     script_execute(Attack_Mordley_Ani_scr);     //Display the correct attack sprite based on which way the player is facing
 
     if (current_time >= timeStamp[2]) { State = s_MOVE; }   //Revert back to the Move state

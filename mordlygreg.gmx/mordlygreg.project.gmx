@@ -143,9 +143,9 @@
       <script>scripts\Damage_Init_scr.gml</script>
     </scripts>
     <scripts name="State Machines">
-      <script>scripts\Default_StateMachine_v04_scr.gml</script>
-      <script>scripts\Mordley_SM_v05_scr.gml</script>
       <script>scripts\Mordley_SM_v06_scr.gml</script>
+      <script>scripts\Mordley_SM_v05_scr.gml</script>
+      <script>scripts\Default_StateMachine_v04_scr.gml</script>
       <scripts name="Enemies">
         <script>scripts\Bat_AI_SM_v02_scr.gml</script>
         <script>scripts\Fishman_AI_SM_v02_scr.gml</script>
@@ -169,6 +169,7 @@
       <script>scripts\TookDamage_scr.gml</script>
       <script>scripts\TookDamage_v02_scr.gml</script>
       <script>scripts\Swing_scr.gml</script>
+      <script>scripts\Parry_v02_scr.gml</script>
     </scripts>
     <scripts name="Animations">
       <scripts name="Mordley">
