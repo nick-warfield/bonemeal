@@ -13,4 +13,7 @@ if (cylinder[cylinderPosition] != 0)
     
     //clear the current chamber
     cylinder[cylinderPosition] = 0;
-}
+    
+    //play sound
+    audio_play_sound(Shot01_Gun_snd, 50, false);
+} else { audio_play_sound(Empty_Gun_snd, 50, false); }

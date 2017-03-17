@@ -2,12 +2,16 @@
 switch(State)
 {
   case s_DAMAGED:       //when bat takes damage
-    if(current_time >= timeStamp[1])
+    if(current_time >= timeStamp[0])
     {
         if (healthPoints <= 0) { instance_destroy(); }
         timeStamp[2] = current_time + random_range(1000, 2000);
+        sprite_index = Walk_Front_Bat_spr;
         State = s_MOVE;
     }
+    if (timeStamp[1] >= current_time)
+    { sprite_index = Hurt_Front_Bat_spr; }
+    else {spd = 0;}
     
     break;
     

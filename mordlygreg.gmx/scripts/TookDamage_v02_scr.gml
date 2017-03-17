@@ -15,6 +15,7 @@ if (current_time > timeStamp[0] && State != s_DODGE)
     State = s_DAMAGED;
     Dir = point_direction(hurter.x, hurter.y, x, y);
     spd = force;
+    audio_play_sound(Hit02_Umbrella_snd, 50, false);
     
     script_execute(Var_Collision_scr);
 }

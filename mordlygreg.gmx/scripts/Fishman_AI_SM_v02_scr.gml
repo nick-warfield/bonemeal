@@ -7,11 +7,15 @@ switch(State)
     
     
   case s_DAMAGED:
-    if (current_time >= timeStamp[1])
+    if (current_time >= timeStamp[0])
     {
         if (healthPoints <= 0) { instance_destroy(); }
         State = s_IDLE;
     }
+    if (timeStamp[1] >= current_time)
+    { script_execute(Hurt_Fishman_Ani_scr); }
+    else {spd = 0;}
+    
     break;
     
     
@@ -24,8 +28,9 @@ switch(State)
     else if (current_time >= timeStamp[2])
     {
         spd = 1;
+        script_execute(Move_Fishman_Ani_scr);
     }
-    else { spd = 0; Dir = random(360); }
+    else { spd = 0; Dir = random(360); sprite_index = Fishman_Idle_spr; image_xscale = 1; }
 
     if (distance_to_object(target) <= 7 * 32 && current_time >= timeStamp[4])
     {
@@ -33,7 +38,7 @@ switch(State)
         State = s_ATTACK1;
     }
     else if (distance_to_object(target) <= 3 * 32)
-    { State = s_MOVE; }
+    { State = s_MOVE; audio_play_sound(Fishman_Cry_snd, 30, false); }
     
     break;
     
@@ -41,6 +46,8 @@ switch(State)
   case s_MOVE:
     Dir = point_direction(target.x, target.y, x, y);
     spd = 1.5;
+    script_execute(Move_Fishman_Ani_scr);
+    
     if (distance_to_object(target) >= 6 * 32) { State = s_IDLE; }
     
     if (!(current_time >= timeStamp[4]))

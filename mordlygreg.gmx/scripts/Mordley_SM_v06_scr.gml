@@ -29,6 +29,7 @@ switch (State)
     {
         State = s_ATTACK1;
         timeStamp[2] = current_time + 200;
+        audio_play_sound(Swing_Umbrella_snd, 50, false);
     }
     
     else if (Input[ATTACK3])    //aim
@@ -39,6 +40,7 @@ switch (State)
         State = s_ATTACK4;
         timeStamp[4] = current_time + 750;
         spd = 1;
+        audio_play_sound(Reload_Gun_snd, 50, false);
     }
     
     else if (Input[ATTACK5])    //cycle
@@ -80,7 +82,7 @@ switch (State)
     
   //Fire Gun
   case (s_ATTACK2):
-    script_execute(Shoot_Simple_scr);   //Spawn bullet if the current chamber is loaded, then empty it
+    script_execute(Shoot_Revolver_scr);   //Spawn bullet if the current chamber is loaded, then empty it
     script_execute(Cycle_scr);          //Cycle the cylinder after shooting, even if the chamber was empty
     
     State = s_ATTACK3;      //Switch state back to aiming
