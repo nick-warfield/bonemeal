@@ -1,10 +1,6 @@
 //REQUIRES:
 //
 
-//running the current move script makes things unstable,
-//have implemented an awful substitute to avoid this
-//I'll put everything in without using script execute in this version, that way I can visualize all of the code opperating at once
-
 switch (State)
 {
   case (s_DAMAGED):

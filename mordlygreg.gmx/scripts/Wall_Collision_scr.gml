@@ -1,6 +1,4 @@
 //Wall Collisions
-var newX = lengthdir_x(spd, Dir);
-var newY = lengthdir_y(spd, Dir);
 
 //horizontal collisions
 if (place_meeting(x + newX, y, Wall_obj) == true)

@@ -146,18 +146,22 @@
       <script>scripts\Default_StateMachine_v04_scr.gml</script>
       <script>scripts\Mordley_SM_v05_scr.gml</script>
       <script>scripts\Mordley_SM_v06_scr.gml</script>
+      <scripts name="Enemies">
+        <script>scripts\Bat_AI_SM_v02_scr.gml</script>
+        <script>scripts\Fishman_AI_SM_v02_scr.gml</script>
+      </scripts>
     </scripts>
     <scripts name="States">
       <scripts name="Movement">
         <script>scripts\Move_v04_scr.gml</script>
         <script>scripts\Move_v05_scr.gml</script>
-        <script>scripts\Movement_Update_scr.gml</script>
       </scripts>
       <scripts name="Gun Stuff">
         <script>scripts\FireGun_v02_scr.gml</script>
         <script>scripts\Reload_scr.gml</script>
         <script>scripts\Cycle_scr.gml</script>
         <script>scripts\Shoot_Simple_scr.gml</script>
+        <script>scripts\Shoot_Revolver_scr.gml</script>
         <script>scripts\Aim_v02_scr.gml</script>
       </scripts>
       <script>scripts\Interact_scr.gml</script>
@@ -175,17 +179,15 @@
       <script>scripts\Player_Idle_Animations_scr.gml</script>
     </scripts>
     <scripts name="Collisions">
+      <script>scripts\Var_Collision_scr.gml</script>
+      <script>scripts\Movement_Update_scr.gml</script>
+      <script>scripts\Character_Collision_v07_scr.gml</script>
       <script>scripts\Character_Collision_v06_scr.gml</script>
-      <script>scripts\Character_Collision_v05_scr.gml</script>
       <script>scripts\Projectile_Collision_scr.gml</script>
-      <script>scripts\Wall_Collisoin_scr.gml</script>
+      <script>scripts\Wall_Collision_scr.gml</script>
     </scripts>
     <scripts name="Controllers">
-      <script>scripts\Player_Controller_scr.gml</script>
       <script>scripts\Player_Controller_v02_scr.gml</script>
-      <script>scripts\SampleAI_Controller_scr.gml</script>
-      <script>scripts\BatAI_Controller_scr.gml</script>
-      <script>scripts\FishManAi_scr.gml</script>
     </scripts>
     <scripts name="SCRATCH">
       <script>scripts\Character_Collision_v02_scr.gml</script>
@@ -212,8 +214,14 @@
       <script>scripts\Move_Defualt_v01_scr.gml</script>
       <script>scripts\Move_Bad_scr.gml</script>
       <script>scripts\Player_Moving_Animations_scr.gml</script>
+      <script>scripts\SampleAI_Controller_scr.gml</script>
+      <script>scripts\BatAI_Controller_scr.gml</script>
+      <script>scripts\FishManAi_scr.gml</script>
+      <script>scripts\Player_Controller_scr.gml</script>
+      <script>scripts\Character_Collision_v05_scr.gml</script>
     </scripts>
     <script>scripts\Pause_scr.gml</script>
+    <script>scripts\DoNothing_scr.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Characters">

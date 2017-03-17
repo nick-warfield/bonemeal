@@ -6,11 +6,14 @@ if (place_meeting(x, y, spawner) == false)
     //if character hit
     if (place_meeting(x, y, Character_obj) == true)
     {
-        with(instance_place(x, y, Character_obj))
+        var scrub = instance_place(x, y, Character_obj);
+        scrub.hurter = id;
+        
+        with(scrub)
         {
-            script_execute(TookDamage_scr, 3, 50, id);
+            script_execute(TookDamage_v02_scr, 3, 10, 75);
         }
-        instance_destroy();
+        if (scrub.timeStamp[0] == current_time + 1000) {instance_destroy();}
     }
     
     //if solid wall hit

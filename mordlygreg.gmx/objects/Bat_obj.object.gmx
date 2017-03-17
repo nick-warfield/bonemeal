@@ -52,7 +52,7 @@ image_speed = (1/6);
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>BatAI_Controller_scr</script>
+            <script>Bat_AI_SM_v02_scr</script>
           </argument>
           <argument>
             <kind>0</kind>

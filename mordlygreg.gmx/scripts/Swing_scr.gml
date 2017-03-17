@@ -17,5 +17,6 @@ else if (facing == DOWN)
 
 if (thing != id)
 {
-    with (thing) { script_execute(TookDamage_scr, 2, 50, id); }
+    //thing.hurter = id;
+    with (thing) { script_execute(TookDamage_v02_scr, 1, 10, 50); }
 }

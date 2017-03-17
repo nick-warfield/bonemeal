@@ -43,8 +43,7 @@ if (place_meeting(x + newX, y + newY, Character_obj) == true)
         else if (cy == 0) { if (cx > 0) { Dir = 0; } else { Dir = 180; } }
         else
         {
-            if(abs(cx) > abs(cy)) { Dir = arctan(abs(cy)/abs(cx)); } 
-            else { Dir = arctan(abs(cx)/abs(cy)); }
+            Dir = arctan(abs(cy)/abs(cx));
             
             //if (id.object_index = Player02_obj) { show_debug_message(Dir); }
             
