@@ -127,7 +127,9 @@
       <sprite>sprites\Player_Down_spr</sprite>
     </sprites>
     <sprites name="HUD">
-      <sprite>sprites\chamber_spr</sprite>
+      <sprites name="CHAMBER">
+        <sprite>sprites\chamber00_spr</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
