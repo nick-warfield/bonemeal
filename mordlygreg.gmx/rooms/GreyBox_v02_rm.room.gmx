@@ -3,8 +3,8 @@
   <caption></caption>
   <width>2112</width>
   <height>3104</height>
-  <vsnap>1</vsnap>
-  <hsnap>1</hsnap>
+  <vsnap>32</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -52,7 +52,6 @@
   </views>
   <instances>
     <instance objName="Player02_obj" x="1024" y="3008" name="inst_2E91887C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Speaker_obj" x="-64" y="64" name="inst_8ABEB112" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Camera_obj" x="-64" y="0" name="inst_704D570C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fishman_obj" x="1408" y="608" name="inst_FD28D07E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fishman_obj" x="1568" y="672" name="inst_006B460A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -90,6 +89,7 @@
     <instance objName="Green_Tree_obj" x="1726" y="1980" name="inst_D1EBC7BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Green_Tree_obj" x="1840" y="1946" name="inst_11202CEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Green_Tree_obj" x="2000" y="2092" name="inst_C2AA916B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dialogue_obj" x="1120" y="2944" name="inst_5F345B70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

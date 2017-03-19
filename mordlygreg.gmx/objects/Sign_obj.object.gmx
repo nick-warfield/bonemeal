@@ -28,6 +28,11 @@
             <string>/// Initialize the sign
 event_inherited();
 
+
+
+
+
+/*
 dialogue = noone;
 dialog_page = 0;
 xoffset = -32;

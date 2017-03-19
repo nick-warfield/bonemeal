@@ -1,5 +1,7 @@
 //Wall Collisions
 
+//set a different collision mask here, so that walking around is easier
+
 //horizontal collisions
 if (place_meeting(x + newX, y, Wall_obj) == true)
 {
@@ -27,3 +29,5 @@ if (place_meeting(x, y + newY, Wall_obj) == true)
     else if (Dir > 270 && Dir < 360) { Dir = 0; spd /= 1.5; }         //force right
     else if (Dir > 180 && Dir < 270) { Dir = 180; spd /= 1.5; }     //force left
 }
+
+//then reset collisions back to normal so that more precise collisions can be used with combat

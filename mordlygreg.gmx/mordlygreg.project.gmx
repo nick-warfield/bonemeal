@@ -109,6 +109,7 @@
     <sprites name="Effects">
       <sprite>sprites\Fang_Front_Effect_spr</sprite>
       <sprite>sprites\Fang_Side_Effect_spr</sprite>
+      <sprite>sprites\TextBox_GUI_spr</sprite>
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\GreyBox_spr</sprite>
@@ -144,6 +145,7 @@
       <script>scripts\Projectile_Initialization_scr.gml</script>
       <script>scripts\AI_Init_scr.gml</script>
       <script>scripts\Damage_Init_scr.gml</script>
+      <script>scripts\Dialogue_Init_scr.gml</script>
     </scripts>
     <scripts name="State Machines">
       <script>scripts\Mordley_SM_v06_scr.gml</script>
@@ -229,6 +231,7 @@
     <script>scripts\Sound_Director_scr.gml</script>
     <script>scripts\Pause_scr.gml</script>
     <script>scripts\DoNothing_scr.gml</script>
+    <script>scripts\Dialogue_GUI_scr.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Characters">
