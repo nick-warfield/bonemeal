@@ -33,7 +33,6 @@
   </sounds>
   <sprites name="sprites">
     <sprites name="Mordley">
-      <sprite>sprites\BasicAttackCollision_spr</sprite>
       <sprite>sprites\Mordley_Attk_Back_spr</sprite>
       <sprite>sprites\Mordley_Attk_Side_spr</sprite>
       <sprite>sprites\Mordley_Attk_Front_spr</sprite>
@@ -110,6 +109,9 @@
       <sprite>sprites\Fang_Front_Effect_spr</sprite>
       <sprite>sprites\Fang_Side_Effect_spr</sprite>
       <sprite>sprites\TextBox_GUI_spr</sprite>
+      <sprite>sprites\BasicAttackCollision_spr</sprite>
+      <sprite>sprites\Filled_Chamber_spr</sprite>
+      <sprite>sprites\Empty_Chamber_spr</sprite>
     </sprites>
     <sprites name="Misc">
       <sprite>sprites\GreyBox_spr</sprite>
@@ -186,6 +188,11 @@
       <script>scripts\Fishman_Animation_scr.gml</script>
       <script>scripts\Player_Idle_Animations_scr.gml</script>
     </scripts>
+    <scripts name="GUI">
+      <script>scripts\Dialogue_GUI_scr.gml</script>
+      <script>scripts\Health_GUI_scr.gml</script>
+      <script>scripts\GunHUD_GUI_scr.gml</script>
+    </scripts>
     <scripts name="Collisions">
       <script>scripts\Var_Collision_scr.gml</script>
       <script>scripts\Movement_Update_scr.gml</script>
@@ -231,7 +238,6 @@
     <script>scripts\Sound_Director_scr.gml</script>
     <script>scripts\Pause_scr.gml</script>
     <script>scripts\DoNothing_scr.gml</script>
-    <script>scripts\Dialogue_GUI_scr.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Characters">
@@ -246,6 +252,9 @@
     </objects>
     <objects name="Walls">
       <object>objects\Wall_obj</object>
+      <objects name="Signs">
+        <object>objects\Sign_obj</object>
+      </objects>
       <objects name="Trees">
         <object>objects\Spooky_Tree_obj</object>
         <object>objects\Green_Tree_obj</object>
@@ -268,7 +277,6 @@
         <object>objects\Mansion_v01_obj</object>
       </objects>
       <object>objects\GreBox_Collisions_obj</object>
-      <object>objects\Sign_obj</object>
       <object>objects\Invisible_Wall_obj</object>
     </objects>
     <objects name="Misc">

@@ -23,7 +23,10 @@ switch (State)
     }
     
     else if (Input[INTERACT])
-    { State = s_INTERACT; }
+    {
+        script_execute(Interact_scr);
+        State = s_INTERACT;
+    }
     
     else if (Input[ATTACK1])    //swing
     {
@@ -61,9 +64,9 @@ switch (State)
     
   //Interact with stuff
   case (s_INTERACT):
-    show_debug_message("Talking");      //Interact code here
-  
-    State = s_MOVE;
+    spd = 0;
+    if (Camera_obj.done == true)
+    { State = s_MOVE; }
     
     break;
 

@@ -1,4 +1,4 @@
-
+show_debug_message(cylinderPosition);
 
 if (cylinder[cylinderPosition] != 0)
 {

@@ -1,4 +1,7 @@
 //interact with stuff
+
+Input[INTERACT] = false;
+
 if (facing == RIGHT)
 {
     var thing = collision_rectangle(x, y, x + 24, y, Sign_obj, false, false);
@@ -18,5 +21,16 @@ else if (facing == DOWN)
 
 if (thing != noone)
 {
+    show_debug_message("Talking");
+
+    var cam = instance_find(Camera_obj, 1);
+
+    for (var i = 0; i < array_length_1d(thing.message); i++)
+    {
+        cam.message[i] = thing.message[i];
+    }
     
+    cam.messageCurrent = thing.messageCurrent;
+    cam.portrait = thing.portrait;
+    cam.done = thing.done;
 }

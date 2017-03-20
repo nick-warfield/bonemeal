@@ -1,5 +1,6 @@
 //Resource related variables
-    healthPoints = 600000000;
+    healthPoints = 12;
+    hpMax = healthPoints;
     hurter = 0;
     
     spd = 3;        //general speed multiplier
