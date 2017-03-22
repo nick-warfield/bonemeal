@@ -119,7 +119,6 @@
       <sprite>sprites\Sign_spr</sprite>
     </sprites>
     <sprites name="SCRATCH">
-      <sprite>sprites\Bullet_spr</sprite>
       <sprite>sprites\Player_spr</sprite>
       <sprite>sprites\BlankTile_spr</sprite>
       <sprite>sprites\BlankTile01_spr</sprite>
@@ -128,6 +127,10 @@
       <sprite>sprites\Player_Right_spr</sprite>
       <sprite>sprites\Player_Up_Idle_spr</sprite>
       <sprite>sprites\Player_Down_spr</sprite>
+    </sprites>
+    <sprites name="Projectiles">
+      <sprite>sprites\Bullet_Mord_spr</sprite>
+      <sprite>sprites\Bullet_spr</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
