@@ -33,12 +33,21 @@
   </sounds>
   <sprites name="sprites">
     <sprites name="Mordley">
-      <sprite>sprites\Mordley_Attk_Back_spr</sprite>
-      <sprite>sprites\Mordley_Attk_Side_spr</sprite>
-      <sprite>sprites\Mordley_Attk_Front_spr</sprite>
-      <sprite>sprites\Mordley_Back_spr</sprite>
-      <sprite>sprites\Mordley_Side_spr</sprite>
-      <sprite>sprites\Mordley_Front_spr</sprite>
+      <sprites name="Idle">
+        <sprite>sprites\Mordley_Back_spr</sprite>
+        <sprite>sprites\Mordley_Side_spr</sprite>
+        <sprite>sprites\Mordley_Front_spr</sprite>
+      </sprites>
+      <sprites name="Swing">
+        <sprite>sprites\Mordley_Attk_Back_spr</sprite>
+        <sprite>sprites\Mordley_Attk_Side_spr</sprite>
+        <sprite>sprites\Mordley_Attk_Front_spr</sprite>
+      </sprites>
+      <sprites name="Gun">
+        <sprite>sprites\Mordley_Front_Aim_spr</sprite>
+        <sprite>sprites\Mordley_Side_Aim_spr</sprite>
+        <sprite>sprites\Mordley_Back_Aim_spr</sprite>
+      </sprites>
     </sprites>
     <sprites name="Enemies">
       <sprites name="Fishman">
@@ -52,6 +61,11 @@
           <sprite>sprites\Hurt_Back_Fishman_spr</sprite>
           <sprite>sprites\Hurt_Front_Fishman_spr</sprite>
           <sprite>sprites\Hurt_Side_Fishman_spr</sprite>
+        </sprites>
+        <sprites name="Spit">
+          <sprite>sprites\Fishman_Spit_Front_spr</sprite>
+          <sprite>sprites\Fishman_Spit_Side_spr</sprite>
+          <sprite>sprites\Fishman_Spit_Back_spr</sprite>
         </sprites>
       </sprites>
       <sprites name="Bat">
@@ -74,6 +88,9 @@
           <sprite>sprites\Walk_Side_Bat_spr</sprite>
         </sprites>
       </sprites>
+    </sprites>
+    <sprites name="Projectiles">
+      <sprite>sprites\Spit_v01_spr</sprite>
     </sprites>
     <sprites name="Enviornment">
       <sprite>sprites\Chair_spr</sprite>
@@ -104,6 +121,9 @@
         <sprite>sprites\Gate_spr</sprite>
         <sprite>sprites\Shrine_spr</sprite>
       </sprites>
+    </sprites>
+    <sprites name="GUI">
+      <sprite>sprites\HUD_Gun_spr</sprite>
     </sprites>
     <sprites name="Effects">
       <sprite>sprites\Fang_Front_Effect_spr</sprite>
@@ -184,6 +204,7 @@
     <scripts name="Animations">
       <scripts name="Mordley">
         <script>scripts\Move_Mordley_Ani_scr.gml</script>
+        <script>scripts\Aim_Mordley_Ani_scr.gml</script>
         <script>scripts\Attack_Mordley_Ani_scr.gml</script>
       </scripts>
       <script>scripts\Move_Fishman_Ani_scr.gml</script>

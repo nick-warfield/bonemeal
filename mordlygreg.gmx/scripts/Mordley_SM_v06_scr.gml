@@ -144,7 +144,7 @@ switch (State)
   case (s_ATTACK3):
     spd = 0;                     //keep the player from moving while aiming
     script_execute(Aim_v02_scr);            //Updates the direction of mordley
-    script_execute(Move_Mordley_Ani_scr);   //Updates the sprite and facing variable
+    script_execute(Aim_Mordley_Ani_scr);   //Updates the sprite and facing variable
 
     
     if (stamina >= staminaMax) { stamina = staminaMax; }
