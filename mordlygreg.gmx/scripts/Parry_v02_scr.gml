@@ -25,5 +25,6 @@ if (instance_exists(thing))
         thing.image_angle = thing.direction;
         thing.x = (x + thing.x) / 2;
         thing.y = (y + thing.y) / 2;
+        stamina += 30;
     }
 }

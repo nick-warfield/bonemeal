@@ -7,7 +7,9 @@
     //7 parry
     //8-12 attacks
     var j = 13;
-    for (var i = 0; i < j; i = i + 1)
+    for (var i = 0; i < j; i++)
     {
         Input[i] = false;
     }
+    
+    num = 0;

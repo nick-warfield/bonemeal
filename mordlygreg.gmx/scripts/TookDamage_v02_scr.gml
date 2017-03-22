@@ -6,7 +6,7 @@ kbck = argument2;
 if (current_time > timeStamp[0] && State != s_DODGE)
 {
     healthPoints = healthPoints - dmg;
-    show_debug_message(healthPoints);
+    //show_debug_message(healthPoints);
     
     //set a 1 second invulnerabiliy period
     timeStamp[0] = current_time + 1000;

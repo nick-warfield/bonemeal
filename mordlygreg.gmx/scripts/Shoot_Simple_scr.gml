@@ -10,3 +10,5 @@ bulletInst.image_angle = id.facing * 90;
 bulletInst.direction = id.facing * 90;
 
 audio_play_sound(Shot01_Gun_snd, 50, false);
+
+stamina -= 30;

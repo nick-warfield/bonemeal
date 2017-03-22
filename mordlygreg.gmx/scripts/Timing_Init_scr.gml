@@ -5,3 +5,4 @@
     timeStamp[3] = 0;
     timeStamp[4] = 0;
     timeStamp[5] = 0;
+    timeStamp[6] = 0;

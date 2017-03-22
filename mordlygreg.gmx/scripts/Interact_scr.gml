@@ -19,12 +19,10 @@ else if (facing == DOWN)
     var thing = collision_rectangle(x, y, x, y + 40, Sign_obj, false, false);
 }
 
+
+var cam = instance_find(Camera_obj, 1);
 if (thing != noone)
 {
-    show_debug_message("Talking");
-
-    var cam = instance_find(Camera_obj, 1);
-
     for (var i = 0; i < array_length_1d(thing.message); i++)
     {
         cam.message[i] = thing.message[i];
@@ -34,3 +32,4 @@ if (thing != noone)
     cam.portrait = thing.portrait;
     cam.done = thing.done;
 }
+else { cam.done = true; }

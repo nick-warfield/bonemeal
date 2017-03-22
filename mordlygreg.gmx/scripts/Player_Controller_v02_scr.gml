@@ -132,7 +132,36 @@
             Input[ATTACK2] = false;
         }
     
-    
+        
+        
+        if (gamepad_button_check(0, gp_shoulderr) == true ||
+            gamepad_button_check(0, gp_shoulderrb) == true ||
+            keyboard_check(vk_space) == true)
+        {
+            num++;
+            if (num > 9) 
+            {
+                Input[PARRY] = true;
+                //show_debug_message("Parry");
+            }
+        }
+        else
+        {
+            if (Input[PARRY] == false && num != 0)
+            {
+                Input[ATTACK1] = true;
+                num = 0;
+                //show_debug_message("SWING");
+            }
+            else
+            {
+                Input[ATTACK1] = false;
+                Input[PARRY] = false;
+                num = 0;
+            }
+        }
+        
+/*    
     //swing umbrella commmand
         if (gamepad_button_check_pressed(0, gp_shoulderr) == true ||
             gamepad_button_check_pressed(0, gp_shoulderrb) == true ||
@@ -143,4 +172,15 @@
         else
         {
             Input[ATTACK1] = false;
+        }
+        
+    //parry umbrella command
+        if (gamepad_button_check(0, gp_start) ||
+            keyboard_check(ord('Q')))
+        {
+            Input[PARRY] = true;
+        }
+        else
+        {
+            Input[PARRY] = false;
         }
