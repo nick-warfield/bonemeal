@@ -7,7 +7,103 @@
   <persistent>0</persistent>
   <parentName>Wall_obj</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>red = instance_find(Candle_Red_obj, 1);
+blue = instance_find(Candle_Blue_obj, 1);
+orange = instance_find(Candle_Orange_obj, 1);
+white = instance_find(Candle_White_obj, 1);
+
+countMax = 4;
+count = countMax;
+solved = false;
+
+newPosition = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (count == 0)
+{
+    if (red.order == 1 &amp;&amp; blue.order == 2 &amp;&amp; orange.order == 3 &amp;&amp; white.order == 4)
+    {
+        solved = true;
+        newPosition = (y-(2*32));
+        count--;
+        show_debug_message("SOLVED");
+    }
+    else
+    {
+        red.order = 0;
+        blue.order = 0;
+        orange.order = 0;
+        white.order = 0;
+        
+        count = countMax;
+        show_debug_message("WRONG");
+    }
+}
+
+if (solved == true)
+{
+    move_towards_point(x, newPosition, 1);
+    
+    with(red) {move_towards_point(x, door.newPosition, 1);}
+    with(blue) {move_towards_point(x, door.newPosition, 1);}
+    with(white) {move_towards_point(x, door.newPosition, 1);}
+    with(orange) {move_towards_point(x, door.newPosition, 1);}
+    
+    if (y &lt;= newPosition) 
+    {
+        solved = false; 
+        
+        speed = 0;
+        red.speed = 0;
+        blue.speed = 0;
+        white.speed = 0;
+        orange.speed = 0;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>

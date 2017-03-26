@@ -14,3 +14,5 @@
     
     newX = 0;
     newY = 0;
+    
+    debug = false;

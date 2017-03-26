@@ -1,6 +1,7 @@
 State = s_MOVE;
+keys = 0;
 
-
+/*
 //state array
     state[s_ACTIVE] = Idle_scr;
     state[s_IDLE] = Idle_scr;

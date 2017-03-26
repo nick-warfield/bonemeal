@@ -65,12 +65,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Initialize the sign
-event_inherited();
+            <string>/// Initialize Messages
+
+//type = "Sign";
+locked = true;
 
 message[0] = "Damger";
 message[1] = "Spoopy Mansion Ahead";
-message[2] = "AHHHHHHHHHHHHHHHHH!##AAAAAAHHHHHHHHHHHHHHHHHHHH!";
+message[2] = "AHHHHHHHHHHH! ##AAAAAHHHHHHHHHHHHHHHH!!!!!!";
 </string>
           </argument>
         </arguments>

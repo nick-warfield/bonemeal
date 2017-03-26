@@ -30,7 +30,7 @@ switch (State)
     
     else if (Input[INTERACT])
     {
-        script_execute(Interact_scr);
+        script_execute(Interact_v02_scr);
         State = s_INTERACT;
     }
     
@@ -189,7 +189,6 @@ switch (State)
         script_execute(Reload_scr);     //fills the next chamber with bullet
         spd = 3;                       //restore speed back to normal
         State = s_MOVE;                 //revert back to move state
-        timeStamp[6] = current_time + 2000;
     }
     
     script_execute(Move_v05_scr);       //allow for movement while reloading

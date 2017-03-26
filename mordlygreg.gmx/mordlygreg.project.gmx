@@ -91,6 +91,8 @@
     </sprites>
     <sprites name="Projectiles">
       <sprite>sprites\Spit_v01_spr</sprite>
+      <sprite>sprites\Bullet_Mord_spr</sprite>
+      <sprite>sprites\Bullet_spr</sprite>
     </sprites>
     <sprites name="Enviornment">
       <sprite>sprites\Chair_spr</sprite>
@@ -148,10 +150,6 @@
       <sprite>sprites\Player_Up_Idle_spr</sprite>
       <sprite>sprites\Player_Down_spr</sprite>
     </sprites>
-    <sprites name="Projectiles">
-      <sprite>sprites\Bullet_Mord_spr</sprite>
-      <sprite>sprites\Bullet_spr</sprite>
-    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\gb_v01_bkd</background>
@@ -171,6 +169,7 @@
       <script>scripts\AI_Init_scr.gml</script>
       <script>scripts\Damage_Init_scr.gml</script>
       <script>scripts\Dialogue_Init_scr.gml</script>
+      <script>scripts\Sign_Init_scr.gml</script>
     </scripts>
     <scripts name="State Machines">
       <script>scripts\Mordley_SM_v06_scr.gml</script>
@@ -195,6 +194,7 @@
         <script>scripts\Aim_v02_scr.gml</script>
       </scripts>
       <script>scripts\Interact_scr.gml</script>
+      <script>scripts\Interact_v02_scr.gml</script>
       <script>scripts\Dodge_scr.gml</script>
       <script>scripts\TookDamage_scr.gml</script>
       <script>scripts\TookDamage_v02_scr.gml</script>
@@ -218,8 +218,8 @@
       <script>scripts\GunHUD_GUI_scr.gml</script>
     </scripts>
     <scripts name="Collisions">
-      <script>scripts\Var_Collision_scr.gml</script>
       <script>scripts\Movement_Update_scr.gml</script>
+      <script>scripts\Var_Collision_scr.gml</script>
       <script>scripts\Character_Collision_v07_scr.gml</script>
       <script>scripts\Character_Collision_v06_scr.gml</script>
       <script>scripts\Projectile_Collision_scr.gml</script>
@@ -296,18 +296,29 @@
       <objects name="Structures">
         <object>objects\Pond_obj</object>
         <object>objects\Mounds_obj</object>
-        <object>objects\Shrine_obj</object>
-        <object>objects\Gate_obj</object>
         <object>objects\Mansion_v01_obj</object>
+        <object>objects\Gate_obj</object>
       </objects>
       <object>objects\GreBox_Collisions_obj</object>
       <object>objects\Invisible_Wall_obj</object>
     </objects>
     <objects name="Misc">
-      <object>objects\Candle_Blue_obj</object>
-      <object>objects\Candle_Orange_obj</object>
-      <object>objects\Candle_Red_obj</object>
-      <object>objects\Candle_White_obj</object>
+      <objects name="Keys">
+        <object>objects\Key_obj</object>
+      </objects>
+      <objects name="Puzzles">
+        <object>objects\Combination_Puzzle_obj</object>
+        <objects name="Candles">
+          <object>objects\Candle_Blue_obj</object>
+          <object>objects\Candle_Orange_obj</object>
+          <object>objects\Candle_Red_obj</object>
+          <object>objects\Candle_White_obj</object>
+          <object>objects\Shrine_obj</object>
+        </objects>
+      </objects>
+      <objects name="Doors">
+        <object>objects\Door01_obj</object>
+      </objects>
     </objects>
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>

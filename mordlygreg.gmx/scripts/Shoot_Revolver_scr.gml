@@ -3,6 +3,10 @@
 if (cylinder[cylinderPosition] != 0)
 {
     bulletInst = instance_create(x, y, Bullet_obj);
+    if (facing == 0) { bulletInst.y -= 8; bulletInst.x += 32; }
+    else if (facing == 2) { bulletInst.y -= 8; bulletInst.x -= 32; }
+    else if (facing == 1) { bulletInst.y -= 32; }
+    else if (facing == 3) { bulletInst.y += 32; }
     
     //set bullet variance based off of missing stamina
     var variance = ((staminaMax - stamina) / 5) * random_range(-1, 1);

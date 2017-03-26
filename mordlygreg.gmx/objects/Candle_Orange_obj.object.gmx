@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-3</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>Combination_Puzzle_obj</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events/>
   <PhysicsObject>0</PhysicsObject>
