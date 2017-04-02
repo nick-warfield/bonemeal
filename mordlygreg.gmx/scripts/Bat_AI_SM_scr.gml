@@ -6,11 +6,7 @@ switch(ds_stack_top(StateStack))
     
 
   case s_DAMAGED:       //when bat takes damage
-    ds_stack_pop(StateStack);
-    
-    if (timeStamp[0] == 0)
-    { script_execute(TookDamage_v03_scr); }
-    
+    script_execute(TookDamage_v03_scr);
     break;
   
     /*
@@ -37,7 +33,7 @@ switch(ds_stack_top(StateStack))
         if (healthPoints <= 0) {instance_destroy();}
     }
     
-    if (current_time >= timeStamp[0])
+    if (current_time >= timeStam[0])
     {
         ds_stack_pop(StateStack);           //pop stun
         ds_stack_pop(StateStack);           //pop previous state
@@ -121,10 +117,7 @@ switch(ds_stack_top(StateStack))
 
 //Reset invulnerability timer once it has finished counting down
 if (current_time >= timeStamp[0]) 
-{
-    timeStamp[0] = 0;
-    sprite_index = Walk_Front_Bat_spr;
-}
+{ timeStamp[0] = 0; }
 //hurt animation
 else
 {
@@ -141,14 +134,11 @@ if (!instance_exists(target))
 
 if (place_meeting(x, y, target))    //damage the target
 {
-    var t = id;
+    target.hurter = id;
     with (target)
-    {
-        script_execute(SetDamageVars_scr(t, 7, 100, 1, NULL));
-        ds_stack_push(StateStack, s_DAMAGED);
-    }
+    { script_execute(TookDamage_v02_scr(1, 7, 100)); }
     
-    if (target.timeStamp[0] == 0)
+    if (target.timeStamp[0] == current_time + 1000)
     {
         timeStamp[5] = current_time + random_range(2000, 3000);
         Dir = random(360);

@@ -1,6 +1,6 @@
-dmg = argument0;
-force = argument1;
-kbck = argument2;
+dmg = argument0;        //damage taken
+force = argument1;      //how fast is the knockback
+kbck = argument2;       //how long is the knockback
 
 //only run this code if more than a second has passed since the last hit
 if (current_time > timeStamp[0] && State != s_DODGE)
@@ -13,6 +13,7 @@ if (current_time > timeStamp[0] && State != s_DODGE)
     timeStamp[1] = current_time + kbck;
     
     State = s_DAMAGED;
+    StateArray[0] = s_DAMAGED;
     Dir = point_direction(hurter.x, hurter.y, x, y);
     spd = force;
     audio_play_sound(Hit02_Umbrella_snd, 50, false);

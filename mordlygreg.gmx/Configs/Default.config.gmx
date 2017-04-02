@@ -651,7 +651,7 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="29">
+    <constants number="30">
       <constant name="NULL">-10</constant>
       <constant name="RIGHT">0</constant>
       <constant name="UP">1</constant>
@@ -679,6 +679,7 @@
       <constant name="s_ATTACK4">10</constant>
       <constant name="s_ATTACK5">11</constant>
       <constant name="s_DAMAGED">12</constant>
+      <constant name="s_STUNED">13</constant>
       <constant name="CHAMBER">0</constant>
       <constant name="RELOAD">7</constant>
     </constants>

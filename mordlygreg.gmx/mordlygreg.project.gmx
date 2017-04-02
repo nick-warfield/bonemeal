@@ -88,6 +88,9 @@
           <sprite>sprites\Walk_Side_Bat_spr</sprite>
         </sprites>
       </sprites>
+      <sprites name="Boss">
+        <sprite>sprites\Boss_Idle_spr</sprite>
+      </sprites>
     </sprites>
     <sprites name="Projectiles">
       <sprite>sprites\Spit_v01_spr</sprite>
@@ -170,36 +173,43 @@
       <script>scripts\Damage_Init_scr.gml</script>
       <script>scripts\Dialogue_Init_scr.gml</script>
       <script>scripts\Sign_Init_scr.gml</script>
+      <script>scripts\Porjectile_Init_v02_scr.gml</script>
     </scripts>
     <scripts name="State Machines">
+      <script>scripts\Mordley_SM_v07_scr.gml</script>
       <script>scripts\Mordley_SM_v06_scr.gml</script>
-      <script>scripts\Mordley_SM_v05_scr.gml</script>
-      <script>scripts\Default_StateMachine_v04_scr.gml</script>
       <scripts name="Enemies">
+        <script>scripts\Boss_AI_SM_scr.gml</script>
+        <script>scripts\Boss_AI_SM_v02_scr.gml</script>
+        <script>scripts\Boss_AI_SM_v03_scr.gml</script>
         <script>scripts\Bat_AI_SM_v02_scr.gml</script>
-        <script>scripts\Fishman_AI_SM_v02_scr.gml</script>
+        <script>scripts\Fishman_AI_SM_v03_scr.gml</script>
       </scripts>
     </scripts>
     <scripts name="States">
-      <scripts name="Movement">
-        <script>scripts\Move_v04_scr.gml</script>
-        <script>scripts\Move_v05_scr.gml</script>
-      </scripts>
-      <scripts name="Gun Stuff">
-        <script>scripts\FireGun_v02_scr.gml</script>
-        <script>scripts\Reload_scr.gml</script>
-        <script>scripts\Cycle_scr.gml</script>
-        <script>scripts\Shoot_Simple_scr.gml</script>
-        <script>scripts\Shoot_Revolver_scr.gml</script>
-        <script>scripts\Aim_v02_scr.gml</script>
-      </scripts>
-      <script>scripts\Interact_scr.gml</script>
-      <script>scripts\Interact_v02_scr.gml</script>
-      <script>scripts\Dodge_scr.gml</script>
-      <script>scripts\TookDamage_scr.gml</script>
+      <script>scripts\TookDamage_v03_scr.gml</script>
       <script>scripts\TookDamage_v02_scr.gml</script>
-      <script>scripts\Swing_scr.gml</script>
-      <script>scripts\Parry_v02_scr.gml</script>
+      <scripts name="Mordley">
+        <scripts name="Movement">
+          <script>scripts\Move_v04_scr.gml</script>
+          <script>scripts\Move_v05_scr.gml</script>
+        </scripts>
+        <scripts name="Gun Stuff">
+          <script>scripts\FireGun_v02_scr.gml</script>
+          <script>scripts\Reload_scr.gml</script>
+          <script>scripts\Cycle_scr.gml</script>
+          <script>scripts\Shoot_Simple_scr.gml</script>
+          <script>scripts\Shoot_Revolver_scr.gml</script>
+          <script>scripts\Aim_v02_scr.gml</script>
+        </scripts>
+        <script>scripts\Interact_v02_scr.gml</script>
+        <script>scripts\Swing_scr.gml</script>
+        <script>scripts\Parry_v02_scr.gml</script>
+      </scripts>
+      <scripts name="Boss">
+        <script>scripts\Grab_Update_scr.gml</script>
+        <script>scripts\Grab_Init_scr.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Animations">
       <scripts name="Mordley">
@@ -258,10 +268,20 @@
       <script>scripts\FishManAi_scr.gml</script>
       <script>scripts\Player_Controller_scr.gml</script>
       <script>scripts\Character_Collision_v05_scr.gml</script>
+      <script>scripts\Interact_scr.gml</script>
+      <script>scripts\Dodge_scr.gml</script>
+      <script>scripts\TookDamage_scr.gml</script>
+      <script>scripts\PushArray_scr.gml</script>
+      <script>scripts\PopArray_scr.gml</script>
+      <script>scripts\Default_StateMachine_v04_scr.gml</script>
+      <script>scripts\Mordley_SM_v05_scr.gml</script>
+      <script>scripts\Fishman_AI_SM_v02_scr.gml</script>
+      <script>scripts\Bat_AI_SM_v01_scr.gml</script>
     </scripts>
     <script>scripts\Sound_Director_scr.gml</script>
     <script>scripts\Pause_scr.gml</script>
     <script>scripts\DoNothing_scr.gml</script>
+    <script>scripts\SetDamageVars_scr.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Characters">
@@ -272,6 +292,7 @@
         <object>objects\Enemy_obj</object>
         <object>objects\Bat_obj</object>
         <object>objects\Fishman_obj</object>
+        <object>objects\Boss_obj</object>
       </objects>
     </objects>
     <objects name="Walls">
@@ -332,12 +353,14 @@
       <object>objects\EnemySpawn_obj</object>
       <object>objects\SwingArc_obj</object>
       <object>objects\Camera_obj</object>
+      <object>objects\GrabArm_obj</object>
     </objects>
     <objects name="SCRATCH">
       <object>objects\floor_obj</object>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room4</room>
     <room>rooms\GreyBox_v02_rm</room>
     <room>rooms\room1</room>
     <room>rooms\GreyBox_rm</room>

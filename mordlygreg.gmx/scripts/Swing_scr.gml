@@ -17,7 +17,16 @@ else if (facing == DOWN)
 
 if (thing != id && instance_exists(thing))
 {
-    if (thing.State != s_DAMAGED) { stamina += 15; }
-    with (thing) { script_execute(TookDamage_v02_scr, 1, 10, 50); }
+    if (thing.timeStamp[0] == 0)
+    {
+        stamina += 15;
+        
+        var t = id;
+        with (thing)
+        {
+            script_execute(SetDamageVars_scr(t, 10, 100, 1, NULL));
+            ds_stack_push(StateStack, s_DAMAGED);
+        }
+    }
 }
 

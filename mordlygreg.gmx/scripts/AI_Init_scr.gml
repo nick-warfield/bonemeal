@@ -1,6 +1,7 @@
-state[s_DAMAGED] = TookDamage_scr;
+//state[s_DAMAGED] = TookDamage_scr;
 State = 0;
-i = 0;
+StateStack = ds_stack_create();
+ds_stack_push(StateStack, s_IDLE);
 
 //AI stuff
     target = instance_find(Player02_obj, 1);

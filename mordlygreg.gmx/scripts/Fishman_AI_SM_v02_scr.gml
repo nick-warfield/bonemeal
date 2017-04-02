@@ -64,6 +64,8 @@ switch(State)
     spitInst.speed = 5;
     spitInst.image_angle = thatWay;
     spitInst.direction = thatWay;
+    
+    spitInst.dmg = 1;
   
     if (distance_to_object(target) <= 3 * 32) { State = s_MOVE; }
     else { State = s_IDLE; }

@@ -97,7 +97,7 @@
     
     //dodge command
         if (gamepad_button_check_pressed(0, gp_face2) == true ||
-            keyboard_check_pressed(vk_shift) == true)
+            keyboard_check_pressed(vk_lshift) == true)
         {
             Input[DODGE] = true;
         }
@@ -110,7 +110,8 @@
     //aim gun command
         if (gamepad_button_check(0, gp_shoulderl) == true ||
             gamepad_button_check(0, gp_shoulderlb) == true ||
-            mouse_check_button(mb_right) == true)
+            mouse_check_button(mb_right) == true ||
+            keyboard_check(vk_rshift) == true)
         {
             Input[ATTACK3] = true;
         }
@@ -123,7 +124,8 @@
     //fire gun command
         if (gamepad_button_check_pressed(0, gp_shoulderr) == true ||
             gamepad_button_check_pressed(0, gp_shoulderrb) == true ||
-            mouse_check_button_pressed(mb_left) == true)
+            mouse_check_button_pressed(mb_left) == true ||
+            keyboard_check(vk_space) == true)
         {
             Input[ATTACK2] = true;
         }

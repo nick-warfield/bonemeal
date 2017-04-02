@@ -7,7 +7,7 @@ if (keyboard_check_pressed(ord('0')))
     else {debug = false;}
 }
 
-if (debug && id.object_index == Player02_obj) {spd = 13;}
+if (debug && object_index == Player02_obj) {spd = 13;}
 
 
 motion_set(Dir, spd);

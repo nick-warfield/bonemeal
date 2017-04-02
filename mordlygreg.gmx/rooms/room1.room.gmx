@@ -145,8 +145,7 @@
     <instance objName="Wall_obj" x="416" y="288" name="inst_C8B0E9B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Player02_obj" x="96" y="224" name="inst_21BBEDED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Camera_obj" x="-64" y="32" name="inst_7CED0050" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fishman_obj" x="352" y="128" name="inst_47688916" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Bat_obj" x="288" y="128" name="inst_34383C45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Bat_obj" x="288" y="96" name="inst_54EEBEAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

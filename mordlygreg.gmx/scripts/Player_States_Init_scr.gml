@@ -1,4 +1,10 @@
 State = s_MOVE;
+
+StateArray[0] = s_MOVE;
+for (var i = 1; i < 5; i++) {StateArray[i] = 0;}
+
+StateStack = ds_stack_create();
+
 keys = 0;
 
 /*
