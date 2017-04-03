@@ -16,31 +16,32 @@ if (plyRef.cylinder[0] != 0) {chmb6 = fill;} else {chmb6 = empty;}
 
 if (rot != newRot && rot%60 == 0) {lerpI = 0;}
 
-if (lerpI < 1) { lerpI += (7/60)/1.9; }
+var a = 1;
+if (lerpI < 1) { lerpI += (7/60)/1.9; a = 0; }
 else if (lerpI > 1) {lerpI = 1;}
 
 //show_debug_message(lerpI);
 
 
-if (rot >= 360) {rot -= 360;}
-if (newRot >= 360) {newRot -= 360;}
+if (rot >= 360) {rot -= 360;} else if (rot < 0) {rot += 360;}
+if (newRot >= 360) {newRot -= 360;} else if (newRot < 0) {newRot += 360;}
 
-rot = lerp(newRot-60, newRot, lerpI);
+rot = lerp(newRot+60, newRot, lerpI);
 
 
 //draw bottom
-draw_sprite(bottom, 0, (48+23)*2, 48+5);
+draw_sprite_ext(bottom, 0, 86, 48+5, 1, 1, 0, c_white, a);
 
 //draw cylinder
 draw_sprite_ext(cyl, 0, 48+10+30, 48+5, 1, 1, rot, c_white, 1);
 
 //draw the chambers
 draw_sprite_ext(chmb1, 0, 88, 53, 1, 1, rot, c_white, 1);   //chamber 1
-draw_sprite_ext(chmb2, 0, 88, 53, 1, 1, rot-60, c_white, 1);   //chamber 2
-draw_sprite_ext(chmb3, 0, 88, 53, 1, 1, rot-(2*60), c_white, 1);   //chamber 3
-draw_sprite_ext(chmb4, 0, 88, 53, 1, 1, rot-(3*60), c_white, 1);   //chamber 4
-draw_sprite_ext(chmb5, 0, 88, 53, 1, 1, rot-(4*60), c_white, 1);   //chamber 5
-draw_sprite_ext(chmb6, 0, 88, 53, 1, 1, rot-(5*60), c_white, 1);   //chamber 6
+draw_sprite_ext(chmb2, 0, 88, 53, 1, 1, rot+60, c_white, 1);   //chamber 2
+draw_sprite_ext(chmb3, 0, 88, 53, 1, 1, rot+(2*60), c_white, 1);   //chamber 3
+draw_sprite_ext(chmb4, 0, 88, 53, 1, 1, rot+(3*60), c_white, 1);   //chamber 4
+draw_sprite_ext(chmb5, 0, 88, 53, 1, 1, rot+(4*60), c_white, 1);   //chamber 5
+draw_sprite_ext(chmb6, 0, 88, 53, 1, 1, rot+(5*60), c_white, 1);   //chamber 6
 
 //draw top
 draw_sprite(top, 0, 48+10+30, 48+5);
