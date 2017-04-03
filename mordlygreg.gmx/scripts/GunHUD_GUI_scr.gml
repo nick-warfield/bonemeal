@@ -1,7 +1,9 @@
-var cyl = BasicAttackCollision_spr;
-var fill = Filled_Chamber_spr;
-var empty = Empty_Chamber_spr;
+var cyl = hud_revolver_02_spr;
+var fill = hud_revolver_03_full_spr;
+var empty = hud_revolver_03_empty_spr;
 var plyRef = Player02_obj;
+var bottom = hud_revolver_01_spr;
+var top = hud_revolver_04_spr;
 
 //chamber0 means the 6th chamber for some reason, I'll get mad at me later
 if (plyRef.cylinder[1] != 0) {chmb1 = fill;} else {chmb1 = empty;}
@@ -26,6 +28,9 @@ if (newRot >= 360) {newRot -= 360;}
 rot = lerp(newRot-60, newRot, lerpI);
 
 
+//draw bottom
+draw_sprite(bottom, 0, (48+23)*2, 48+5);
+
 //draw cylinder
 draw_sprite_ext(cyl, 0, 48+10+30, 48+5, 1, 1, rot, c_white, 1);
 
@@ -36,3 +41,6 @@ draw_sprite_ext(chmb3, 0, 88, 53, 1, 1, rot-(2*60), c_white, 1);   //chamber 3
 draw_sprite_ext(chmb4, 0, 88, 53, 1, 1, rot-(3*60), c_white, 1);   //chamber 4
 draw_sprite_ext(chmb5, 0, 88, 53, 1, 1, rot-(4*60), c_white, 1);   //chamber 5
 draw_sprite_ext(chmb6, 0, 88, 53, 1, 1, rot-(5*60), c_white, 1);   //chamber 6
+
+//draw top
+draw_sprite(top, 0, 48+10+30, 48+5);
