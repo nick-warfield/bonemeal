@@ -90,6 +90,7 @@
       </sprites>
       <sprites name="Boss">
         <sprite>sprites\Boss_Idle_spr</sprite>
+        <sprite>sprites\Boss_Idle_v02_spr</sprite>
       </sprites>
     </sprites>
     <sprites name="Projectiles">
@@ -123,13 +124,18 @@
       </sprites>
       <sprites name="Structures">
         <sprite>sprites\Mansion_v01_spr</sprite>
-        <sprite>sprites\Gate_spr</sprite>
         <sprite>sprites\Shrine_spr</sprite>
+        <sprite>sprites\Shrine_v02_spr</sprite>
+        <sprite>sprites\Gate_spr</sprite>
+        <sprite>sprites\Gate_v02_spr</sprite>
+        <sprite>sprites\Gate_Open_v02_spr</sprite>
       </sprites>
       <sprite>sprites\Floor2_Wall_spr</sprite>
     </sprites>
     <sprites name="GUI">
       <sprite>sprites\HUD_Gun_spr</sprite>
+      <sprite>sprites\Journal_spr</sprite>
+      <sprite>sprites\Journal_Blank_spr</sprite>
     </sprites>
     <sprites name="Effects">
       <sprite>sprites\Fang_Front_Effect_spr</sprite>
@@ -154,6 +160,10 @@
       <sprite>sprites\Player_Up_Idle_spr</sprite>
       <sprite>sprites\Player_Down_spr</sprite>
     </sprites>
+    <sprite>sprites\Crate01_spr</sprite>
+    <sprite>sprites\Crate02_spr</sprite>
+    <sprite>sprites\Crate_Key_spr</sprite>
+    <sprite>sprites\Key_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\gb_v01_bkd</background>
@@ -345,6 +355,9 @@
         <object>objects\Door_Next_obj</object>
         <object>objects\Door_Start_obj</object>
       </objects>
+      <object>objects\Crate01_obj</object>
+      <object>objects\Crate02_obj</object>
+      <object>objects\Crate_Key_obj</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>
