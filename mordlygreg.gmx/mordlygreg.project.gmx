@@ -387,6 +387,7 @@
     <rooms name="Alpha Demo">
       <room>rooms\Start_Menu</room>
       <room>rooms\GreyBox_v02_rm</room>
+      <room>rooms\Laceys_Room</room>
       <room>rooms\Floor2</room>
     </rooms>
     <room>rooms\room4</room>
