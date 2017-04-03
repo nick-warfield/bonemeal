@@ -108,7 +108,7 @@
     <instance objName="Invisible_Wall_obj" x="680" y="1112" name="inst_7DF8DC4A" locked="0" code="" scaleX="0.75" scaleY="-0.5" colour="4294967295" rotation="-35"/>
     <instance objName="Invisible_Wall_obj" x="952" y="1112" name="inst_FE052C6C" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="680" y="1112" name="inst_28ABD25B" locked="0" code="" scaleX="0.5" scaleY="0.75" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="608" y="1192" name="inst_E3DA447F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="528" y="952" name="inst_E3DA447F" locked="0" code="" scaleX="-0.5" scaleY="2.25" colour="4294967295" rotation="-20"/>
     <instance objName="Invisible_Wall_obj" x="944" y="1120" name="inst_D373BEE4" locked="0" code="" scaleX="0.75" scaleY="0.25" colour="4294967295" rotation="35"/>
     <instance objName="Invisible_Wall_obj" x="736" y="1144" name="inst_80F31299" locked="0" code="" scaleX="5.75" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="240" y="784" name="inst_7A4C3BEC" locked="0" code="" scaleX="6" scaleY="5.75" colour="4294967295" rotation="0"/>
@@ -121,6 +121,8 @@
     <instance objName="Invisible_Wall_obj" x="296" y="440" name="inst_3DE0F54A" locked="0" code="" scaleX="3.25" scaleY="3.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="312" y="448" name="inst_BAE9400B" locked="0" code="" scaleX="2" scaleY="2.75" colour="4294967295" rotation="-31"/>
     <instance objName="Invisible_Wall_obj" x="248" y="504" name="inst_C42B8E64" locked="0" code="" scaleX="2.25" scaleY="2.5" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="664" y="952" name="inst_48E664BD" locked="0" code="" scaleX="0.5" scaleY="2.5" colour="4294967295" rotation="24"/>
+    <instance objName="Camera_obj" x="-40" y="32" name="inst_79C92180" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
