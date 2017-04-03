@@ -19,19 +19,6 @@ switch(ds_stack_top(StateStack))
     }
     
     break;
-  
-    /*
-    if(current_time >= timeStamp[0])
-    {
-        if (healthPoints <= 0) { instance_destroy(); }
-        State = s_IDLE;
-    }
-    if (timeStamp[1] >= current_time)
-    { sprite_index = Boss_Idle_spr; }       //hurt animation
-    else {spd = 0;}
-    
-    break;
-    */
     
     
   case s_STUNED:
@@ -54,8 +41,8 @@ switch(ds_stack_top(StateStack))
         if (distance_to_object(target) <= 4*32)
         {
             spd = 0;
-            //timeStamp[4] = current_time + 1000;     //gives a 1 second wind up to sweep attack
-            //ds_stack_push(StateStack, s_ATTACK5);
+            timeStamp[4] = current_time + 1000;     //gives a 1 second wind up to sweep attack
+            ds_stack_push(StateStack, s_ATTACK5);
         }
         
         else if (distance_to_object(target) <= 12*32)
@@ -81,11 +68,11 @@ switch(ds_stack_top(StateStack))
     {
         grabbed = instance_place(x, y, all);
         
-        if (grabbed == noone) {grabbed = -10;}  //enter null data if nothing found
+        if (grabbed == noone || grabbed == Boss_obj) {grabbed = -10;}  //enter null data if nothing found
         else {grabbed = grabbed.object_index;}  //set up grabbed for switch statement
         
         //do something different based on what was grabbed
-        switch (grabbed)
+        switch (object_get_parent(grabbed))
         {
           case (Wall_obj):
             with (Boss_obj)
@@ -100,7 +87,7 @@ switch(ds_stack_top(StateStack))
             
             break;
          
-          case (Player02_obj):
+          case (Character_obj):
             with(Boss_obj)
             {
                 ds_stack_push(StateStack, s_ATTACK3); 
@@ -115,25 +102,6 @@ switch(ds_stack_top(StateStack))
             }
             
             instance_destroy();
-          
-            /*
-            grabbed.x = x;
-            grabbed.y = y - 33;
-            
-            direction = point_direction(x, y, Boss_obj.x, Boss_obj.y);
-            speed = 5;
-             
-            with (Boss_obj)
-            {
-                if (place_meeting(x, y, target))
-                {
-                    with(arm) {instance_destroy();} 
-                    
-                    timeStamp[3] = current_time + 1000;
-                    ds_stack_push(StateStack, s_ATTACK3);
-                }
-            }
-            */
             
             break;
                
@@ -234,6 +202,7 @@ switch(ds_stack_top(StateStack))
     if (current_time >= timeStamp[5] && timeStamp[5] != 0)
     {
         //var walled = collision_circle(x, y, 12*32, Wall_obj, false, false);
+        /*
         var walled = 0;
         for (var i = 0; i < 360; i += 10)
         {
@@ -243,12 +212,13 @@ switch(ds_stack_top(StateStack))
             if (place_meeting(x+wallx, y+wally, Wall_obj))
             { walled = instance_place(x+wallx, y+wally, Wall_obj); show_debug_message(i); i = 360; }
         }
+        */
         
         var rmcenx = room_width/2;
         var rmceny = room_height/2;
         
         
-        if (distance_to_point(rmcenx, rmceny) >= 6*32)
+        if (distance_to_point(rmcenx, rmceny) >= 7*32)
         {
             target.Dir = point_direction(x, y, rmcenx, rmceny);
             target.spd = 9;
@@ -277,7 +247,7 @@ switch(ds_stack_top(StateStack))
             ds_stack_pop(StateStack);
             timeStamp[6] = 0;
         }
-        else if (current_time >= timeStamp[6] - 200 && !instance_exists(arm))
+        else if (current_time >= timeStamp[6] - 100 && !instance_exists(arm))
         {      
             arm = instance_create(x, y, GrabArm_obj);
             arm.speed = 16;

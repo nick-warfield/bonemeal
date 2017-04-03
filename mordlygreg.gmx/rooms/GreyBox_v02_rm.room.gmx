@@ -92,7 +92,7 @@
     <instance objName="Sign_obj" x="928" y="2912" name="inst_FED5FA55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Gate_obj" x="240" y="1968" name="inst_69F44240" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="Key_obj" x="192" y="2248" name="inst_E341749D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Door01_obj" x="1544" y="64" name="inst_C48D2CE3" locked="0" code="" scaleX="10" scaleY="2.25" colour="4294967295" rotation="0"/>
+    <instance objName="Door_Next_obj" x="1544" y="64" name="inst_C48D2CE3" locked="0" code="" scaleX="10" scaleY="2.25" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

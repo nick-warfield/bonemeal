@@ -126,6 +126,7 @@
         <sprite>sprites\Gate_spr</sprite>
         <sprite>sprites\Shrine_spr</sprite>
       </sprites>
+      <sprite>sprites\Floor2_Wall_spr</sprite>
     </sprites>
     <sprites name="GUI">
       <sprite>sprites\HUD_Gun_spr</sprite>
@@ -157,6 +158,7 @@
   <backgrounds name="background">
     <background>background\gb_v01_bkd</background>
     <background>background\gb_v02_bkd</background>
+    <background>background\Floor2_floor_bkg</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -322,6 +324,8 @@
       </objects>
       <object>objects\GreBox_Collisions_obj</object>
       <object>objects\Invisible_Wall_obj</object>
+      <object>objects\Floor2_Wall_obj</object>
+      <object>objects\Floor2_Door_obj</object>
     </objects>
     <objects name="Misc">
       <objects name="Keys">
@@ -338,7 +342,8 @@
         </objects>
       </objects>
       <objects name="Doors">
-        <object>objects\Door01_obj</object>
+        <object>objects\Door_Next_obj</object>
+        <object>objects\Door_Start_obj</object>
       </objects>
     </objects>
     <objects name="Projectiles">
@@ -354,14 +359,20 @@
       <object>objects\SwingArc_obj</object>
       <object>objects\Camera_obj</object>
       <object>objects\GrabArm_obj</object>
+      <object>objects\Door_Shut_obj</object>
+      <object>objects\Start_Menu_obj</object>
     </objects>
     <objects name="SCRATCH">
       <object>objects\floor_obj</object>
     </objects>
   </objects>
   <rooms name="rooms">
+    <rooms name="Alpha Demo">
+      <room>rooms\Start_Menu</room>
+      <room>rooms\GreyBox_v02_rm</room>
+      <room>rooms\Floor2</room>
+    </rooms>
     <room>rooms\room4</room>
-    <room>rooms\GreyBox_v02_rm</room>
     <room>rooms\room1</room>
     <room>rooms\GreyBox_rm</room>
     <room>rooms\room0_rm</room>
