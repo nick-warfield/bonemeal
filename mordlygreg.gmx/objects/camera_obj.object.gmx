@@ -132,7 +132,7 @@ audio_sound_gain(Crickets_Ambient_snd, 0.05, 0);
 audio_play_sound(Crickets_Ambient_snd, 20, true);
 
 
-audio_master_gain(0);       //mute sounds, nice when debugging
+//audio_master_gain(0);       //mute sounds, nice when debugging
 </string>
           </argument>
         </arguments>
