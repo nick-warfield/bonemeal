@@ -59,7 +59,7 @@ newPosition = 0;
             <kind>1</kind>
             <string>if (count == 0)
 {
-    if (red.order == 1 &amp;&amp; blue.order == 2 &amp;&amp; orange.order == 3 &amp;&amp; white.order == 4)
+    if (red.order == 3 &amp;&amp; blue.order == 1 &amp;&amp; orange.order == 2 &amp;&amp; white.order == 4)
     {
         solved = true;
         newPosition = (y-(2*32));
