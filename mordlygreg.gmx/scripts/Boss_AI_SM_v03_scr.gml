@@ -134,7 +134,7 @@ switch(ds_stack_top(StateStack))
   
     //check for collisions and switch states accordingly
     if (place_meeting(x + newX, y + newY, Wall_obj))
-    { ds_stack_clear(StateStack); ds_stack_push(StateStack, s_IDLE); }
+    { ds_stack_clear(StateStack); ds_stack_push(StateStack, s_IDLE); timeStamp[2] = current_time + 2000; }
     
     if (place_meeting(x, y, target))
     {
@@ -326,7 +326,7 @@ switch(ds_stack_top(StateStack))
         }
         
         ds_stack_pop(StateStack);
-        timeStamp[2] = current_time + 1000;
+        timeStamp[2] = current_time + 2000;
     }
     
     break;

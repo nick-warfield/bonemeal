@@ -62,7 +62,6 @@
     <instance objName="Candle_White_obj" x="864" y="152" name="inst_6BB78769" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Candle_Red_obj" x="904" y="152" name="inst_48158055" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Gate_obj" x="136" y="920" name="inst_69F44240" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Key_obj" x="112" y="1056" name="inst_E341749D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Door_Next_obj" x="808" y="136" name="inst_C48D2CE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Spooky_Tree_obj" x="176" y="1192" name="inst_B4E73408" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="-8" y="-16" name="inst_5E97BFE6" locked="0" code="" scaleX="1" scaleY="49" colour="4294967295" rotation="0"/>
@@ -123,6 +122,11 @@
     <instance objName="Invisible_Wall_obj" x="248" y="504" name="inst_C42B8E64" locked="0" code="" scaleX="2.25" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="664" y="952" name="inst_48E664BD" locked="0" code="" scaleX="0.5" scaleY="2.5" colour="4294967295" rotation="24"/>
     <instance objName="Camera_obj" x="-40" y="32" name="inst_79C92180" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Crate01_obj" x="888" y="1248" name="inst_CC351833" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Crate_Key_obj" x="944" y="1248" name="inst_EC197BCE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Crate02_obj" x="880" y="1320" name="inst_650E4B67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Crate02_obj" x="984" y="1264" name="inst_5B5AA1ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Crate01_obj" x="936" y="1296" name="inst_3DC4D8D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
