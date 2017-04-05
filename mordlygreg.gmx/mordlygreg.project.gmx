@@ -393,8 +393,8 @@
   </objects>
   <rooms name="rooms">
     <rooms name="Alpha Demo">
-      <room>rooms\Start_Menu</room>
       <room>rooms\Laceys_Room</room>
+      <room>rooms\Start_Menu</room>
       <room>rooms\Floor2</room>
     </rooms>
     <room>rooms\room4</room>
