@@ -199,6 +199,7 @@
     </scripts>
     <scripts name="State Machines">
       <script>scripts\Mordley_SM_v07_scr.gml</script>
+      <script>scripts\Mordley_SM_v08_scr.gml</script>
       <script>scripts\Mordley_SM_v06_scr.gml</script>
       <scripts name="Enemies">
         <script>scripts\Boss_AI_SM_scr.gml</script>
@@ -252,6 +253,7 @@
     <scripts name="Collisions">
       <script>scripts\Movement_Update_scr.gml</script>
       <script>scripts\Var_Collision_scr.gml</script>
+      <script>scripts\Small_Collision_v08.gml</script>
       <script>scripts\Character_Collision_v07_scr.gml</script>
       <script>scripts\Character_Collision_v06_scr.gml</script>
       <script>scripts\Projectile_Collision_scr.gml</script>
@@ -350,6 +352,7 @@
       <object>objects\Floor2_Door_obj</object>
     </objects>
     <objects name="Misc">
+      <object>objects\Small_obj</object>
       <objects name="Keys">
         <object>objects\Key_obj</object>
       </objects>
@@ -393,8 +396,8 @@
   </objects>
   <rooms name="rooms">
     <rooms name="Alpha Demo">
-      <room>rooms\Laceys_Room</room>
       <room>rooms\Start_Menu</room>
+      <room>rooms\Laceys_Room</room>
       <room>rooms\Floor2</room>
     </rooms>
     <room>rooms\room4</room>

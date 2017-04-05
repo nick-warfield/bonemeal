@@ -62,7 +62,7 @@ switch(ds_stack_top(StateStack))
     
     
   case s_MOVE:      //when target gets too close and bat becomes agitated
-    spd = 3;
+    spd = 2;
   
     if (current_time >= timeStamp[3])
     {
@@ -76,7 +76,7 @@ switch(ds_stack_top(StateStack))
         else 
         {
             Dir = point_direction(x, y, target.x, target.y);
-            spd = 6;
+            spd = 4;
             timeStamp[4] = current_time + 1000;
             ds_stack_push(StateStack, s_ATTACK1);
         }

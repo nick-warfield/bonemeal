@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>v = 0;
 
-
+window_set_cursor(cr_none);
 </string>
           </argument>
         </arguments>
@@ -186,6 +186,10 @@ if (v == 0) {tc1 = c_white;} else {tc2 = c_white;}
 
 
 draw_set_halign(fa_center);
+
+//Game name, and company
+draw_text_transformed_colour(room_width/2, room_height/2 - 160, "MORDLEY GREG, P.I.", 2, 2, 0, c_white, c_white, c_white, c_white, 1);
+draw_text_colour(room_width/2, room_height/2 - 96, "by: bonemeal", c_white, c_white, c_white, c_white, 1);
 
 //logo
 draw_sprite(Mordley_Side_Aim_spr, 0, room_width/2, room_height/2 - 25);
