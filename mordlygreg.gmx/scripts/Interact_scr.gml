@@ -1,69 +1,35 @@
 //interact with stuff
-var xdir = lengthdir_x(8, facing);
-var ydir = lengthdir_y(8, facing);
-var Speaker = instance_place(x+xdir, y+ydir, Speaker_obj);
 
- /*   if(Speaker != noone)    
-        {
-        //Talk to it
-        with (Speaker)
-        {
-            if (!instance_exists(Dialogue))
-                {
-                Dialogue = instance_create(x+xoffset, y+yoffset, Dialogue_obj);
-                Dialogue.text = text;
-                } else {Dialogue.text_page++;
-                        Dialogue.text_count = 0;
-                        if (Dialogue.text_page > array_length_1d(Dialogue.text)-1)
-                            {
-                            with (Dialogue)
-                                {
-                                instance_destroy();
-                                }
-                            }
-                        }
-            }
-            }*/
+Input[INTERACT] = false;
 
-        
-  
-  
-    if (Input[INTERACT] == true)
+if (facing == RIGHT)
+{
+    var thing = collision_rectangle(x, y, x + 24, y, Sign_obj, false, false);
+}
+else if (facing == LEFT)
+{
+    var thing = collision_rectangle(x - 24, y, x, y, Sign_obj, false, false);
+}
+else if (facing == UP)
+{
+    var thing = collision_rectangle(x, y - 40, x, y, Sign_obj, false, false);
+}
+else if (facing == DOWN)
+{
+    var thing = collision_rectangle(x, y, x, y + 40, Sign_obj, false, false);
+}
+
+
+var cam = instance_find(Camera_obj, 1);
+if (thing != noone)
+{
+    for (var i = 0; i < array_length_1d(thing.message); i++)
     {
-        show_debug_message("talking");
-        
-        // Within each IF, place the interactions possible (Notes, Doors, NPCs, Items, Etc.)
-        if (instance_place(x+xdir, y+ydir, Speaker_obj)) //checks collision to players UP at a distance of 3 pixels
-            {
-             if (!instance_exists(Dialogue))
-                {
-                Dialogue = instance_create(x+xoffset, y+yoffset, Dialogue_obj);
-                Dialogue.text = text;
-                } else {Dialogue.text_page++;
-                        Dialogue.text_count = 0;
-                        if (Dialogue.text_page > array_length_1d(Dialogue.text)-1)
-                            {
-                            with (Dialogue)
-                                {
-                                instance_destroy();
-                                }
-                            }
-                        }                           //interact with the object/NPC (possibly within an IF to seperate different objects)
-            }
-            
-        if (instance_place(x+xdir, y+ydir, OBJECT)) //checks collision to players DOWN at a distance of 3 pixels
-            {
-                                       //interact with the object/NPC (possibly within an IF to seperate different objects)
-            }
-            
-        if (instance_place(x+xdir, y+ydir, OBJECT)) //checks collision to players RIGHT at a distance of 3 pixels
-            {
-                                        //interact with the object/NPC (possibly within an IF to seperate different objects)
-            }
-            
-        if (instance_place(x+xdir, y+ydir, OBJECT)) //checks collision to players LEFT at a distance of 3 pixels
-            {
-                                        //interact with the object/NPC (possibly within an IF to seperate different objects)
-            }
-            
+        cam.message[i] = thing.message[i];
     }
+    
+    cam.messageCurrent = thing.messageCurrent;
+    cam.portrait = thing.portrait;
+    cam.done = thing.done;
+}
+else { cam.done = true; }
