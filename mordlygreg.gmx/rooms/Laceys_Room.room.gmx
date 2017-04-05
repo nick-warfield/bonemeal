@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1056</width>
   <height>1552</height>
-  <vsnap>8</vsnap>
-  <hsnap>8</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -100,7 +100,7 @@
     <instance objName="Invisible_Wall_obj" x="848" y="1064" name="inst_DF92B5F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="16" y="1504" name="inst_F7747D07" locked="0" code="" scaleX="32" scaleY="1.80645155906677" colour="4294967295" rotation="0"/>
     <instance objName="Mounds_obj" x="920" y="744" name="inst_A6BCA9A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Manison_v02_obj" x="168" y="408" name="inst_2A7AA902" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Manison_v02_obj" x="165" y="408" name="inst_2A7AA902" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="960" y="184" name="inst_1E6499A7" locked="0" code="" scaleX="5" scaleY="0.75" colour="4294967295" rotation="45"/>
     <instance objName="Invisible_Wall_obj" x="896" y="1136" name="inst_83A34F7F" locked="0" code="" scaleX="2.06451606750488" scaleY="1.03225803375244" colour="4294967295" rotation="20"/>
     <instance objName="Invisible_Wall_obj" x="896" y="1136" name="inst_8A1C3209" locked="0" code="" scaleX="2.06451606750488" scaleY="1.03225803375244" colour="4294967295" rotation="20"/>
@@ -111,18 +111,23 @@
     <instance objName="Invisible_Wall_obj" x="528" y="952" name="inst_E3DA447F" locked="0" code="" scaleX="-0.5" scaleY="2.25" colour="4294967295" rotation="-20"/>
     <instance objName="Invisible_Wall_obj" x="944" y="1120" name="inst_D373BEE4" locked="0" code="" scaleX="0.75" scaleY="0.25" colour="4294967295" rotation="35"/>
     <instance objName="Invisible_Wall_obj" x="736" y="1144" name="inst_80F31299" locked="0" code="" scaleX="5.75" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="240" y="784" name="inst_7A4C3BEC" locked="0" code="" scaleX="6" scaleY="5.75" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="240" y="696" name="inst_1156C08E" locked="0" code="" scaleX="2.75" scaleY="2.75" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="240" y="552" name="inst_98BF2018" locked="0" code="" scaleX="3.5" scaleY="4.5" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="352" y="512" name="inst_A93DA78A" locked="0" code="" scaleX="14.25" scaleY="13.25" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="752" y="640" name="inst_4C42BED6" locked="0" code="" scaleX="4.25" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="648" y="728" name="inst_7A4C3BEC" locked="0" code="" scaleX="6" scaleY="5.75" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="272" y="552" name="inst_1156C08E" locked="0" code="" scaleX="2.75" scaleY="2.75" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="495" y="693" name="inst_98BF2018" locked="0" code="" scaleX="6.15999984741211" scaleY="9" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="379" y="551" name="inst_A93DA78A" locked="0" code="" scaleX="15.5" scaleY="13.1612901687622" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="750" y="662" name="inst_4C42BED6" locked="0" code="" scaleX="4.25" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="800" y="432" name="inst_4EF7DD2B" locked="0" code="" scaleX="-3.64516139030457" scaleY="7.48387098312378" colour="4294967295" rotation="24"/>
     <instance objName="Invisible_Wall_obj" x="760" y="688" name="inst_2CEDC4F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="296" y="440" name="inst_3DE0F54A" locked="0" code="" scaleX="3.25" scaleY="3.5" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="312" y="448" name="inst_BAE9400B" locked="0" code="" scaleX="2" scaleY="2.75" colour="4294967295" rotation="-31"/>
+    <instance objName="Invisible_Wall_obj" x="240" y="856" name="inst_3DE0F54A" locked="0" code="" scaleX="5.4193549156189" scaleY="3.61290311813354" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="309" y="441" name="inst_BAE9400B" locked="0" code="" scaleX="2" scaleY="2.75" colour="4294967295" rotation="-31"/>
     <instance objName="Invisible_Wall_obj" x="248" y="504" name="inst_C42B8E64" locked="0" code="" scaleX="2.25" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="664" y="952" name="inst_48E664BD" locked="0" code="" scaleX="0.5" scaleY="2.5" colour="4294967295" rotation="24"/>
     <instance objName="Camera_obj" x="-40" y="32" name="inst_79C92180" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="248" y="584" name="inst_348A925C" locked="0" code="" scaleX="2.25" scaleY="2.5" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="243" y="757" name="inst_4E7969F1" locked="0" code="" scaleX="3.6875" scaleY="4.28000020980835" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="217" y="695" name="inst_3ECEF20D" locked="0" code="" scaleX="4" scaleY="3.45000004768372" colour="4294967295" rotation="-8"/>
+    <instance objName="Invisible_Wall_obj" x="231" y="605" name="inst_F3CE6584" locked="0" code="" scaleX="3" scaleY="3.33999991416931" colour="4294967295" rotation="-8"/>
+    <instance objName="Invisible_Wall_obj" x="-57" y="-80" name="inst_EA9215FF" locked="0" code="" scaleX="35.6300010681152" scaleY="4.21875" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
