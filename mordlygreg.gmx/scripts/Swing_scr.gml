@@ -1,29 +1,25 @@
 if (facing == RIGHT)
 {
-    var thing = collision_circle(x + 32, y, 48, Character_obj, false, true);
-    Dir = 0;
+    var thing = collision_circle(x + 32, y, 32, Character_obj, false, true);
 }
 else if (facing == LEFT)
 {
-    var thing = collision_circle(x - 32, y, 48, Character_obj, false, true);
-    Dir = 180;
+    var thing = collision_circle(x - 32, y, 32, Character_obj, false, true);
 }
 else if (facing == UP)
 {
-    var thing = collision_circle(x, y - 48, 48, Character_obj, false, true);
-    Dir = 90;
+    var thing = collision_circle(x, y - 48, 32, Character_obj, false, true);
 }
 else if (facing == DOWN)
 {
-    var thing = collision_circle(x, y + 48, 48, Character_obj, false, true);
-    Dir = 270;
+    var thing = collision_circle(x, y + 48, 32, Character_obj, false, true);
 }
 
 if (thing != id && instance_exists(thing))
 {
     if (thing.timeStamp[0] == 0)
     {
-        stamina += 12;
+        stamina += 15;
         
         var t = id;
         with (thing)

@@ -25,15 +25,8 @@ if (cylinder[cylinderPosition] != 0)
     audio_play_sound(Shot01_Gun_snd, 50, false);
     
     //knockback after shooting
-    script_execute(SetDamageVars_scr(bulletInst, 9, 100));
+    script_execute(SetDamageVars_scr(bulletInst, (staminaMax - stamina) / 6.5, staminaMax - stamina));
     
-    //no fear bullet
-    if(stamina <= 0)
-    {
-        script_execute(SetDamageVars_scr(bulletInst, 12, 200));
-    }
-    
-    Dir = (facing*90) + 180;
     /*
     Dir = point_direction(bulletInst.x + lengthdir_x(bulletInst.speed, bulletInst.direction), bulletInst.y + lengthdir_y(bulletInst.speed, bulletInst.direction), x, y);
     spd = (staminaMax - stamina) / 6.5;
