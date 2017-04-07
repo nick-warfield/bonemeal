@@ -41,5 +41,8 @@ if (cylinder[cylinderPosition] != 0)
     */
     
     stamina -= 30;
+    
+    //script_execute(Var_Collision_scr);
+    //script_execute(Wall_Collision_scr);
 }
 else { audio_play_sound(Empty_Gun_snd, 50, false); }

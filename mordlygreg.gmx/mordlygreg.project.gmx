@@ -258,6 +258,8 @@
       <script>scripts\Character_Collision_v06_scr.gml</script>
       <script>scripts\Projectile_Collision_scr.gml</script>
       <script>scripts\Wall_Collision_scr.gml</script>
+      <script>scripts\Wall_Collision_v02_scr.gml</script>
+      <script>scripts\Small_Object_Collision_scr.gml</script>
     </scripts>
     <scripts name="Controllers">
       <script>scripts\Player_Controller_v02_scr.gml</script>
