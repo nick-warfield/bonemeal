@@ -375,6 +375,7 @@
       <object>objects\Crate01_obj</object>
       <object>objects\Crate02_obj</object>
       <object>objects\Crate_Key_obj</object>
+      <object>objects\Pit_obj</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>
@@ -398,6 +399,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room1</room>
     <rooms name="Alpha Demo">
       <room>rooms\Start_Menu</room>
       <room>rooms\Laceys_Room</room>
@@ -405,7 +407,6 @@
     </rooms>
     <room>rooms\room4</room>
     <room>rooms\GreyBox_v02_rm</room>
-    <room>rooms\room1</room>
     <room>rooms\GreyBox_rm</room>
     <room>rooms\room0_rm</room>
   </rooms>
