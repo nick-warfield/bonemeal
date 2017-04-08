@@ -3,6 +3,8 @@
 if (cylinder[cylinderPosition] != 0)
 {
     bulletInst = instance_create(x, y, cylinder[cylinderPosition]);
+    show_debug_message(object_get_name(bulletInst.object_index));
+    
     if (facing == 0) { bulletInst.y -= 8; bulletInst.x += 32; }
     else if (facing == 2) { bulletInst.y -= 8; bulletInst.x -= 32; }
     else if (facing == 1) { bulletInst.y -= 32; }
@@ -34,6 +36,7 @@ if (cylinder[cylinderPosition] != 0)
     }
     
     Dir = (facing*90) + 180;
+    if (Dir >= 360) {Dir -= 360;}
     /*
     Dir = point_direction(bulletInst.x + lengthdir_x(bulletInst.speed, bulletInst.direction), bulletInst.y + lengthdir_y(bulletInst.speed, bulletInst.direction), x, y);
     spd = (staminaMax - stamina) / 6.5;
