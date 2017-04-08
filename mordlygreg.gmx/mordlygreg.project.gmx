@@ -198,8 +198,8 @@
       <script>scripts\Porjectile_Init_v02_scr.gml</script>
     </scripts>
     <scripts name="State Machines">
-      <script>scripts\Mordley_SM_v07_scr.gml</script>
       <script>scripts\Mordley_SM_v08_scr.gml</script>
+      <script>scripts\Mordley_SM_v07_scr.gml</script>
       <script>scripts\Mordley_SM_v06_scr.gml</script>
       <scripts name="Enemies">
         <script>scripts\Boss_AI_SM_scr.gml</script>
@@ -258,6 +258,8 @@
       <script>scripts\Character_Collision_v06_scr.gml</script>
       <script>scripts\Projectile_Collision_scr.gml</script>
       <script>scripts\Wall_Collision_scr.gml</script>
+      <script>scripts\Wall_Collision_v02_scr.gml</script>
+      <script>scripts\Small_Object_Collision_scr.gml</script>
     </scripts>
     <scripts name="Controllers">
       <script>scripts\Player_Controller_v02_scr.gml</script>
@@ -377,6 +379,7 @@
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>
       <object>objects\Bullet_obj</object>
+      <object>objects\Bullet_90_obj</object>
       <object>objects\SlowMo_Bullet_obj</object>
     </objects>
     <objects name="Utility">
