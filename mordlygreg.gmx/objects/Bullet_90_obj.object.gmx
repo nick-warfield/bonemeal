@@ -103,7 +103,7 @@ if (current_time &gt;= timeStamp2)
     bull1.image_angle = direction + 90;
     bull1.direction = direction + 90;
     bull1.spawner = spawner;
-    bull1.timeStamp = current_time + 200;
+    //bull1.timeStamp = current_time + 200;
     bull1.image_blend = c_lime;
 
     var bull2 = instance_create(x, y, Bullet_obj);
@@ -112,7 +112,7 @@ if (current_time &gt;= timeStamp2)
     bull2.image_angle = direction - 90;
     bull2.direction = direction - 90;
     bull2.spawner = spawner;
-    bull2.timeStamp = current_time + 200;
+    //bull2.timeStamp = current_time + 200;
     bull2.image_blend = c_lime;
     
     instance_destroy();

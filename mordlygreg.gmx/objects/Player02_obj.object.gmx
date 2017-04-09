@@ -430,7 +430,7 @@
             <string>///debug jazz
 
 stamina = 100;
-
+/*
 for(var i = 0; i &lt; array_length_1d(cylinder); i++)
 {
     cylinder[i] = Bullet_90_obj;
