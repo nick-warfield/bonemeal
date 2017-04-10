@@ -5,6 +5,10 @@
 //current wall collisions work if the center of a character object will collide with a wall
 //but if the center doesn't reach a wall, the edges of the collision mask can get stuck
 
+
+if (Dir >= 360) {Dir -= 360;}
+else if (Dir < 0) {Dir += 360;}
+
 //horizontal collisions
 if (place_meeting(x + newX, y, Wall_obj) == true)
 {
