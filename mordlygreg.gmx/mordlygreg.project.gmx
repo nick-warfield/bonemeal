@@ -326,6 +326,7 @@
       <object>objects\Wall_obj</object>
       <objects name="Signs">
         <object>objects\Sign_obj</object>
+        <object>objects\Invisible_Sign_obj</object>
       </objects>
       <objects name="Trees">
         <object>objects\Spooky_Tree_obj</object>
