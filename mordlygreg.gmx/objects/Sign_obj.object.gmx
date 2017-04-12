@@ -71,8 +71,7 @@
 locked = true;
 
 message[0] = "Damger";
-message[1] = "Spoopy Mansion Ahead";
-message[2] = "AHHHHHHHHHHH! ##AAAAAHHHHHHHHHHHHHHHH!!!!!!";
+
 </string>
           </argument>
         </arguments>

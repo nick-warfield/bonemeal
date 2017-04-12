@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1056</width>
   <height>1552</height>
-  <vsnap>8</vsnap>
-  <hsnap>8</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -52,17 +52,16 @@
   </views>
   <instances>
     <instance objName="Player02_obj" x="528" y="1440" name="inst_2E91887C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fishman_obj" x="880" y="256" name="inst_FD28D07E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fishman_obj" x="824" y="296" name="inst_006B460A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Bat_obj" x="136" y="1160" name="inst_DF99F779" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Bat_obj" x="208" y="1176" name="inst_34FAA839" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Shrine_obj" x="824" y="128" name="inst_BCF5800B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Candle_Blue_obj" x="776" y="152" name="inst_7864C46D" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="Candle_Orange_obj" x="736" y="152" name="inst_7DB72C2B" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="Candle_White_obj" x="864" y="152" name="inst_6BB78769" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="Candle_Red_obj" x="904" y="152" name="inst_48158055" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Shrine_obj" x="872" y="88" name="inst_BCF5800B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Candle_Blue_obj" x="840" y="104" name="inst_7864C46D" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Candle_Orange_obj" x="800" y="104" name="inst_7DB72C2B" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Candle_White_obj" x="912" y="104" name="inst_6BB78769" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Candle_Red_obj" x="952" y="112" name="inst_48158055" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Gate_obj" x="136" y="920" name="inst_69F44240" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Door_Next_obj" x="808" y="136" name="inst_C48D2CE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Door_Next_obj" x="852" y="133" name="inst_C48D2CE3" locked="0" code="" scaleX="1.35483872890472" scaleY="0.84375" colour="4294967295" rotation="0"/>
     <instance objName="Spooky_Tree_obj" x="176" y="1192" name="inst_B4E73408" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="-8" y="-16" name="inst_5E97BFE6" locked="0" code="" scaleX="1" scaleY="49" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="1032" y="-8" name="inst_52607CB3" locked="0" code="" scaleX="1" scaleY="49" colour="4294967295" rotation="0"/>

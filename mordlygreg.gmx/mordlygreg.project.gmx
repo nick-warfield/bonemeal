@@ -160,6 +160,7 @@
     <sprites name="SCRATCH">
       <sprite>sprites\Player_spr</sprite>
       <sprite>sprites\BlankTile_spr</sprite>
+      <sprite>sprites\Pit_spr</sprite>
       <sprite>sprites\BlankTile01_spr</sprite>
       <sprite>sprites\Player_Up_spr</sprite>
       <sprite>sprites\Player_Left_spr</sprite>
@@ -325,6 +326,7 @@
       <object>objects\Wall_obj</object>
       <objects name="Signs">
         <object>objects\Sign_obj</object>
+        <object>objects\Invisible_Sign_obj</object>
       </objects>
       <objects name="Trees">
         <object>objects\Spooky_Tree_obj</object>
@@ -375,6 +377,7 @@
       <object>objects\Crate01_obj</object>
       <object>objects\Crate02_obj</object>
       <object>objects\Crate_Key_obj</object>
+      <object>objects\Pit_obj</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>
@@ -403,9 +406,9 @@
       <room>rooms\Laceys_Room</room>
       <room>rooms\Floor2</room>
     </rooms>
+    <room>rooms\room1</room>
     <room>rooms\room4</room>
     <room>rooms\GreyBox_v02_rm</room>
-    <room>rooms\room1</room>
     <room>rooms\GreyBox_rm</room>
     <room>rooms\room0_rm</room>
   </rooms>
