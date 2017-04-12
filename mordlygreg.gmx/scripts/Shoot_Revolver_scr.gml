@@ -37,13 +37,14 @@ if (cylinder[cylinderPosition] != 0)
     
     Dir = (facing*90) + 180;
     if (Dir >= 360) {Dir -= 360;}
+    
     /*
     Dir = point_direction(bulletInst.x + lengthdir_x(bulletInst.speed, bulletInst.direction), bulletInst.y + lengthdir_y(bulletInst.speed, bulletInst.direction), x, y);
     spd = (staminaMax - stamina) / 6.5;
     timeStamp[1] = current_time + (staminaMax - stamina);
     */
     
-    stamina -= 30;
+    //stamina -= 30;
     
     //script_execute(Var_Collision_scr);
     //script_execute(Wall_Collision_scr);

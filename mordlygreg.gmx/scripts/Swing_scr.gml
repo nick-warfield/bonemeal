@@ -23,7 +23,7 @@ if (thing != id && instance_exists(thing))
 {
     if (thing.timeStamp[0] == 0)
     {
-        stamina += 12;
+        //stamina += 12;
         
         var t = id;
         with (thing)
