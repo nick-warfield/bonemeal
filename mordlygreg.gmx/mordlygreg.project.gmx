@@ -199,6 +199,7 @@
       <script>scripts\Porjectile_Init_v02_scr.gml</script>
     </scripts>
     <scripts name="State Machines">
+      <script>scripts\Mordley_SM_v09_scr.gml</script>
       <script>scripts\Mordley_SM_v08_scr.gml</script>
       <script>scripts\Mordley_SM_v07_scr.gml</script>
       <script>scripts\Mordley_SM_v06_scr.gml</script>
@@ -354,6 +355,7 @@
       <object>objects\Invisible_Wall_obj</object>
       <object>objects\Floor2_Wall_obj</object>
       <object>objects\Floor2_Door_obj</object>
+      <object>objects\Arrow_Block_obj</object>
     </objects>
     <objects name="Misc">
       <object>objects\Small_obj</object>

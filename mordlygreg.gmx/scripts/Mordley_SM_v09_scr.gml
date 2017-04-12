@@ -89,8 +89,7 @@ switch (ds_stack_top(StateStack))
     else if (Input[ATTACK4])    //reload
     {
         ds_stack_push(StateStack, s_ATTACK4);
-        timeStamp[4] = current_time + 250;
-        spd = 1;
+        timeStamp[4] = current_time + 300;
         audio_play_sound(Reload_Gun_snd, 50, false);
     }
     
@@ -109,7 +108,7 @@ switch (ds_stack_top(StateStack))
     if (current_time >= timeStamp[5])
     {
         ds_stack_pop(StateStack);
-        timeStamp[6] = current_time + 600;
+        timeStamp[6] = current_time + 800;
     }
     
     break;
@@ -155,12 +154,12 @@ switch (ds_stack_top(StateStack))
   case (s_ATTACK1):
     spd = 2;                         //stop player while swinging
     script_execute(Swing_scr);                  //swing in the direction the player is currently facing, not their current direction
+    script_execute(Parry_v02_scr);
     script_execute(Attack_Mordley_Ani_scr);     //Display the correct attack sprite based on which way the player is facing
 
     if (current_time >= timeStamp[2])           //Revert back to the move state
     {
         ds_stack_pop(StateStack);
-        timeStamp[6] = current_time + 2000;
     }
     else if (current_time >= timeStamp[2] - 100) {spd = 0;}
 
@@ -184,7 +183,6 @@ switch (ds_stack_top(StateStack))
     script_execute(Aim_v02_scr);            //Updates the direction of mordley
     script_execute(Aim_Mordley_Ani_scr);   //Updates the sprite and facing variable
 
-    
     if (Input[DODGE] && current_time >= timeStamp[6]) 
     {
         timeStamp[5] = current_time + 150;
@@ -207,13 +205,6 @@ switch (ds_stack_top(StateStack))
      
   //Reload
   case (s_ATTACK4):
-    if (Input[DODGE] && current_time >= timeStamp[6])       //exit reload if player wants to dodge
-    {
-        timeStamp[5] = current_time + 150;
-        ds_stack_pop(StateStack);       //pop off the reload state
-        ds_stack_push(StateStack, s_DODGE);     //push in move state then dodge state, that way when dodges pops itself off the stack isn't empty
-    }
-    
     if (current_time >= timeStamp[4])   //reload at the end of the timer
     {
         script_execute(Reload_scr);     //fills the next chamber with bullet
@@ -221,7 +212,7 @@ switch (ds_stack_top(StateStack))
     }
     
     script_execute(Move_v05_scr);       //allow for movement while reloading
-    spd /= 3;
+    //spd /= 3;
     
     break;
     

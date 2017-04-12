@@ -118,7 +118,7 @@
     <instance objName="Invisible_Wall_obj" x="760" y="688" name="inst_2CEDC4F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="296" y="440" name="inst_3DE0F54A" locked="0" code="" scaleX="3.25" scaleY="3.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="312" y="448" name="inst_BAE9400B" locked="0" code="" scaleX="2" scaleY="2.75" colour="4294967295" rotation="-31"/>
-    <instance objName="Invisible_Wall_obj" x="248" y="504" name="inst_C42B8E64" locked="0" code="" scaleX="2.25" scaleY="2.5" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="241" y="508" name="inst_C42B8E64" locked="0" code="" scaleX="2.25" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="664" y="952" name="inst_48E664BD" locked="0" code="" scaleX="0.5" scaleY="2.5" colour="4294967295" rotation="24"/>
     <instance objName="Camera_obj" x="-40" y="32" name="inst_79C92180" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Crate01_obj" x="888" y="1248" name="inst_CC351833" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
