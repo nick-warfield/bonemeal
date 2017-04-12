@@ -17,7 +17,7 @@ if (plyRef.cylinder[0] != 0) {chmb6 = fill;} else {chmb6 = empty;}
 if (rot != newRot && rot%60 == 0) {lerpI = 0;}
 
 var a = 1;
-if (lerpI < 1) { lerpI += (7/60)/1.9; a = 0; }
+if (lerpI < 1) { lerpI += (10/60); a = 0; }
 else if (lerpI > 1) {lerpI = 1;}
 
 //show_debug_message(lerpI);
