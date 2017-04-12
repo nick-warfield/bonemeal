@@ -135,7 +135,7 @@
         }
     
         
-        
+/*        
         if (gamepad_button_check(0, gp_shoulderr) == true ||
             gamepad_button_check(0, gp_shoulderrb) == true ||
             keyboard_check(vk_space) == true)
@@ -163,7 +163,7 @@
             }
         }
         
-/*    
+*/    
     //swing umbrella commmand
         if (gamepad_button_check_pressed(0, gp_shoulderr) == true ||
             gamepad_button_check_pressed(0, gp_shoulderrb) == true ||
@@ -175,7 +175,8 @@
         {
             Input[ATTACK1] = false;
         }
-        
+
+/*        
     //parry umbrella command
         if (gamepad_button_check(0, gp_start) ||
             keyboard_check(ord('Q')))

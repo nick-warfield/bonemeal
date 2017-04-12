@@ -4,19 +4,19 @@ Input[INTERACT] = false;
 
 if (facing == RIGHT)
 {
-    var thing = collision_rectangle(x, y, x + 24, y, all, false, true);
+    var thing = collision_rectangle(x, y, x + 36, y, all, false, true);
 }
 else if (facing == LEFT)
 {
-    var thing = collision_rectangle(x - 24, y, x, y, all, false, true);
+    var thing = collision_rectangle(x - 36, y, x, y, all, false, true);
 }
 else if (facing == UP)
 {
-    var thing = collision_rectangle(x, y - 40, x, y, all, false, true);
+    var thing = collision_rectangle(x, y - 48, x, y, all, false, true);
 }
 else if (facing == DOWN)
 {
-    var thing = collision_rectangle(x, y, x, y + 40, all, false, true);
+    var thing = collision_rectangle(x, y, x, y + 48, all, false, true);
 }
 
 

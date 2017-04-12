@@ -6,7 +6,7 @@
   <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>Character_obj</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>Mordley_Front_spr</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -227,7 +227,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Mordley_SM_v07_scr</script>
+            <script>Mordley_SM_v08_scr</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -268,6 +268,46 @@
           <argument>
             <kind>9</kind>
             <script>Var_Collision_scr</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>Small_Collision_v08</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -368,6 +408,34 @@
           <argument>
             <kind>0</kind>
             <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///debug jazz
+
+stamina = 100;
+/*
+for(var i = 0; i &lt; array_length_1d(cylinder); i++)
+{
+    cylinder[i] = Bullet_90_obj;
+}
+</string>
           </argument>
         </arguments>
       </action>

@@ -30,10 +30,12 @@ else if (Input[DOWN])
 }
 
 //if the x direction remained unchanged, then y direction changed. Set the direction to the y direction and then move that way
-if (xdir == 1000) { Dir = ydir; }
+if (xdir == 1000 && ydir != 1000) { Dir = ydir; }
 
 //same as above, but swap x and y
-else if (ydir == 1000) { Dir = xdir; }
+else if (ydir == 1000 && xdir != 1000) { Dir = xdir; }
 
 //both directions have been changed, average them out and move in that direction
-else { Dir = (xdir + ydir) / 2; }
+else if (xdir != 1000 && ydir != 1000) { Dir = (xdir + ydir) / 2; }
+
+show_debug_message(Dir);

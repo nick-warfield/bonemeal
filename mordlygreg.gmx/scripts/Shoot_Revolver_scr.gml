@@ -3,6 +3,8 @@
 if (cylinder[cylinderPosition] != 0)
 {
     bulletInst = instance_create(x, y, cylinder[cylinderPosition]);
+    show_debug_message(object_get_name(bulletInst.object_index));
+    
     if (facing == 0) { bulletInst.y -= 8; bulletInst.x += 32; }
     else if (facing == 2) { bulletInst.y -= 8; bulletInst.x -= 32; }
     else if (facing == 1) { bulletInst.y -= 32; }
@@ -25,8 +27,16 @@ if (cylinder[cylinderPosition] != 0)
     audio_play_sound(Shot01_Gun_snd, 50, false);
     
     //knockback after shooting
-    script_execute(SetDamageVars_scr(bulletInst, (staminaMax - stamina) / 6.5, staminaMax - stamina));
+    script_execute(SetDamageVars_scr(bulletInst, 9, 100));
     
+    //no fear bullet
+    if(stamina <= 0)
+    {
+        script_execute(SetDamageVars_scr(bulletInst, 12, 200));
+    }
+    
+    Dir = (facing*90) + 180;
+    if (Dir >= 360) {Dir -= 360;}
     /*
     Dir = point_direction(bulletInst.x + lengthdir_x(bulletInst.speed, bulletInst.direction), bulletInst.y + lengthdir_y(bulletInst.speed, bulletInst.direction), x, y);
     spd = (staminaMax - stamina) / 6.5;
@@ -34,5 +44,8 @@ if (cylinder[cylinderPosition] != 0)
     */
     
     stamina -= 30;
+    
+    //script_execute(Var_Collision_scr);
+    //script_execute(Wall_Collision_scr);
 }
 else { audio_play_sound(Empty_Gun_snd, 50, false); }

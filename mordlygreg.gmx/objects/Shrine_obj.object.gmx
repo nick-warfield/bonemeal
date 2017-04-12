@@ -59,10 +59,10 @@ newPosition = 0;
             <kind>1</kind>
             <string>if (count == 0)
 {
-    if (red.order == 1 &amp;&amp; blue.order == 2 &amp;&amp; orange.order == 3 &amp;&amp; white.order == 4)
+    if (red.order == 2 &amp;&amp; blue.order == 3 &amp;&amp; orange.order == 4 &amp;&amp; white.order == 1)
     {
         solved = true;
-        newPosition = (y-(2*32));
+        newPosition = (y-(32));
         count--;
         show_debug_message("SOLVED");
     }
