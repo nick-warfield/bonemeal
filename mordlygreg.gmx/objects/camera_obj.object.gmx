@@ -89,7 +89,7 @@
 window_set_size(1440, 768);
 
 //display_set_gui_size(view_wview[0], view_hview[0]);
-display_set_gui_maximise(2, 2, 0, 0);
+//display_set_gui_maximise(2, 2, 0, 0);
 
 //remove cursor
 window_set_cursor(cr_none);
