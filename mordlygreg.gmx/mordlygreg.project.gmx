@@ -143,6 +143,7 @@
       <sprite>sprites\hud_revolver_01_spr</sprite>
       <sprite>sprites\hud_revolver_03_empty_spr</sprite>
       <sprite>sprites\hud_revolver_03_full_spr</sprite>
+      <sprite>sprites\HUD_Card_spr</sprite>
     </sprites>
     <sprites name="Effects">
       <sprite>sprites\Fang_Front_Effect_spr</sprite>
@@ -329,6 +330,12 @@
         <object>objects\Sign_obj</object>
         <object>objects\Invisible_Sign_obj</object>
       </objects>
+      <objects name="Arrow Blocks">
+        <object>objects\Arrow_Block_Down_obj</object>
+        <object>objects\Arrow_Block_Right_obj</object>
+        <object>objects\Arrow_Block_Left_obj</object>
+        <object>objects\Arrow_Block_Up_obj</object>
+      </objects>
       <objects name="Trees">
         <object>objects\Spooky_Tree_obj</object>
         <object>objects\Green_Tree_obj</object>
@@ -355,7 +362,6 @@
       <object>objects\Invisible_Wall_obj</object>
       <object>objects\Floor2_Wall_obj</object>
       <object>objects\Floor2_Door_obj</object>
-      <object>objects\Arrow_Block_obj</object>
     </objects>
     <objects name="Misc">
       <object>objects\Small_obj</object>
