@@ -177,11 +177,19 @@
     <sprite>sprites\Crate02_spr</sprite>
     <sprite>sprites\Crate_Key_spr</sprite>
     <sprite>sprites\Key_spr</sprite>
-    <sprites name="Rooms">
-      <sprite>sprites\sprite97</sprite>
-    </sprites>
   </sprites>
   <backgrounds name="background">
+    <backgrounds name="Floor2">
+      <background>background\Gate_Room_bkg</background>
+      <background>background\Start_Flr2_bkg</background>
+      <background>background\EnemyRm_Flr2_bkg</background>
+      <background>background\EnemyRm2_Flr2_bkg</background>
+      <background>background\Office_Flr2_bkg</background>
+      <background>background\Bullet_Puzzle_Flr2_bkg</background>
+      <background>background\Storage_Flr2_bkg</background>
+      <background>background\Pit_Flr2_bkg</background>
+      <background>background\Exit_Flr2_bkg</background>
+    </backgrounds>
     <background>background\gb_v01_bkd</background>
     <background>background\gb_v02_bkd</background>
     <background>background\Floor2_floor_bkg</background>
@@ -370,6 +378,44 @@
       <object>objects\Floor2_Wall_obj</object>
       <object>objects\Floor2_Door_obj</object>
     </objects>
+    <objects name="Doors">
+      <objects name="Floor2">
+        <objects name="Start">
+          <object>objects\Start_Exit_obj</object>
+          <object>objects\Start_Office_obj</object>
+        </objects>
+        <objects name="Office">
+          <object>objects\Office_Gate_obj</object>
+          <object>objects\Office_Start_obj</object>
+        </objects>
+        <objects name="Gates">
+          <object>objects\Gate_Office_obj</object>
+          <object>objects\Gate_Enemy1_obj</object>
+          <object>objects\Gate_Enemy2_obj</object>
+          <object>objects\Gate_Pit_obj</object>
+        </objects>
+        <objects name="Enemy1">
+          <object>objects\Enemy1_Office_obj</object>
+        </objects>
+        <objects name="Enemy2">
+          <object>objects\Enemy2_Enemy1_obj</object>
+        </objects>
+        <objects name="Pit">
+          <object>objects\Pit_Gate_obj</object>
+          <object>objects\Pit_Switch_obj</object>
+        </objects>
+        <objects name="Switch">
+          <object>objects\Switch_Pit_obj</object>
+          <object>objects\Switch_Storage_obj</object>
+        </objects>
+        <objects name="Storage">
+          <object>objects\Storage_Switch_obj</object>
+          <object>objects\Storage_Office_obj</object>
+        </objects>
+      </objects>
+      <object>objects\Door_Next_obj</object>
+      <object>objects\Door_Start_obj</object>
+    </objects>
     <objects name="Misc">
       <object>objects\Small_obj</object>
       <objects name="Keys">
@@ -387,11 +433,8 @@
         <objects name="Gate Puzzle">
           <object>objects\Gate_Puzzle_01_obj</object>
           <object>objects\Pressure_Plate_obj</object>
+          <object>objects\Small_Gate_obj</object>
         </objects>
-      </objects>
-      <objects name="Doors">
-        <object>objects\Door_Next_obj</object>
-        <object>objects\Door_Start_obj</object>
       </objects>
       <object>objects\Crate01_obj</object>
       <object>objects\Crate02_obj</object>
@@ -421,7 +464,17 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room8</room>
+    <rooms name="Floor2">
+      <room>rooms\Start_Flr2_rm</room>
+      <room>rooms\Switch_rm</room>
+      <room>rooms\Pit_rm</room>
+      <room>rooms\Storage_rm</room>
+      <room>rooms\Enemy2_rm</room>
+      <room>rooms\Enemy1_rm</room>
+      <room>rooms\Exit_Flr2_rm</room>
+      <room>rooms\Office_rm</room>
+      <room>rooms\Gate_Room_rm</room>
+    </rooms>
     <rooms name="Alpha Demo">
       <room>rooms\Start_Menu</room>
       <room>rooms\Laceys_Room</room>

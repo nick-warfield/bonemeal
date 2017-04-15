@@ -28,10 +28,10 @@
             <string>plate1 = instance_find(Pressure_Plate_obj, 0);
 plate2 = instance_find(Pressure_Plate_obj, 1);
 
-gate1 = true;
-gate2 = false;
-gate3 = false;
-gate4 = true;
+gate1 = instance_find(Small_Gate_obj, 0);
+gate2 = instance_find(Small_Gate_obj, 1);
+gate3 = instance_find(Small_Gate_obj, 2);
+gate4 = instance_find(Small_Gate_obj, 3);
 </string>
           </argument>
         </arguments>
@@ -56,26 +56,27 @@ gate4 = true;
             <kind>1</kind>
             <string>if (plate1.active == true &amp;&amp; plate2.active == true)
 {
-    gate1 = false;
-    gate2 = true;
-    gate3 = true;
-    gate4 = false;
+    gate1.opened = false;
+    gate2.opened = true;
+    gate3.opened = true;
+    gate4.opened = false;
 }
 else if (plate2.active == true xor plate1.active == true)
 {
-    gate1 = true;
-    gate2 = true;
-    gate3 = false;
-    gate4 = true;
+    gate1.opened = true;
+    gate2.opened = true;
+    gate3.opened = false;
+    gate4.opened = true;
 }
 else
 {
-    gate1 = true;
-    gate2 = false;
-    gate3 = false;
-    gate4 = true;
+    gate1.opened = true;
+    gate2.opened = false;
+    gate3.opened = false;
+    gate4.opened = true;
 }
 
+/*
 show_debug_message("---");
 show_debug_message(gate1);
 show_debug_message(gate2);
