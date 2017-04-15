@@ -51,7 +51,8 @@ debug = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (place_empty(x, y)) {spd = 0;}
+            <string>if(place_meeting(x, y, Player02_obj) == false) 
+{spd = 0;}
 </string>
           </argument>
         </arguments>
@@ -98,41 +99,24 @@ debug = false;
       </action>
       <action>
         <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>9</kind>
-            <script>Small_Object_Collision_scr</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
+            <kind>1</kind>
+            <string>///Small Object Collision
+if (place_meeting(x + newX, y + newY, Small_obj))
+{ spd = 0; }
+</string>
           </argument>
         </arguments>
       </action>
@@ -213,28 +197,6 @@ debug = false;
           <argument>
             <kind>0</kind>
             <string></string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (spd == 0 &amp;&amp; place_meeting(x - newX, y - newY, Character_obj))
-{ var a = instance_place(x - newX, y - newY, Character_obj); a.spd = 0; }
-</string>
           </argument>
         </arguments>
       </action>

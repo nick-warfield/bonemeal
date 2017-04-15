@@ -384,7 +384,10 @@
           <object>objects\Candle_White_obj</object>
           <object>objects\Shrine_obj</object>
         </objects>
-        <object>objects\Pressure_Plate_obj</object>
+        <objects name="Gate Puzzle">
+          <object>objects\Gate_Puzzle_01_obj</object>
+          <object>objects\Pressure_Plate_obj</object>
+        </objects>
       </objects>
       <objects name="Doors">
         <object>objects\Door_Next_obj</object>
@@ -418,12 +421,13 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
+    <room>rooms\room8</room>
     <rooms name="Alpha Demo">
       <room>rooms\Start_Menu</room>
       <room>rooms\Laceys_Room</room>
       <room>rooms\Floor2</room>
     </rooms>
+    <room>rooms\room1</room>
     <room>rooms\room4</room>
     <room>rooms\GreyBox_v02_rm</room>
     <room>rooms\GreyBox_rm</room>
