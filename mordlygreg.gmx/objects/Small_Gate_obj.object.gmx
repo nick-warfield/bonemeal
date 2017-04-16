@@ -57,7 +57,7 @@
 else
 {
     //visible = true;
-    if (y &lt; 96)
+    if (y &lt; 128)
     {y += 4;}
 }
 </string>
