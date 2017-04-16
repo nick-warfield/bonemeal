@@ -56,6 +56,8 @@
     <instance objName="Invisible_Wall_obj" x="64" y="112" name="inst_76879204" locked="0" code="" scaleX="1" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="0" y="0" name="inst_736C3EC7" locked="0" code="" scaleX="5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="160" y="16" name="inst_505EC34E" locked="0" code="" scaleX="0.5" scaleY="5.5" colour="4294967295" rotation="0"/>
+    <instance objName="Exit_Floor1_obj" x="96" y="192" name="inst_76F1B8F0" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Exit_Start_obj" x="-16" y="16" name="inst_31155C6A" locked="0" code="" scaleX="0.5" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

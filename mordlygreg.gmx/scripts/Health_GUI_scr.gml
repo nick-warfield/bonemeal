@@ -1,8 +1,8 @@
 var h = display_get_height()/2;
 var w = display_get_width()/2;
 
-var amnt = (Player02_obj.healthPoints / Player02_obj.hpMax) * 100;
-var amnt2 = (Player02_obj.stamina / Player02_obj.staminaMax) * 100;
+var amnt = (healthPoints / hpMax) * 100;
+var amnt2 = (stamina / staminaMax) * 100;
 
 
 draw_sprite(HUD_Card_spr, 0, 16, h-16);

@@ -52,12 +52,13 @@
   </views>
   <instances>
     <instance objName="Camera_obj" x="-32" y="32" name="inst_20BF0798" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Player02_obj" x="48" y="48" name="inst_F26F4CA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="80" y="0" name="inst_DA6D22EE" locked="0" code="" scaleX="0.5" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="0" y="0" name="inst_0D732BE3" locked="0" code="" scaleX="0.5" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="0" y="320" name="inst_AFCD2B67" locked="0" code="" scaleX="3" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Start_Exit_obj" x="96" y="256" name="inst_4A425322" locked="0" code="" scaleX="0.5" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Start_Office_obj" x="-16" y="256" name="inst_4D575103" locked="0" code="" scaleX="0.5" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Track_Floor2_obj" x="-64" y="32" name="inst_6BC1BDF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Start_Floor1_obj" x="16" y="-16" name="inst_1083B0BA" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

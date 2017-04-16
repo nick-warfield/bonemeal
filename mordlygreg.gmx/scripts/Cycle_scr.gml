@@ -5,4 +5,4 @@ if (cylinderPosition >= 6) { cylinderPosition = 0; }
 
 audio_play_sound(Cock_Gun_snd, 50, false);
 
-Camera_obj.newRot -= 60;
+newRot -= 60;

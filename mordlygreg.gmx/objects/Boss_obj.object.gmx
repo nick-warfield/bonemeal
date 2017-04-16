@@ -67,6 +67,8 @@ var d2 = instance_position(896, 1632, Wall_obj);
 
 with (d1) {instance_destroy();}
 with (d2) {instance_destroy();}
+
+audio_stop_sound(Boss_trk);
 </string>
           </argument>
         </arguments>
