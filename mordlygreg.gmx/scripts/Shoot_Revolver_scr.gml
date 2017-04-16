@@ -24,7 +24,7 @@ if (cylinder[cylinderPosition] != 0)
     cylinder[cylinderPosition] = 0;
     
     //play sound
-    audio_play_sound(Shot01_Gun_snd, 50, false);
+    audio_play_sound(Shot03_Gun_snd, 50, false);
     
     //knockback after shooting
     script_execute(SetDamageVars_scr(bulletInst, 9, 100));

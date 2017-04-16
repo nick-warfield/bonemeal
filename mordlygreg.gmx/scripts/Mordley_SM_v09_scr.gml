@@ -90,7 +90,8 @@ switch (ds_stack_top(StateStack))
     {
         ds_stack_push(StateStack, s_ATTACK4);
         timeStamp[4] = current_time + 300;
-        audio_play_sound(Reload_Gun_snd, 50, false);
+        var reload2 = audio_play_sound(Reload_Gun_02_snd, 50, false);
+        audio_sound_pitch(reload2, 0.7);
     }
     
     else if (Input[ATTACK5])    //cycle
