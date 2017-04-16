@@ -25,12 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_sound(Floor1_trk);
+            <string>room_goto(Start_Flr2_rm);
 
-room_goto_next();
-
-other.x = 32;
-other.y = 48;
+other.x = 64;
+other.y = 288;
 </string>
           </argument>
         </arguments>

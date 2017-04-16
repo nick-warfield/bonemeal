@@ -187,7 +187,6 @@
     <instance objName="Floor2_Wall_obj" x="960" y="1888" name="inst_F66383CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="960" y="1920" name="inst_2A127611" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="960" y="1952" name="inst_55C8FF96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Player02_obj" x="352" y="64" name="inst_F2AC5135" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Camera_obj" x="-32" y="0" name="inst_A35732BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="256" y="608" name="inst_55C054A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="256" y="576" name="inst_A80D08AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -25,12 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_sound(Floor1_trk);
-
-room_goto_next();
-
-other.x = 32;
-other.y = 48;
+            <string>if(other.bigKey &gt; 0)
+{ room_goto(Floor2); }
 </string>
           </argument>
         </arguments>

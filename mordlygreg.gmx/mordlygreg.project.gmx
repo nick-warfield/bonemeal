@@ -30,6 +30,11 @@
       <sound>sound\Open_Shrine_snd</sound>
       <sound>sound\Crate_Smash_snd</sound>
     </sounds>
+    <sounds name="Tracks">
+      <sound>sound\Floor1_trk</sound>
+      <sound>sound\Floor2_trk</sound>
+      <sound>sound\Boss_trk</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Mordley">
@@ -323,6 +328,7 @@
       <script>scripts\Bat_AI_SM_v01_scr.gml</script>
     </scripts>
     <script>scripts\Sound_Director_scr.gml</script>
+    <script>scripts\Sound_Director_v02_scr.gml</script>
     <script>scripts\Pause_scr.gml</script>
     <script>scripts\DoNothing_scr.gml</script>
     <script>scripts\SetDamageVars_scr.gml</script>
@@ -383,6 +389,7 @@
         <objects name="Start">
           <object>objects\Start_Exit_obj</object>
           <object>objects\Start_Office_obj</object>
+          <object>objects\Start_Floor1_obj</object>
         </objects>
         <objects name="Office">
           <object>objects\Office_Gate_obj</object>
@@ -412,9 +419,14 @@
           <object>objects\Storage_Switch_obj</object>
           <object>objects\Storage_Office_obj</object>
         </objects>
+        <objects name="Exit">
+          <object>objects\Exit_Floor1_obj</object>
+          <object>objects\Exit_Start_obj</object>
+        </objects>
       </objects>
       <object>objects\Door_Next_obj</object>
       <object>objects\Door_Start_obj</object>
+      <object>objects\Door_Boss_obj</object>
     </objects>
     <objects name="Misc">
       <object>objects\Small_obj</object>
@@ -458,27 +470,32 @@
       <object>objects\GrabArm_obj</object>
       <object>objects\Door_Shut_obj</object>
       <object>objects\Start_Menu_obj</object>
+      <objects name="Sound Players">
+        <object>objects\Track_Floor1_obj</object>
+        <object>objects\Track_Floor2_obj</object>
+        <object>objects\Track_Boss_obj</object>
+      </objects>
     </objects>
     <objects name="SCRATCH">
       <object>objects\floor_obj</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <rooms name="Floor2">
-      <room>rooms\Start_Flr2_rm</room>
-      <room>rooms\Switch_rm</room>
-      <room>rooms\Pit_rm</room>
-      <room>rooms\Storage_rm</room>
-      <room>rooms\Enemy2_rm</room>
-      <room>rooms\Enemy1_rm</room>
-      <room>rooms\Exit_Flr2_rm</room>
-      <room>rooms\Office_rm</room>
-      <room>rooms\Gate_Room_rm</room>
-    </rooms>
     <rooms name="Alpha Demo">
       <room>rooms\Start_Menu</room>
       <room>rooms\Laceys_Room</room>
       <room>rooms\Floor2</room>
+      <rooms name="Floor2">
+        <room>rooms\Start_Flr2_rm</room>
+        <room>rooms\Switch_rm</room>
+        <room>rooms\Pit_rm</room>
+        <room>rooms\Storage_rm</room>
+        <room>rooms\Enemy2_rm</room>
+        <room>rooms\Enemy1_rm</room>
+        <room>rooms\Exit_Flr2_rm</room>
+        <room>rooms\Office_rm</room>
+        <room>rooms\Gate_Room_rm</room>
+      </rooms>
     </rooms>
     <room>rooms\room1</room>
     <room>rooms\room4</room>

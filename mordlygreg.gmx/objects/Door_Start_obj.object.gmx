@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(0);
+            <string>with (other) {instance_destroy();}
+
+room_goto(Start_Menu);
 </string>
           </argument>
         </arguments>
