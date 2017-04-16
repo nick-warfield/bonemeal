@@ -64,8 +64,8 @@
     <instance objName="Flowerbed_Blue_obj" x="788" y="2920" name="inst_28FC8573" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Flowerbed_Orange_obj" x="584" y="2696" name="inst_F4D26DF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Flowerbed_Orange_obj" x="584" y="2920" name="inst_373568BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Flowerbed_Red_obj" x="1528" y="2680" name="inst_66BEFFDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Flowerbed_Red_obj" x="1528" y="2904" name="inst_C8C4A8F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Manison_v02_obj" x="1528" y="2680" name="inst_66BEFFDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Manison_v02_obj" x="1528" y="2904" name="inst_C8C4A8F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Flowerbed_White_obj" x="1320" y="2680" name="inst_5901C71D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Flowerbed_White_obj" x="1320" y="2904" name="inst_4B829869" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Spooky_Tree_obj" x="1048" y="2368" name="inst_D27B5DF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
