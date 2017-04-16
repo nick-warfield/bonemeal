@@ -126,6 +126,7 @@
     <instance objName="Crate02_obj" x="984" y="1264" name="inst_5B5AA1ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Crate01_obj" x="936" y="1296" name="inst_3DC4D8D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Track_Floor1_obj" x="-64" y="31" name="inst_9BCB8FF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Door_Boss_obj" x="540" y="972" name="inst_FA013D19" locked="0" code="" scaleX="3.375" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

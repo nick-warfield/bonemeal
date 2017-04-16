@@ -499,20 +499,20 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <rooms name="Floor2">
-      <room>rooms\Start_Flr2_rm</room>
-      <room>rooms\Office_rm</room>
-      <room>rooms\Gate_Room_rm</room>
-      <room>rooms\Enemy1_rm</room>
-      <room>rooms\Enemy2_rm</room>
-      <room>rooms\Pit_rm</room>
-      <room>rooms\Switch_rm</room>
-      <room>rooms\Storage_rm</room>
-      <room>rooms\Exit_Flr2_rm</room>
-    </rooms>
     <rooms name="Alpha Demo">
       <room>rooms\Start_Menu</room>
       <room>rooms\Laceys_Room</room>
+      <rooms name="Floor2">
+        <room>rooms\Start_Flr2_rm</room>
+        <room>rooms\Office_rm</room>
+        <room>rooms\Gate_Room_rm</room>
+        <room>rooms\Enemy1_rm</room>
+        <room>rooms\Enemy2_rm</room>
+        <room>rooms\Pit_rm</room>
+        <room>rooms\Switch_rm</room>
+        <room>rooms\Storage_rm</room>
+        <room>rooms\Exit_Flr2_rm</room>
+      </rooms>
       <room>rooms\Floor2</room>
     </rooms>
     <room>rooms\room1</room>

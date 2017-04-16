@@ -62,8 +62,8 @@ State = -10;
             <kind>1</kind>
             <string>event_inherited();
 
-var d1 = instance_position(864, 1632, Wall_obj);
-var d2 = instance_position(896, 1632, Wall_obj);
+var d1 = instance_position(320, 960, Wall_obj);
+var d2 = instance_position(352, 960, Wall_obj);
 
 with (d1) {instance_destroy();}
 with (d2) {instance_destroy();}
