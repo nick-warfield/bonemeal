@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>room_goto(Storage_rm);
 
-other.x = 192;
-other.y = 208;
+other.x = 192+200;
+other.y = 208+200;
 </string>
           </argument>
         </arguments>

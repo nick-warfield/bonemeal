@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>room_goto(Enemy1_rm);
 
-other.x = 16;
-other.y = 48;
+other.x = 16+650;
+other.y = 48+300;
 </string>
           </argument>
         </arguments>
