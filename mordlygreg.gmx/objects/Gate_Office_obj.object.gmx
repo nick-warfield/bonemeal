@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>room_goto(Office_rm);
 
-other.x = 256;
-other.y = 32;
+other.x = 624;
+other.y = 392;
 </string>
           </argument>
         </arguments>

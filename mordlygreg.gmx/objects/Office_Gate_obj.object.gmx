@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>room_goto(Gate_Room_rm);
 
-other.x = 896;
-other.y = 320;
+other.x = 896+200;
+other.y = 304+136;
 </string>
           </argument>
         </arguments>

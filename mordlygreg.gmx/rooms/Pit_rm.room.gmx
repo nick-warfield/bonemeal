@@ -57,7 +57,7 @@
     <instance objName="Invisible_Wall_obj" x="192" y="112" name="inst_A4DD7AD0" locked="0" code="" scaleX="3" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="272" y="128" name="inst_D8099574" locked="0" code="" scaleX="0.5" scaleY="8.77419376373291" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="272" y="400" name="inst_09609AB4" locked="0" code="" scaleX="5.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="448" y="432" name="inst_10C9282F" locked="0" code="" scaleX="0.5" scaleY="52.5" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="448" y="432" name="inst_10C9282F" locked="0" code="" scaleX="0.5" scaleY="52" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="448" y="2208" name="inst_8BF6B2EE" locked="0" code="" scaleX="0.5" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="16" y="2288" name="inst_6CF4E742" locked="0" code="" scaleX="13.4193544387817" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="0" y="0" name="inst_3ADD9F76" locked="0" code="" scaleX="0.5" scaleY="71.7419357299805" colour="4294967295" rotation="0"/>

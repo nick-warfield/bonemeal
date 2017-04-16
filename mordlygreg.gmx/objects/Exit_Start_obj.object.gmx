@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>room_goto(Start_Flr2_rm);
 
-other.x = 64;
-other.y = 288;
+other.x = 816;
+other.y = 400;
 </string>
           </argument>
         </arguments>

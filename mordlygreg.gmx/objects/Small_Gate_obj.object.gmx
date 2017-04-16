@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>opened = false;
+
+closey = y;
+openy = y - 112;
 </string>
           </argument>
         </arguments>
@@ -51,13 +54,13 @@
             <string>if(opened)
 {
     //visible = false;
-    if (y &gt; 16)
+    if (y &gt; openy)
     {y -= 4;}
 }
 else
 {
     //visible = true;
-    if (y &lt; 128)
+    if (y &lt; closey)
     {y += 4;}
 }
 </string>
