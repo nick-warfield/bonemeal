@@ -17,6 +17,8 @@
       <sound>sound\Reload_Gun_snd</sound>
       <sound>sound\Shot01_Gun_snd</sound>
       <sound>sound\Shot02_Gun_snd</sound>
+      <sound>sound\Shot03_Gun_snd</sound>
+      <sound>sound\Reload_Gun_02_snd</sound>
     </sounds>
     <sounds name="Umbrella">
       <sound>sound\Hit01_Umbrella_snd</sound>
@@ -28,7 +30,12 @@
     </sounds>
     <sounds name="Misc">
       <sound>sound\Open_Shrine_snd</sound>
+      <sound>sound\Open_Shrine_02_snd</sound>
       <sound>sound\Crate_Smash_snd</sound>
+      <sound>sound\BodyHit_snd</sound>
+      <sound>sound\Crate_Smash_02_snd</sound>
+      <sound>sound\Door_snd</sound>
+      <sound>sound\FileCambinent_snd</sound>
     </sounds>
     <sounds name="Tracks">
       <sound>sound\Floor1_trk</sound>
@@ -484,7 +491,6 @@
     <rooms name="Alpha Demo">
       <room>rooms\Start_Menu</room>
       <room>rooms\Laceys_Room</room>
-      <room>rooms\Floor2</room>
       <rooms name="Floor2">
         <room>rooms\Start_Flr2_rm</room>
         <room>rooms\Switch_rm</room>
@@ -496,6 +502,7 @@
         <room>rooms\Office_rm</room>
         <room>rooms\Gate_Room_rm</room>
       </rooms>
+      <room>rooms\Floor2</room>
     </rooms>
     <room>rooms\room1</room>
     <room>rooms\room4</room>
