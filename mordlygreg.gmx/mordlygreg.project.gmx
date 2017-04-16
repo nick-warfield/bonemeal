@@ -202,6 +202,17 @@
       <background>background\Pit_Flr2_bkg</background>
       <background>background\Exit_Flr2_bkg</background>
     </backgrounds>
+    <backgrounds name="Floor2-v02">
+      <background>background\Start_Flr2_02_bkg</background>
+      <background>background\Office_02_bkg</background>
+      <background>background\Gate_Rm_02_bkg</background>
+      <background>background\EnemyRm_02_bkg</background>
+      <background>background\EnemyRm02_02_bkg</background>
+      <background>background\Pit_02_bkg</background>
+      <background>background\Bullet_Puzzle_02_bkg</background>
+      <background>background\Storage_02_bkg</background>
+      <background>background\Exit_Flr2_02_bkg</background>
+    </backgrounds>
     <background>background\gb_v01_bkd</background>
     <background>background\gb_v02_bkd</background>
     <background>background\Floor2_floor_bkg</background>
@@ -493,14 +504,14 @@
       <room>rooms\Laceys_Room</room>
       <rooms name="Floor2">
         <room>rooms\Start_Flr2_rm</room>
-        <room>rooms\Switch_rm</room>
-        <room>rooms\Pit_rm</room>
-        <room>rooms\Storage_rm</room>
-        <room>rooms\Enemy2_rm</room>
-        <room>rooms\Enemy1_rm</room>
-        <room>rooms\Exit_Flr2_rm</room>
         <room>rooms\Office_rm</room>
         <room>rooms\Gate_Room_rm</room>
+        <room>rooms\Enemy1_rm</room>
+        <room>rooms\Enemy2_rm</room>
+        <room>rooms\Pit_rm</room>
+        <room>rooms\Switch_rm</room>
+        <room>rooms\Storage_rm</room>
+        <room>rooms\Exit_Flr2_rm</room>
       </rooms>
       <room>rooms\Floor2</room>
     </rooms>

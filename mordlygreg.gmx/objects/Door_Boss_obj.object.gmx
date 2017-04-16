@@ -25,8 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(other.bigKey &gt; 0)
-{ room_goto(Floor2); }
+            <string>//if(other.bigKey &gt; 0)
+{
+    room_goto(Floor2);
+    
+    other.x = 896;
+    other.y = 2560;
+    
+    audio_stop_sound(Floor1_trk);
+}
 </string>
           </argument>
         </arguments>

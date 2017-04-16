@@ -29,8 +29,8 @@
 
 room_goto_next();
 
-other.x = 32;
-other.y = 48;
+other.x = 32+732;
+other.y = 48+124;
 </string>
           </argument>
         </arguments>
