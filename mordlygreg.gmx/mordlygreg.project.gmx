@@ -269,6 +269,7 @@
           <script>scripts\Cycle_scr.gml</script>
           <script>scripts\Shoot_Simple_scr.gml</script>
           <script>scripts\Shoot_Revolver_scr.gml</script>
+          <script>scripts\Aim_v02_scr.gml</script>
         </scripts>
         <script>scripts\Interact_v02_scr.gml</script>
         <script>scripts\Swing_scr.gml</script>
@@ -390,7 +391,7 @@
       <objects name="Flowerbeds">
         <object>objects\Flowerbed_Blue_obj</object>
         <object>objects\Flowerbed_Orange_obj</object>
-        <object>objects\Manison_v02_obj</object>
+        <object>objects\Flowerbed_Red_obj</object>
         <object>objects\Flowerbed_White_obj</object>
       </objects>
       <objects name="Structures">
