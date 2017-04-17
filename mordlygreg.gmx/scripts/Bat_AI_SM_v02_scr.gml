@@ -1,3 +1,10 @@
+if (!instance_exists(target))
+{
+    ds_stack_clear(StateStack);
+    ds_stack_push(StateStack, -1);
+}
+
+
 switch(ds_stack_top(StateStack))
 {
   case -1:      //if target not found
@@ -131,12 +138,6 @@ else
     sprite_index = Hurt_Front_Bat_spr;
 }
 
-
-if (!instance_exists(target))
-{
-    ds_stack_clear(StateStack);
-    ds_stack_push(StateStack, -1);
-}
 
 
 if (place_meeting(x, y, target))    //damage the target

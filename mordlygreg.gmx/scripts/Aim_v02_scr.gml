@@ -38,4 +38,3 @@ else if (ydir == 1000 && xdir != 1000) { Dir = xdir; }
 //both directions have been changed, average them out and move in that direction
 else if (xdir != 1000 && ydir != 1000) { Dir = (xdir + ydir) / 2; }
 
-show_debug_message(Dir);

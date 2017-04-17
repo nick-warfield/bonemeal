@@ -28,6 +28,8 @@
             <string>v = 0;
 
 window_set_cursor(cr_none);
+
+audio_stop_all();
 </string>
           </argument>
         </arguments>
@@ -150,6 +152,7 @@ if (Input[INTERACT])
     {
       case 0:
         room_goto_next();
+        instance_create(505, 1440, Player02_obj);
         break;
         
       case 1:
