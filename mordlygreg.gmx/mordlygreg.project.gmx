@@ -60,6 +60,11 @@
         <sprite>sprites\Mordley_Side_Aim_spr</sprite>
         <sprite>sprites\Mordley_Back_Aim_spr</sprite>
       </sprites>
+      <sprites name="Walk">
+        <sprite>sprites\Mordley_Walk_Side_spr</sprite>
+        <sprite>sprites\Mordley_Walk_Down_spr</sprite>
+        <sprite>sprites\Mordley_Walk_Up_spr</sprite>
+      </sprites>
     </sprites>
     <sprites name="Enemies">
       <sprites name="Fishman">
@@ -189,6 +194,7 @@
     <sprite>sprites\Crate02_spr</sprite>
     <sprite>sprites\Crate_Key_spr</sprite>
     <sprite>sprites\Key_spr</sprite>
+    <sprite>sprites\Boss_Key_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Floor2">
@@ -219,6 +225,7 @@
     <background>background\Floor1_Background_bkg</background>
     <background>background\Floor1_Foreground_bkg</background>
     <background>background\Floor1_Object_bkg</background>
+    <background>background\Pit_03_bkg</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

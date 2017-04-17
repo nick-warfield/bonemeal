@@ -97,7 +97,6 @@
     <instance objName="Invisible_Wall_obj" x="848" y="1064" name="inst_DF92B5F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="16" y="1504" name="inst_F7747D07" locked="0" code="" scaleX="32" scaleY="1.80645155906677" colour="4294967295" rotation="0"/>
     <instance objName="Mounds_obj" x="920" y="744" name="inst_A6BCA9A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Manison_v02_obj" x="168" y="408" name="inst_2A7AA902" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="960" y="184" name="inst_1E6499A7" locked="0" code="" scaleX="5" scaleY="0.75" colour="4294967295" rotation="45"/>
     <instance objName="Invisible_Wall_obj" x="896" y="1136" name="inst_83A34F7F" locked="0" code="" scaleX="2.06451606750488" scaleY="1.03225803375244" colour="4294967295" rotation="20"/>
     <instance objName="Invisible_Wall_obj" x="896" y="1136" name="inst_8A1C3209" locked="0" code="" scaleX="2.06451606750488" scaleY="1.03225803375244" colour="4294967295" rotation="20"/>
