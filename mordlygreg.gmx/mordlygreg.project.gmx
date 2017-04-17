@@ -456,6 +456,7 @@
       <object>objects\Small_obj</object>
       <objects name="Keys">
         <object>objects\Key_obj</object>
+        <object>objects\BigKey_obj</object>
       </objects>
       <objects name="Puzzles">
         <objects name="Candles">
