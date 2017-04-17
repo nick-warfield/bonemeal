@@ -507,7 +507,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <rooms name="Alpha Demo">
+    <rooms name="Beta Demo">
       <room>rooms\Start_Menu</room>
       <room>rooms\Laceys_Room</room>
       <rooms name="Floor2">
