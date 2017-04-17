@@ -269,7 +269,6 @@
           <script>scripts\Cycle_scr.gml</script>
           <script>scripts\Shoot_Simple_scr.gml</script>
           <script>scripts\Shoot_Revolver_scr.gml</script>
-          <script>scripts\Swing_scr.gml</script>
         </scripts>
         <script>scripts\Interact_v02_scr.gml</script>
         <script>scripts\Swing_scr.gml</script>
@@ -400,7 +399,6 @@
         <object>objects\Mansion_v01_obj</object>
         <object>objects\Manison_v02_obj</object>
         <object>objects\Gate_obj</object>
-        <object>objects\object52</object>
       </objects>
       <object>objects\GreBox_Collisions_obj</object>
       <object>objects\Invisible_Wall_obj</object>

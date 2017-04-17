@@ -191,7 +191,7 @@ lerpI = 1;
 rot = 0;
 newRot = 0;
 
-image_speed = 8;
+image_speed = 7/60;
 </string>
           </argument>
         </arguments>
