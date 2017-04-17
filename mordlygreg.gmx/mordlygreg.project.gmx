@@ -375,6 +375,7 @@
       <objects name="Signs">
         <object>objects\Sign_obj</object>
         <object>objects\Invisible_Sign_obj</object>
+        <object>objects\Shrine_Txt_obj</object>
       </objects>
       <objects name="Arrow Blocks">
         <object>objects\Arrow_Block_Down_obj</object>
