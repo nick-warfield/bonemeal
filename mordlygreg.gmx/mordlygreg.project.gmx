@@ -395,7 +395,6 @@
         <object>objects\Mansion_v01_obj</object>
         <object>objects\Manison_v02_obj</object>
         <object>objects\Gate_obj</object>
-        <object>objects\object52</object>
       </objects>
       <object>objects\GreBox_Collisions_obj</object>
       <object>objects\Invisible_Wall_obj</object>
