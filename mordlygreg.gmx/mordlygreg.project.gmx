@@ -362,6 +362,7 @@
     <script>scripts\Pause_scr.gml</script>
     <script>scripts\DoNothing_scr.gml</script>
     <script>scripts\SetDamageVars_scr.gml</script>
+    <script>scripts\Checkpoint_Manager_scr.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Characters">
@@ -492,12 +493,15 @@
       <object>objects\SlowMo_Bullet_obj</object>
     </objects>
     <objects name="Utility">
+      <objects name="Checkpoints">
+        <object>objects\Checkpoint_01_obj</object>
+      </objects>
+      <object>objects\Camera_obj</object>
       <object>objects\Dialogue_obj</object>
       <object>objects\Speaker_obj</object>
       <object>objects\Pause_obj</object>
       <object>objects\EnemySpawn_obj</object>
       <object>objects\SwingArc_obj</object>
-      <object>objects\Camera_obj</object>
       <object>objects\GrabArm_obj</object>
       <object>objects\Door_Shut_obj</object>
       <object>objects\Start_Menu_obj</object>
