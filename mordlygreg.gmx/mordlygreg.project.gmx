@@ -375,6 +375,7 @@
       <objects name="Signs">
         <object>objects\Sign_obj</object>
         <object>objects\Invisible_Sign_obj</object>
+        <object>objects\Shrine_Txt_obj</object>
       </objects>
       <objects name="Arrow Blocks">
         <object>objects\Arrow_Block_Down_obj</object>
@@ -456,6 +457,7 @@
       <object>objects\Small_obj</object>
       <objects name="Keys">
         <object>objects\Key_obj</object>
+        <object>objects\BigKey_obj</object>
       </objects>
       <objects name="Puzzles">
         <objects name="Candles">
@@ -505,7 +507,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <rooms name="Alpha Demo">
+    <rooms name="Beta Demo">
       <room>rooms\Start_Menu</room>
       <room>rooms\Laceys_Room</room>
       <rooms name="Floor2">

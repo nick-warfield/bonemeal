@@ -27,7 +27,7 @@ if (messageEnd > 0 && done != true && message[messageCurrent] != "")
     
     //Line up the text to fit in the box
     tx -= sprite_get_width(TextBox_GUI_spr);
-    tx += 5;
+    tx += 40;
     ty += 5;
     
     //Draw the text
