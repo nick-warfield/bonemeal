@@ -26,7 +26,7 @@ switch (ds_stack_top(StateStack))
     if (timeStamp[0] == 0 && ds_stack_top(StateStack) != s_DODGE)
     { script_execute(TookDamage_v03_scr); }
     
-    if (healthPoints <= 0) {script_execute(Checkpoint_Manager_scr(id));}
+    if (healthPoints <= 0) {room_restart();}
     
     break;
     

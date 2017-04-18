@@ -27,10 +27,11 @@ if (messageEnd > 0 && done != true && message[messageCurrent] != "")
     
     //Line up the text to fit in the box
     tx -= sprite_get_width(TextBox_GUI_spr);
-    tx += 40;
+    tx += 5;
     ty += 5;
     
     //Draw the text
+    draw_set_halign(fa_left);
     draw_text_ext(tx, ty, message[messageCurrent], -1, sprite_get_width(TextBox_GUI_spr) - 10);
     
     //Draw Portrait

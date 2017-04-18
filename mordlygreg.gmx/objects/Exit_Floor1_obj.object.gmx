@@ -31,8 +31,6 @@ room_goto(Laceys_Room);
 
 other.x = 144;
 other.y = 1332;
-
-global.checkpoint = 1;
 </string>
           </argument>
         </arguments>
