@@ -92,7 +92,7 @@ message[0] = "It's Locked";
           <argument>
             <kind>1</kind>
             <string>//run some code on unlock, in this case play a gate opening animation and change the collision mask
-if (locked == false) { instance_destroy(); message[0] = "It Opened"; }
+if (locked == false) { instance_destroy(); }
 </string>
           </argument>
         </arguments>

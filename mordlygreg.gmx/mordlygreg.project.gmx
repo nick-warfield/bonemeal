@@ -279,6 +279,7 @@
           <script>scripts\Aim_v02_scr.gml</script>
         </scripts>
         <script>scripts\Interact_v02_scr.gml</script>
+        <script>scripts\Interact_v03_scr.gml</script>
         <script>scripts\Swing_scr.gml</script>
         <script>scripts\Parry_v02_scr.gml</script>
       </scripts>
