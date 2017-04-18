@@ -10,4 +10,6 @@ if (keyboard_check_pressed(ord('0')))
 if (debug && object_index == Player02_obj) {spd = 13;}
 
 
+//spd *= global.SpeedScale;
+
 motion_set(Dir, spd);

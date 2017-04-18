@@ -30,6 +30,8 @@
 window_set_cursor(cr_none);
 
 audio_stop_all();
+
+global.paused = true;
 </string>
           </argument>
         </arguments>
@@ -154,6 +156,7 @@ if (Input[INTERACT])
         room_goto_next();
         instance_create(505, 1440, Player02_obj);
         global.checkpoint = 1;
+        global.SpeedScale = 1;
         break;
         
       case 1:

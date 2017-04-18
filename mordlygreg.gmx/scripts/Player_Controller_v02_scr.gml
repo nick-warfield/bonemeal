@@ -1,6 +1,6 @@
 //REQUIRES:
 //initialization_scr
-    
+
     //up command
         if (gamepad_axis_value(0, gp_axislv) <= -0.5 ||
             gamepad_axis_value(0, gp_axisrv) <= -0.5 ||
