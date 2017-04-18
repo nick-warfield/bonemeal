@@ -44,3 +44,4 @@ if (messageEnd > 0 && done != true && message[messageCurrent] != "")
             portrait = "none";
     }
 }
+else {global.paused = false;}

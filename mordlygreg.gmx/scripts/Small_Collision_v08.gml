@@ -1,3 +1,5 @@
+if (global.paused) {exit;}
+
 if (place_meeting(x + newX, y + newY, Small_obj) == true)
 {
     var thing = instance_place(x + newX, y + newY, Small_obj);

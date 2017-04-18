@@ -1,6 +1,7 @@
 //REQUIRES:
 //
 
+if (global.paused) {exit;}
 
 //Reset invulnerability timer once it has finished counting down
 if (current_time >= timeStamp[0]) 
@@ -66,6 +67,7 @@ switch (ds_stack_top(StateStack))
     {
         script_execute(Interact_v02_scr);
         ds_stack_push(StateStack, s_INTERACT);
+        global.paused = true;
     }
     
     else if (Input[ATTACK1])    //swing

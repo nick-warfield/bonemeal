@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var oops = instance_place(x, y, Character_obj);
+            <string>if (global.paused) {exit;}
+
+var oops = instance_place(x, y, Character_obj);
 
 //use a switch statement to check for things I want to fall in pits and ignore other things
 if (instance_exists(oops) &amp;&amp; oops.object_index != Bat_obj)

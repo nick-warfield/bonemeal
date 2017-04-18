@@ -9,7 +9,6 @@ if (keyboard_check_pressed(ord('0')))
 
 if (debug && object_index == Player02_obj) {spd = 13;}
 
-
-//spd *= global.SpeedScale;
+if (global.paused) {motion_set(Dir, 0); exit;}
 
 motion_set(Dir, spd);

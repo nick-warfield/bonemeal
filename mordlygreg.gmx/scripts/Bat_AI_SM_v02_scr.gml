@@ -1,3 +1,5 @@
+if (global.paused) {exit;}
+
 if (!instance_exists(target))
 {
     ds_stack_clear(StateStack);
