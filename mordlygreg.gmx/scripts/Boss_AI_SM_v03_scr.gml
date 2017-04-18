@@ -1,3 +1,5 @@
+if (global.paused) {exit;}
+
 switch(ds_stack_top(StateStack))
 {
   case -1:      //if target not found, keep checking until found

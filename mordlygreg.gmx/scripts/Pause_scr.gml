@@ -1,5 +1,4 @@
-show_debug_message("Pause");
-
+if (global.paused) {exit;}
 
 
 
