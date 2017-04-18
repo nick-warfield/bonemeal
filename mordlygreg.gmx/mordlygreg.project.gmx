@@ -45,6 +45,11 @@
   </sounds>
   <sprites name="sprites">
     <sprites name="Mordley">
+      <sprites name="Masks">
+        <sprite>sprites\Mask_Wall_Mordley_spr</sprite>
+        <sprite>sprites\Mask_Combat_Mordley_spr</sprite>
+        <sprite>sprites\Mask_Feet_Mordley_spr</sprite>
+      </sprites>
       <sprites name="Idle">
         <sprite>sprites\Mordley_Back_spr</sprite>
         <sprite>sprites\Mordley_Side_spr</sprite>
