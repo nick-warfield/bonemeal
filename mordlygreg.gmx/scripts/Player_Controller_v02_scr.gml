@@ -176,6 +176,14 @@
             Input[ATTACK1] = false;
         }
 
+        
+    //Pause
+        if (gamepad_button_check_pressed(0, gp_start) ||
+            keyboard_check_pressed(ord('P')))
+        {
+            global.paused = !global.paused;
+        }
+        
 /*        
     //parry umbrella command
         if (gamepad_button_check(0, gp_start) ||

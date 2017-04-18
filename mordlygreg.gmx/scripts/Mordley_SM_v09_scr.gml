@@ -67,7 +67,7 @@ switch (ds_stack_top(StateStack))
     {
         script_execute(Interact_v02_scr);
         ds_stack_push(StateStack, s_INTERACT);
-        global.paused = true;
+        //global.paused = true;
     }
     
     else if (Input[ATTACK1])    //swing

@@ -6,6 +6,8 @@ var messageEnd = array_length_1d(message);      //how many messages are in the a
 
 if (messageEnd > 0 && done != true && message[messageCurrent] != "")
 {
+    global.paused = true;
+
     //Text Position
     { var tx = (display_get_width() / 2) - 5; }
     //else { var tx = 60; }
@@ -18,7 +20,7 @@ if (messageEnd > 0 && done != true && message[messageCurrent] != "")
         if (messageCurrent < messageEnd - 1)
         { messageCurrent++; }
         else        //if no more, we are done
-        { done = true; }
+        { done = true; global.paused = false; }
     }
 
     //The Draw functions will draw over things that already exsist, so the further down it is in the code the higher the draw "layer"
@@ -44,4 +46,5 @@ if (messageEnd > 0 && done != true && message[messageCurrent] != "")
             portrait = "none";
     }
 }
-else {global.paused = false;}
+
+//if (done = true) {global.paused = false;}
