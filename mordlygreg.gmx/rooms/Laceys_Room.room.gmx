@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1056</width>
   <height>1552</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -125,8 +125,11 @@
     <instance objName="Crate02_obj" x="984" y="1264" name="inst_5B5AA1ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Crate01_obj" x="936" y="1296" name="inst_3DC4D8D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Track_Floor1_obj" x="-64" y="31" name="inst_9BCB8FF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Door_Boss_obj" x="544" y="944" name="inst_FA013D19" locked="0" code="" scaleX="3.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Door_Boss_obj" x="544" y="960" name="inst_FA013D19" locked="0" code="" scaleX="3.09677410125732" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Character_obj" x="336" y="176" name="inst_63C9E937" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Sign_obj" x="544" y="928" name="inst_380ADBB4" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Shrine_Txt_obj" x="840" y="136" name="inst_65EE2F4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Gate_Txt_obj" x="40" y="888" name="inst_1327EC7D" locked="0" code="" scaleX="6.25" scaleY="2.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

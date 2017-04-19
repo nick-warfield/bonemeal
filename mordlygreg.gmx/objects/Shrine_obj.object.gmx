@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>Sign_obj</parentName>
+  <parentName>Wall_obj</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -35,30 +35,6 @@ count = countMax;
 solved = false;
 
 newPosition = 0;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Dialogue
-script_execute(Dialogue_Init_scr);
-
-message[0] = "The plaque reads:##'Four Fires, Eternally in Bloom'";
 </string>
           </argument>
         </arguments>
@@ -114,6 +90,9 @@ if (global.paused) {exit;}
         show_debug_message("SOLVED");
         
         audio_play_sound(Open_Shrine_02_snd, 50, false);
+        
+        var txt = instance_find(Shrine_Txt_obj, 1);
+        with (txt) {instance_destroy();} 
     }
     else
     {

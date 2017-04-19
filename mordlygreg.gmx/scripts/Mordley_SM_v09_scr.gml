@@ -65,7 +65,7 @@ switch (ds_stack_top(StateStack))
     
     else if (Input[INTERACT])
     {
-        script_execute(Interact_v02_scr);
+        script_execute(Interact_v03_scr);
         ds_stack_push(StateStack, s_INTERACT);
         //global.paused = true;
     }
