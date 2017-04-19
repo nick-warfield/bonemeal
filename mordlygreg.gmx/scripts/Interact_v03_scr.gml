@@ -6,7 +6,7 @@ var cam = instance_find(Camera_obj, 1);
 cam.done = true;
 
 var thing = 0;
-var hype = 0;
+//var hype = 0;
 
 //check puzzle interact
 if (facing == RIGHT)
@@ -27,6 +27,7 @@ if (thing != 0 && instance_exists(thing))
     }
 }
 
+
 thing = 0;
 
 //check gates
@@ -44,6 +45,7 @@ if (thing != 0 && instance_exists(thing))
     if (keys > 0)
     {
       thing.locked = false;
+      thing.gatetxt.message[0] = "It Opened!";
       keys--;
     }
 }

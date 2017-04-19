@@ -187,6 +187,7 @@
     <sprites name="SCRATCH">
       <sprite>sprites\Player_spr</sprite>
       <sprite>sprites\BlankTile_spr</sprite>
+      <sprite>sprites\Text_spr</sprite>
       <sprite>sprites\Pit_spr</sprite>
       <sprite>sprites\BlankTile01_spr</sprite>
       <sprite>sprites\Player_Up_spr</sprite>
@@ -379,11 +380,6 @@
     </objects>
     <objects name="Walls">
       <object>objects\Wall_obj</object>
-      <objects name="Signs">
-        <object>objects\Sign_obj</object>
-        <object>objects\Invisible_Sign_obj</object>
-        <object>objects\Shrine_Txt_obj</object>
-      </objects>
       <objects name="Arrow Blocks">
         <object>objects\Arrow_Block_Down_obj</object>
         <object>objects\Arrow_Block_Right_obj</object>
@@ -415,6 +411,12 @@
       <object>objects\Invisible_Wall_obj</object>
       <object>objects\Floor2_Wall_obj</object>
       <object>objects\Floor2_Door_obj</object>
+    </objects>
+    <objects name="Signs">
+      <object>objects\Sign_obj</object>
+      <object>objects\Invisible_Sign_obj</object>
+      <object>objects\Shrine_Txt_obj</object>
+      <object>objects\Gate_Txt_obj</object>
     </objects>
     <objects name="Doors">
       <objects name="Floor2">
