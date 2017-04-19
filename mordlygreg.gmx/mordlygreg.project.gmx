@@ -279,8 +279,8 @@
           <script>scripts\Shoot_Revolver_scr.gml</script>
           <script>scripts\Aim_v02_scr.gml</script>
         </scripts>
-        <script>scripts\Interact_v02_scr.gml</script>
         <script>scripts\Interact_v03_scr.gml</script>
+        <script>scripts\Interact_v02_scr.gml</script>
         <script>scripts\Swing_scr.gml</script>
         <script>scripts\Parry_v02_scr.gml</script>
       </scripts>
@@ -302,6 +302,7 @@
     </scripts>
     <scripts name="GUI">
       <script>scripts\Dialogue_GUI_scr.gml</script>
+      <script>scripts\Dialogue_GUI_02_scr.gml</script>
       <script>scripts\Health_GUI_scr.gml</script>
       <script>scripts\GunHUD_GUI_scr.gml</script>
     </scripts>

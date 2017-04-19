@@ -2,7 +2,7 @@
 draw_set_colour(c_navy);       //the color of the text
 
 
-//var messageEnd = array_length_1d(message);      //how many messages are in the array
+var messageEnd = array_length_1d(message);      //how many messages are in the array
 
 if (messageEnd > 0 && done != true && message[messageCurrent] != "")
 {

@@ -70,6 +70,7 @@ if (thing != 0 && instance_exists(thing))
         cam.message[i] = thing.message[i];
     }
     
+    cam.messageEnd = array_length_1d(thing.message);
     cam.messageCurrent = thing.messageCurrent;
     cam.portrait = thing.portrait;
     cam.done = thing.done;

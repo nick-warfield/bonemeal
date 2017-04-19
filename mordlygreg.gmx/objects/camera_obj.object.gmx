@@ -95,6 +95,8 @@ display_set_gui_maximise(2, 2, 0, 0);
 window_set_cursor(cr_none);
 
 
+messageEnd = 0;
+
 lerpI = 1;
 rot = 0;
 newRot = 0;
