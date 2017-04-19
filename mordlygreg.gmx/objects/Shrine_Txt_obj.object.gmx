@@ -67,8 +67,7 @@
             <kind>1</kind>
             <string>///Messages go here
 
-message[0] = "The plaque reads:##'Four Fires Eternally in Bloom'";
-
+message[0] = "The plaque reads:##Four Fires, Eternally in Bloom.";
 </string>
           </argument>
         </arguments>

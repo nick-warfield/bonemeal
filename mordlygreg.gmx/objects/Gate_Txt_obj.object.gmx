@@ -68,7 +68,7 @@
             <string>///Messages go here
 localGate = instance_find(Gate_obj, 1);
 
-message[0] = "It's Locked";
+message[0] = "It's Locked.";
 
 </string>
           </argument>
