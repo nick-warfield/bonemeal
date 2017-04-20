@@ -204,31 +204,35 @@
     <sprite>sprites\Boss_Key_spr</sprite>
   </sprites>
   <backgrounds name="background">
-    <backgrounds name="Floor2">
-      <background>background\Gate_Room_bkg</background>
-      <background>background\Start_Flr2_bkg</background>
-      <background>background\EnemyRm_Flr2_bkg</background>
-      <background>background\EnemyRm2_Flr2_bkg</background>
-      <background>background\Office_Flr2_bkg</background>
-      <background>background\Bullet_Puzzle_Flr2_bkg</background>
-      <background>background\Storage_Flr2_bkg</background>
-      <background>background\Pit_Flr2_bkg</background>
-      <background>background\Exit_Flr2_bkg</background>
-    </backgrounds>
-    <backgrounds name="Floor2-v02">
-      <background>background\Start_Flr2_02_bkg</background>
-      <background>background\Office_02_bkg</background>
-      <background>background\Gate_Rm_02_bkg</background>
-      <background>background\EnemyRm_02_bkg</background>
-      <background>background\EnemyRm02_02_bkg</background>
-      <background>background\Pit_02_bkg</background>
-      <background>background\Bullet_Puzzle_02_bkg</background>
-      <background>background\Storage_02_bkg</background>
-      <background>background\Exit_Flr2_02_bkg</background>
-    </backgrounds>
     <backgrounds name="Floor1">
       <background>background\Floor1_bottom_bkg</background>
       <background>background\Floor1_top_bkg</background>
+    </backgrounds>
+    <backgrounds name="Floor2">
+      <backgrounds name="Floor2-v01">
+        <background>background\Gate_Room_bkg</background>
+        <background>background\Start_Flr2_bkg</background>
+        <background>background\EnemyRm_Flr2_bkg</background>
+        <background>background\EnemyRm2_Flr2_bkg</background>
+        <background>background\Office_Flr2_bkg</background>
+        <background>background\Bullet_Puzzle_Flr2_bkg</background>
+        <background>background\Storage_Flr2_bkg</background>
+        <background>background\Pit_Flr2_bkg</background>
+        <background>background\Exit_Flr2_bkg</background>
+      </backgrounds>
+      <backgrounds name="Floor2-v02">
+        <background>background\Start_Flr2_02_bkg</background>
+        <background>background\Office_02_bkg</background>
+        <background>background\Gate_Rm_02_bkg</background>
+        <background>background\EnemyRm_02_bkg</background>
+        <background>background\EnemyRm02_02_bkg</background>
+        <background>background\Pit_02_bkg</background>
+        <background>background\Bullet_Puzzle_02_bkg</background>
+        <background>background\Storage_02_bkg</background>
+        <background>background\Exit_Flr2_02_bkg</background>
+      </backgrounds>
+      <background>background\pit_04_bkg</background>
+      <background>background\Pit_03_bkg</background>
     </backgrounds>
     <background>background\gb_v01_bkd</background>
     <background>background\gb_v02_bkd</background>
@@ -236,7 +240,6 @@
     <background>background\Floor1_Background_bkg</background>
     <background>background\Floor1_Foreground_bkg</background>
     <background>background\Floor1_Object_bkg</background>
-    <background>background\Pit_03_bkg</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -527,6 +530,7 @@
   <rooms name="rooms">
     <rooms name="Beta Demo">
       <room>rooms\Start_Menu</room>
+      <room>rooms\Pit_02_rm</room>
       <room>rooms\Outside_rm</room>
       <rooms name="Floor2">
         <room>rooms\Start_Flr2_rm</room>
