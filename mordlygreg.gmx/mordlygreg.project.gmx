@@ -119,6 +119,10 @@
       <sprite>sprites\Spit_v01_spr</sprite>
       <sprite>sprites\Bullet_Mord_spr</sprite>
       <sprite>sprites\Bullet_spr</sprite>
+      <sprite>sprites\Arrow_Up_spr</sprite>
+      <sprite>sprites\Arrow_Down_spr</sprite>
+      <sprite>sprites\Arrow_Left_spr</sprite>
+      <sprite>sprites\Arrow_Right_spr</sprite>
     </sprites>
     <sprites name="Enviornment">
       <sprite>sprites\Chair_spr</sprite>
@@ -159,6 +163,10 @@
       <sprite>sprites\Floor2_Wall_spr</sprite>
       <sprite>sprites\Pond_v02_spr</sprite>
       <sprite>sprites\Manison_v02_spr</sprite>
+      <sprite>sprites\Arrow_Block_Down_spr</sprite>
+      <sprite>sprites\Arrow_Block_Up_spr</sprite>
+      <sprite>sprites\Arrow_Block_Left_spr</sprite>
+      <sprite>sprites\Arrow_Block_Right_spr</sprite>
     </sprites>
     <sprites name="GUI">
       <sprite>sprites\HUD_Gun_spr</sprite>
@@ -488,6 +496,7 @@
         </objects>
         <objects name="Gate Puzzle">
           <object>objects\Gate_Puzzle_01_obj</object>
+          <object>objects\Gate_Puzzle_02_obj</object>
           <object>objects\Pressure_Plate_obj</object>
           <object>objects\Small_Gate_obj</object>
         </objects>
@@ -501,6 +510,7 @@
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>
       <object>objects\Bullet_obj</object>
+      <object>objects\Arrow_obj</object>
       <object>objects\Bullet_90_obj</object>
       <object>objects\SlowMo_Bullet_obj</object>
     </objects>
