@@ -188,6 +188,7 @@
       <sprite>sprites\Player_spr</sprite>
       <sprite>sprites\BlankTile_spr</sprite>
       <sprite>sprites\Text_spr</sprite>
+      <sprite>sprites\Door_spr</sprite>
       <sprite>sprites\Pit_spr</sprite>
       <sprite>sprites\BlankTile01_spr</sprite>
       <sprite>sprites\Player_Up_spr</sprite>

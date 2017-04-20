@@ -51,9 +51,9 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="Fishman_obj" x="824" y="296" name="inst_006B460A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Bat_obj" x="408" y="1152" name="inst_DF99F779" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Bat_obj" x="428" y="1096" name="inst_34FAA839" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Fishman_obj" x="386" y="248" name="inst_006B460A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Bat_obj" x="340" y="1082" name="inst_DF99F779" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Bat_obj" x="402" y="1064" name="inst_34FAA839" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Shrine_obj" x="772" y="124" name="inst_BCF5800B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Candle_Blue_obj" x="740" y="148" name="inst_7864C46D" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Candle_Orange_obj" x="708" y="148" name="inst_7DB72C2B" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
@@ -84,7 +84,6 @@
     <instance objName="Invisible_Sign_obj" x="550" y="958" name="inst_380ADBB4" locked="0" code="" scaleX="2.90322589874268" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Shrine_Txt_obj" x="756" y="136" name="inst_65EE2F4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Gate_Txt_obj" x="106" y="904" name="inst_1327EC7D" locked="0" code="" scaleX="1.8125" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="504" y="1504" name="inst_165E0945" locked="0" code="" scaleX="1.54838705062866" scaleY="1.29032254219055" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="552" y="1468" name="inst_768ED9C1" locked="0" code="" scaleX="15.125" scaleY="2.75" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="716" y="1132" name="inst_1DC8EA07" locked="0" code="" scaleX="1" scaleY="1.75" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="680" y="1112" name="inst_979CC0D5" locked="0" code="" scaleX="1.1612902879715" scaleY="1.41935479640961" colour="4294967295" rotation="0"/>
@@ -145,6 +144,7 @@
     <instance objName="Invisible_Wall_obj" x="848" y="636" name="inst_E2A2C91D" locked="0" code="" scaleX="1" scaleY="7.05999994277954" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="826" y="580" name="inst_1EF60741" locked="0" code="" scaleX="0.625" scaleY="2.25" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="808" y="534" name="inst_BCC076D6" locked="0" code="" scaleX="0.5625" scaleY="2.5" colour="4294967295" rotation="0"/>
+    <instance objName="Door_Start_obj" x="506" y="1552" name="inst_52AF2778" locked="0" code="" scaleX="1.4375" scaleY="0.6875" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
