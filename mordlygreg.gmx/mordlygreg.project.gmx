@@ -225,6 +225,10 @@
       <background>background\Storage_02_bkg</background>
       <background>background\Exit_Flr2_02_bkg</background>
     </backgrounds>
+    <backgrounds name="Floor1">
+      <background>background\Floor1_bottom_bkg</background>
+      <background>background\Floor1_top_bkg</background>
+    </backgrounds>
     <background>background\gb_v01_bkd</background>
     <background>background\gb_v02_bkd</background>
     <background>background\Floor2_floor_bkg</background>
@@ -522,7 +526,7 @@
   <rooms name="rooms">
     <rooms name="Beta Demo">
       <room>rooms\Start_Menu</room>
-      <room>rooms\Laceys_Room</room>
+      <room>rooms\Outside_rm</room>
       <rooms name="Floor2">
         <room>rooms\Start_Flr2_rm</room>
         <room>rooms\Office_rm</room>
@@ -536,6 +540,7 @@
       </rooms>
       <room>rooms\Floor2</room>
     </rooms>
+    <room>rooms\Laceys_Room</room>
     <room>rooms\room1</room>
     <room>rooms\room4</room>
     <room>rooms\GreyBox_v02_rm</room>
