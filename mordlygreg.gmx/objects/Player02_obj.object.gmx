@@ -501,6 +501,7 @@ mask_index = Mask_Combat_Mordley_spr;
             <string>///debug jazz
 
 stamina = 100;
+healthPoints = hpMax;
 
 /*
 for(var i = 0; i &lt; array_length_1d(cylinder); i++)

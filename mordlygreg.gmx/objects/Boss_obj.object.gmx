@@ -6,7 +6,7 @@
   <depth>-5</depth>
   <persistent>0</persistent>
   <parentName>Enemy_obj</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>Boss_Idle_v02_spr</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>event_inherited();
+
+image_speed = 15/60;
 
 count[0] = 0;
 
@@ -305,6 +307,8 @@ if (ds_stack_top(StateStack) == s_ATTACK4)
     else
     { draw_line_width_colour(x, y, x+lengthdir_x(5*32, Dir), y+lengthdir_y(5*32, Dir), 10, c_red, c_red); }
 }
+
+/*
 //draw knockback telegraph
 else if (ds_stack_top(StateStack) == s_ATTACK5)
 {
