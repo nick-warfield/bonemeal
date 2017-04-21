@@ -13,6 +13,12 @@ else if (global.checkpoint == 2)
     rmx = 764;
     rmy = 172;
 }
+else if (global.checkpoint == 3)
+{
+    room_goto(Pit_02_rm);
+    rmx = 248;
+    rmy = 432;
+}
 
 audio_stop_all();
 

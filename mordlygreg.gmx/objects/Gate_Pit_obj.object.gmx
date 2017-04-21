@@ -29,6 +29,8 @@
 
 other.x = 48+200;
 other.y = 32+400;
+
+global.checkpoint = 3;
 </string>
           </argument>
         </arguments>
