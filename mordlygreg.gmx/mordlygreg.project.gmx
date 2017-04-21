@@ -113,6 +113,11 @@
       <sprites name="Boss">
         <sprite>sprites\Boss_Idle_spr</sprite>
         <sprite>sprites\Boss_Idle_v02_spr</sprite>
+        <sprites name="Walk">
+          <sprite>sprites\Boss_Walk_spr</sprite>
+        </sprites>
+        <sprite>sprites\Boss_Sweep_spr</sprite>
+        <sprite>sprites\Boss_Dagger_spr</sprite>
       </sprites>
     </sprites>
     <sprites name="Projectiles">
@@ -273,9 +278,9 @@
       <script>scripts\Mordley_SM_v07_scr.gml</script>
       <script>scripts\Mordley_SM_v06_scr.gml</script>
       <scripts name="Enemies">
+        <script>scripts\Boss_AI_SM_v03_scr.gml</script>
         <script>scripts\Boss_AI_SM_scr.gml</script>
         <script>scripts\Boss_AI_SM_v02_scr.gml</script>
-        <script>scripts\Boss_AI_SM_v03_scr.gml</script>
         <script>scripts\Bat_AI_SM_v02_scr.gml</script>
         <script>scripts\Fishman_AI_SM_v03_scr.gml</script>
       </scripts>
@@ -541,6 +546,7 @@
   <rooms name="rooms">
     <rooms name="Beta Demo">
       <room>rooms\Start_Menu</room>
+      <room>rooms\Floor2</room>
       <room>rooms\Switch_02_rm</room>
       <room>rooms\Pit_02_rm</room>
       <room>rooms\Outside_rm</room>
@@ -555,7 +561,6 @@
         <room>rooms\Storage_rm</room>
         <room>rooms\Exit_Flr2_rm</room>
       </rooms>
-      <room>rooms\Floor2</room>
     </rooms>
     <room>rooms\Laceys_Room</room>
     <room>rooms\room1</room>

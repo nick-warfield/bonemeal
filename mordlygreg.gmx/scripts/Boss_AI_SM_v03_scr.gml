@@ -33,6 +33,7 @@ switch(ds_stack_top(StateStack))
     
     
   case s_IDLE:      //boss can find target, waiting before taking action
+    sprite_index = Boss_Idle_v02_spr;
     spd = 1;
     Dir = point_direction(x, y, target.x, target.y);
     
@@ -42,6 +43,8 @@ switch(ds_stack_top(StateStack))
     {
         if (distance_to_object(target) <= 4*32)
         {
+            sprite_index = Boss_Sweep_spr;
+            
             spd = 0;
             timeStamp[4] = current_time + 1000;     //gives a 1 second wind up to sweep attack
             ds_stack_push(StateStack, s_ATTACK5);
