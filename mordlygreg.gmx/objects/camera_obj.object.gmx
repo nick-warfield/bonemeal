@@ -122,6 +122,9 @@ newRot = 0;
             <kind>1</kind>
             <string>///Initialization for Sound Stuff
 
+//audio_master_gain(0);       //mute sounds, nice when debugging
+
+
 /*
 script_execute(Timing_Init_scr);
 
@@ -139,7 +142,6 @@ audio_play_sound(Crickets_Ambient_snd, 20, true);
 
 */
 
-//audio_master_gain(0);       //mute sounds, nice when debugging
 </string>
           </argument>
         </arguments>

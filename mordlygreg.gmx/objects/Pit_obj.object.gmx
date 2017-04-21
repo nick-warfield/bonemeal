@@ -35,7 +35,7 @@ if (instance_exists(oops) &amp;&amp; oops.object_index != Bat_obj)
     oops.mask_index = Mask_Feet_Mordley_spr;
     if(place_meeting(x, y, oops) &amp;&amp; ds_stack_top(oops.StateStack) != s_DODGE &amp;&amp; oops.timeStamp[0] == 0)
     {
-        oops.healthPoints -= 2;
+        oops.damage = 2;
         oops.hurter = id;
         ds_stack_push(oops.StateStack, s_DAMAGED);
         //use some vector math to create a dragging sort of effect that slowly pulls object into the center of the pit

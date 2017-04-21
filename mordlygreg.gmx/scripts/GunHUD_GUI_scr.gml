@@ -1,8 +1,8 @@
 var h = display_get_height()/2;
 var w = display_get_width()/2;
 
-var dx = w-74;
-var dy = 74;
+var dx = w/2;
+var dy = 87;
 
 var cyl = hud_revolver_02_spr;
 var fill = hud_revolver_03_full_spr;
