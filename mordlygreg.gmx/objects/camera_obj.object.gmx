@@ -122,7 +122,7 @@ newRot = 0;
             <kind>1</kind>
             <string>///Initialization for Sound Stuff
 
-audio_master_gain(0);       //mute sounds, nice when debugging
+//audio_master_gain(0);       //mute sounds, nice when debugging
 
 
 /*
