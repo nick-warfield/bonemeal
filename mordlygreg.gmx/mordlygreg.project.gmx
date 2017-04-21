@@ -241,6 +241,7 @@
       </backgrounds>
       <background>background\pit_04_bkg</background>
       <background>background\Pit_03_bkg</background>
+      <background>background\Bullet_Puzzle_03_bkg</background>
     </backgrounds>
     <background>background\gb_v01_bkd</background>
     <background>background\gb_v02_bkd</background>
@@ -540,6 +541,7 @@
   <rooms name="rooms">
     <rooms name="Beta Demo">
       <room>rooms\Start_Menu</room>
+      <room>rooms\Switch_02_rm</room>
       <room>rooms\Pit_02_rm</room>
       <room>rooms\Outside_rm</room>
       <rooms name="Floor2">
