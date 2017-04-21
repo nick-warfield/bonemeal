@@ -82,6 +82,16 @@
     <instance objName="Arrow_Block_Down_obj" x="1220" y="368" name="inst_C0908404" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Arrow_Block_Up_obj" x="1284" y="564" name="inst_0CAAFF08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Crate01_obj" x="1576" y="388" name="inst_91336501" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Switch_Pit_obj" x="484" y="484" name="inst_4DA32379" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Pit_obj" x="1008" y="276" name="inst_153EC78D" locked="0" code="" scaleX="2.21875" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pit_obj" x="1028" y="244" name="inst_0A0170D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pit_obj" x="1156" y="276" name="inst_EB3C4DFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pit_obj" x="1148" y="308" name="inst_511FAD96" locked="0" code="" scaleX="3.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pit_obj" x="1220" y="228" name="inst_A79524E5" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Pit_obj" x="1156" y="148" name="inst_00CB9DFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pit_obj" x="1316" y="180" name="inst_7D6B551C" locked="0" code="" scaleX="1" scaleY="2.9375" colour="4294967295" rotation="0"/>
+    <instance objName="Pit_obj" x="592" y="500" name="inst_50CBA2B3" locked="0" code="" scaleX="2.625" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Switch_Storage_obj" x="980" y="84" name="inst_9B641CBA" locked="0" code="" scaleX="4" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
