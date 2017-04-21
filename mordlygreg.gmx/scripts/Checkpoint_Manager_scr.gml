@@ -3,9 +3,9 @@ playerRef = argument[0];
 
 if (global.checkpoint == 1)
 {
-    room_goto(Laceys_Room);
-    rmx = 505;
-    rmy = 1440;
+    room_goto(Outside_rm);
+    rmx = 535;
+    rmy = 1460;
 }
 else if (global.checkpoint == 2)
 {
