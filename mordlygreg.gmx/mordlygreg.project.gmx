@@ -156,6 +156,10 @@
         <sprite>sprites\Flowerbed_Orange_spr</sprite>
         <sprite>sprites\Flowerbed_Red_spr</sprite>
         <sprite>sprites\Flowerbed_White_spr</sprite>
+        <sprite>sprites\Flowerbed_Blue_02_spr</sprite>
+        <sprite>sprites\Flowerbed_Orange_02_spr</sprite>
+        <sprite>sprites\Flowerbed_Red_02_spr</sprite>
+        <sprite>sprites\Flowerbed_White_02_spr</sprite>
       </sprites>
       <sprites name="Structures">
         <sprite>sprites\Mansion_v01_spr</sprite>
@@ -440,6 +444,10 @@
       <object>objects\Invisible_Sign_obj</object>
       <object>objects\Shrine_Txt_obj</object>
       <object>objects\Gate_Txt_obj</object>
+      <object>objects\Flwer_Txt_01_obj</object>
+      <object>objects\Flwer_Txt_02_obj</object>
+      <object>objects\Flwer_Txt_03_obj</object>
+      <object>objects\Flwer_Txt_04_obj</object>
     </objects>
     <objects name="Doors">
       <objects name="Floor2">
