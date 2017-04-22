@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1056</width>
   <height>1552</height>
-  <vsnap>2</vsnap>
-  <hsnap>2</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -51,7 +51,6 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="Fishman_obj" x="386" y="248" name="inst_006B460A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Bat_obj" x="340" y="1082" name="inst_DF99F779" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Bat_obj" x="402" y="1064" name="inst_34FAA839" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Shrine_obj" x="772" y="124" name="inst_BCF5800B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -145,6 +144,18 @@
     <instance objName="Invisible_Wall_obj" x="826" y="580" name="inst_1EF60741" locked="0" code="" scaleX="0.625" scaleY="2.25" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="808" y="534" name="inst_BCC076D6" locked="0" code="" scaleX="0.5625" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="Door_Start_obj" x="506" y="1552" name="inst_52AF2778" locked="0" code="" scaleX="1.4375" scaleY="0.6875" colour="4294967295" rotation="0"/>
+    <instance objName="Pond_obj" x="830" y="399" name="inst_827AF904" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Flowerbed_Blue_obj" x="283" y="97" name="inst_E21EFDEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Flowerbed_Orange_obj" x="396" y="83" name="inst_62097FD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Flowerbed_Red_obj" x="509" y="83" name="inst_A0B280CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Flowerbed_White_obj" x="622" y="83" name="inst_6F0183BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Fishman_obj" x="726" y="329" name="inst_6AE43A33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Fishman_obj" x="853" y="294" name="inst_ADAB499A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="224" y="79" name="inst_F8A3F57F" locked="0" code="" scaleX="14.1935482025146" scaleY="1.96774196624756" colour="4294967295" rotation="0"/>
+    <instance objName="Flwer_Txt_01_obj" x="268" y="116" name="inst_29126CF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Flwer_Txt_02_obj" x="381" y="115" name="inst_74BB3303" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Flwer_Txt_03_obj" x="497" y="113" name="inst_5B626B7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Flwer_Txt_04_obj" x="611" y="113" name="inst_54B61BE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
