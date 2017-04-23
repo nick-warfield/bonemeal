@@ -27,10 +27,10 @@
             <kind>1</kind>
             <string>if(other.bigKey &gt; 0)
 {
-    room_goto(Floor2);
+    room_goto(Boss_rm);
     
-    other.x = 896;
-    other.y = 2560;
+    other.x = 632;
+    other.y = 1656;
     
     audio_stop_sound(Floor1_trk);
 }
