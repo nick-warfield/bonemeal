@@ -65,11 +65,11 @@ State = -10;
             <kind>1</kind>
             <string>event_inherited();
 
-var d1 = instance_position(320, 960, Wall_obj);
-var d2 = instance_position(352, 960, Wall_obj);
+var d1 = instance_find(Floor2_Door_obj, 0);
+//var d2 = instance_find(Floor2_Door_obj, 0);
 
 with (d1) {instance_destroy();}
-with (d2) {instance_destroy();}
+//with (d2) {instance_destroy();}
 
 audio_stop_sound(Boss_trk);
 </string>
@@ -94,7 +94,7 @@ audio_stop_sound(Boss_trk);
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Boss_AI_SM_v03_scr</script>
+            <script>Boss_AI_SM_v04_scr</script>
           </argument>
           <argument>
             <kind>0</kind>

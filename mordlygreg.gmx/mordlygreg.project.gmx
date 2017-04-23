@@ -176,6 +176,7 @@
       <sprite>sprites\Arrow_Block_Up_spr</sprite>
       <sprite>sprites\Arrow_Block_Left_spr</sprite>
       <sprite>sprites\Arrow_Block_Right_spr</sprite>
+      <sprite>sprites\TileWall_spr</sprite>
     </sprites>
     <sprites name="GUI">
       <sprite>sprites\HUD_Gun_spr</sprite>
@@ -207,6 +208,7 @@
       <sprite>sprites\Text_spr</sprite>
       <sprite>sprites\Door_spr</sprite>
       <sprite>sprites\Pit_spr</sprite>
+      <sprite>sprites\Blood_spr</sprite>
       <sprite>sprites\BlankTile01_spr</sprite>
       <sprite>sprites\Player_Up_spr</sprite>
       <sprite>sprites\Player_Left_spr</sprite>
@@ -252,9 +254,12 @@
       <background>background\Pit_03_bkg</background>
       <background>background\Bullet_Puzzle_03_bkg</background>
     </backgrounds>
+    <backgrounds name="Tiles">
+      <background>background\Floor2_floor_bkg</background>
+      <background>background\Brown_bkg</background>
+    </backgrounds>
     <background>background\gb_v01_bkd</background>
     <background>background\gb_v02_bkd</background>
-    <background>background\Floor2_floor_bkg</background>
     <background>background\Floor1_Background_bkg</background>
     <background>background\Floor1_Foreground_bkg</background>
     <background>background\Floor1_Object_bkg</background>
@@ -282,6 +287,7 @@
       <script>scripts\Mordley_SM_v07_scr.gml</script>
       <script>scripts\Mordley_SM_v06_scr.gml</script>
       <scripts name="Enemies">
+        <script>scripts\Boss_AI_SM_v04_scr.gml</script>
         <script>scripts\Boss_AI_SM_v03_scr.gml</script>
         <script>scripts\Boss_AI_SM_scr.gml</script>
         <script>scripts\Boss_AI_SM_v02_scr.gml</script>
@@ -520,6 +526,7 @@
       <object>objects\Crate_Key_obj</object>
       <object>objects\Metal_Box_obj</object>
       <object>objects\Pit_obj</object>
+      <object>objects\BloodPrint_obj</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>
@@ -566,6 +573,7 @@
         <room>rooms\Storage_rm</room>
         <room>rooms\Exit_Flr2_rm</room>
       </rooms>
+      <room>rooms\Boss_rm</room>
       <room>rooms\Floor2</room>
       <room>rooms\Switch_02_rm</room>
       <room>rooms\Pit_02_rm</room>
