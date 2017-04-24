@@ -1,0 +1,74 @@
+global.ps = part_system_create();
+part_system_depth(global.ps, -1);
+
+//Effect0
+global.pt_Effect0 = part_type_create();
+part_type_shape(global.pt_Effect0, pt_shape_smoke);
+part_type_size(global.pt_Effect0, 1, 1, 0.02, 0);
+part_type_scale(global.pt_Effect0, 1, 1);
+part_type_orientation(global.pt_Effect0, 0, 0, 1, 0, 0);
+part_type_color3(global.pt_Effect0, 786173, 4235519, 255);
+part_type_alpha3(global.pt_Effect0, 1, 1, 0);
+part_type_blend(global.pt_Effect0, 1);
+part_type_life(global.pt_Effect0, 30, 100);
+part_type_speed(global.pt_Effect0, 0, 1, 0, 0);
+part_type_direction(global.pt_Effect0, 0, 359, 0, 0);
+part_type_gravity(global.pt_Effect0, 0, 0);
+
+global.pe_Effect0 = part_emitter_create(global.ps);
+part_emitter_region(global.ps, global.pe_Effect0, x-8, x+8, y-8, y+8, ps_shape_rectangle, ps_distr_linear);
+part_emitter_stream(global.ps, global.pe_Effect0, global.pt_Effect0, 10);
+
+//Effect1
+global.pt_Effect1 = part_type_create();
+part_type_shape(global.pt_Effect1, pt_shape_pixel);
+part_type_size(global.pt_Effect1, 1, 2, 0, 1);
+part_type_scale(global.pt_Effect1, 1, 1);
+part_type_orientation(global.pt_Effect1, 0, 0, 0, 0, 0);
+part_type_color3(global.pt_Effect1, 65535, 4235519, 255);
+part_type_alpha3(global.pt_Effect1, 1, 0.50, 0);
+part_type_blend(global.pt_Effect1, 1);
+part_type_life(global.pt_Effect1, 30, 80);
+part_type_speed(global.pt_Effect1, 8, 12, 0, 0);
+part_type_direction(global.pt_Effect1, 0, 180, 0, 0);
+part_type_gravity(global.pt_Effect1, 0.20, 270);
+
+global.pe_Effect1 = part_emitter_create(global.ps);
+part_emitter_region(global.ps, global.pe_Effect1, x-8, x+8, y-8, y+8, ps_shape_rectangle, ps_distr_linear);
+part_emitter_stream(global.ps, global.pe_Effect1, global.pt_Effect1, 30);
+
+//Effect2
+global.pt_Effect2 = part_type_create();
+part_type_shape(global.pt_Effect2, pt_shape_smoke);
+part_type_size(global.pt_Effect2, 1, 2, -0.02, 0);
+part_type_scale(global.pt_Effect2, 1, 1);
+part_type_orientation(global.pt_Effect2, 0, 0, 0, 0, 0);
+part_type_color3(global.pt_Effect2, 65535, 4235519, 255);
+part_type_alpha3(global.pt_Effect2, 1, 0.50, 0);
+part_type_blend(global.pt_Effect2, 1);
+part_type_life(global.pt_Effect2, 20, 40);
+part_type_speed(global.pt_Effect2, 5, 10, -0.20, 0);
+part_type_direction(global.pt_Effect2, 0, 359, 0, 0);
+part_type_gravity(global.pt_Effect2, 0, 0);
+
+global.pe_Effect2 = part_emitter_create(global.ps);
+part_emitter_region(global.ps, global.pe_Effect2, x-8, x+8, y-8, y+8, ps_shape_rectangle, ps_distr_linear);
+part_emitter_stream(global.ps, global.pe_Effect2, global.pt_Effect2, 9);
+
+//Effect3
+global.pt_Effect3 = part_type_create();
+part_type_shape(global.pt_Effect3, pt_shape_explosion);
+part_type_size(global.pt_Effect3, 0.20, 1, 0.02, 0);
+part_type_scale(global.pt_Effect3, 1, 1);
+part_type_orientation(global.pt_Effect3, 0, 359, 1, 0, 0);
+part_type_color3(global.pt_Effect3, 13355979, 13882323, 14145495);
+part_type_alpha3(global.pt_Effect3, 0, 0.30, 0);
+part_type_blend(global.pt_Effect3, 0);
+part_type_life(global.pt_Effect3, 120, 200);
+part_type_speed(global.pt_Effect3, 0, 1, 0, 0);
+part_type_direction(global.pt_Effect3, 0, 359, 0, 0);
+part_type_gravity(global.pt_Effect3, 0, 0);
+
+global.pe_Effect3 = part_emitter_create(global.ps);
+part_emitter_region(global.ps, global.pe_Effect3, x-8, x+8, y-8, y+8, ps_shape_rectangle, ps_distr_linear);
+part_emitter_stream(global.ps, global.pe_Effect3, global.pt_Effect3, 5);

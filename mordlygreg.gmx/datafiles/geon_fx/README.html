@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Geon FX Help</title>
+<style type="text/css">
+html, body {
+	height:100%;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#363636;
+	padding:0;
+	margin:0;
+}
+img {
+	border:none;
+}
+a {
+	text-decoration:none;
+	border-bottom:1px solid;
+}
+	a:link {
+		color:#09F;
+	}
+	a:visited {
+		color:#939;
+	}
+	a:hover {
+		color:#F00;
+	}
+.header {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100px;
+	background:#09F;
+	padding:30px;
+	box-sizing:border-box;
+}
+	.header p {
+		font-size:2em;
+		color:#fff;
+		margin:0;
+		padding:0;
+	}
+	.lang {
+		position:absolute;
+		right:30px;
+		top:40px;
+	}
+		.lang a {
+			color:#fff;
+		}
+
+.content {
+	padding:100px 30px 0 30px;
+	background:#fff;
+	height:100%;
+	box-sizing:border-box;
+	max-width:800px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+	<p>Geon FX Asset Help</p>
+</div>
+
+<div class="content">
+	<h2>What is Geon FX?</h2>
+	<p><strong>Geon FX</strong> is the newest and the most advanced particle editor for <a href="http://www.yoyogames.com/gamemaker" target="_blank">GameMaker: Studio</a> and <a href="http://www.yoyogames.com/gamemaker/studio2" target="_blank">Game Maker Studio 2</a>. </p>
+	<p>It allows you to create complex <strong>particle effects</strong> on <strong>Windows</strong> or <strong>Mac</strong> and play them in your project easily. </p>
+	<p><strong>Geon FX</strong> comes with plenty of effects for you to test and examine. </p>
+
+	<h2>Where is Geon FX?</h2>
+	<p>There are two archives in <strong>Included Files - editor</strong> folder. One is for <strong>macOS</strong>, another for <strong>Windows</strong>. </p>
+	<p>Extract archives and run <strong>.exe</strong> (on Windows) or <strong>.app</strong> (on macOS). </p>
+	<p>Press <strong>F1</strong> on keyboard or click <strong>?</strong> icon at the top-right corner of the window to show editor <strong>Help</strong>. </p>
+
+	<h2>How to play Geon FX effects?</h2>
+	<p>You can either export your effect to <strong>GML</strong> in Geon FX editor then copy and paste resulting code into your project. Or use our custom loading scripts. </p>
+	<p>We have designed a very simple system for you to use Geon FX effects. That’s how it works:
+	</p>
+	<ol>
+	<li>Import <strong>obj_geonfx_con</strong> object to your project;</li>
+	<li>Import all <strong>scripts</strong> from <strong>geon_fx folder</strong>;</li>
+	<li>Import all <strong>sprites</strong> from <strong>geon_fx folder</strong>;</li>
+	<li>Add <strong>.geon </strong>effects as <strong>Included Files;</strong></li>
+	<li>Load them using <strong>geon_effect_add(filename, -1)</strong> function (check our examples);</li>
+	<li>Play any effect once with <strong>geon_effect_burst(effect_ind, x, y)</strong> or continuously with <strong>geon_effect_stream(effect_ind, x, y, enable)</strong>.</li>
+	</ol>
+
+	<h2>Examples</h2>
+	<p>There are several rooms in the project. You can change their order and run whichever you want first. </p>
+	<ol>
+	<li><strong>rm_geon_test_stream</strong> contains <strong>obj_effect_stream</strong> which streams several Geon FX effects. You can cycle through them with Left Click. </li>
+	<li><strong>rm_geon_test_burst</strong> and <strong>obj_effect_burst</strong> show how to load and play Geon FX effect once. Left Click to create an explosion.</li>
+	<li><strong>rm_geon_test_concurrent_effects</strong> shows how to play a dozen Geon FX effects simultaneously. Left Click to create explosions. 1-8 to switch fire streams on/off.</li>
+	<li><strong>obj_effect_gml_export_rain</strong> and <strong>obj_effect_gml_export_fire</strong> are two objects in corresponding rooms. They are illustrating <strong>GML</strong> export function from <strong>Geon FX</strong> editor.</li>
+	</ol>
+
+	<h2>Links</h2>
+	<ul>
+	<li><strong>Geon FX website:</strong> <a href="http://www.steampanic.com/geonfx/">http://www.steampanic.com/geonfx/</a></li>
+	<li><strong>Documentation:</strong> <a href="http://www.steampanic.com/geonfx/documentation">http://www.steampanic.com/geonfx/documentation</a></li>
+	<li><strong>Contacts: </strong><a href="http://www.steampanic.com/geonfx/contacts">http://www.steampanic.com/geonfx/contacts</a></li>
+	<li><strong>YouTube channel: </strong><a href="https://www.youtube.com/playlist?list=PLURgy8kNiTRF5xkHsKhlKXuWMm0X9PYoc">https://www.youtube.com/playlist?list=PLURgy8kNiTRF5xkHsKhlKXuWMm0X9PYoc</a></li>
+	<li><strong>Twitter:</strong> <a href="https://twitter.com/steampanic">https://twitter.com/steampanic</a></li>
+	<li><strong>Editor Roadmap:</strong> <a href="https://trello.com/b/LYxoIQ5T">https://trello.com/b/LYxoIQ5T</a></li>
+	</ul>
+
+</div>
+
+</body>
+</html>

@@ -3,7 +3,221 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <datafiles number="12" name="datafiles">
+    <datafiles number="12" name="geon_fx">
+      <datafiles number="12" name="effects">
+        <datafile>
+          <name>electro.geon</name>
+          <exists>-1</exists>
+          <size>2731</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>electro.geon</filename>
+        </datafile>
+        <datafile>
+          <name>explosion.geon</name>
+          <exists>-1</exists>
+          <size>2734</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>explosion.geon</filename>
+        </datafile>
+        <datafile>
+          <name>fire.geon</name>
+          <exists>-1</exists>
+          <size>2746</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>fire.geon</filename>
+        </datafile>
+        <datafile>
+          <name>asteroid.geon</name>
+          <exists>-1</exists>
+          <size>2179</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>asteroid.geon</filename>
+        </datafile>
+        <datafile>
+          <name>gms2_test.geon</name>
+          <exists>-1</exists>
+          <size>1350</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>gms2_test.geon</filename>
+        </datafile>
+        <datafile>
+          <name>bats.geon</name>
+          <exists>-1</exists>
+          <size>813</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>bats.geon</filename>
+        </datafile>
+        <datafile>
+          <name>portal.geon</name>
+          <exists>-1</exists>
+          <size>2061</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>portal.geon</filename>
+        </datafile>
+        <datafile>
+          <name>rain.geon</name>
+          <exists>-1</exists>
+          <size>2119</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>rain.geon</filename>
+        </datafile>
+        <datafile>
+          <name>wormhole.geon</name>
+          <exists>-1</exists>
+          <size>2059</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>wormhole.geon</filename>
+        </datafile>
+      </datafiles>
+      <datafiles number="12" name="editor">
+        <datafile>
+          <name>Geon_FX_Pro_v0_9_Mac.zip</name>
+          <exists>-1</exists>
+          <size>7564294</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>Geon_FX_Pro_v0_9_Mac.zip</filename>
+        </datafile>
+        <datafile>
+          <name>Geon_FX_Pro_v0_9_Win.zip</name>
+          <exists>-1</exists>
+          <size>2578662</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>Geon_FX_Pro_v0_9_Win.zip</filename>
+        </datafile>
+      </datafiles>
+      <datafile>
+        <name>README.html</name>
+        <exists>-1</exists>
+        <size>4827</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>README.html</filename>
+      </datafile>
+    </datafiles>
+  </datafiles>
+  <NewExtensions>
+    <extension index="0">extensions\Geon FX - Particle Editor</extension>
+  </NewExtensions>
   <sounds name="sound">
     <sounds name="Ambient">
       <sound>sound\Crickets_Ambient_snd</sound>
@@ -221,6 +435,43 @@
     <sprite>sprites\Crate_Key_spr</sprite>
     <sprite>sprites\Key_spr</sprite>
     <sprite>sprites\Boss_Key_spr</sprite>
+    <sprite>sprites\spr_asteroid</sprite>
+    <sprite>sprites\spr_bat</sprite>
+    <sprite>sprites\spr_rock</sprite>
+    <sprites name="geon_fx">
+      <sprites name="pt_shapes_gms">
+        <sprite>sprites\spr_pt_shape_pixel</sprite>
+        <sprite>sprites\spr_pt_shape_disk</sprite>
+        <sprite>sprites\spr_pt_shape_circle</sprite>
+        <sprite>sprites\spr_pt_shape_ring</sprite>
+        <sprite>sprites\spr_pt_shape_line</sprite>
+        <sprite>sprites\spr_pt_shape_square</sprite>
+        <sprite>sprites\spr_pt_shape_star</sprite>
+        <sprite>sprites\spr_pt_shape_spark</sprite>
+        <sprite>sprites\spr_pt_shape_flare</sprite>
+        <sprite>sprites\spr_pt_shape_sphere</sprite>
+        <sprite>sprites\spr_pt_shape_smoke</sprite>
+        <sprite>sprites\spr_pt_shape_explosion</sprite>
+        <sprite>sprites\spr_pt_shape_cloud</sprite>
+        <sprite>sprites\spr_pt_shape_snow</sprite>
+      </sprites>
+      <sprites name="pt_shapes_gms2">
+        <sprite>sprites\spr_pt_shape_pixel_new</sprite>
+        <sprite>sprites\spr_pt_shape_disk_new</sprite>
+        <sprite>sprites\spr_pt_shape_circle_new</sprite>
+        <sprite>sprites\spr_pt_shape_ring_new</sprite>
+        <sprite>sprites\spr_pt_shape_line_new</sprite>
+        <sprite>sprites\spr_pt_shape_square_new</sprite>
+        <sprite>sprites\spr_pt_shape_star_new</sprite>
+        <sprite>sprites\spr_pt_shape_spark_new</sprite>
+        <sprite>sprites\spr_pt_shape_flare_new</sprite>
+        <sprite>sprites\spr_pt_shape_sphere_new</sprite>
+        <sprite>sprites\spr_pt_shape_smoke_new</sprite>
+        <sprite>sprites\spr_pt_shape_explosion_new</sprite>
+        <sprite>sprites\spr_pt_shape_cloud_new</sprite>
+        <sprite>sprites\spr_pt_shape_snow_new</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Floor1">
@@ -398,6 +649,23 @@
     <script>scripts\DoNothing_scr.gml</script>
     <script>scripts\SetDamageVars_scr.gml</script>
     <script>scripts\Checkpoint_Manager_scr.gml</script>
+    <scripts name="geon_fx">
+      <script>scripts\geon_effect_add.gml</script>
+      <script>scripts\geon_effect_burst.gml</script>
+      <script>scripts\geon_effect_stream.gml</script>
+      <script>scripts\geon_effect_is_streamed.gml</script>
+      <script>scripts\geon_effect_delete.gml</script>
+      <scripts name="system">
+        <script>scripts\geon_system_init.gml</script>
+        <script>scripts\geon_system_destroy.gml</script>
+        <script>scripts\geon_string_parse.gml</script>
+        <script>scripts\geon_effect_read.gml</script>
+        <script>scripts\geon_effect_init.gml</script>
+        <script>scripts\geon_effect_id.gml</script>
+        <script>scripts\geon_effect_add_to_list.gml</script>
+        <script>scripts\sin_shift.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="Characters">
@@ -557,6 +825,23 @@
     <objects name="SCRATCH">
       <object>objects\floor_obj</object>
     </objects>
+    <objects name="geon_fx">
+      <object>objects\obj_geonfx_con</object>
+      <objects name="examples">
+        <objects name="simple">
+          <object>objects\obj_effect_stream</object>
+          <object>objects\obj_effect_burst</object>
+        </objects>
+        <objects name="advanced">
+          <object>objects\obj_concurrent_streams</object>
+          <object>objects\obj_concurrent_bursts</object>
+        </objects>
+        <objects name="gml">
+          <object>objects\obj_effect_gml_export_fire</object>
+          <object>objects\obj_effect_gml_export_rain</object>
+        </objects>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
     <rooms name="Beta Demo">
@@ -584,6 +869,15 @@
     <room>rooms\GreyBox_v02_rm</room>
     <room>rooms\GreyBox_rm</room>
     <room>rooms\room0_rm</room>
+    <rooms name="geon_fx">
+      <room>rooms\rm_geon_test_stream</room>
+      <room>rooms\rm_geon_test_burst</room>
+      <room>rooms\rm_geon_test_concurrent_effects</room>
+      <rooms name="gml">
+        <room>rooms\rm_geon_test_gml_export_fire</room>
+        <room>rooms\rm_geon_test_gml_export_rain</room>
+      </rooms>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
