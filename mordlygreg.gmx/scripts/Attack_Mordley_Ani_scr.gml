@@ -1,3 +1,5 @@
+//image_speed = 2/60;
+
 if (facing == RIGHT)
 {
     sprite_index = Mordley_Attk_Side_spr;

@@ -59,6 +59,9 @@
         <sprite>sprites\Mordley_Attk_Back_spr</sprite>
         <sprite>sprites\Mordley_Attk_Side_spr</sprite>
         <sprite>sprites\Mordley_Attk_Front_spr</sprite>
+        <sprite>sprites\Mordley_Old_Attk_Back_spr</sprite>
+        <sprite>sprites\Mordley_Old_Attk_Side_spr</sprite>
+        <sprite>sprites\Mordley_Old_Attk_Front_spr</sprite>
       </sprites>
       <sprites name="Gun">
         <sprite>sprites\Mordley_Front_Aim_spr</sprite>
@@ -282,6 +285,7 @@
       <script>scripts\Porjectile_Init_v02_scr.gml</script>
     </scripts>
     <scripts name="State Machines">
+      <script>scripts\Mordley_SM_v10_scr.gml</script>
       <script>scripts\Mordley_SM_v09_scr.gml</script>
       <script>scripts\Mordley_SM_v08_scr.gml</script>
       <script>scripts\Mordley_SM_v07_scr.gml</script>
@@ -314,6 +318,7 @@
         <script>scripts\Interact_v03_scr.gml</script>
         <script>scripts\Interact_v02_scr.gml</script>
         <script>scripts\Swing_scr.gml</script>
+        <script>scripts\Swing_v02_scr.gml</script>
         <script>scripts\Parry_v02_scr.gml</script>
       </scripts>
       <scripts name="Boss">
@@ -326,6 +331,7 @@
         <script>scripts\Move_Mordley_Ani_scr.gml</script>
         <script>scripts\Aim_Mordley_Ani_scr.gml</script>
         <script>scripts\Attack_Mordley_Ani_scr.gml</script>
+        <script>scripts\Attack_Old_Mordley_Ani_scr.gml</script>
       </scripts>
       <script>scripts\Move_Fishman_Ani_scr.gml</script>
       <script>scripts\Hurt_Fishman_Ani_scr.gml</script>
@@ -350,6 +356,7 @@
       <script>scripts\Small_Object_Collision_scr.gml</script>
     </scripts>
     <scripts name="Controllers">
+      <script>scripts\Player_Controller_v03_scr.gml</script>
       <script>scripts\Player_Controller_v02_scr.gml</script>
     </scripts>
     <scripts name="SCRATCH">
