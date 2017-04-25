@@ -254,7 +254,7 @@ image_speed = 9/60;
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Mordley_SM_v09_scr</script>
+            <script>Mordley_SM_v10_scr</script>
           </argument>
           <argument>
             <kind>0</kind>

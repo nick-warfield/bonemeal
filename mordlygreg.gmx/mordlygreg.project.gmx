@@ -282,6 +282,7 @@
       <script>scripts\Porjectile_Init_v02_scr.gml</script>
     </scripts>
     <scripts name="State Machines">
+      <script>scripts\Mordley_SM_v10_scr.gml</script>
       <script>scripts\Mordley_SM_v09_scr.gml</script>
       <script>scripts\Mordley_SM_v08_scr.gml</script>
       <script>scripts\Mordley_SM_v07_scr.gml</script>
@@ -314,6 +315,7 @@
         <script>scripts\Interact_v03_scr.gml</script>
         <script>scripts\Interact_v02_scr.gml</script>
         <script>scripts\Swing_scr.gml</script>
+        <script>scripts\Swing_v02_scr.gml</script>
         <script>scripts\Parry_v02_scr.gml</script>
       </scripts>
       <scripts name="Boss">
