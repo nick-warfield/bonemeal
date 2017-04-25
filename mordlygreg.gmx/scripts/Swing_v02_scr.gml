@@ -1,11 +1,11 @@
 if (facing == RIGHT)
 {
-    var thing = collision_ellipse(x + 64, y + 64, x, y - 64, Character_obj, false, true);
+    var thing = collision_ellipse(x, y + 64, x + 64, y - 64, Character_obj, false, true);
     Dir = 0;
 }
 else if (facing == LEFT)
 {
-    var thing = collision_ellipse(x + 64, y - 64, x, y - 64, Character_obj, false, true);
+    var thing = collision_ellipse(x - 64, y + 64, x, y - 64, Character_obj, false, true);
     Dir = 180;
 }
 else if (facing == UP)
@@ -15,7 +15,7 @@ else if (facing == UP)
 }
 else if (facing == DOWN)
 {
-    var thing = collision_ellipse(x + 64, y - 64, x - 64, y, Character_obj, false, true);
+    var thing = collision_ellipse(x + 64, y + 64, x - 64, y, Character_obj, false, true);
     Dir = 270;
 }
 
@@ -41,7 +41,7 @@ if (facing == RIGHT)
 }
 else if (facing == LEFT)
 {
-    var thing = collision_ellipse(x + 64, y - 64, x, y - 64, Small_obj, false, true);
+    var thing = collision_ellipse(x - 64, y + 64, x, y - 64, Small_obj, false, true);
     Dir = 180;
 }
 else if (facing == UP)
@@ -51,7 +51,7 @@ else if (facing == UP)
 }
 else if (facing == DOWN)
 {
-    var thing = collision_ellipse(x + 64, y - 64, x - 64, y, Small_obj, false, true);
+    var thing = collision_ellipse(x + 64, y + 64, x - 64, y, Small_obj, false, true);
     Dir = 270;
 }
 
