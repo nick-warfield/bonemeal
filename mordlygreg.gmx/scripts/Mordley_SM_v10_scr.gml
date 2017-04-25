@@ -81,9 +81,9 @@ switch (ds_stack_top(StateStack))
     
     else if (Input[ATTACK1])    //swing
     {
-        ds_stack_push(StateStack, s_ATTACK1);
-        timeStamp[2] = current_time + 500;
+        ds_stack_push(StateStack, s_PARRY);
         audio_play_sound(Swing_Umbrella_snd, 50, false);
+        timeStamp[2] = current_time + 100;
         image_index = 0;
     }
     
@@ -139,25 +139,14 @@ switch (ds_stack_top(StateStack))
   
   //Parry something
   case (s_PARRY):
-    script_execute(Move_v05_scr);
-    script_execute(Move_Mordley_Ani_scr);
-    spd /= 2;
+    script_execute(Swing_scr);
+    script_execute(Parry_v02_scr);
+    script_execute(Attack_Old_Mordley_Ani_scr);
+    spd = 0;
     
-    if (current_time >= timeStamp[2] && timeStamp[2] != 0)      //exit condition for the parry
+    if (current_time >= timeStamp[2])      //exit condition for the parry
     {
         ds_stack_pop(StateStack);
-    }
-    
-    if (!Input[PARRY])      //when the parry button is released, start the parry
-    {
-        spd = 0;
-        script_execute(Parry_v02_scr);
-        script_execute(Attack_Mordley_Ani_scr);
-        if (current_time >= timeStamp[2] && ds_stack_top(StateStack) == s_PARRY)    //set the timer for how long the parry window is
-        {
-            timeStamp[2] = current_time + 50;
-            audio_play_sound(Swing_Umbrella_snd, 50, false);
-        }
     }
     
     break;
@@ -167,7 +156,7 @@ switch (ds_stack_top(StateStack))
   case (s_ATTACK1):
     spd = 2;                         //stop player while swinging
     script_execute(Swing_v02_scr);                  //swing in the direction the player is currently facing, not their current direction
-    script_execute(Parry_v02_scr);
+    //script_execute(Parry_v02_scr);
     script_execute(Attack_Mordley_Ani_scr);     //Display the correct attack sprite based on which way the player is facing
 
     if (current_time >= timeStamp[2])           //Revert back to the move state
