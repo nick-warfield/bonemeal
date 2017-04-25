@@ -214,7 +214,7 @@ image_speed = 9/60;
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Player_Controller_v02_scr</script>
+            <script>Player_Controller_v03_scr</script>
           </argument>
           <argument>
             <kind>0</kind>

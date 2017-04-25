@@ -68,6 +68,15 @@ switch (ds_stack_top(StateStack))
     {
         script_execute(Interact_v03_scr);
         ds_stack_push(StateStack, s_INTERACT);
+        
+        if (Camera_obj.done)
+        {
+            ds_stack_pop(StateStack);
+            ds_stack_push(StateStack, s_ATTACK1);
+            timeStamp[2] = current_time + 500;
+            audio_play_sound(Swing_Umbrella_snd, 50, false);
+            image_index = 0;
+        }
     }
     
     else if (Input[ATTACK1])    //swing

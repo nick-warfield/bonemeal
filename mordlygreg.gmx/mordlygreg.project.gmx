@@ -353,6 +353,7 @@
     </scripts>
     <scripts name="Controllers">
       <script>scripts\Player_Controller_v02_scr.gml</script>
+      <script>scripts\Player_Controller_v03_scr.gml</script>
     </scripts>
     <scripts name="SCRATCH">
       <script>scripts\Character_Collision_v02_scr.gml</script>
