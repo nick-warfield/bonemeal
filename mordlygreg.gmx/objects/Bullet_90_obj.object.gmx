@@ -90,7 +90,7 @@ image_blend = c_lime;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (place_meeting(x, y, all) &amp;&amp; !place_meeting(x, y, spawner))
+            <string>if ((place_meeting(x, y, Character_obj) || place_meeting(x, y, Wall_obj)) &amp;&amp; !place_meeting(x, y, spawner))
 {
     instance_destroy();
 }

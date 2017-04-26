@@ -1,6 +1,7 @@
 //REQUIRES:
 //
 
+if (global.paused) {exit;}
 
 //Reset invulnerability timer once it has finished counting down
 if (current_time >= timeStamp[0]) 
@@ -26,7 +27,7 @@ switch (ds_stack_top(StateStack))
     if (timeStamp[0] == 0 && ds_stack_top(StateStack) != s_DODGE)
     { script_execute(TookDamage_v03_scr); }
     
-    if (healthPoints <= 0) {room_restart();}
+    if (healthPoints <= 0) {script_execute(Checkpoint_Manager_scr(id));}
     
     break;
     
@@ -64,8 +65,9 @@ switch (ds_stack_top(StateStack))
     
     else if (Input[INTERACT])
     {
-        script_execute(Interact_v02_scr);
+        script_execute(Interact_v03_scr);
         ds_stack_push(StateStack, s_INTERACT);
+        //global.paused = true;
     }
     
     else if (Input[ATTACK1])    //swing

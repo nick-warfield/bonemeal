@@ -30,6 +30,13 @@
 window_set_cursor(cr_none);
 
 audio_stop_all();
+
+global.paused = true;
+
+
+/*
+if (ds_exists(global.log, ds_type_stack)) {ds_stack_destroy(global.log);}
+global.log = ds_stack_create();
 </string>
           </argument>
         </arguments>
@@ -152,7 +159,11 @@ if (Input[INTERACT])
     {
       case 0:
         room_goto_next();
-        instance_create(505, 1440, Player02_obj);
+        instance_create(535, 1460, Player02_obj);
+        //instance_create(0, 0, Player02_obj);
+        
+        global.checkpoint = 1;
+        global.paused = false;
         break;
         
       case 1:
