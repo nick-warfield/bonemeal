@@ -578,7 +578,6 @@
   <rooms name="rooms">
     <rooms name="Beta Demo">
       <room>rooms\Start_Menu</room>
-      <room>rooms\Switch_03_rm</room>
       <room>rooms\Outside_rm</room>
       <rooms name="Floor2">
         <room>rooms\Start_Flr2_rm</room>
@@ -587,7 +586,7 @@
         <room>rooms\Pit_03_rm</room>
         <room>rooms\Enemy1_rm</room>
         <room>rooms\Enemy2_rm</room>
-        <room>rooms\Switch_02_rm</room>
+        <room>rooms\Switch_03_rm</room>
         <room>rooms\Storage_rm</room>
         <room>rooms\Exit_Flr2_rm</room>
       </rooms>
@@ -604,6 +603,7 @@
       <room>rooms\Pit_rm</room>
       <room>rooms\Pit_02_rm</room>
       <room>rooms\Switch_rm</room>
+      <room>rooms\Switch_02_rm</room>
     </rooms>
   </rooms>
   <help>
