@@ -208,6 +208,7 @@
     <sprites name="SCRATCH">
       <sprite>sprites\Player_spr</sprite>
       <sprite>sprites\BlankTile_spr</sprite>
+      <sprite>sprites\NOMASK</sprite>
       <sprite>sprites\Text_spr</sprite>
       <sprite>sprites\Door_spr</sprite>
       <sprite>sprites\Pit_spr</sprite>
@@ -231,16 +232,12 @@
       <background>background\Floor1_top_bkg</background>
     </backgrounds>
     <backgrounds name="Floor2">
-      <backgrounds name="Floor2-v01">
-        <background>background\Gate_Room_bkg</background>
-        <background>background\Start_Flr2_bkg</background>
-        <background>background\EnemyRm_Flr2_bkg</background>
-        <background>background\EnemyRm2_Flr2_bkg</background>
-        <background>background\Office_Flr2_bkg</background>
-        <background>background\Bullet_Puzzle_Flr2_bkg</background>
-        <background>background\Storage_Flr2_bkg</background>
-        <background>background\Pit_Flr2_bkg</background>
-        <background>background\Exit_Flr2_bkg</background>
+      <backgrounds name="Floor2-v03">
+        <background>background\Pit_05_flr_bkg</background>
+        <background>background\Pit_05_obj_bkg</background>
+        <background>background\BPuzzle_04_flr_bkg</background>
+        <background>background\BPuzzle_04_obj_bkg</background>
+        <background>background\GatePuzzle_03_bkg</background>
       </backgrounds>
       <backgrounds name="Floor2-v02">
         <background>background\Start_Flr2_02_bkg</background>
@@ -252,6 +249,17 @@
         <background>background\Bullet_Puzzle_02_bkg</background>
         <background>background\Storage_02_bkg</background>
         <background>background\Exit_Flr2_02_bkg</background>
+      </backgrounds>
+      <backgrounds name="Floor2-v01">
+        <background>background\Gate_Room_bkg</background>
+        <background>background\Start_Flr2_bkg</background>
+        <background>background\EnemyRm_Flr2_bkg</background>
+        <background>background\EnemyRm2_Flr2_bkg</background>
+        <background>background\Office_Flr2_bkg</background>
+        <background>background\Bullet_Puzzle_Flr2_bkg</background>
+        <background>background\Storage_Flr2_bkg</background>
+        <background>background\Pit_Flr2_bkg</background>
+        <background>background\Exit_Flr2_bkg</background>
       </backgrounds>
       <background>background\pit_04_bkg</background>
       <background>background\Pit_03_bkg</background>
@@ -524,6 +532,7 @@
         <objects name="Gate Puzzle">
           <object>objects\Gate_Puzzle_01_obj</object>
           <object>objects\Gate_Puzzle_02_obj</object>
+          <object>objects\Gate_Puzzle_03_obj</object>
           <object>objects\Pressure_Plate_obj</object>
           <object>objects\Small_Gate_obj</object>
         </objects>
@@ -568,7 +577,7 @@
   <rooms name="rooms">
     <rooms name="Beta Demo">
       <room>rooms\Start_Menu</room>
-      <room>rooms\Pit_02_rm</room>
+      <room>rooms\Pit_03_rm</room>
       <room>rooms\Outside_rm</room>
       <rooms name="Floor2">
         <room>rooms\Start_Flr2_rm</room>
@@ -583,6 +592,7 @@
       </rooms>
       <room>rooms\Boss_rm</room>
       <room>rooms\Floor2</room>
+      <room>rooms\Pit_02_rm</room>
       <room>rooms\Switch_02_rm</room>
     </rooms>
     <room>rooms\Laceys_Room</room>
