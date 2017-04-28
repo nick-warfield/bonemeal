@@ -500,7 +500,7 @@ mask_index = Mask_Combat_Mordley_spr;
             <kind>1</kind>
             <string>///debug jazz
 
-stamina = 100;
+//stamina = 100;
 //healthPoints = hpMax;
 
 /*

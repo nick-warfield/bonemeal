@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(Pit_02_rm);
+            <string>room_goto(Pit_03_rm);
 
-other.x = 632+200;
-other.y = 1232+400;
+other.x = 648+200;
+other.y = 1332+400;
 </string>
           </argument>
         </arguments>

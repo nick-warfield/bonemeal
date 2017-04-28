@@ -75,7 +75,6 @@
     <instance objName="Floor2_Wall_obj" x="528" y="1056" name="inst_3A960DE6" locked="0" code="" scaleX="1.25" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="568" y="1056" name="inst_4731462F" locked="0" code="" scaleX="1.25" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="1088" y="1056" name="inst_FC867776" locked="0" code="" scaleX="1.25" scaleY="1.25" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Wall_obj" x="328" y="1256" name="inst_1E35617A" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="168" y="1696" name="inst_5E9CA60B" locked="0" code="" scaleX="1.25" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="208" y="1696" name="inst_50538A14" locked="0" code="" scaleX="1.25" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="248" y="1696" name="inst_E64A772C" locked="0" code="" scaleX="1.25" scaleY="1.25" colour="4294967295" rotation="0"/>
@@ -131,9 +130,6 @@
     <instance objName="Boss_obj" x="648" y="1240" name="inst_272185FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="128" y="1376" name="inst_D9308C02" locked="0" code="" scaleX="1.25" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="128" y="1696" name="inst_05E82A79" locked="0" code="" scaleX="1.25" scaleY="1.25" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Wall_obj" x="328" y="1472" name="inst_842A3469" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Wall_obj" x="864" y="1472" name="inst_A3F1C131" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Wall_obj" x="864" y="1256" name="inst_9E319C3C" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Arrow_Block_Down_obj" x="488" y="1088" name="inst_7BCE2C70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Arrow_Block_Down_obj" x="808" y="1088" name="inst_B8E5ED6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="528" y="1016" name="inst_C0A020AD" locked="0" code="" scaleX="1.25" scaleY="1.25" colour="4294967295" rotation="0"/>

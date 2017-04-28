@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(Switch_02_rm);
+            <string>room_goto(Switch_03_rm);
 
 other.x = 528+500;
 other.y = 32+100;

@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1344</width>
   <height>868</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>4</vsnap>
+  <hsnap>4</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="Gate_Rm_02_bkg" x="200" y="100" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="GatePuzzle_03_bkg" x="200" y="100" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -72,8 +72,8 @@
     <instance objName="Invisible_Wall_obj" x="600" y="100" name="inst_E26A8B11" locked="0" code="" scaleX="5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="760" y="116" name="inst_64E7623D" locked="0" code="" scaleX="1" scaleY="3.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="568" y="340" name="inst_F63494BE" locked="0" code="" scaleX="1" scaleY="4.12903213500977" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="280" y="452" name="inst_4FF028D4" locked="0" code="" scaleX="2.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="200" y="116" name="inst_C58A0A63" locked="0" code="" scaleX="0.5" scaleY="11" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="216" y="452" name="inst_4FF028D4" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="200" y="116" name="inst_C58A0A63" locked="0" code="" scaleX="0.5" scaleY="10.5806455612183" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="216" y="100" name="inst_4CBB6CDB" locked="0" code="" scaleX="4.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="944" y="228" name="inst_871FA285" locked="0" code="" scaleX="0.5" scaleY="3.5" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="768" y="228" name="inst_DFDEE2B4" locked="0" code="" scaleX="0.5" scaleY="3.5" colour="4294967295" rotation="0"/>
@@ -82,12 +82,13 @@
     <instance objName="Gate_Office_obj" x="1064" y="468" name="inst_7C77FCBD" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Gate_Enemy1_obj" x="600" y="468" name="inst_A7EB846D" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Gate_Enemy2_obj" x="504" y="468" name="inst_60382087" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Gate_Pit_obj" x="216" y="468" name="inst_825DF4B6" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Gate_Pit_obj" x="280" y="468" name="inst_825DF4B6" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="792" y="100" name="inst_568D491B" locked="0" code="" scaleX="4.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="968" y="452" name="inst_464724BB" locked="0" code="" scaleX="3" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="664" y="452" name="inst_8E11F52D" locked="0" code="" scaleX="3.09677410125732" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="664" y="452" name="inst_ABF3E769" locked="0" code="" scaleX="3.09677410125732" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="792" y="452" name="inst_8E4EEEDF" locked="0" code="" scaleX="4.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="344" y="452" name="inst_16A1D149" locked="0" code="" scaleX="0.625" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

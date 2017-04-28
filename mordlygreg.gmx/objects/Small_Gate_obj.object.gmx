@@ -76,15 +76,19 @@ if (global.paused) {exit;}
             <kind>1</kind>
             <string>if(opened)
 {
-    //visible = false;
-    if (y &gt; openy)
-    {y -= 4;}
+    visible = false;
+    mask_index = NOMASK;
+    
+    //if (y &gt; openy)
+    //{y -= 4;}
 }
 else
 {
-    //visible = true;
-    if (y &lt; closey)
-    {y += 4;}
+    visible = true;
+    mask_index = BlankTile01_spr;
+    
+    //if (y &lt; closey)
+    //{y += 4;}
 }
 </string>
           </argument>
