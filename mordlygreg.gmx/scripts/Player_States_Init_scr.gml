@@ -6,7 +6,7 @@ for (var i = 1; i < 5; i++) {StateArray[i] = 0;}
 StateStack = ds_stack_create();
 
 keys = 0;
-bigKey = 0;
+bigKey = 1;
 
 /*
 //state array

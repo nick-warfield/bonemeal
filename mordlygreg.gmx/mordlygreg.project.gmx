@@ -568,6 +568,7 @@
   <rooms name="rooms">
     <rooms name="Beta Demo">
       <room>rooms\Start_Menu</room>
+      <room>rooms\Pit_02_rm</room>
       <room>rooms\Outside_rm</room>
       <rooms name="Floor2">
         <room>rooms\Start_Flr2_rm</room>
@@ -583,7 +584,6 @@
       <room>rooms\Boss_rm</room>
       <room>rooms\Floor2</room>
       <room>rooms\Switch_02_rm</room>
-      <room>rooms\Pit_02_rm</room>
     </rooms>
     <room>rooms\Laceys_Room</room>
     <room>rooms\room1</room>
