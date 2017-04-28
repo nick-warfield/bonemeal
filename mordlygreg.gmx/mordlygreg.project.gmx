@@ -533,6 +533,7 @@
           <object>objects\Gate_Puzzle_01_obj</object>
           <object>objects\Gate_Puzzle_02_obj</object>
           <object>objects\Gate_Puzzle_03_obj</object>
+          <object>objects\Gate_Puzzle_04_obj</object>
           <object>objects\Pressure_Plate_obj</object>
           <object>objects\Small_Gate_obj</object>
         </objects>
@@ -577,30 +578,33 @@
   <rooms name="rooms">
     <rooms name="Beta Demo">
       <room>rooms\Start_Menu</room>
-      <room>rooms\Pit_03_rm</room>
+      <room>rooms\Switch_03_rm</room>
       <room>rooms\Outside_rm</room>
       <rooms name="Floor2">
         <room>rooms\Start_Flr2_rm</room>
         <room>rooms\Office_rm</room>
         <room>rooms\Gate_Room_rm</room>
+        <room>rooms\Pit_03_rm</room>
         <room>rooms\Enemy1_rm</room>
         <room>rooms\Enemy2_rm</room>
-        <room>rooms\Pit_rm</room>
-        <room>rooms\Switch_rm</room>
+        <room>rooms\Switch_02_rm</room>
         <room>rooms\Storage_rm</room>
         <room>rooms\Exit_Flr2_rm</room>
       </rooms>
       <room>rooms\Boss_rm</room>
-      <room>rooms\Floor2</room>
-      <room>rooms\Pit_02_rm</room>
-      <room>rooms\Switch_02_rm</room>
     </rooms>
-    <room>rooms\Laceys_Room</room>
-    <room>rooms\room1</room>
-    <room>rooms\room4</room>
-    <room>rooms\GreyBox_v02_rm</room>
-    <room>rooms\GreyBox_rm</room>
-    <room>rooms\room0_rm</room>
+    <rooms name="Scratch">
+      <room>rooms\room0_rm</room>
+      <room>rooms\room1</room>
+      <room>rooms\room4</room>
+      <room>rooms\Laceys_Room</room>
+      <room>rooms\GreyBox_v02_rm</room>
+      <room>rooms\GreyBox_rm</room>
+      <room>rooms\Floor2</room>
+      <room>rooms\Pit_rm</room>
+      <room>rooms\Pit_02_rm</room>
+      <room>rooms\Switch_rm</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
