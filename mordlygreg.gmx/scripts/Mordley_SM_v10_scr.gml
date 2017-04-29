@@ -61,7 +61,7 @@ switch (ds_stack_top(StateStack))
     if (Input[DODGE] && current_time >= timeStamp[6])
     {
         ds_stack_push(StateStack, s_DODGE);
-        timeStamp[5] = current_time + 150;
+        timeStamp[5] = current_time + 200;
     }
     
     else if (Input[INTERACT])
@@ -188,7 +188,7 @@ switch (ds_stack_top(StateStack))
 
     if (Input[DODGE] && current_time >= timeStamp[6]) 
     {
-        timeStamp[5] = current_time + 150;
+        timeStamp[5] = current_time + 200;
         ds_stack_push(StateStack, s_DODGE);
     }
     
