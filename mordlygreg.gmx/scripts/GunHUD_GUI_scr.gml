@@ -1,5 +1,5 @@
-var h = display_get_height()/2;
-var w = display_get_width()/2;
+var h = display_get_height()/global.scaleFactor;
+var w = display_get_width()/global.scaleFactor;
 
 var dx = w/2;
 var dy = 87;

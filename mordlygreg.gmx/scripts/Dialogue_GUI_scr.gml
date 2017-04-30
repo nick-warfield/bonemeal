@@ -9,8 +9,8 @@ if (messageEnd > 0 && done != true && message[messageCurrent] != "")
     global.paused = true;
 
     //Text Position
-    var tx = display_get_width()/4;
-    var ty = display_get_height()/8;
+    var tx = display_get_width()/(global.scaleFactor * 2);
+    var ty = display_get_height()/(global.scaleFactor * 2.5);
 
     //Next Message
     if (Player02_obj.Input[INTERACT])

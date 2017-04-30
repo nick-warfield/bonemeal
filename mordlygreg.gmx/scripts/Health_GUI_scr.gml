@@ -1,5 +1,5 @@
-var h = display_get_height()/2;
-var w = display_get_width()/2;
+var h = display_get_height()/global.scaleFactor;
+var w = display_get_width()/global.scaleFactor;
 
 var amnt = (healthPoints / hpMax) * 100;
 var amnt2 = (stamina / staminaMax) * 100;
