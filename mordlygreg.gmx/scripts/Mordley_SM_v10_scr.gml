@@ -73,9 +73,11 @@ switch (ds_stack_top(StateStack))
         {
             ds_stack_pop(StateStack);
             ds_stack_push(StateStack, s_ATTACK1);
-            timeStamp[2] = current_time + 500;
+            timeStamp[2] = current_time + 600;
             audio_play_sound(Swing_Umbrella_snd, 50, false);
             image_index = 0;
+            
+            comboCount = 1;
         }
     }
     
@@ -155,16 +157,57 @@ switch (ds_stack_top(StateStack))
   //umbrella swing    
   case (s_ATTACK1):
     spd = 2;                         //stop player while swinging
-    script_execute(Swing_v02_scr);                  //swing in the direction the player is currently facing, not their current direction
-    //script_execute(Parry_v02_scr);
-    script_execute(Attack_Mordley_Ani_scr);     //Display the correct attack sprite based on which way the player is facing
+    
+    switch (comboCount)
+    {
+      case 1:
+        if (image_speed > 0) {script_execute(Swing_v02_scr);}
+        script_execute(Attack_Mordley_Ani_scr(Mordley_Combo1_Side_spr, Mordley_Combo1_Back_spr, Mordley_Combo1_Front_spr, 12));
+        
+        if (image_index >= image_number - 2 && Input[INTERACT])
+        {
+            timeStamp[2] = current_time + 600;
+            audio_play_sound(Swing_Umbrella_snd, 50, false);
+            
+            script_execute(Attack_Mordley_Ani_scr(Mordley_Combo2_Side_spr, Mordley_Combo2_Back_spr, Mordley_Combo2_Front_spr, 12));
+            image_index = 0;
+            
+            comboCount++;
+        }
+        
+        break;
+        
+      case 2:
+        if (image_speed > 0) {script_execute(Swing_v02_scr);}
+        script_execute(Attack_Mordley_Ani_scr(Mordley_Combo2_Side_spr, Mordley_Combo2_Back_spr, Mordley_Combo2_Front_spr, 12));
+        
+        if (image_speed <= 0 && Input[INTERACT])
+        {
+            timeStamp[2] = current_time + 600;
+            audio_play_sound(Swing_Umbrella_snd, 50, false);
+            
+            script_execute(Attack_Mordley_Ani_scr(Mordley_Combo3_Side_spr, Mordley_Combo3_Back_spr, Mordley_Combo3_Front_spr, 12));
+            image_index = 0;
+            
+            comboCount++;
+        }
+        
+        break;
+        
+      case 3:
+        if (image_speed > 0) {script_execute(Swing_Spin_scr);}
+        script_execute(Attack_Mordley_Ani_scr(Mordley_Combo3_Side_spr, Mordley_Combo3_Back_spr, Mordley_Combo3_Front_spr, 12));
+        
+        break;
+    }        
 
+    show_debug_message(comboCount);
+    
     if (current_time >= timeStamp[2])           //Revert back to the move state
     {
         ds_stack_pop(StateStack);
-        //image_speed = 9/60;
     }
-    else if (current_time >= timeStamp[2] - 300) {spd = 0;}
+    else if (current_time >= timeStamp[2] - 400) {spd = 0;}
 
     break;
     

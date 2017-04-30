@@ -62,6 +62,16 @@
         <sprite>sprites\Mordley_Old_Attk_Back_spr</sprite>
         <sprite>sprites\Mordley_Old_Attk_Side_spr</sprite>
         <sprite>sprites\Mordley_Old_Attk_Front_spr</sprite>
+        <sprite>sprites\Mordley_Combo1_Back_spr</sprite>
+        <sprite>sprites\Mordley_Combo2_Back_spr</sprite>
+        <sprite>sprites\Mordley_Combo3_Back_spr</sprite>
+        <sprite>sprites\Mordley_Combo1_Side_spr</sprite>
+        <sprite>sprites\Mordley_Combo2_Side_spr</sprite>
+        <sprite>sprites\Mordley_Combo3_Side_spr</sprite>
+        <sprite>sprites\Mordley_Combo1_Front_spr</sprite>
+        <sprite>sprites\Mordley_Combo2_Front_spr</sprite>
+        <sprite>sprites\Mordley_Combo3_Front_spr</sprite>
+        <sprite>sprites\sprite136</sprite>
       </sprites>
       <sprites name="Gun">
         <sprite>sprites\Mordley_Front_Aim_spr</sprite>
@@ -225,6 +235,10 @@
     <sprite>sprites\Crate_Key_spr</sprite>
     <sprite>sprites\Key_spr</sprite>
     <sprite>sprites\Boss_Key_spr</sprite>
+    <sprite>sprites\SmallGate_spr</sprite>
+    <sprite>sprites\SmallGate_02_spr</sprite>
+    <sprite>sprites\Plate_Pressed_spr</sprite>
+    <sprite>sprites\Plate_Unpressed_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Floor1">
@@ -327,6 +341,7 @@
         <script>scripts\Interact_v02_scr.gml</script>
         <script>scripts\Swing_scr.gml</script>
         <script>scripts\Swing_v02_scr.gml</script>
+        <script>scripts\Swing_Spin_scr.gml</script>
         <script>scripts\Parry_v02_scr.gml</script>
       </scripts>
       <scripts name="Boss">
