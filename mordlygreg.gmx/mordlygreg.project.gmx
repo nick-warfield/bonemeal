@@ -62,6 +62,9 @@
         <sprite>sprites\Mordley_Old_Attk_Back_spr</sprite>
         <sprite>sprites\Mordley_Old_Attk_Side_spr</sprite>
         <sprite>sprites\Mordley_Old_Attk_Front_spr</sprite>
+        <sprite>sprites\Mordley_Combo_Back_spr</sprite>
+        <sprite>sprites\Mordley_Combo_Side_spr</sprite>
+        <sprite>sprites\Mordley_Combo_Front_spr</sprite>
       </sprites>
       <sprites name="Gun">
         <sprite>sprites\Mordley_Front_Aim_spr</sprite>
@@ -225,6 +228,10 @@
     <sprite>sprites\Crate_Key_spr</sprite>
     <sprite>sprites\Key_spr</sprite>
     <sprite>sprites\Boss_Key_spr</sprite>
+    <sprite>sprites\SmallGate_spr</sprite>
+    <sprite>sprites\SmallGate_02_spr</sprite>
+    <sprite>sprites\Plate_Pressed_spr</sprite>
+    <sprite>sprites\Plate_Unpressed_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Floor1">

@@ -75,10 +75,10 @@
     <instance objName="Invisible_Wall_obj" x="216" y="452" name="inst_4FF028D4" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="200" y="116" name="inst_C58A0A63" locked="0" code="" scaleX="0.5" scaleY="10.5806455612183" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="216" y="100" name="inst_4CBB6CDB" locked="0" code="" scaleX="4.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Small_Gate_obj" x="944" y="228" name="inst_871FA285" locked="0" code="" scaleX="0.5" scaleY="3.5" colour="4294967295" rotation="0"/>
-    <instance objName="Small_Gate_obj" x="768" y="228" name="inst_DFDEE2B4" locked="0" code="" scaleX="0.5" scaleY="3.5" colour="4294967295" rotation="0"/>
-    <instance objName="Small_Gate_obj" x="576" y="228" name="inst_E3866558" locked="0" code="" scaleX="0.5" scaleY="3.5" colour="4294967295" rotation="0"/>
-    <instance objName="Small_Gate_obj" x="368" y="228" name="inst_80139635" locked="0" code="" scaleX="0.5" scaleY="3.5" colour="4294967295" rotation="0"/>
+    <instance objName="Small_Gate_obj" x="940" y="228" name="inst_871FA285" locked="0" code="" scaleX="0.75" scaleY="3.48387098312378" colour="4294967295" rotation="0"/>
+    <instance objName="Small_Gate_obj" x="764" y="228" name="inst_DFDEE2B4" locked="0" code="" scaleX="0.75" scaleY="3.48387098312378" colour="4294967295" rotation="0"/>
+    <instance objName="Small_Gate_obj" x="572" y="228" name="inst_E3866558" locked="0" code="" scaleX="0.75" scaleY="3.48387098312378" colour="4294967295" rotation="0"/>
+    <instance objName="Small_Gate_obj" x="364" y="228" name="inst_80139635" locked="0" code="" scaleX="0.75" scaleY="3.48387098312378" colour="4294967295" rotation="0"/>
     <instance objName="Gate_Office_obj" x="1064" y="468" name="inst_7C77FCBD" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Gate_Enemy1_obj" x="600" y="468" name="inst_A7EB846D" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Gate_Enemy2_obj" x="504" y="468" name="inst_60382087" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
