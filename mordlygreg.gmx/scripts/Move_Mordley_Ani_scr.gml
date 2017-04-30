@@ -1,3 +1,5 @@
+image_speed = 9/60;
+
 if (Dir == 270 || facing == DOWN)
 {
     if (spd == 0) {sprite_index = Mordley_Front_spr;}

@@ -1,4 +1,5 @@
 playerRef = argument[0];
+audio_stop_all();
 
 
 if (global.checkpoint == 1)
@@ -15,12 +16,12 @@ else if (global.checkpoint == 2)
 }
 else if (global.checkpoint == 3)
 {
-    room_goto(Pit_02_rm);
+    room_goto(Pit_03_rm);
+    audio_play_sound(Floor2_trk, 75, true);
     rmx = 248;
     rmy = 432;
 }
 
-audio_stop_all();
 
 with (playerRef)
 {
