@@ -257,8 +257,8 @@ audio_stop_sound(Boss_trk);
           <argument>
             <kind>1</kind>
             <string>//Draw hpbar while fighing the boss
-var h = display_get_height()/2;
-var w = display_get_width()/2;
+var h = display_get_height()/global.scaleFactor;
+var w = display_get_width()/global.scaleFactor;
 var num = healthPoints/hpMax * 100;
 draw_set_halign(fa_center);
 
