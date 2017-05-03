@@ -585,6 +585,7 @@
         <object>objects\Track_Floor2_obj</object>
         <object>objects\Track_Boss_obj</object>
       </objects>
+      <object>objects\Init_Game_obj</object>
     </objects>
     <objects name="SCRATCH">
       <object>objects\floor_obj</object>
@@ -592,6 +593,7 @@
   </objects>
   <rooms name="rooms">
     <rooms name="Beta Demo">
+      <room>rooms\Init_rm</room>
       <room>rooms\Start_Menu</room>
       <room>rooms\Outside_rm</room>
       <rooms name="Floor2">
@@ -606,6 +608,12 @@
         <room>rooms\Exit_Flr2_rm</room>
       </rooms>
       <room>rooms\Boss_rm</room>
+    </rooms>
+    <rooms name="Options/Menus/Utility">
+      <room>rooms\Controls_rm</room>
+      <room>rooms\Options_rm</room>
+      <room>rooms\Credits_rm</room>
+      <room>rooms\Room_Transition</room>
     </rooms>
     <rooms name="Scratch">
       <room>rooms\room0_rm</room>

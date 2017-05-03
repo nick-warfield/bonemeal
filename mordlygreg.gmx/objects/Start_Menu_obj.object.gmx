@@ -31,9 +31,6 @@ window_set_cursor(cr_none);
 
 audio_stop_all();
 
-global.paused = true;
-global.scaleFactor = 1.25;
-
 
 /*
 if (ds_exists(global.log, ds_type_stack)) {ds_stack_destroy(global.log);}
@@ -166,6 +163,9 @@ if (Input[INTERACT])
         global.checkpoint = 1;
         global.paused = false;
         break;
+        
+      case 2:       //will be 1 when options menu is made
+        
         
       case 1:
         game_end();
