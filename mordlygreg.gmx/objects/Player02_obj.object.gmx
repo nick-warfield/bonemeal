@@ -444,6 +444,45 @@ mask_index = Mask_Combat_Mordley_spr;
       </action>
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///debug jazz
+
+//stamina = 100;
+//healthPoints = hpMax;
+
+//debug speed
+if (keyboard_check_pressed(ord('0')))
+{
+    if (debug == false) { debug = true; }
+    else {debug = false;}
+}
+
+if (debug) {spd = 13;}
+
+/*
+for(var i = 0; i &lt; array_length_1d(cylinder); i++)
+{
+    cylinder[i] = Bullet_90_obj;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>601</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -479,36 +518,6 @@ mask_index = Mask_Combat_Mordley_spr;
           <argument>
             <kind>0</kind>
             <string></string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///debug jazz
-
-//stamina = 100;
-//healthPoints = hpMax;
-
-/*
-for(var i = 0; i &lt; array_length_1d(cylinder); i++)
-{
-    cylinder[i] = Bullet_90_obj;
-}
-</string>
           </argument>
         </arguments>
       </action>

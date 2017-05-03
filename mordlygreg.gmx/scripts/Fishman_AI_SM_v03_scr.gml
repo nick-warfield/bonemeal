@@ -79,9 +79,9 @@ switch(ds_stack_top(StateStack))
   
     spitInst = instance_create(x, y, Bullet_obj);
     spitInst.spawner = id;
-    spitInst.speed = 5;
+    spitInst.spd = 5;
     spitInst.image_angle = thatWay;
-    spitInst.direction = thatWay;
+    spitInst.Dir = thatWay;
     
     spitInst.dmg = 1;
     
