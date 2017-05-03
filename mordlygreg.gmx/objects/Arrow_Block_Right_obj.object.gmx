@@ -59,9 +59,9 @@ image_speed = 0;
     bull.image_index = Arrow_Right_spr;
     bull.mask_index = Arrow_Right_spr;
     
-    bull.direction = 0;
+    bull.Dir = 0;
     bull.image_angle = 0;
-    bull.speed = 7;
+    bull.spd = 7;
     
     bull.dmg = 2;
 }
