@@ -609,6 +609,12 @@
       </rooms>
       <room>rooms\Boss_rm</room>
     </rooms>
+    <rooms name="Options/Menus/Utility">
+      <room>rooms\Controls_rm</room>
+      <room>rooms\Options_rm</room>
+      <room>rooms\Credits_rm</room>
+      <room>rooms\Room_Transition</room>
+    </rooms>
     <rooms name="Scratch">
       <room>rooms\room0_rm</room>
       <room>rooms\room1</room>

@@ -164,6 +164,9 @@ if (Input[INTERACT])
         global.paused = false;
         break;
         
+      case 2:       //will be 1 when options menu is made
+        
+        
       case 1:
         game_end();
         break;
