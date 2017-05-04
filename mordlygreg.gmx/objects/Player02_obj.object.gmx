@@ -214,7 +214,7 @@ image_speed = 9/60;
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Player_Controller_v03_scr</script>
+            <script>Player_Controller_v04_scr</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -254,7 +254,7 @@ image_speed = 9/60;
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Mordley_SM_v10_scr</script>
+            <script>Mordley_SM_v11_scr</script>
           </argument>
           <argument>
             <kind>0</kind>
