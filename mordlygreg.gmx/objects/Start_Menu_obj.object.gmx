@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>v = 0;
+            <string>selection = 0;
+timeStamp1 = 0;
+timeStamp2 = 0;
 
 window_set_cursor(cr_none);
 
@@ -80,10 +82,14 @@ global.log = ds_stack_create();
             <string>///up and down input
 
     //up command
-        if (gamepad_button_check_pressed(0, gp_padu) == true ||
+        if ((gamepad_axis_value(0, gp_axislv) &lt;= -0.75 &amp;&amp; current_time &gt;= timeStamp1) ||
+            (gamepad_axis_value(0, gp_axisrv) &lt;= -0.75 &amp;&amp; current_time &gt;= timeStamp1) ||
+            gamepad_button_check_pressed(0, gp_padu) == true ||
             keyboard_check_pressed(ord('W')) == true || 
             keyboard_check_pressed(vk_up) == true)
         {
+            timeStamp1 = current_time + 275;
+            timeStamp2 = 0;
             Input[UP] = true;
         }
         else
@@ -93,10 +99,14 @@ global.log = ds_stack_create();
     
     
     //down command
-        if (gamepad_button_check_pressed(0, gp_padd) == true||
+        if ((gamepad_axis_value(0, gp_axislv) &gt;= 0.75 &amp;&amp; current_time &gt;= timeStamp2) ||
+            (gamepad_axis_value(0, gp_axisrv) &gt;= 0.75 &amp;&amp; current_time &gt;= timeStamp2) ||
+            gamepad_button_check_pressed(0, gp_padd) == true||
             keyboard_check_pressed(ord('S')) == true ||
             keyboard_check_pressed(vk_down) == true)
         {
+            timeStamp2 = current_time + 275;
+            timeStamp1 = 0;
             Input[DOWN] = true;
         }
         else
@@ -107,6 +117,7 @@ global.log = ds_stack_create();
         
     //interact command
         if (gamepad_button_check_pressed(0, gp_face1) == true ||
+            gamepad_button_check_pressed(0, gp_start) == true ||
             keyboard_check_pressed(ord('E')) == true ||
             keyboard_check_pressed(vk_space) == true ||
             keyboard_check_pressed(vk_enter) == true)
@@ -139,21 +150,21 @@ global.log = ds_stack_create();
             <kind>1</kind>
             <string>if (Input[UP])
 {
-    v++;
+    selection++;
 }
 
 else if (Input[DOWN])
 {
-    v--;
+    selection--;
 }
 
 
-if (v &gt; 1) {v = 0;} else if (v &lt; 0) {v = 1;}
+if (selection &gt; 1) {selection = 0;} else if (selection &lt; 0) {selection = 1;}
 
 
 if (Input[INTERACT])
 {
-    switch (v)
+    switch (selection)
     {
       case 0:
         room_goto_next();
@@ -197,7 +208,7 @@ if (Input[INTERACT])
             <string>var tc1 = c_black;
 var tc2 = c_black;
 
-if (v == 0) {tc1 = c_white;} else {tc2 = c_white;}
+if (selection == 0) {tc1 = c_white;} else {tc2 = c_white;}
 
 
 draw_set_halign(fa_center);
