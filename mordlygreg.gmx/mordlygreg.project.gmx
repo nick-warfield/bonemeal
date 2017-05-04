@@ -343,6 +343,7 @@
         <script>scripts\Interact_v02_scr.gml</script>
         <script>scripts\Swing_scr.gml</script>
         <script>scripts\Swing_v02_scr.gml</script>
+        <script>scripts\Swing_v03_scr.gml</script>
         <script>scripts\Swing_Spin_scr.gml</script>
         <script>scripts\Parry_v02_scr.gml</script>
       </scripts>

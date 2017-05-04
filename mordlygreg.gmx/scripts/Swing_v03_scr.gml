@@ -28,7 +28,7 @@ if (thing != id && instance_exists(thing))
         var t = id;
         with (thing)
         {
-            script_execute(SetDamageVars_scr(t, 6, 100, 2, NULL));
+            script_execute(SetDamageVars_scr(t, 10, 100, 1, NULL));
             ds_stack_push(StateStack, s_DAMAGED);
         }
     }
