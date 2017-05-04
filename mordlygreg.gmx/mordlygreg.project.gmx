@@ -572,24 +572,28 @@
       <object>objects\SlowMo_Bullet_obj</object>
     </objects>
     <objects name="Utility">
+      <object>objects\Camera_obj</object>
       <objects name="Checkpoints">
         <object>objects\Checkpoint_01_obj</object>
       </objects>
-      <object>objects\Camera_obj</object>
-      <object>objects\Dialogue_obj</object>
-      <object>objects\Speaker_obj</object>
-      <object>objects\Pause_obj</object>
-      <object>objects\EnemySpawn_obj</object>
-      <object>objects\SwingArc_obj</object>
-      <object>objects\GrabArm_obj</object>
-      <object>objects\Door_Shut_obj</object>
-      <object>objects\Start_Menu_obj</object>
+      <objects name="Menu Jazz">
+        <object>objects\Init_Game_obj</object>
+        <object>objects\Start_Menu_obj</object>
+      </objects>
       <objects name="Sound Players">
         <object>objects\Track_Floor1_obj</object>
         <object>objects\Track_Floor2_obj</object>
         <object>objects\Track_Boss_obj</object>
       </objects>
-      <object>objects\Init_Game_obj</object>
+      <objects name="Misc">
+        <object>objects\Dialogue_obj</object>
+        <object>objects\Speaker_obj</object>
+        <object>objects\Pause_obj</object>
+        <object>objects\EnemySpawn_obj</object>
+        <object>objects\SwingArc_obj</object>
+        <object>objects\GrabArm_obj</object>
+        <object>objects\Door_Shut_obj</object>
+      </objects>
     </objects>
     <objects name="SCRATCH">
       <object>objects\floor_obj</object>
