@@ -7,7 +7,7 @@ var dy = 87;
 var cyl = hud_revolver_02_spr;
 var fill = hud_revolver_03_full_spr;
 var empty = hud_revolver_03_empty_spr;
-var bottom = hud_revolver_01_spr;
+var bottom = hud_revolver_reloadIndicator_spr;
 var top = hud_revolver_04_spr;
 
 //chamber0 means the 6th chamber for some reason, I'll get mad at me later
@@ -35,7 +35,7 @@ rot = lerp(newRot+60, newRot, lerpI);
 
 
 //draw bottom
-draw_sprite_ext(bottom, 0, dx-1.25, dy, 1, 1, 0, c_white, a);
+draw_sprite_ext(bottom, 0, dx, dy, 1, 1, 0, c_white, a);
 
 //draw cylinder
 draw_sprite_ext(cyl, 0, dx, dy, 1, 1, rot, c_white, 1);

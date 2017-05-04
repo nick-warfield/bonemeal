@@ -197,6 +197,7 @@
       <sprite>sprites\Journal_Blank_spr</sprite>
       <sprite>sprites\hud_revolver_04_spr</sprite>
       <sprite>sprites\hud_revolver_02_spr</sprite>
+      <sprite>sprites\hud_revolver_reloadIndicator_spr</sprite>
       <sprite>sprites\hud_revolver_01_spr</sprite>
       <sprite>sprites\hud_revolver_03_empty_spr</sprite>
       <sprite>sprites\hud_revolver_03_full_spr</sprite>

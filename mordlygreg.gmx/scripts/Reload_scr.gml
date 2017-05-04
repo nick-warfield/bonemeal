@@ -1,4 +1,4 @@
-var temp = cylinderPosition + 1;
+var temp = cylinderPosition;
 if (temp >= 6) { temp = 0; }
 
 if (temp != 4)

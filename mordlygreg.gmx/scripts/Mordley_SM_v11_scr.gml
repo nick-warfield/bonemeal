@@ -225,7 +225,15 @@ switch (ds_stack_top(StateStack))
         ds_stack_push(StateStack, s_DODGE);
     }
     
-    if (Input[ATTACK2] && current_time >= timeStamp[3])
+    else if (Input[ATTACK4])    //reload
+    {
+        ds_stack_push(StateStack, s_ATTACK4);
+        timeStamp[4] = current_time + 300;
+        var reload2 = audio_play_sound(Reload_Gun_02_snd, 50, false);
+        audio_sound_pitch(reload2, 0.7);
+    }
+    
+    else if (Input[ATTACK2] && current_time >= timeStamp[3])
     {
         ds_stack_push(StateStack, s_ATTACK2);    //go to shooting state on fire input
         timeStamp[3] = current_time + 750;
