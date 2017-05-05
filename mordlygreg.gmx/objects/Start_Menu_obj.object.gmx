@@ -203,8 +203,14 @@ if (Input[INTERACT])
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//text colors
-var tc1 = c_silver;
+            <string>var version = "version: 2.1.7";
+
+//xoffsets
+var leftPage = room_width/4;
+var rightPage = room_width/2 + 80;
+
+//text colors
+var tc1 = c_navy;
 var tc2 = tc1;
 var tc3 = tc2;
 var tc4 = tc3;
@@ -218,64 +224,97 @@ var ts4 = ts3;
 var ts5 = ts4;
 
 //text spacing
-var tp1 = room_height/2 + 20;
-var tp2 = tp1 + 40;
-var tp3 = tp2 + 40;
-var tp4 = tp3 + 40;
-var tp5 = tp4 + 40;
+var tp1 = room_height/2 - 102;
+var tp2 = tp1 + 25;
+var tp3 = tp2 + 26;
+var tp4 = tp3 + 30;
+var tp5 = tp4 + 25;
 
+var tph1 = rightPage;
+var tph2 = rightPage;
+var tph3 = rightPage;
+var tph4 = rightPage;
+var tph5 = rightPage;
+
+var my;
+
+
+//change text based on selction
 switch (selection)
 {
   case 0:
-    tc1 = c_white;
+    tc1 = c_purple;
     ts1 += 0.5
+    tph1 += 10;
+    my = tp1;
     break;
     
   case 1:
-    tc2 = c_white;
+    tc2 = c_purple;
     ts2 += 0.5
+    tph2 += 10;
+    my = tp2;
     break;
     
   case 2:
-    tc3 = c_white;
+    tc3 = c_purple;
     ts3 += 0.5
+    tph3 += 10;
+    my = tp3;
     break;
     
   case 3:
-    tc4 = c_white;
+    tc4 = c_purple;
     ts4 += 0.5
+    tph4 += 10;
+    my = tp4;
     break;
     
   case 4:
-    tc5 = c_white;
+    tc5 = c_purple;
     ts5 += 0.5
+    tph5 += 10;
+    my = tp5;
     break;
 }
 
 
 draw_set_halign(fa_center);
 
-//Game name, and company
-draw_text_transformed_colour(room_width/2, room_height/2 - 160, "MORDLEY GREG, P.I.", 2, 2, 0, c_white, c_white, c_white, c_white, 1);
-draw_text_colour(room_width/2, room_height/2 - 96, "by: bonemeal", c_silver, c_silver, c_silver, c_silver, 1);
+//journal
+draw_sprite(Journal_02_spr, 0, room_width/2, room_height/2 - 25);
 
-//logo
-draw_sprite(HUD_Card_spr, 0, room_width/2, room_height/2 - 25);
+
+draw_set_halign(fa_left);
+draw_set_valign(fa_bottom);
+
+//left page stuff
+draw_sprite_ext(Icon_spr, 0, leftPage*1.35, tp1, 1.75, 1.75, 0, c_white, 1);
+
+//Game name, and company
+draw_text_transformed_colour(leftPage - 12, room_height/2 - 25, "MORDLEY GREG:", 1.5, 1.5, 0, c_purple, c_purple, c_purple, c_purple, 1);
+draw_text_transformed_colour(leftPage + 1, room_height/2, "PRIVATE EYE", 1.5, 1.5, 0, c_purple, c_purple, c_purple, c_purple, 1);
+draw_text_colour(leftPage + 20, room_height/2 + 30, "by: bonemeal", c_navy, c_navy, c_navy, c_navy, 1);
+draw_text_transformed_colour(leftPage + 7, room_height/2 + 123, version, 1, 1, 0, c_navy, c_navy, c_navy, c_navy, 1);
+
+
+//Right Page Stuff
+draw_sprite(Mordley_Side_Aim_spr, 0, room_width/2 + 55, my - 3);
 
 //line 1
-draw_text_transformed_colour(room_width/2, tp1, "START DEMO", ts1, ts1, 0, tc1, tc1, tc1, tc1, 1);
+draw_text_transformed_colour(tph1, tp1, "START DEMO", ts1, ts1, 0, tc1, tc1, tc1, tc1, 1);
 
 //line 2
-draw_text_transformed_colour(room_width/2, tp2, "CONTROLS", ts2, ts2, 0, tc2, tc2, tc2, tc2, 1);
+draw_text_transformed_colour(tph2, tp2, "CONTROLS", ts2, ts2, 0, tc2, tc2, tc2, tc2, 1);
 
 //line 3
-draw_text_transformed_colour(room_width/2, tp3, "OPTIONS", ts3, ts3, 0, tc3, tc3, tc3, tc3, 1);
+draw_text_transformed_colour(tph3, tp3, "OPTIONS", ts3, ts3, 0, tc3, tc3, tc3, tc3, 1);
 
 //line 4
-draw_text_transformed_colour(room_width/2, tp4, "CREDITS", ts4, ts4, 0, tc4, tc4, tc4, tc4, 1);
+draw_text_transformed_colour(tph4, tp4, "CREDITS", ts4, ts4, 0, tc4, tc4, tc4, tc4, 1);
 
 //line 5
-draw_text_transformed_colour(room_width/2, tp5, "EXIT DEMO", ts5, ts5, 0, tc5, tc5, tc5, tc5, 1);
+draw_text_transformed_colour(tph5, tp5, "EXIT DEMO", ts5, ts5, 0, tc5, tc5, tc5, tc5, 1);
 
 </string>
           </argument>
