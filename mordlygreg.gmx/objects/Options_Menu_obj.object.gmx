@@ -137,36 +137,55 @@ global.log = ds_stack_create();
             <string>///Menu Selection Code
 if (timeStamp3 = 0)
 {
-    if (Input[UP])
+    switch (selection)
     {
-        if ((selection*10) mod 10 == 0)
-        {selection++;}
+      //GUI Scale
+      case 0.1:
+        //is actually up...
+        if (Input[DOWN] &amp;&amp; global.scaleFactor &lt; 5) {global.scaleFactor += 0.05;}
+        //is actually down...
+        else if (Input[UP] &amp;&amp; global.scaleFactor &gt; 0.05) {global.scaleFactor -= 0.05;}
+        break;
+        
+      //volume
+      case 1.1:
+        var gains = audio_get_master_gain(0);
+      
+        if (Input[DOWN] &amp;&amp; gains &lt; 1) {gains += 0.05;}
+        else if (Input[UP] &amp;&amp; gains &gt; 0) {gains -= 0.05;}
+        
+        audio_set_master_gain(0, gains);
+        break;
+    
+      default:
+        if (Input[UP])
+        {
+            selection++
+            
+            
+            if (audio_is_playing(Reload_Gun_02_snd))
+            {audio_stop_sound(Reload_Gun_02_snd);}
+            
+            var reload2 = audio_play_sound(Reload_Gun_02_snd, 50, false);
+            audio_sound_pitch(reload2, 0.7);
+            audio_sound_set_track_position(reload2, 0.015);
+        }
+        
+        else if (Input[DOWN])
+        {
+            selection--;
+            
+            if (audio_is_playing(Reload_Gun_02_snd))
+            {audio_stop_sound(Reload_Gun_02_snd);}
+            
+            var reload2 = audio_play_sound(Reload_Gun_02_snd, 50, false);
+            audio_sound_pitch(reload2, 0.7);
+            audio_sound_set_track_position(reload2, 0.015);
+        }
         
         
-        if (audio_is_playing(Reload_Gun_02_snd))
-        {audio_stop_sound(Reload_Gun_02_snd);}
-        
-        var reload2 = audio_play_sound(Reload_Gun_02_snd, 50, false);
-        audio_sound_pitch(reload2, 0.7);
-        audio_sound_set_track_position(reload2, 0.015);
+        if (selection &gt; 6) {selection = 0;} else if (selection &lt; 0) {selection = 6;}
     }
-    
-    else if (Input[DOWN])
-    {
-        if ((selection*10) mod 10 == 0)
-        {selection--;}
-        
-        if (audio_is_playing(Reload_Gun_02_snd))
-        {audio_stop_sound(Reload_Gun_02_snd);}
-        
-        var reload2 = audio_play_sound(Reload_Gun_02_snd, 50, false);
-        audio_sound_pitch(reload2, 0.7);
-        audio_sound_set_track_position(reload2, 0.015);
-    }
-    
-    
-    if (selection &gt; 6) {selection = 0;} else if (selection &lt; 0) {selection = 6;}
-    
     
     if (Input[INTERACT])
     {
@@ -428,7 +447,7 @@ draw_text_transformed_colour(leftPage + 30, tp0, "Options:", 1, 1, 0, c_purple, 
 draw_text_transformed_colour(tph1, tp2, "GUI Scale:", 1, 1, 0, tc1, tc1, tc1, tc1, 1);
 
 //line 3
-draw_line_width_colour(leftPage + 15, tp3-9, leftPage, tp3-9, 2, tc1, tc1);
+if (selection != 0.1) {draw_line_width_colour(leftPage + 15, tp3-9, leftPage, tp3-9, 2, tc1, tc1);}
 draw_line_width_colour(leftPage + 60, tp3-9, leftPage*1.65, tp3-9, 2, tc1, tc1);
 draw_text_transformed_colour(leftPage + 20, tp3, string_format(global.scaleFactor, 1, 2), 1, 1, 0, tc1, tc1, tc1, tc1, 1);
 
@@ -443,7 +462,7 @@ var num = 45;
 if (audio_get_master_gain(0) == 1) {num = 55;}
 else if (audio_get_master_gain(0) &lt; 0.1) {num = 35;}
 
-draw_line_width_colour(leftPage + 15, tp6-9, leftPage, tp6-9, 2, tc2, tc2);
+if (selection != 1.1) {draw_line_width_colour(leftPage + 15, tp6-9, leftPage, tp6-9, 2, tc2, tc2);}
 draw_line_width_colour(leftPage + num, tp6-9, leftPage*1.65, tp6-9, 2, tc2, tc2);
 draw_text_transformed_colour(leftPage + 20, tp6, round(audio_get_master_gain(0)*100), 1, 1, 0, tc2, tc2, tc2, tc2, 1);
 

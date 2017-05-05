@@ -49,7 +49,7 @@ if (thing != 0 && instance_exists(thing))
       keys--;
     }
 }
-
+/*
 
 thing = 0;
 
