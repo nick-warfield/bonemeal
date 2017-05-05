@@ -67,6 +67,7 @@
             <kind>1</kind>
             <string>audio_stop_all();
 
+aniCount = 6;
 
 /*
 if (ds_exists(global.log, ds_type_stack)) {ds_stack_destroy(global.log);}
@@ -135,21 +136,44 @@ global.log = ds_stack_create();
             <kind>1</kind>
             <string>///Menu Selection Code
 
-if (Input[UP])
+if (timeStamp3 = 0)
 {
-    selection++;
+    if (Input[UP])
+    {
+        selection++;
+        
+        
+        if (audio_is_playing(Reload_Gun_02_snd))
+        {audio_stop_sound(Reload_Gun_02_snd);}
+        
+        var reload2 = audio_play_sound(Reload_Gun_02_snd, 50, false);
+        audio_sound_pitch(reload2, 0.7);
+        audio_sound_set_track_position(reload2, 0.015);
+    }
+    
+    else if (Input[DOWN])
+    {
+        selection--;
+        
+        if (audio_is_playing(Reload_Gun_02_snd))
+        {audio_stop_sound(Reload_Gun_02_snd);}
+        
+        var reload2 = audio_play_sound(Reload_Gun_02_snd, 50, false);
+        audio_sound_pitch(reload2, 0.7);
+        audio_sound_set_track_position(reload2, 0.015);
+    }
+    
+    
+    if (selection &gt; 4) {selection = 0;} else if (selection &lt; 0) {selection = 4;}
+    
+    
+    if (Input[INTERACT])
+    {
+        audio_play_sound(Shot03_Gun_snd, 100, false);
+        timeStamp3 = current_time + 1000;
+    }
 }
-
-else if (Input[DOWN])
-{
-    selection--;
-}
-
-
-if (selection &gt; 4) {selection = 0;} else if (selection &lt; 0) {selection = 4;}
-
-
-if (Input[INTERACT])
+else if (current_time &gt;= timeStamp3)
 {
     switch (selection)
     {
@@ -180,6 +204,8 @@ if (Input[INTERACT])
         game_end();
         break;
     }
+    
+    timeStamp3 = 0;
 }
 </string>
           </argument>
@@ -281,6 +307,9 @@ switch (selection)
 
 draw_set_halign(fa_center);
 
+//background
+draw_sprite(Alpha_Fade_spr, 0, 0, 0);
+
 //journal
 draw_sprite(Journal_02_spr, 0, room_width/2, room_height/2 - 25);
 
@@ -301,6 +330,7 @@ draw_text_transformed_colour(leftPage + 7, room_height/2 + 123, version, 1, 1, 0
 //Right Page Stuff
 draw_sprite(Mordley_Side_Aim_spr, 0, room_width/2 + 55, my - 3);
 
+
 //line 1
 draw_text_transformed_colour(tph1, tp1, "START DEMO", ts1, ts1, 0, tc1, tc1, tc1, tc1, 1);
 
@@ -315,6 +345,15 @@ draw_text_transformed_colour(tph4, tp4, "CREDITS", ts4, ts4, 0, tc4, tc4, tc4, t
 
 //line 5
 draw_text_transformed_colour(tph5, tp5, "EXIT DEMO", ts5, ts5, 0, tc5, tc5, tc5, tc5, 1);
+
+
+if (Input[INTERACT]) {aniCount = 0;}
+if (aniCount &lt; 6)
+{
+    draw_sprite(Bullet_Ani_spr, aniCount, room_width/2 + 95, my - 11);
+    aniCount += 0.5;
+}
+
 
 </string>
           </argument>

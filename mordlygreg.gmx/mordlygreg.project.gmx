@@ -204,6 +204,8 @@
       <sprite>sprites\hud_revolver_03_full_spr</sprite>
       <sprite>sprites\HUD_Card_spr</sprite>
       <sprite>sprites\Icon_spr</sprite>
+      <sprite>sprites\Bullet_Ani_spr</sprite>
+      <sprite>sprites\Alpha_Fade_spr</sprite>
     </sprites>
     <sprites name="Effects">
       <sprite>sprites\Fang_Front_Effect_spr</sprite>
