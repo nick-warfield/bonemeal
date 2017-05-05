@@ -579,9 +579,6 @@
     </objects>
     <objects name="Utility">
       <object>objects\Camera_obj</object>
-      <objects name="Checkpoints">
-        <object>objects\Checkpoint_01_obj</object>
-      </objects>
       <objects name="Menu Jazz">
         <object>objects\Init_Game_obj</object>
         <object>objects\Menu_obj</object>
@@ -589,6 +586,9 @@
         <object>objects\Controls_Menu_obj</object>
         <object>objects\Options_Menu_obj</object>
         <object>objects\Credits_obj</object>
+      </objects>
+      <objects name="Checkpoints">
+        <object>objects\Checkpoint_01_obj</object>
       </objects>
       <objects name="Sound Players">
         <object>objects\Track_Floor1_obj</object>

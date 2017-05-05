@@ -137,7 +137,7 @@ global.log = ds_stack_create();
             <string>///Menu Selection Code
 
 if (timeStamp3 = 0)
-{
+{/*
     if (Input[UP])
     {
         selection++;
@@ -166,11 +166,11 @@ if (timeStamp3 = 0)
     
     if (selection != 0) {selection = 0;}
     
-    
+    */
     if (Input[INTERACT])
     {
-        audio_play_sound(Shot03_Gun_snd, 100, false);
-        timeStamp3 = current_time + 1000;
+        audio_play_sound(Empty_Gun_snd, 100, false);
+        timeStamp3 = current_time + 175;
     }
 }
 else if (current_time &gt;= timeStamp3)
