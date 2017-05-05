@@ -58,7 +58,7 @@
     
         
     //interact command
-        if (gamepad_button_check_pressed(0, gp_face3) == true ||
+        if (gamepad_button_check_pressed(0, gp_face1) == true ||
             keyboard_check_pressed(ord('E')) == true)
         {
             Input[INTERACT] = true;
@@ -131,7 +131,7 @@
     
         
     //swing umbrella commmand
-        if (gamepad_button_check_pressed(0, gp_face1) ||
+        if (gamepad_button_check_pressed(0, gp_face3) ||
             keyboard_check_pressed(vk_space) == true)
         {
             Input[ATTACK1] = true;

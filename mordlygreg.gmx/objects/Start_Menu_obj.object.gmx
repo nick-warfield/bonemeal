@@ -11,6 +11,46 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>Menu_Init_scr</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -25,12 +65,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>v = 0;
+            <string>audio_stop_all();
 
-window_set_cursor(cr_none);
-
-audio_stop_all();
-
+aniCount = 6;
 
 /*
 if (ds_exists(global.log, ds_type_stack)) {ds_stack_destroy(global.log);}
@@ -39,85 +76,45 @@ global.log = ds_stack_create();
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>531</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_fullscreen</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>4</kind>
-            <string>2</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>///up and down input
-
-    //up command
-        if (gamepad_button_check_pressed(0, gp_padu) == true ||
-            keyboard_check_pressed(ord('W')) == true || 
-            keyboard_check_pressed(vk_up) == true)
-        {
-            Input[UP] = true;
-        }
-        else
-        {
-            Input[UP] = false;
-        }
-    
-    
-    //down command
-        if (gamepad_button_check_pressed(0, gp_padd) == true||
-            keyboard_check_pressed(ord('S')) == true ||
-            keyboard_check_pressed(vk_down) == true)
-        {
-            Input[DOWN] = true;
-        }
-        else
-        {
-            Input[DOWN] = false;
-        }
-        
-        
-    //interact command
-        if (gamepad_button_check_pressed(0, gp_face1) == true ||
-            keyboard_check_pressed(ord('E')) == true ||
-            keyboard_check_pressed(vk_space) == true ||
-            keyboard_check_pressed(vk_enter) == true)
-        {
-            Input[INTERACT] = true;
-        }
-        else
-        {
-            Input[INTERACT] = false;
-        }
-</string>
+            <kind>9</kind>
+            <script>MenuController_scr</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -137,24 +134,50 @@ global.log = ds_stack_create();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (Input[UP])
+            <string>///Menu Selection Code
+
+if (timeStamp3 = 0)
 {
-    v++;
-}
-
-else if (Input[DOWN])
-{
-    v--;
-}
-
-
-if (v &gt; 1) {v = 0;} else if (v &lt; 0) {v = 1;}
-
-
-if (Input[INTERACT])
-{
-    switch (v)
+    if (Input[UP])
     {
+        selection++;
+        
+        
+        if (audio_is_playing(Reload_Gun_02_snd))
+        {audio_stop_sound(Reload_Gun_02_snd);}
+        
+        var reload2 = audio_play_sound(Reload_Gun_02_snd, 50, false);
+        audio_sound_pitch(reload2, 0.7);
+        audio_sound_set_track_position(reload2, 0.015);
+    }
+    
+    else if (Input[DOWN])
+    {
+        selection--;
+        
+        if (audio_is_playing(Reload_Gun_02_snd))
+        {audio_stop_sound(Reload_Gun_02_snd);}
+        
+        var reload2 = audio_play_sound(Reload_Gun_02_snd, 50, false);
+        audio_sound_pitch(reload2, 0.7);
+        audio_sound_set_track_position(reload2, 0.015);
+    }
+    
+    
+    if (selection &gt; 4) {selection = 0;} else if (selection &lt; 0) {selection = 4;}
+    
+    
+    if (Input[INTERACT])
+    {
+        audio_play_sound(Shot03_Gun_snd, 100, false);
+        timeStamp3 = current_time + 1000;
+    }
+}
+else if (current_time &gt;= timeStamp3)
+{
+    switch (selection)
+    {
+      //Start Game
       case 0:
         room_goto_next();
         instance_create(535, 1460, Player02_obj);
@@ -164,13 +187,25 @@ if (Input[INTERACT])
         global.paused = false;
         break;
         
-      case 2:       //will be 1 when options menu is made
-        
-        
+      //Controls
       case 1:
+        break;
+        
+      //Options
+      case 2:
+        break;
+        
+      //Credits
+      case 3:
+        break;
+        
+      //Exit
+      case 4:
         game_end();
         break;
     }
+    
+    timeStamp3 = 0;
 }
 </string>
           </argument>
@@ -194,26 +229,131 @@ if (Input[INTERACT])
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var tc1 = c_black;
-var tc2 = c_black;
+            <string>var version = "version: 2.1.7";
 
-if (v == 0) {tc1 = c_white;} else {tc2 = c_white;}
+//xoffsets
+var leftPage = room_width/4;
+var rightPage = room_width/2 + 80;
+
+//text colors
+var tc1 = c_navy;
+var tc2 = tc1;
+var tc3 = tc2;
+var tc4 = tc3;
+var tc5 = tc4;
+
+//text scales
+var ts1 = 1;
+var ts2 = ts1;
+var ts3 = ts2;
+var ts4 = ts3;
+var ts5 = ts4;
+
+//text spacing
+var tp1 = room_height/2 - 102;
+var tp2 = tp1 + 25;
+var tp3 = tp2 + 26;
+var tp4 = tp3 + 30;
+var tp5 = tp4 + 25;
+
+var tph1 = rightPage;
+var tph2 = rightPage;
+var tph3 = rightPage;
+var tph4 = rightPage;
+var tph5 = rightPage;
+
+var my;
+
+
+//change text based on selction
+switch (selection)
+{
+  case 0:
+    tc1 = c_purple;
+    ts1 += 0.5
+    tph1 += 10;
+    my = tp1;
+    break;
+    
+  case 1:
+    tc2 = c_purple;
+    ts2 += 0.5
+    tph2 += 10;
+    my = tp2;
+    break;
+    
+  case 2:
+    tc3 = c_purple;
+    ts3 += 0.5
+    tph3 += 10;
+    my = tp3;
+    break;
+    
+  case 3:
+    tc4 = c_purple;
+    ts4 += 0.5
+    tph4 += 10;
+    my = tp4;
+    break;
+    
+  case 4:
+    tc5 = c_purple;
+    ts5 += 0.5
+    tph5 += 10;
+    my = tp5;
+    break;
+}
 
 
 draw_set_halign(fa_center);
 
-//Game name, and company
-draw_text_transformed_colour(room_width/2, room_height/2 - 160, "MORDLEY GREG, P.I.", 2, 2, 0, c_white, c_white, c_white, c_white, 1);
-draw_text_colour(room_width/2, room_height/2 - 96, "by: bonemeal", c_white, c_white, c_white, c_white, 1);
+//background
+draw_sprite(Alpha_Fade_spr, 0, 0, 0);
 
-//logo
-draw_sprite(Mordley_Side_Aim_spr, 0, room_width/2, room_height/2 - 25);
+//journal
+draw_sprite(Journal_02_spr, 0, room_width/2, room_height/2 - 25);
+
+
+draw_set_halign(fa_left);
+draw_set_valign(fa_bottom);
+
+//left page stuff
+draw_sprite_ext(Icon_spr, 0, leftPage*1.35, tp1, 1.75, 1.75, 0, c_white, 1);
+
+//Game name, and company
+draw_text_transformed_colour(leftPage - 12, room_height/2 - 25, "MORDLEY GREG:", 1.5, 1.5, 0, c_purple, c_purple, c_purple, c_purple, 1);
+draw_text_transformed_colour(leftPage + 1, room_height/2, "PRIVATE EYE", 1.5, 1.5, 0, c_purple, c_purple, c_purple, c_purple, 1);
+draw_text_colour(leftPage + 20, room_height/2 + 30, "by: bonemeal", c_navy, c_navy, c_navy, c_navy, 1);
+draw_text_transformed_colour(leftPage + 7, room_height/2 + 123, version, 1, 1, 0, c_navy, c_navy, c_navy, c_navy, 1);
+
+
+//Right Page Stuff
+draw_sprite(Mordley_Side_Aim_spr, 0, room_width/2 + 55, my - 3);
+
 
 //line 1
-draw_text_transformed_colour(room_width/2, room_height/2 + 20, "START DEMO", 1.5, 1.5, 0, tc1, tc1, tc1, tc1, 1);
+draw_text_transformed_colour(tph1, tp1, "START DEMO", ts1, ts1, 0, tc1, tc1, tc1, tc1, 1);
 
 //line 2
-draw_text_transformed_colour(room_width/2, room_height/2 + 60, "EXIT DEMO", 1.5, 1.5, 0, tc2, tc2, tc2, tc2, 1);
+draw_text_transformed_colour(tph2, tp2, "CONTROLS", ts2, ts2, 0, tc2, tc2, tc2, tc2, 1);
+
+//line 3
+draw_text_transformed_colour(tph3, tp3, "OPTIONS", ts3, ts3, 0, tc3, tc3, tc3, tc3, 1);
+
+//line 4
+draw_text_transformed_colour(tph4, tp4, "CREDITS", ts4, ts4, 0, tc4, tc4, tc4, tc4, 1);
+
+//line 5
+draw_text_transformed_colour(tph5, tp5, "EXIT DEMO", ts5, ts5, 0, tc5, tc5, tc5, tc5, 1);
+
+
+if (Input[INTERACT]) {aniCount = 0;}
+if (aniCount &lt; 6)
+{
+    draw_sprite(Bullet_Ani_spr, aniCount, room_width/2 + 95, my - 11);
+    aniCount += 0.5;
+}
+
 
 </string>
           </argument>
