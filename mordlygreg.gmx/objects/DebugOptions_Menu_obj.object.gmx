@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>Menu_obj</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Inherit_scr</script>
+            <script>Menu_Init_scr</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -94,7 +94,7 @@ global.log = ds_stack_create();
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Inherit_scr</script>
+            <script>MenuController_scr</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -189,21 +189,14 @@ else if (current_time &gt;= timeStamp3)
         
       //Controls
       case 1:
-        instance_create(x, y, Controls_Menu_obj);
-        instance_destroy();
         break;
         
       //Options
       case 2:
-        //Input[INTERACT] = false;
-        instance_create(x, y, Options_Menu_obj);
-        instance_destroy();
         break;
         
       //Credits
       case 3:
-        instance_create(x, y, Credits_obj);
-        instance_destroy();
         break;
         
       //Exit
