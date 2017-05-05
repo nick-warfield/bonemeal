@@ -183,10 +183,18 @@ else if (current_time &gt;= timeStamp3)
         selection = 0.1;
         break;
         
+        case 0.1:
+          selection = 0;
+          break;
+        
       //Volume
       case 1:
         selection = 1.1
         break;
+        
+        case 1.1:
+          selection = 1;
+          break;
         
       //Back
       case 2:
@@ -197,10 +205,26 @@ else if (current_time &gt;= timeStamp3)
         selection = 3.1;
         break;
         
+        case 3.1:
+          selection = 3;
+          break;
+          
+        case 3.2:
+          selection = 3;
+          break;
+        
       //Keys
       case 4:
         selection = 4.1;
         break;
+        
+        case 4.1:
+          selection = 4;
+          break;
+          
+        case 4.2:
+          selection = 4;
+          break;
         
       //Reset Room
       case 5:
@@ -295,6 +319,8 @@ switch (selection)
     break;
     
     case 0.1:
+      mx = leftPage - 20;
+      my = tp3;
       break;
     
   //Volume
@@ -308,6 +334,8 @@ switch (selection)
     break;
     
     case 1.1:
+      mx = leftPage - 20;
+      my = tp6;
       break;
     
   //BACK Button
@@ -330,10 +358,12 @@ switch (selection)
     
     //ON
     case 3.1:
+      my = tp2;
       break;
       
     //OFF
     case 3.2:
+      my = tp2;
       break;
     
   //Keys
@@ -346,10 +376,12 @@ switch (selection)
     
     //KEY++
     case 4.1:
+      my = tp5;
       break;
       
     //BIGKEY++
     case 4.2:
+      my = tp5;
       break;
     
   //Room Reset
