@@ -306,6 +306,7 @@
       <script>scripts\Dialogue_Init_scr.gml</script>
       <script>scripts\Sign_Init_scr.gml</script>
       <script>scripts\Porjectile_Init_v02_scr.gml</script>
+      <script>scripts\Menu_Init_scr.gml</script>
     </scripts>
     <scripts name="State Machines">
       <script>scripts\Mordley_SM_v11_scr.gml</script>
@@ -385,6 +386,7 @@
       <script>scripts\Player_Controller_v04_scr.gml</script>
       <script>scripts\Player_Controller_v03_scr.gml</script>
       <script>scripts\Player_Controller_v02_scr.gml</script>
+      <script>scripts\MenuController_scr.gml</script>
     </scripts>
     <scripts name="SCRATCH">
       <script>scripts\Character_Collision_v02_scr.gml</script>

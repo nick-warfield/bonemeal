@@ -11,6 +11,46 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>Menu_Init_scr</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -25,13 +65,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>selection = 0;
-timeStamp1 = 0;
-timeStamp2 = 0;
-
-window_set_cursor(cr_none);
-
-audio_stop_all();
+            <string>audio_stop_all();
 
 
 /*
@@ -41,94 +75,45 @@ global.log = ds_stack_create();
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>531</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_fullscreen</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>4</kind>
-            <string>2</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>///up and down input
-
-    //up command
-        if ((gamepad_axis_value(0, gp_axislv) &lt;= -0.75 &amp;&amp; current_time &gt;= timeStamp1) ||
-            (gamepad_axis_value(0, gp_axisrv) &lt;= -0.75 &amp;&amp; current_time &gt;= timeStamp1) ||
-            gamepad_button_check_pressed(0, gp_padu) == true ||
-            keyboard_check_pressed(ord('W')) == true || 
-            keyboard_check_pressed(vk_up) == true)
-        {
-            timeStamp1 = current_time + 275;
-            timeStamp2 = 0;
-            Input[UP] = true;
-        }
-        else
-        {
-            Input[UP] = false;
-        }
-    
-    
-    //down command
-        if ((gamepad_axis_value(0, gp_axislv) &gt;= 0.75 &amp;&amp; current_time &gt;= timeStamp2) ||
-            (gamepad_axis_value(0, gp_axisrv) &gt;= 0.75 &amp;&amp; current_time &gt;= timeStamp2) ||
-            gamepad_button_check_pressed(0, gp_padd) == true||
-            keyboard_check_pressed(ord('S')) == true ||
-            keyboard_check_pressed(vk_down) == true)
-        {
-            timeStamp2 = current_time + 275;
-            timeStamp1 = 0;
-            Input[DOWN] = true;
-        }
-        else
-        {
-            Input[DOWN] = false;
-        }
-        
-        
-    //interact command
-        if (gamepad_button_check_pressed(0, gp_face1) == true ||
-            gamepad_button_check_pressed(0, gp_start) == true ||
-            keyboard_check_pressed(ord('E')) == true ||
-            keyboard_check_pressed(vk_space) == true ||
-            keyboard_check_pressed(vk_enter) == true)
-        {
-            Input[INTERACT] = true;
-        }
-        else
-        {
-            Input[INTERACT] = false;
-        }
-</string>
+            <kind>9</kind>
+            <script>MenuController_scr</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -148,7 +133,9 @@ global.log = ds_stack_create();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (Input[UP])
+            <string>///Menu Selection Code
+
+if (Input[UP])
 {
     selection++;
 }
@@ -159,13 +146,14 @@ else if (Input[DOWN])
 }
 
 
-if (selection &gt; 1) {selection = 0;} else if (selection &lt; 0) {selection = 1;}
+if (selection &gt; 4) {selection = 0;} else if (selection &lt; 0) {selection = 4;}
 
 
 if (Input[INTERACT])
 {
     switch (selection)
     {
+      //Start Game
       case 0:
         room_goto_next();
         instance_create(535, 1460, Player02_obj);
@@ -175,10 +163,20 @@ if (Input[INTERACT])
         global.paused = false;
         break;
         
-      case 2:       //will be 1 when options menu is made
-        
-        
+      //Controls
       case 1:
+        break;
+        
+      //Options
+      case 2:
+        break;
+        
+      //Credits
+      case 3:
+        break;
+        
+      //Exit
+      case 4:
         game_end();
         break;
     }
@@ -205,26 +203,79 @@ if (Input[INTERACT])
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var tc1 = c_black;
-var tc2 = c_black;
+            <string>//text colors
+var tc1 = c_silver;
+var tc2 = tc1;
+var tc3 = tc2;
+var tc4 = tc3;
+var tc5 = tc4;
 
-if (selection == 0) {tc1 = c_white;} else {tc2 = c_white;}
+//text scales
+var ts1 = 1;
+var ts2 = ts1;
+var ts3 = ts2;
+var ts4 = ts3;
+var ts5 = ts4;
+
+//text spacing
+var tp1 = room_height/2 + 20;
+var tp2 = tp1 + 40;
+var tp3 = tp2 + 40;
+var tp4 = tp3 + 40;
+var tp5 = tp4 + 40;
+
+switch (selection)
+{
+  case 0:
+    tc1 = c_white;
+    ts1 += 0.5
+    break;
+    
+  case 1:
+    tc2 = c_white;
+    ts2 += 0.5
+    break;
+    
+  case 2:
+    tc3 = c_white;
+    ts3 += 0.5
+    break;
+    
+  case 3:
+    tc4 = c_white;
+    ts4 += 0.5
+    break;
+    
+  case 4:
+    tc5 = c_white;
+    ts5 += 0.5
+    break;
+}
 
 
 draw_set_halign(fa_center);
 
 //Game name, and company
 draw_text_transformed_colour(room_width/2, room_height/2 - 160, "MORDLEY GREG, P.I.", 2, 2, 0, c_white, c_white, c_white, c_white, 1);
-draw_text_colour(room_width/2, room_height/2 - 96, "by: bonemeal", c_white, c_white, c_white, c_white, 1);
+draw_text_colour(room_width/2, room_height/2 - 96, "by: bonemeal", c_silver, c_silver, c_silver, c_silver, 1);
 
 //logo
-draw_sprite(Mordley_Side_Aim_spr, 0, room_width/2, room_height/2 - 25);
+draw_sprite(HUD_Card_spr, 0, room_width/2, room_height/2 - 25);
 
 //line 1
-draw_text_transformed_colour(room_width/2, room_height/2 + 20, "START DEMO", 1.5, 1.5, 0, tc1, tc1, tc1, tc1, 1);
+draw_text_transformed_colour(room_width/2, tp1, "START DEMO", ts1, ts1, 0, tc1, tc1, tc1, tc1, 1);
 
 //line 2
-draw_text_transformed_colour(room_width/2, room_height/2 + 60, "EXIT DEMO", 1.5, 1.5, 0, tc2, tc2, tc2, tc2, 1);
+draw_text_transformed_colour(room_width/2, tp2, "CONTROLS", ts2, ts2, 0, tc2, tc2, tc2, tc2, 1);
+
+//line 3
+draw_text_transformed_colour(room_width/2, tp3, "OPTIONS", ts3, ts3, 0, tc3, tc3, tc3, tc3, 1);
+
+//line 4
+draw_text_transformed_colour(room_width/2, tp4, "CREDITS", ts4, ts4, 0, tc4, tc4, tc4, tc4, 1);
+
+//line 5
+draw_text_transformed_colour(room_width/2, tp5, "EXIT DEMO", ts5, ts5, 0, tc5, tc5, tc5, tc5, 1);
 
 </string>
           </argument>
