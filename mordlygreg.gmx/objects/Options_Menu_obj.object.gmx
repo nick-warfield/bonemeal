@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-20</depth>
   <persistent>0</persistent>
   <parentName>Menu_obj</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -422,6 +422,7 @@ switch (selection)
 draw_set_halign(fa_center);
 
 //background
+draw_sprite(global.pauseBkg, 0, 0, 0);
 draw_sprite(Alpha_Fade_spr, 0, 0, 0);
 
 //journal
