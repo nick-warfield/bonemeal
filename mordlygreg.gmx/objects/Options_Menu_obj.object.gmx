@@ -135,12 +135,12 @@ global.log = ds_stack_create();
           <argument>
             <kind>1</kind>
             <string>///Menu Selection Code
-
 if (timeStamp3 = 0)
 {
     if (Input[UP])
     {
-        selection++;
+        if ((selection*10) mod 10 == 0)
+        {selection++;}
         
         
         if (audio_is_playing(Reload_Gun_02_snd))
@@ -153,7 +153,8 @@ if (timeStamp3 = 0)
     
     else if (Input[DOWN])
     {
-        selection--;
+        if ((selection*10) mod 10 == 0)
+        {selection--;}
         
         if (audio_is_playing(Reload_Gun_02_snd))
         {audio_stop_sound(Reload_Gun_02_snd);}
@@ -164,51 +165,50 @@ if (timeStamp3 = 0)
     }
     
     
-    if (selection &gt; 4) {selection = 0;} else if (selection &lt; 0) {selection = 4;}
+    if (selection &gt; 6) {selection = 0;} else if (selection &lt; 0) {selection = 6;}
     
     
     if (Input[INTERACT])
     {
-        audio_play_sound(Shot03_Gun_snd, 100, false);
-        timeStamp3 = current_time + 1000;
+        audio_play_sound(Empty_Gun_snd, 100, false);
+        timeStamp3 = current_time + 175;
     }
 }
 else if (current_time &gt;= timeStamp3)
 {
     switch (selection)
     {
-      //Start Game
+      //GUI Scale
       case 0:
-        room_goto_next();
-        instance_create(535, 1460, Player02_obj);
-        //instance_create(0, 0, Player02_obj);
-        
-        global.checkpoint = 1;
-        global.paused = false;
+        selection = 0.1;
         break;
         
-      //Controls
+      //Volume
       case 1:
-        instance_create(x, y, Controls_Menu_obj);
-        instance_destroy();
+        selection = 1.1
         break;
         
-      //Options
+      //Back
       case 2:
-        //Input[INTERACT] = false;
-        instance_create(x, y, Options_Menu_obj);
-        instance_destroy();
         break;
         
-      //Credits
+      //No Damage
       case 3:
-        instance_create(x, y, Credits_obj);
-        instance_destroy();
+        selection = 3.1;
         break;
         
-      //Exit
+      //Keys
       case 4:
-        game_end();
+        selection = 4.1;
+        break;
+        
+      //Reset Room
+      case 5:
+        break;
+        
+      //Main Menu
+      case 6:
+        room_goto(Start_Menu);
         break;
     }
     
@@ -236,9 +236,7 @@ else if (current_time &gt;= timeStamp3)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var version = "version: 2.1.8";
-
-//xoffsets
+            <string>//xoffsets
 var leftPage = room_width/4;
 var rightPage = room_width/2 + 80;
 
@@ -248,6 +246,8 @@ var tc2 = tc1;
 var tc3 = tc2;
 var tc4 = tc3;
 var tc5 = tc4;
+var tc6 = tc5;
+var tc7 = tc6;
 
 //text scales
 var ts1 = 1;
@@ -257,57 +257,113 @@ var ts4 = ts3;
 var ts5 = ts4;
 
 //text spacing
+var tp0 = room_height/2 - 128;
 var tp1 = room_height/2 - 102;
 var tp2 = tp1 + 25;
 var tp3 = tp2 + 26;
 var tp4 = tp3 + 30;
 var tp5 = tp4 + 25;
+var tp6 = tp5 + 29;
+var tp7 = tp6 + 30;
+var tp8 = tp7 + 30;
+var tp9 = tp8 + 24;
 
-var tph1 = rightPage;
-var tph2 = rightPage;
-var tph3 = rightPage;
+var tph1 = leftPage;
+var tph2 = leftPage;
+var tph3 = leftPage;
 var tph4 = rightPage;
 var tph5 = rightPage;
+var tph6 = rightPage;
+var tph7 = rightPage;
 
-var my;
+
+var mx = room_width/2 + 55;
+var my = 0;
 
 
 //change text based on selction
 switch (selection)
 {
+  //GUI Scale
   case 0:
     tc1 = c_purple;
     ts1 += 0.5
     tph1 += 10;
-    my = tp1;
+    
+    mx = leftPage - 27;
+    my = tp2;
     break;
     
+    case 0.1:
+      break;
+    
+  //Volume
   case 1:
     tc2 = c_purple;
     ts2 += 0.5
     tph2 += 10;
-    my = tp2;
+    
+    mx = leftPage - 27;
+    my = tp5;
     break;
     
+    case 1.1:
+      break;
+    
+  //BACK Button
   case 2:
     tc3 = c_purple;
     ts3 += 0.5
     tph3 += 10;
-    my = tp3;
+    
+    mx = leftPage - 12;
+    my = tp9;
     break;
     
+  //NO DAMAGE
   case 3:
     tc4 = c_purple;
     ts4 += 0.5
     tph4 += 10;
-    my = tp4;
+    my = tp1;
     break;
     
+    //ON
+    case 3.1:
+      break;
+      
+    //OFF
+    case 3.2:
+      break;
+    
+  //Keys
   case 4:
     tc5 = c_purple;
     ts5 += 0.5
     tph5 += 10;
-    my = tp5;
+    my = tp4;
+    break;
+    
+    //KEY++
+    case 4.1:
+      break;
+      
+    //BIGKEY++
+    case 4.2:
+      break;
+    
+  //Room Reset
+  case 5:
+    tc6 = c_purple;
+    tph6 += 10;
+    my = tp7;
+    break;
+    
+  //Exit Demo
+  case 6:
+    tc7 = c_purple;
+    tph7 += 10;
+    my = tp9;
     break;
 }
 
@@ -318,42 +374,89 @@ draw_set_halign(fa_center);
 draw_sprite(Alpha_Fade_spr, 0, 0, 0);
 
 //journal
-draw_sprite(Journal_02_spr, 0, room_width/2, room_height/2 - 25);
+draw_sprite(Journal_spr, 0, room_width/2, room_height/2 - 25);
 
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_bottom);
 
-//left page stuff
-draw_sprite_ext(Icon_spr, 0, leftPage*1.35, tp1, 1.75, 1.75, 0, c_white, 1);
 
-//Game name, and company
-draw_text_transformed_colour(leftPage - 12, room_height/2 - 25, "MORDLEY GREG:", 1.5, 1.5, 0, c_purple, c_purple, c_purple, c_purple, 1);
-draw_text_transformed_colour(leftPage + 1, room_height/2, "PRIVATE EYE", 1.5, 1.5, 0, c_purple, c_purple, c_purple, c_purple, 1);
-draw_text_colour(leftPage + 20, room_height/2 + 30, "by: bonemeal", c_navy, c_navy, c_navy, c_navy, 1);
-draw_text_transformed_colour(leftPage + 7, room_height/2 + 123, version, 1, 1, 0, c_navy, c_navy, c_navy, c_navy, 1);
+//pointer
+draw_sprite(Mordley_Side_Aim_spr, 0, mx, my - 3);
+
+
+//left page stuff
+//title line
+draw_text_transformed_colour(leftPage + 30, tp0, "Options:", 1, 1, 0, c_purple, c_purple, c_purple, c_purple, 1);
+
+//line 1
+//draw_text_transformed_colour(leftPage, tp1, "Move: WASD/Arrow Keys", 1, 1, 0, tc1, tc1, tc1, tc1, 1);
+
+//line 2
+draw_text_transformed_colour(tph1, tp2, "GUI Scale:", 1, 1, 0, tc1, tc1, tc1, tc1, 1);
+
+//line 3
+draw_line_width_colour(leftPage + 15, tp3-9, leftPage, tp3-9, 2, tc1, tc1);
+draw_line_width_colour(leftPage + 60, tp3-9, leftPage*1.65, tp3-9, 2, tc1, tc1);
+draw_text_transformed_colour(leftPage + 20, tp3, string_format(global.scaleFactor, 1, 2), 1, 1, 0, tc1, tc1, tc1, tc1, 1);
+
+//line 4
+//draw_text_transformed_colour(leftPage, tp4, "Aim: Space", 1, 1, 0, tc4, tc4, tc4, tc4, 1);
+
+//line 5
+draw_text_transformed_colour(tph2, tp5, "Volume:", 1, 1, 0, tc2, tc2, tc2, tc2, 1);
+
+//line 6
+var num = 45;
+if (audio_get_master_gain(0) == 1) {num = 55;}
+else if (audio_get_master_gain(0) &lt; 0.1) {num = 35;}
+
+draw_line_width_colour(leftPage + 15, tp6-9, leftPage, tp6-9, 2, tc2, tc2);
+draw_line_width_colour(leftPage + num, tp6-9, leftPage*1.65, tp6-9, 2, tc2, tc2);
+draw_text_transformed_colour(leftPage + 20, tp6, round(audio_get_master_gain(0)*100), 1, 1, 0, tc2, tc2, tc2, tc2, 1);
+
+//line 7
+//draw_text_transformed_colour(leftPage, tp7, "Dodge: Left Shift", 1, 1, 0, tc2, tc2, tc2, tc2, 1);
+
+//line 8
+//draw_text_transformed_colour(leftPage, tp8, "Interact: E", 1, 1, 0, tc2, tc2, tc2, tc2, 1);
+
+//line 9
+draw_text_transformed_colour(tph3 + 15, tp9, "BACK", 1, 1, 0, tc3, tc3, tc3, tc3, 1);
+
 
 
 //Right Page Stuff
-draw_sprite(Mordley_Side_Aim_spr, 0, room_width/2 + 55, my - 3);
-
+//title line
+draw_text_transformed_colour(rightPage - 9, tp0, "Debug: [In Game Only]", 1, 1, 0, c_purple, c_purple, c_purple, c_purple, 1);
 
 //line 1
-draw_text_transformed_colour(tph1, tp1, "START DEMO", ts1, ts1, 0, tc1, tc1, tc1, tc1, 1);
+draw_text_transformed_colour(tph4, tp1, "No Damage:", 1, 1, 0, tc4, tc4, tc4, tc4, 1);
 
 //line 2
-draw_text_transformed_colour(tph2, tp2, "CONTROLS", ts2, ts2, 0, tc2, tc2, tc2, tc2, 1);
+draw_text_transformed_colour(tph4, tp2, "ON     OFF", 1, 1, 0, tc4, tc4, tc4, tc4, 1);
 
 //line 3
-draw_text_transformed_colour(tph3, tp3, "OPTIONS", ts3, ts3, 0, tc3, tc3, tc3, tc3, 1);
+//draw_text_transformed_colour(tph3, tp3, "Add Keys: 0 :: 0", 1, 1, 0, tc3, tc3, tc3, tc3, 1);
 
 //line 4
-draw_text_transformed_colour(tph4, tp4, "CREDITS", ts4, ts4, 0, tc4, tc4, tc4, tc4, 1);
+draw_text_transformed_colour(tph5, tp4, "Add Keys:", 1, 1, 0, tc5, tc5, tc5, tc5, 1);
 
 //line 5
-draw_text_transformed_colour(tph5, tp5, "EXIT DEMO", ts5, ts5, 0, tc5, tc5, tc5, tc5, 1);
+draw_text_transformed_colour(tph5, tp5, "K: 0   BK: 0", 1, 1, 0, tc5, tc5, tc5, tc5, 1);
+
+//line 6
+
+//line 7
+draw_text_transformed_colour(tph6, tp7, "RESET ROOM", 1, 1, 0, tc6, tc6, tc6, tc6, 1);
+
+//line 8
+
+//line 9
+draw_text_transformed_colour(tph7, tp9, "MAIN MENU", 1, 1, 0, tc7, tc7, tc7, tc7, 1);
 
 
+/*
 if (Input[INTERACT]) {aniCount = 0;}
 if (aniCount &lt; 6)
 {
