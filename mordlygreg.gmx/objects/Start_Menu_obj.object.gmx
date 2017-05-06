@@ -66,7 +66,8 @@
           <argument>
             <kind>1</kind>
             <string>audio_stop_all();
-global.pauseBkg = 0;
+global.pauseBkg = HUD_Gun_spr;
+global.oldRm = room;
 aniCount = 6;
 
 /*
