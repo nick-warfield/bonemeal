@@ -251,6 +251,15 @@
       <background>background\Floor1_top_bkg</background>
     </backgrounds>
     <backgrounds name="Floor2">
+      <backgrounds name="Floor2_v04">
+        <background>background\Pit_06_flr_bkg</background>
+        <background>background\Office_03_flr_bkg</background>
+        <background>background\Start_03_flr_bkg</background>
+        <background>background\EnemyRm_03_bkg</background>
+        <background>background\EnemyRm2_03_bkg</background>
+        <background>background\Exit_03_flr_bkg</background>
+        <background>background\Storage_03_bkg</background>
+      </backgrounds>
       <backgrounds name="Floor2-v03">
         <background>background\Pit_05_flr_bkg</background>
         <background>background\Pit_05_obj_bkg</background>
