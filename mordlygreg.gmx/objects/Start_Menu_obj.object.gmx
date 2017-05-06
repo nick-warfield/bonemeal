@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>Menu_obj</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Menu_Init_scr</script>
+            <script>Inherit_scr</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -66,7 +66,8 @@
           <argument>
             <kind>1</kind>
             <string>audio_stop_all();
-
+global.pauseBkg = HUD_Gun_spr;
+global.oldRm = room;
 aniCount = 6;
 
 /*
@@ -94,7 +95,7 @@ global.log = ds_stack_create();
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>MenuController_scr</script>
+            <script>Inherit_scr</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -189,14 +190,21 @@ else if (current_time &gt;= timeStamp3)
         
       //Controls
       case 1:
+        instance_create(x, y, Controls_Menu_obj);
+        instance_destroy();
         break;
         
       //Options
       case 2:
+        //Input[INTERACT] = false;
+        instance_create(x, y, Options_Menu_obj);
+        instance_destroy();
         break;
         
       //Credits
       case 3:
+        instance_create(x, y, Credits_obj);
+        instance_destroy();
         break;
         
       //Exit
@@ -229,7 +237,7 @@ else if (current_time &gt;= timeStamp3)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var version = "version: 2.1.7";
+            <string>var version = "version: 2.1.8";
 
 //xoffsets
 var leftPage = room_width/4;

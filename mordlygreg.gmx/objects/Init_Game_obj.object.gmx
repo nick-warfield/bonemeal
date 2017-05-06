@@ -49,6 +49,10 @@
 
 global.paused = true;
 global.scaleFactor = 1.5;
+global.pauseBkg = 0;
+global.oldRm = 0;
+
+audio_set_master_gain(0, 0.75);
 
 room_goto_next();
 </string>
