@@ -69,7 +69,7 @@
         }
         
     //reload command
-        if (gamepad_button_check_pressed(0, gp_shoulderr) == true ||
+        if (gamepad_button_check_pressed(0, gp_face4) == true ||
             keyboard_check_pressed(ord('R')) == true ||
             mouse_check_button_pressed(mb_middle) == true ||
             mouse_wheel_up() == true)
@@ -82,8 +82,8 @@
         }
     
     //cycle cylinder command
-        if (gamepad_button_check_pressed(0, gp_shoulderl) == true ||
-            gamepad_button_check_pressed(0, gp_face4) == true ||
+        if (gamepad_button_check_pressed(0, gp_shoulderr) == true ||
+            //gamepad_button_check_pressed(0, gp_face4) == true ||
             keyboard_check_pressed(ord('Q')) == true ||
             (mouse_wheel_down() == true && lerpI >= 0.65))
         {
@@ -109,6 +109,7 @@
     
     //aim gun command
         if (gamepad_button_check(0, gp_shoulderlb) == true ||
+            gamepad_button_check(0, gp_shoulderl) == true ||
             //mouse_check_button(mb_right) == true ||
             keyboard_check(vk_space) == true)
         {
