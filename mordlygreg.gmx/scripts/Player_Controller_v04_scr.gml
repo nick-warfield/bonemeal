@@ -71,8 +71,8 @@
     //reload command
         if (gamepad_button_check_pressed(0, gp_face4) == true ||
             keyboard_check_pressed(ord('R')) == true ||
-            mouse_check_button_pressed(mb_middle) == true ||
-            mouse_wheel_up() == true)
+            keyboard_check_pressed(ord('L')) == true ||
+            mouse_check_button_pressed(mb_middle) == true)
         {
             Input[ATTACK4] = true;
         }
@@ -85,6 +85,7 @@
         if (gamepad_button_check_pressed(0, gp_shoulderr) == true ||
             //gamepad_button_check_pressed(0, gp_face4) == true ||
             keyboard_check_pressed(ord('Q')) == true ||
+            keyboard_check_pressed(ord('K')) == true ||
             (mouse_wheel_down() == true && lerpI >= 0.65))
         {
             Input[ATTACK5] = true;
@@ -111,7 +112,7 @@
         if (gamepad_button_check(0, gp_shoulderlb) == true ||
             gamepad_button_check(0, gp_shoulderl) == true ||
             //mouse_check_button(mb_right) == true ||
-            keyboard_check(vk_space) == true)
+            keyboard_check(vk_rshift) == true)
         {
             Input[ATTACK3] = true;
         }
@@ -124,8 +125,8 @@
     //fire gun command
         if (gamepad_button_check_pressed(0, gp_shoulderrb) == true ||
             mouse_check_button_pressed(mb_right) == true ||
-            mouse_check_button_pressed(mb_left) == true)
-            //keyboard_check(vk_space) == true)
+            mouse_check_button_pressed(mb_left) == true ||
+            keyboard_check(vk_space) == true)
         {
             Input[ATTACK2] = true;
         }
@@ -137,9 +138,9 @@
         
     //swing umbrella commmand
         if (gamepad_button_check_pressed(0, gp_face3) ||
-            //keyboard_check_pressed(vk_space) == true)
-            mouse_check_button(mb_left) == true ||
-            mouse_check_button(mb_right) == true)
+            keyboard_check_pressed(vk_space) == true)
+            //mouse_check_button(mb_left) == true ||
+            //mouse_check_button(mb_right) == true)
         {
             Input[ATTACK1] = true;
         }

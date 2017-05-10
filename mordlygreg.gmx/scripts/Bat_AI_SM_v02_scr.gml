@@ -85,7 +85,7 @@ switch(ds_stack_top(StateStack))
         else 
         {
             Dir = point_direction(x, y, target.x, target.y);
-            spd = 4;
+            spd = 3.5;
             timeStamp[4] = current_time + 1000;
             ds_stack_push(StateStack, s_ATTACK1);
         }
