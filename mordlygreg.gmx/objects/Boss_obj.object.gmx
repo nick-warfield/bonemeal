@@ -94,7 +94,7 @@ audio_stop_sound(Boss_trk);
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Boss_AI_SM_v04_scr</script>
+            <script>Boss_AI_SM_v05_scr</script>
           </argument>
           <argument>
             <kind>0</kind>

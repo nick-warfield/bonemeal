@@ -47,7 +47,7 @@
             <kind>1</kind>
             <string>///Initialize Global Variables, and other stuff, then go to next room
 
-global.paused = true;
+global.paused = false;
 global.scaleFactor = 1.5;
 global.pauseBkg = 0;
 global.oldRm = 0;

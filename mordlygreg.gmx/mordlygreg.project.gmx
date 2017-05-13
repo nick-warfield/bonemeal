@@ -126,11 +126,18 @@
       <sprites name="Boss">
         <sprite>sprites\Boss_Idle_spr</sprite>
         <sprite>sprites\Boss_Idle_v02_spr</sprite>
-        <sprites name="Walk">
-          <sprite>sprites\Boss_Walk_spr</sprite>
+        <sprites name="Tentacle Sweep">
+          <sprite>sprites\Boss_Sweep_Attack_spr</sprite>
+          <sprite>sprites\Boss_Sweep_Winddown_spr</sprite>
+          <sprite>sprites\Boss_Sweep_Windup_spr</sprite>
         </sprites>
-        <sprite>sprites\Boss_Sweep_spr</sprite>
-        <sprite>sprites\Boss_Dagger_spr</sprite>
+        <sprites name="Old">
+          <sprites name="Walk">
+            <sprite>sprites\Boss_Walk_spr</sprite>
+          </sprites>
+          <sprite>sprites\Boss_Sweep_spr</sprite>
+          <sprite>sprites\Boss_Dagger_spr</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Projectiles">
@@ -251,6 +258,12 @@
       <background>background\Floor1_top_bkg</background>
     </backgrounds>
     <backgrounds name="Floor2">
+      <backgrounds name="Floor2-v05">
+        <background>background\GatePuzzle_v04_bkg</background>
+        <background>background\Office_v04_bkg</background>
+        <background>background\BPuzzle_v05_bkg</background>
+        <background>background\Pit_v06_flr_bkg</background>
+      </backgrounds>
       <backgrounds name="Floor2_v04">
         <background>background\Pit_06_flr_bkg</background>
         <background>background\Office_03_flr_bkg</background>
@@ -330,6 +343,7 @@
       <script>scripts\Mordley_SM_v07_scr.gml</script>
       <script>scripts\Mordley_SM_v06_scr.gml</script>
       <scripts name="Enemies">
+        <script>scripts\Boss_AI_SM_v05_scr.gml</script>
         <script>scripts\Boss_AI_SM_v04_scr.gml</script>
         <script>scripts\Boss_AI_SM_v03_scr.gml</script>
         <script>scripts\Boss_AI_SM_scr.gml</script>
@@ -625,10 +639,9 @@
       <room>rooms\Start_Menu</room>
       <room>rooms\Outside_rm</room>
       <rooms name="Floor2">
-        <room>rooms\Start_Flr2_rm</room>
         <room>rooms\Office_rm</room>
         <room>rooms\Gate_Room_rm</room>
-        <room>rooms\Pit_03_rm</room>
+        <room>rooms\Pit_04_rm</room>
         <room>rooms\Enemy1_rm</room>
         <room>rooms\Enemy2_rm</room>
         <room>rooms\Switch_03_rm</room>
@@ -636,6 +649,7 @@
         <room>rooms\Exit_Flr2_rm</room>
       </rooms>
       <room>rooms\Boss_rm</room>
+      <room>rooms\Combat_PRototype_rm</room>
     </rooms>
     <rooms name="Options/Menus/Utility">
       <room>rooms\Controls_rm</room>
@@ -643,6 +657,8 @@
       <room>rooms\Credits_rm</room>
       <room>rooms\Room_Transition</room>
     </rooms>
+    <room>rooms\Pit_03_rm</room>
+    <room>rooms\Start_Flr2_rm</room>
     <rooms name="Scratch">
       <room>rooms\room0_rm</room>
       <room>rooms\room1</room>

@@ -170,7 +170,7 @@ switch (ds_stack_top(StateStack))
         break;
         
       case 2:
-        if (image_speed > 0) {script_execute(Swing_v02_scr);}
+        if (image_speed > 0) {script_execute(Swing_v03_scr); script_execute(Parry_v02_scr);}
         script_execute(Attack_Mordley_Ani_scr(Mordley_Combo2_Side_spr, Mordley_Combo2_Back_spr, Mordley_Combo2_Front_spr, 12));
         
         if (image_speed <= 0 && Input[ATTACK1])
@@ -187,7 +187,7 @@ switch (ds_stack_top(StateStack))
         break;
         
       case 3:
-        if (image_speed > 0) {script_execute(Swing_Spin_scr); script_execute(Parry_v02_scr);}
+        if (image_speed > 0) {script_execute(Swing_Spin_scr);}
         script_execute(Attack_Mordley_Ani_scr(Mordley_Combo3_Side_spr, Mordley_Combo3_Back_spr, Mordley_Combo3_Front_spr, 12));
         
         break;
