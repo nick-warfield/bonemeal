@@ -126,11 +126,18 @@
       <sprites name="Boss">
         <sprite>sprites\Boss_Idle_spr</sprite>
         <sprite>sprites\Boss_Idle_v02_spr</sprite>
-        <sprites name="Walk">
-          <sprite>sprites\Boss_Walk_spr</sprite>
+        <sprites name="Tentacle Sweep">
+          <sprite>sprites\Boss_Sweep_Attack_spr</sprite>
+          <sprite>sprites\Boss_Sweep_Winddown_spr</sprite>
+          <sprite>sprites\Boss_Sweep_Windup_spr</sprite>
         </sprites>
-        <sprite>sprites\Boss_Sweep_spr</sprite>
-        <sprite>sprites\Boss_Dagger_spr</sprite>
+        <sprites name="Old">
+          <sprites name="Walk">
+            <sprite>sprites\Boss_Walk_spr</sprite>
+          </sprites>
+          <sprite>sprites\Boss_Sweep_spr</sprite>
+          <sprite>sprites\Boss_Dagger_spr</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Projectiles">
@@ -330,6 +337,7 @@
       <script>scripts\Mordley_SM_v07_scr.gml</script>
       <script>scripts\Mordley_SM_v06_scr.gml</script>
       <scripts name="Enemies">
+        <script>scripts\Boss_AI_SM_v05_scr.gml</script>
         <script>scripts\Boss_AI_SM_v04_scr.gml</script>
         <script>scripts\Boss_AI_SM_v03_scr.gml</script>
         <script>scripts\Boss_AI_SM_scr.gml</script>
@@ -622,7 +630,6 @@
   <rooms name="rooms">
     <rooms name="Beta Demo">
       <room>rooms\Init_rm</room>
-      <room>rooms\Combat_PRototype_rm</room>
       <room>rooms\Start_Menu</room>
       <room>rooms\Outside_rm</room>
       <rooms name="Floor2">
@@ -637,6 +644,7 @@
         <room>rooms\Exit_Flr2_rm</room>
       </rooms>
       <room>rooms\Boss_rm</room>
+      <room>rooms\Combat_PRototype_rm</room>
     </rooms>
     <rooms name="Options/Menus/Utility">
       <room>rooms\Controls_rm</room>
