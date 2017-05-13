@@ -641,7 +641,7 @@
       <rooms name="Floor2">
         <room>rooms\Office_rm</room>
         <room>rooms\Gate_Room_rm</room>
-        <room>rooms\Pit_03_rm</room>
+        <room>rooms\Pit_04_rm</room>
         <room>rooms\Enemy1_rm</room>
         <room>rooms\Enemy2_rm</room>
         <room>rooms\Switch_03_rm</room>
@@ -657,6 +657,7 @@
       <room>rooms\Credits_rm</room>
       <room>rooms\Room_Transition</room>
     </rooms>
+    <room>rooms\Pit_03_rm</room>
     <room>rooms\Start_Flr2_rm</room>
     <rooms name="Scratch">
       <room>rooms\room0_rm</room>
