@@ -258,6 +258,12 @@
       <background>background\Floor1_top_bkg</background>
     </backgrounds>
     <backgrounds name="Floor2">
+      <backgrounds name="Floor2-v05">
+        <background>background\GatePuzzle_v04_bkg</background>
+        <background>background\Office_v04_bkg</background>
+        <background>background\BPuzzle_v05_bkg</background>
+        <background>background\Pit_v06_flr_bkg</background>
+      </backgrounds>
       <backgrounds name="Floor2_v04">
         <background>background\Pit_06_flr_bkg</background>
         <background>background\Office_03_flr_bkg</background>
