@@ -237,7 +237,7 @@ else if (current_time &gt;= timeStamp3)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var version = "version: 2.1.9";
+            <string>var version = "version: 2.2.0";
 
 //xoffsets
 var leftPage = room_width/4;
