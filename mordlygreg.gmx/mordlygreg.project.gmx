@@ -585,6 +585,7 @@
           <object>objects\Gate_Puzzle_05_obj</object>
           <object>objects\Gate_Puzzle_04_obj</object>
           <object>objects\Gate_Puzzle_06_obj</object>
+          <object>objects\Gate_Puzzle_07_obj</object>
           <object>objects\Pressure_Plate_obj</object>
           <object>objects\Small_Gate_obj</object>
         </objects>
@@ -638,18 +639,15 @@
   <rooms name="rooms">
     <rooms name="Beta Demo">
       <room>rooms\Init_rm</room>
-      <room>rooms\Switch_03_rm</room>
       <room>rooms\Start_Menu</room>
       <room>rooms\Outside_rm</room>
       <rooms name="Floor2">
         <room>rooms\Office_rm</room>
         <room>rooms\Gate_Room_rm</room>
-        <room>rooms\Combat_PRototype_rm</room>
+        <room>rooms\Combat_Prototype_rm</room>
         <room>rooms\Pit_04_rm</room>
-        <room>rooms\Enemy1_rm</room>
-        <room>rooms\Enemy2_rm</room>
+        <room>rooms\Switch_03_rm</room>
         <room>rooms\Storage_rm</room>
-        <room>rooms\Exit_Flr2_rm</room>
       </rooms>
       <room>rooms\Boss_rm</room>
     </rooms>
@@ -660,6 +658,9 @@
       <room>rooms\Room_Transition</room>
     </rooms>
     <room>rooms\Pit_03_rm</room>
+    <room>rooms\Enemy2_rm</room>
+    <room>rooms\Enemy1_rm</room>
+    <room>rooms\Exit_Flr2_rm</room>
     <room>rooms\Start_Flr2_rm</room>
     <rooms name="Scratch">
       <room>rooms\room0_rm</room>
