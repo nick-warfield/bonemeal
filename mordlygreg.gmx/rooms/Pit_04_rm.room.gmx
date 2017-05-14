@@ -53,7 +53,6 @@
   <instances>
     <instance objName="Camera_obj" x="184" y="420" name="inst_15618A68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pit_obj" x="376" y="616" name="inst_12CD6566" locked="0" code="" scaleX="3.96875" scaleY="0.5625" colour="4294967295" rotation="0"/>
-    <instance objName="Pit_Gate_obj" x="232" y="412" name="inst_ED29A4DB" locked="0" code="" scaleX="2.5806450843811" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Wall_obj" x="328" y="512" name="inst_3C299EF8" locked="0" code="" scaleX="3.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Wall_obj" x="440" y="512" name="inst_45EDFE91" locked="0" code="" scaleX="0.5" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="Wall_obj" x="456" y="624" name="inst_D8A025FD" locked="0" code="" scaleX="4" scaleY="0.5" colour="4294967295" rotation="0"/>
@@ -142,6 +141,7 @@
     <instance objName="Pit_obj" x="804" y="1244" name="inst_BFC6F5AA" locked="0" code="" scaleX="3.35483860969543" scaleY="0.6875" colour="4294967295" rotation="0"/>
     <instance objName="Pit_obj" x="824" y="1264" name="inst_E56908D8" locked="0" code="" scaleX="1.96774196624756" scaleY="0.65625" colour="4294967295" rotation="0"/>
     <instance objName="Pit_obj" x="840" y="1288" name="inst_CFFF2AB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pit_Combat_obj" x="232" y="412" name="inst_042DA9E0" locked="0" code="" scaleX="2.5" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

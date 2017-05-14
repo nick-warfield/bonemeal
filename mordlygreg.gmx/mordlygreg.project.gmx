@@ -529,12 +529,18 @@
         <objects name="Office">
           <object>objects\Office_Gate_obj</object>
           <object>objects\Office_Start_obj</object>
+          <object>objects\Office_Storage_obj</object>
         </objects>
         <objects name="Gates">
           <object>objects\Gate_Office_obj</object>
           <object>objects\Gate_Enemy1_obj</object>
           <object>objects\Gate_Enemy2_obj</object>
           <object>objects\Gate_Pit_obj</object>
+          <object>objects\Gate_Combat_obj</object>
+        </objects>
+        <objects name="Combat Room">
+          <object>objects\Combat_Gate_obj</object>
+          <object>objects\Combat_Pit_obj</object>
         </objects>
         <objects name="Enemy1">
           <object>objects\Enemy1_Office_obj</object>
@@ -545,6 +551,7 @@
         <objects name="Pit">
           <object>objects\Pit_Gate_obj</object>
           <object>objects\Pit_Switch_obj</object>
+          <object>objects\Pit_Combat_obj</object>
         </objects>
         <objects name="Switch">
           <object>objects\Switch_Pit_obj</object>
@@ -596,6 +603,7 @@
       <object>objects\Metal_Box_obj</object>
       <object>objects\Pit_obj</object>
       <object>objects\BloodPrint_obj</object>
+      <object>objects\Combat_Lock_obj</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>

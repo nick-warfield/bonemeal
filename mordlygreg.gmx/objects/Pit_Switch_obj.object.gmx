@@ -28,7 +28,7 @@
             <string>room_goto(Switch_03_rm);
 
 other.x = 16+500;
-other.y = 448+100;
+other.y = 536+100;
 </string>
           </argument>
         </arguments>

@@ -25,10 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(Office_rm);
+            <string>room_goto(Pit_04_rm);
 
-other.x = 624;
-other.y = 424;
+other.x = 72+200;
+other.y = 80+400;
+
+global.checkpoint = 3;
 </string>
           </argument>
         </arguments>

@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(Office_rm);
+            <string>room_goto(Combat_Prototype_rm);
 
-other.x = 624;
-other.y = 424;
+other.x = 320;
+other.y = 592;
 </string>
           </argument>
         </arguments>
