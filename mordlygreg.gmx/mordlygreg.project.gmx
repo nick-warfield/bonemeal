@@ -529,12 +529,18 @@
         <objects name="Office">
           <object>objects\Office_Gate_obj</object>
           <object>objects\Office_Start_obj</object>
+          <object>objects\Office_Storage_obj</object>
         </objects>
         <objects name="Gates">
           <object>objects\Gate_Office_obj</object>
           <object>objects\Gate_Enemy1_obj</object>
           <object>objects\Gate_Enemy2_obj</object>
           <object>objects\Gate_Pit_obj</object>
+          <object>objects\Gate_Combat_obj</object>
+        </objects>
+        <objects name="Combat Room">
+          <object>objects\Combat_Gate_obj</object>
+          <object>objects\Combat_Pit_obj</object>
         </objects>
         <objects name="Enemy1">
           <object>objects\Enemy1_Office_obj</object>
@@ -545,6 +551,7 @@
         <objects name="Pit">
           <object>objects\Pit_Gate_obj</object>
           <object>objects\Pit_Switch_obj</object>
+          <object>objects\Pit_Combat_obj</object>
         </objects>
         <objects name="Switch">
           <object>objects\Switch_Pit_obj</object>
@@ -582,7 +589,10 @@
           <object>objects\Gate_Puzzle_01_obj</object>
           <object>objects\Gate_Puzzle_02_obj</object>
           <object>objects\Gate_Puzzle_03_obj</object>
+          <object>objects\Gate_Puzzle_05_obj</object>
           <object>objects\Gate_Puzzle_04_obj</object>
+          <object>objects\Gate_Puzzle_06_obj</object>
+          <object>objects\Gate_Puzzle_07_obj</object>
           <object>objects\Pressure_Plate_obj</object>
           <object>objects\Small_Gate_obj</object>
         </objects>
@@ -593,6 +603,7 @@
       <object>objects\Metal_Box_obj</object>
       <object>objects\Pit_obj</object>
       <object>objects\BloodPrint_obj</object>
+      <object>objects\Combat_Lock_obj</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>
@@ -641,15 +652,12 @@
       <rooms name="Floor2">
         <room>rooms\Office_rm</room>
         <room>rooms\Gate_Room_rm</room>
+        <room>rooms\Combat_Prototype_rm</room>
         <room>rooms\Pit_04_rm</room>
-        <room>rooms\Enemy1_rm</room>
-        <room>rooms\Enemy2_rm</room>
         <room>rooms\Switch_03_rm</room>
         <room>rooms\Storage_rm</room>
-        <room>rooms\Exit_Flr2_rm</room>
       </rooms>
       <room>rooms\Boss_rm</room>
-      <room>rooms\Combat_PRototype_rm</room>
     </rooms>
     <rooms name="Options/Menus/Utility">
       <room>rooms\Controls_rm</room>
@@ -658,6 +666,9 @@
       <room>rooms\Room_Transition</room>
     </rooms>
     <room>rooms\Pit_03_rm</room>
+    <room>rooms\Enemy2_rm</room>
+    <room>rooms\Enemy1_rm</room>
+    <room>rooms\Exit_Flr2_rm</room>
     <room>rooms\Start_Flr2_rm</room>
     <rooms name="Scratch">
       <room>rooms\room0_rm</room>

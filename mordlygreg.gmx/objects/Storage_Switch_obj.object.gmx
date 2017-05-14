@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>room_goto(Switch_03_rm);
 
-other.x = 528+500;
+other.x = 1216;
 other.y = 32+100;
 </string>
           </argument>

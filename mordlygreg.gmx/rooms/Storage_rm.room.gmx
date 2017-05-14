@@ -3,8 +3,8 @@
   <caption></caption>
   <width>768</width>
   <height>656</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>4</vsnap>
+  <hsnap>4</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -52,14 +52,25 @@
   </views>
   <instances>
     <instance objName="Camera_obj" x="168" y="232" name="inst_20BF0798" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="216" y="200" name="inst_97D30A5F" locked="0" code="" scaleX="5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="440" y="200" name="inst_AC07404D" locked="0" code="" scaleX="3.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="216" y="232" name="inst_97D30A5F" locked="0" code="" scaleX="5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="440" y="232" name="inst_AC07404D" locked="0" code="" scaleX="3.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="552" y="216" name="inst_8ABE8AD3" locked="0" code="" scaleX="0.5" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="424" y="440" name="inst_7BB2FE1F" locked="0" code="" scaleX="4" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="216" y="440" name="inst_B776BAA9" locked="0" code="" scaleX="4.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="200" y="216" name="inst_34F7DCAC" locked="0" code="" scaleX="0.5" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="Storage_Switch_obj" x="360" y="456" name="inst_7567BB34" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Storage_Office_obj" x="376" y="184" name="inst_0FB1727A" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Storage_Office_obj" x="376" y="216" name="inst_0FB1727A" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Floor2_Wall_obj" x="216" y="328" name="inst_28193C96" locked="0" code="" scaleX="4.875" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Floor2_Wall_obj" x="444" y="328" name="inst_42F02C99" locked="0" code="" scaleX="3.35483860969543" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Crate01_obj" x="304" y="380" name="inst_7D901D9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pressure_Plate_obj" x="240" y="360" name="inst_D7553FAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Small_Gate_obj" x="372" y="352" name="inst_6855E70C" locked="0" code="" scaleX="1" scaleY="2.25" colour="4294967295" rotation="90"/>
+    <instance objName="Gate_Puzzle_07_obj" x="168" y="256" name="inst_E5461FAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="216" y="264" name="inst_370D2C7A" locked="0" code="" scaleX="4.5" scaleY="0.625" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="229" y="412" name="inst_4F8E227B" locked="0" code="" scaleX="3.46875" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="484" y="410" name="inst_5B99B9DE" locked="0" code="" scaleX="2.125" scaleY="0.8125" colour="4294967295" rotation="0"/>
+    <instance objName="Exit_Floor1_obj" x="539" y="340" name="inst_30AB16B7" locked="0" code="" scaleX="1.5" scaleY="0.75" colour="4294967295" rotation="-90"/>
+    <instance objName="Exit_Floor1_obj" x="492" y="388" name="inst_CBA5EB8F" locked="0" code="" scaleX="1.5" scaleY="0.75" colour="4294967295" rotation="90"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
