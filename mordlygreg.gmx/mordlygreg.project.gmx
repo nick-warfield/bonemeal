@@ -51,37 +51,65 @@
         <sprite>sprites\Mask_Feet_Mordley_spr</sprite>
       </sprites>
       <sprites name="Idle">
-        <sprite>sprites\Mordley_Back_spr</sprite>
-        <sprite>sprites\Mordley_Side_spr</sprite>
-        <sprite>sprites\Mordley_Front_spr</sprite>
+        <sprite>sprites\Mordley_Idle_Back_02_spr</sprite>
+        <sprite>sprites\Mordley_Idle_Side_02_spr</sprite>
+        <sprite>sprites\Mordley_Idle_Front_02_spr</sprite>
       </sprites>
-      <sprites name="Swing">
-        <sprite>sprites\Mordley_Attk_Back_spr</sprite>
-        <sprite>sprites\Mordley_Attk_Side_spr</sprite>
-        <sprite>sprites\Mordley_Attk_Front_spr</sprite>
-        <sprite>sprites\Mordley_Old_Attk_Back_spr</sprite>
-        <sprite>sprites\Mordley_Old_Attk_Side_spr</sprite>
-        <sprite>sprites\Mordley_Old_Attk_Front_spr</sprite>
-        <sprite>sprites\Mordley_Combo1_Back_spr</sprite>
-        <sprite>sprites\Mordley_Combo2_Back_spr</sprite>
-        <sprite>sprites\Mordley_Combo3_Back_spr</sprite>
-        <sprite>sprites\Mordley_Combo1_Side_spr</sprite>
-        <sprite>sprites\Mordley_Combo2_Side_spr</sprite>
-        <sprite>sprites\Mordley_Combo3_Side_spr</sprite>
-        <sprite>sprites\Mordley_Combo1_Front_spr</sprite>
-        <sprite>sprites\Mordley_Combo2_Front_spr</sprite>
-        <sprite>sprites\Mordley_Combo3_Front_spr</sprite>
-        <sprite>sprites\sprite136</sprite>
-      </sprites>
-      <sprites name="Gun">
-        <sprite>sprites\Mordley_Front_Aim_spr</sprite>
-        <sprite>sprites\Mordley_Side_Aim_spr</sprite>
-        <sprite>sprites\Mordley_Back_Aim_spr</sprite>
+      <sprites name="Swings">
+        <sprite>sprites\Mordley_Swing1_Back_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing2_Back_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing3_Back_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing1_Side_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing2_Side_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing3_Side_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing1_Front_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing2_Front_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing3_Front_03_spr</sprite>
       </sprites>
       <sprites name="Walk">
-        <sprite>sprites\Mordley_Walk_Side_spr</sprite>
-        <sprite>sprites\Mordley_Walk_Down_spr</sprite>
-        <sprite>sprites\Mordley_Walk_Up_spr</sprite>
+        <sprite>sprites\Mordley_Walk_Back_02_spr</sprite>
+        <sprite>sprites\Mordley_Walk_Side_02_spr</sprite>
+        <sprite>sprites\Mordley_Walk_Front_02_spr</sprite>
+      </sprites>
+      <sprites name="Gun">
+        <sprite>sprites\Mordley_Gun_Back_02_spr</sprite>
+        <sprite>sprites\Mordley_Gun_Side_02_spr</sprite>
+        <sprite>sprites\Mordley_Gun_Front_02_spr</sprite>
+      </sprites>
+      <sprites name="Old">
+        <sprites name="Idle">
+          <sprite>sprites\Mordley_Back_spr</sprite>
+          <sprite>sprites\Mordley_Side_spr</sprite>
+          <sprite>sprites\Mordley_Front_spr</sprite>
+        </sprites>
+        <sprites name="Swing">
+          <sprite>sprites\Mordley_Attk_Back_spr</sprite>
+          <sprite>sprites\Mordley_Attk_Side_spr</sprite>
+          <sprite>sprites\Mordley_Attk_Front_spr</sprite>
+          <sprite>sprites\Mordley_Old_Attk_Back_spr</sprite>
+          <sprite>sprites\Mordley_Old_Attk_Side_spr</sprite>
+          <sprite>sprites\Mordley_Old_Attk_Front_spr</sprite>
+          <sprite>sprites\Mordley_Combo1_Back_spr</sprite>
+          <sprite>sprites\Mordley_Combo2_Back_spr</sprite>
+          <sprite>sprites\Mordley_Combo3_Back_spr</sprite>
+          <sprite>sprites\Mordley_Combo1_Side_spr</sprite>
+          <sprite>sprites\Mordley_Combo2_Side_spr</sprite>
+          <sprite>sprites\Mordley_Combo3_Side_spr</sprite>
+          <sprite>sprites\Mordley_Combo1_Front_spr</sprite>
+          <sprite>sprites\Mordley_Combo2_Front_spr</sprite>
+          <sprite>sprites\Mordley_Combo3_Front_spr</sprite>
+          <sprite>sprites\sprite136</sprite>
+        </sprites>
+        <sprites name="Gun">
+          <sprite>sprites\Mordley_Front_Aim_spr</sprite>
+          <sprite>sprites\Mordley_Side_Aim_spr</sprite>
+          <sprite>sprites\Mordley_Back_Aim_spr</sprite>
+        </sprites>
+        <sprites name="Walk">
+          <sprite>sprites\Mordley_Walk_Side_spr</sprite>
+          <sprite>sprites\Mordley_Walk_Down_spr</sprite>
+          <sprite>sprites\Mordley_Walk_Up_spr</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Enemies">

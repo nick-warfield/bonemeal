@@ -6,11 +6,11 @@
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
-  <bboxmode>2</bboxmode>
-  <bbox_left>61</bbox_left>
-  <bbox_right>66</bbox_right>
-  <bbox_top>78</bbox_top>
-  <bbox_bottom>86</bbox_bottom>
+  <bboxmode>0</bboxmode>
+  <bbox_left>52</bbox_left>
+  <bbox_right>75</bbox_right>
+  <bbox_top>40</bbox_top>
+  <bbox_bottom>95</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -20,6 +20,6 @@
   <width>128</width>
   <height>128</height>
   <frames>
-    <frame index="0">images\Mask_Feet_Mordley_spr_0.png</frame>
+    <frame index="0">images\Mordley_Gun_Front_02_spr_0.png</frame>
   </frames>
 </sprite>
