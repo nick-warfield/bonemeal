@@ -154,14 +154,14 @@ switch (ds_stack_top(StateStack))
     {
       case 1:
         if (image_speed > 0) {script_execute(Swing_v03_scr); script_execute(Parry_v02_scr);}
-        script_execute(Attack_Mordley_Ani_scr(Mordley_Combo1_Side_spr, Mordley_Combo1_Back_spr, Mordley_Combo1_Front_spr, 12));
+        script_execute(Attack_Mordley_Ani_scr(Mordley_Swing1_Side_03_spr, Mordley_Swing1_Back_03_spr, Mordley_Swing1_Front_03_spr, 12));
         
         if (image_index >= image_number - 2 && Input[ATTACK1])
         {
             timeStamp[2] = current_time + 600;
             audio_play_sound(Swing_Umbrella_snd, 50, false);
             
-            script_execute(Attack_Mordley_Ani_scr(Mordley_Combo2_Side_spr, Mordley_Combo2_Back_spr, Mordley_Combo2_Front_spr, 12));
+            script_execute(Attack_Mordley_Ani_scr(Mordley_Swing2_Side_03_spr, Mordley_Swing2_Back_03_spr, Mordley_Swing2_Front_03_spr, 12));
             image_index = 0;
             
             comboCount++;
@@ -171,14 +171,14 @@ switch (ds_stack_top(StateStack))
         
       case 2:
         if (image_speed > 0) {script_execute(Swing_v03_scr); script_execute(Parry_v02_scr);}
-        script_execute(Attack_Mordley_Ani_scr(Mordley_Combo2_Side_spr, Mordley_Combo2_Back_spr, Mordley_Combo2_Front_spr, 12));
+        script_execute(Attack_Mordley_Ani_scr(Mordley_Swing2_Side_03_spr, Mordley_Swing2_Back_03_spr, Mordley_Swing2_Front_03_spr, 12));
         
         if (image_speed <= 0 && Input[ATTACK1])
         {
             timeStamp[2] = current_time + 600;
             audio_play_sound(Swing_Umbrella_snd, 50, false);
             
-            script_execute(Attack_Mordley_Ani_scr(Mordley_Combo3_Side_spr, Mordley_Combo3_Back_spr, Mordley_Combo3_Front_spr, 12));
+            script_execute(Attack_Mordley_Ani_scr(Mordley_Swing3_Side_03_spr, Mordley_Swing3_Back_03_spr, Mordley_Swing3_Front_03_spr, 12));
             image_index = 0;
             
             comboCount++;
@@ -188,7 +188,7 @@ switch (ds_stack_top(StateStack))
         
       case 3:
         if (image_speed > 0) {script_execute(Swing_Spin_scr);}
-        script_execute(Attack_Mordley_Ani_scr(Mordley_Combo3_Side_spr, Mordley_Combo3_Back_spr, Mordley_Combo3_Front_spr, 12));
+        script_execute(Attack_Mordley_Ani_scr(Mordley_Swing3_Side_03_spr, Mordley_Swing3_Back_03_spr, Mordley_Swing3_Front_03_spr, 12));
         
         break;
     }        
