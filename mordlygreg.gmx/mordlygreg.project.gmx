@@ -75,6 +75,9 @@
         <sprite>sprites\Mordley_Gun_Back_02_spr</sprite>
         <sprite>sprites\Mordley_Gun_Side_02_spr</sprite>
         <sprite>sprites\Mordley_Gun_Front_02_spr</sprite>
+        <sprite>sprites\Mordley_Gun_Back_03_spr</sprite>
+        <sprite>sprites\Mordley_Gun_Side_03_spr</sprite>
+        <sprite>sprites\Mordley_Gun_Front_03_spr</sprite>
       </sprites>
       <sprites name="Old">
         <sprites name="Idle">
@@ -111,6 +114,10 @@
           <sprite>sprites\Mordley_Walk_Up_spr</sprite>
         </sprites>
       </sprites>
+      <sprite>sprites\Mordley_Hurt_Back_spr</sprite>
+      <sprite>sprites\Mordley_Hurt_Side_spr</sprite>
+      <sprite>sprites\Mordley_Hurt_Front_spr</sprite>
+      <sprite>sprites\Mordley_Ded_spr</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprites name="Fishman">
@@ -284,6 +291,8 @@
     <backgrounds name="Floor1">
       <background>background\Floor1_bottom_bkg</background>
       <background>background\Floor1_top_bkg</background>
+      <background>background\Floor1_bot_02_bkg</background>
+      <background>background\Floor1_top_02_bkg</background>
     </backgrounds>
     <backgrounds name="Floor2">
       <backgrounds name="Floor2-v05">
