@@ -67,6 +67,7 @@
       <sound>sound\File_cabinet_snd</sound>
       <sound>sound\Fish_Die_snd</sound>
       <sound>sound\Fish_spit_snd</sound>
+      <sound>sound\Gunshot_snd</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -260,6 +261,39 @@
       <sprite>sprites\TileWall_spr</sprite>
     </sprites>
     <sprites name="GUI">
+      <sprites name="Menu">
+        <sprites name="Word">
+          <sprite>sprites\controls_wrd</sprite>
+          <sprite>sprites\credits_wrd</sprite>
+          <sprite>sprites\specialThanks_wrd</sprite>
+          <sprite>sprites\team_wrd</sprite>
+          <sprite>sprites\exitdemo_wrd</sprite>
+          <sprite>sprites\options_wrd</sprite>
+          <sprite>sprites\startdemo_wrd</sprite>
+          <sprites name="keyboard">
+            <sprite>sprites\aim_kb_wrd</sprite>
+            <sprite>sprites\cycle_kb_wrd</sprite>
+            <sprite>sprites\dodge_kb_wrd</sprite>
+            <sprite>sprites\interact_kb_wrd</sprite>
+            <sprite>sprites\keyboardmouse_wrd</sprite>
+            <sprite>sprites\pause_kb_wrd</sprite>
+            <sprite>sprites\reload_kb_wrd</sprite>
+            <sprite>sprites\shoot_kb_wrd</sprite>
+          </sprites>
+          <sprites name="Controller">
+            <sprite>sprites\aim_ctrl_wrd</sprite>
+            <sprite>sprites\controller_wrd</sprite>
+            <sprite>sprites\cycle_ctrl_wrd</sprite>
+            <sprite>sprites\dodge_ctrl_wrd</sprite>
+            <sprite>sprites\interact_ctrl_wrd</sprite>
+            <sprite>sprites\melee_ctrl_wrd</sprite>
+            <sprite>sprites\pause_ctrl_wrd</sprite>
+            <sprite>sprites\reload_ctrl_wrd</sprite>
+            <sprite>sprites\shoot_ctrl_wrd</sprite>
+            <sprite>sprites\move_ctrl_wrd</sprite>
+          </sprites>
+        </sprites>
+      </sprites>
       <sprite>sprites\HUD_Gun_spr</sprite>
       <sprite>sprites\Journal_spr</sprite>
       <sprite>sprites\Journal_02_spr</sprite>
