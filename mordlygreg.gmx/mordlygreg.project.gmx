@@ -51,37 +51,65 @@
         <sprite>sprites\Mask_Feet_Mordley_spr</sprite>
       </sprites>
       <sprites name="Idle">
-        <sprite>sprites\Mordley_Back_spr</sprite>
-        <sprite>sprites\Mordley_Side_spr</sprite>
-        <sprite>sprites\Mordley_Front_spr</sprite>
+        <sprite>sprites\Mordley_Idle_Back_02_spr</sprite>
+        <sprite>sprites\Mordley_Idle_Side_02_spr</sprite>
+        <sprite>sprites\Mordley_Idle_Front_02_spr</sprite>
       </sprites>
-      <sprites name="Swing">
-        <sprite>sprites\Mordley_Attk_Back_spr</sprite>
-        <sprite>sprites\Mordley_Attk_Side_spr</sprite>
-        <sprite>sprites\Mordley_Attk_Front_spr</sprite>
-        <sprite>sprites\Mordley_Old_Attk_Back_spr</sprite>
-        <sprite>sprites\Mordley_Old_Attk_Side_spr</sprite>
-        <sprite>sprites\Mordley_Old_Attk_Front_spr</sprite>
-        <sprite>sprites\Mordley_Combo1_Back_spr</sprite>
-        <sprite>sprites\Mordley_Combo2_Back_spr</sprite>
-        <sprite>sprites\Mordley_Combo3_Back_spr</sprite>
-        <sprite>sprites\Mordley_Combo1_Side_spr</sprite>
-        <sprite>sprites\Mordley_Combo2_Side_spr</sprite>
-        <sprite>sprites\Mordley_Combo3_Side_spr</sprite>
-        <sprite>sprites\Mordley_Combo1_Front_spr</sprite>
-        <sprite>sprites\Mordley_Combo2_Front_spr</sprite>
-        <sprite>sprites\Mordley_Combo3_Front_spr</sprite>
-        <sprite>sprites\sprite136</sprite>
-      </sprites>
-      <sprites name="Gun">
-        <sprite>sprites\Mordley_Front_Aim_spr</sprite>
-        <sprite>sprites\Mordley_Side_Aim_spr</sprite>
-        <sprite>sprites\Mordley_Back_Aim_spr</sprite>
+      <sprites name="Swings">
+        <sprite>sprites\Mordley_Swing1_Back_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing2_Back_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing3_Back_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing1_Side_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing2_Side_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing3_Side_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing1_Front_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing2_Front_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing3_Front_03_spr</sprite>
       </sprites>
       <sprites name="Walk">
-        <sprite>sprites\Mordley_Walk_Side_spr</sprite>
-        <sprite>sprites\Mordley_Walk_Down_spr</sprite>
-        <sprite>sprites\Mordley_Walk_Up_spr</sprite>
+        <sprite>sprites\Mordley_Walk_Back_02_spr</sprite>
+        <sprite>sprites\Mordley_Walk_Side_02_spr</sprite>
+        <sprite>sprites\Mordley_Walk_Front_02_spr</sprite>
+      </sprites>
+      <sprites name="Gun">
+        <sprite>sprites\Mordley_Gun_Back_02_spr</sprite>
+        <sprite>sprites\Mordley_Gun_Side_02_spr</sprite>
+        <sprite>sprites\Mordley_Gun_Front_02_spr</sprite>
+      </sprites>
+      <sprites name="Old">
+        <sprites name="Idle">
+          <sprite>sprites\Mordley_Back_spr</sprite>
+          <sprite>sprites\Mordley_Side_spr</sprite>
+          <sprite>sprites\Mordley_Front_spr</sprite>
+        </sprites>
+        <sprites name="Swing">
+          <sprite>sprites\Mordley_Attk_Back_spr</sprite>
+          <sprite>sprites\Mordley_Attk_Side_spr</sprite>
+          <sprite>sprites\Mordley_Attk_Front_spr</sprite>
+          <sprite>sprites\Mordley_Old_Attk_Back_spr</sprite>
+          <sprite>sprites\Mordley_Old_Attk_Side_spr</sprite>
+          <sprite>sprites\Mordley_Old_Attk_Front_spr</sprite>
+          <sprite>sprites\Mordley_Combo1_Back_spr</sprite>
+          <sprite>sprites\Mordley_Combo2_Back_spr</sprite>
+          <sprite>sprites\Mordley_Combo3_Back_spr</sprite>
+          <sprite>sprites\Mordley_Combo1_Side_spr</sprite>
+          <sprite>sprites\Mordley_Combo2_Side_spr</sprite>
+          <sprite>sprites\Mordley_Combo3_Side_spr</sprite>
+          <sprite>sprites\Mordley_Combo1_Front_spr</sprite>
+          <sprite>sprites\Mordley_Combo2_Front_spr</sprite>
+          <sprite>sprites\Mordley_Combo3_Front_spr</sprite>
+          <sprite>sprites\sprite136</sprite>
+        </sprites>
+        <sprites name="Gun">
+          <sprite>sprites\Mordley_Front_Aim_spr</sprite>
+          <sprite>sprites\Mordley_Side_Aim_spr</sprite>
+          <sprite>sprites\Mordley_Back_Aim_spr</sprite>
+        </sprites>
+        <sprites name="Walk">
+          <sprite>sprites\Mordley_Walk_Side_spr</sprite>
+          <sprite>sprites\Mordley_Walk_Down_spr</sprite>
+          <sprite>sprites\Mordley_Walk_Up_spr</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Enemies">
@@ -126,11 +154,18 @@
       <sprites name="Boss">
         <sprite>sprites\Boss_Idle_spr</sprite>
         <sprite>sprites\Boss_Idle_v02_spr</sprite>
-        <sprites name="Walk">
-          <sprite>sprites\Boss_Walk_spr</sprite>
+        <sprites name="Tentacle Sweep">
+          <sprite>sprites\Boss_Sweep_Attack_spr</sprite>
+          <sprite>sprites\Boss_Sweep_Winddown_spr</sprite>
+          <sprite>sprites\Boss_Sweep_Windup_spr</sprite>
         </sprites>
-        <sprite>sprites\Boss_Sweep_spr</sprite>
-        <sprite>sprites\Boss_Dagger_spr</sprite>
+        <sprites name="Old">
+          <sprites name="Walk">
+            <sprite>sprites\Boss_Walk_spr</sprite>
+          </sprites>
+          <sprite>sprites\Boss_Sweep_spr</sprite>
+          <sprite>sprites\Boss_Dagger_spr</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Projectiles">
@@ -251,6 +286,12 @@
       <background>background\Floor1_top_bkg</background>
     </backgrounds>
     <backgrounds name="Floor2">
+      <backgrounds name="Floor2-v05">
+        <background>background\GatePuzzle_v04_bkg</background>
+        <background>background\Office_v04_bkg</background>
+        <background>background\BPuzzle_v05_bkg</background>
+        <background>background\Pit_v06_flr_bkg</background>
+      </backgrounds>
       <backgrounds name="Floor2_v04">
         <background>background\Pit_06_flr_bkg</background>
         <background>background\Office_03_flr_bkg</background>
@@ -330,6 +371,7 @@
       <script>scripts\Mordley_SM_v07_scr.gml</script>
       <script>scripts\Mordley_SM_v06_scr.gml</script>
       <scripts name="Enemies">
+        <script>scripts\Boss_AI_SM_v05_scr.gml</script>
         <script>scripts\Boss_AI_SM_v04_scr.gml</script>
         <script>scripts\Boss_AI_SM_v03_scr.gml</script>
         <script>scripts\Boss_AI_SM_scr.gml</script>
@@ -515,12 +557,18 @@
         <objects name="Office">
           <object>objects\Office_Gate_obj</object>
           <object>objects\Office_Start_obj</object>
+          <object>objects\Office_Storage_obj</object>
         </objects>
         <objects name="Gates">
           <object>objects\Gate_Office_obj</object>
           <object>objects\Gate_Enemy1_obj</object>
           <object>objects\Gate_Enemy2_obj</object>
           <object>objects\Gate_Pit_obj</object>
+          <object>objects\Gate_Combat_obj</object>
+        </objects>
+        <objects name="Combat Room">
+          <object>objects\Combat_Gate_obj</object>
+          <object>objects\Combat_Pit_obj</object>
         </objects>
         <objects name="Enemy1">
           <object>objects\Enemy1_Office_obj</object>
@@ -531,6 +579,7 @@
         <objects name="Pit">
           <object>objects\Pit_Gate_obj</object>
           <object>objects\Pit_Switch_obj</object>
+          <object>objects\Pit_Combat_obj</object>
         </objects>
         <objects name="Switch">
           <object>objects\Switch_Pit_obj</object>
@@ -568,7 +617,10 @@
           <object>objects\Gate_Puzzle_01_obj</object>
           <object>objects\Gate_Puzzle_02_obj</object>
           <object>objects\Gate_Puzzle_03_obj</object>
+          <object>objects\Gate_Puzzle_05_obj</object>
           <object>objects\Gate_Puzzle_04_obj</object>
+          <object>objects\Gate_Puzzle_06_obj</object>
+          <object>objects\Gate_Puzzle_07_obj</object>
           <object>objects\Pressure_Plate_obj</object>
           <object>objects\Small_Gate_obj</object>
         </objects>
@@ -579,6 +631,7 @@
       <object>objects\Metal_Box_obj</object>
       <object>objects\Pit_obj</object>
       <object>objects\BloodPrint_obj</object>
+      <object>objects\Combat_Lock_obj</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>
@@ -622,19 +675,15 @@
   <rooms name="rooms">
     <rooms name="Beta Demo">
       <room>rooms\Init_rm</room>
-      <room>rooms\Combat_PRototype_rm</room>
       <room>rooms\Start_Menu</room>
       <room>rooms\Outside_rm</room>
       <rooms name="Floor2">
-        <room>rooms\Start_Flr2_rm</room>
         <room>rooms\Office_rm</room>
         <room>rooms\Gate_Room_rm</room>
-        <room>rooms\Pit_03_rm</room>
-        <room>rooms\Enemy1_rm</room>
-        <room>rooms\Enemy2_rm</room>
+        <room>rooms\Combat_Prototype_rm</room>
+        <room>rooms\Pit_04_rm</room>
         <room>rooms\Switch_03_rm</room>
         <room>rooms\Storage_rm</room>
-        <room>rooms\Exit_Flr2_rm</room>
       </rooms>
       <room>rooms\Boss_rm</room>
     </rooms>
@@ -644,6 +693,11 @@
       <room>rooms\Credits_rm</room>
       <room>rooms\Room_Transition</room>
     </rooms>
+    <room>rooms\Pit_03_rm</room>
+    <room>rooms\Enemy2_rm</room>
+    <room>rooms\Enemy1_rm</room>
+    <room>rooms\Exit_Flr2_rm</room>
+    <room>rooms\Start_Flr2_rm</room>
     <rooms name="Scratch">
       <room>rooms\room0_rm</room>
       <room>rooms\room1</room>

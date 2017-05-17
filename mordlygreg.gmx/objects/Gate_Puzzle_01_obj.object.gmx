@@ -32,6 +32,7 @@ gate1 = instance_find(Small_Gate_obj, 0);
 gate2 = instance_find(Small_Gate_obj, 1);
 gate3 = instance_find(Small_Gate_obj, 2);
 gate4 = instance_find(Small_Gate_obj, 3);
+gate5 = instance_find(Small_Gate_obj, 4);
 </string>
           </argument>
         </arguments>
@@ -60,6 +61,7 @@ gate4 = instance_find(Small_Gate_obj, 3);
     gate2.opened = true;
     gate3.opened = true;
     gate4.opened = false;
+    gate5.opened = false;
 }
 else if (plate2.active == true xor plate1.active == true)
 {
@@ -67,6 +69,7 @@ else if (plate2.active == true xor plate1.active == true)
     gate2.opened = true;
     gate3.opened = false;
     gate4.opened = true;
+    gate5.opened = false;
 }
 else
 {
@@ -74,6 +77,7 @@ else
     gate2.opened = false;
     gate3.opened = false;
     gate4.opened = true;
+    gate5.opened = true;
 }
 
 /*

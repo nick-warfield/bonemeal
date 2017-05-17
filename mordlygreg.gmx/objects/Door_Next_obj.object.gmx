@@ -29,8 +29,8 @@
 
 room_goto_next();
 
-other.x = 32+732;
-other.y = 48+124;
+other.x = 650;
+other.y = 570;
 
 global.checkpoint = 2;
 </string>
