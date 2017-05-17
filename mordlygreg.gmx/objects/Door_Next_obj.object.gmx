@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_sound(Floor1_v2_trk);
+            <string>audio_stop_sound(Floor1_v2no_piano);
+audio_play_sound(Main_trk, 90, true);
 
 room_goto_next();
 
