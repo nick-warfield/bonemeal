@@ -31,8 +31,8 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="Floor1_bottom_bkg" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="-1"/>
-    <background visible="-1" foreground="-1" name="Floor1_top_bkg" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="-1"/>
+    <background visible="-1" foreground="0" name="Floor1_bot_02_bkg" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="-1"/>
+    <background visible="-1" foreground="-1" name="Floor1_top_02_bkg" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="-1"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="-1"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -145,17 +145,9 @@
     <instance objName="Invisible_Wall_obj" x="808" y="534" name="inst_BCC076D6" locked="0" code="" scaleX="0.5625" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="Door_Start_obj" x="506" y="1552" name="inst_52AF2778" locked="0" code="" scaleX="1.4375" scaleY="0.6875" colour="4294967295" rotation="0"/>
     <instance objName="Pond_obj" x="830" y="399" name="inst_827AF904" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Flowerbed_Blue_obj" x="283" y="97" name="inst_E21EFDEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Flowerbed_Orange_obj" x="396" y="83" name="inst_62097FD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Flowerbed_Red_obj" x="509" y="83" name="inst_A0B280CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Flowerbed_White_obj" x="622" y="83" name="inst_6F0183BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fishman_obj" x="726" y="329" name="inst_6AE43A33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fishman_obj" x="853" y="294" name="inst_ADAB499A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="224" y="79" name="inst_F8A3F57F" locked="0" code="" scaleX="14.1935482025146" scaleY="1.96774196624756" colour="4294967295" rotation="0"/>
-    <instance objName="Flwer_Txt_01_obj" x="268" y="116" name="inst_29126CF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Flwer_Txt_02_obj" x="381" y="115" name="inst_74BB3303" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Flwer_Txt_03_obj" x="497" y="113" name="inst_5B626B7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Flwer_Txt_04_obj" x="611" y="113" name="inst_54B61BE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="338" y="95" name="inst_FAED8F62" locked="0" code="" scaleX="4.34999990463257" scaleY="1.1612902879715" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
