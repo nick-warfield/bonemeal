@@ -319,6 +319,7 @@
       <background>background\Floor1_top_bkg</background>
       <background>background\Floor1_bot_02_bkg</background>
       <background>background\Floor1_top_02_bkg</background>
+      <background>background\background55</background>
     </backgrounds>
     <backgrounds name="Floor2">
       <backgrounds name="Floor2-v05">
