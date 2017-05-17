@@ -66,6 +66,7 @@
     <instance objName="Gate_Puzzle_07_obj" x="168" y="256" name="inst_E5461FAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="220" y="312" name="inst_370D2C7A" locked="0" code="" scaleX="4.5" scaleY="0.625" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="424" y="324" name="inst_F6964A59" locked="0" code="" scaleX="4" scaleY="0.875" colour="4294967295" rotation="0"/>
+    <instance objName="Exit_Floor1_obj" x="476" y="368" name="inst_4BAEE38B" locked="0" code="" scaleX="1.5" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
