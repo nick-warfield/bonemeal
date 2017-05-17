@@ -67,6 +67,14 @@
       <sound>sound\File_cabinet_snd</sound>
       <sound>sound\Fish_Die_snd</sound>
       <sound>sound\Fish_spit_snd</sound>
+      <sound>sound\Gunshot_option02_snd</sound>
+      <sound>sound\Reload_snd</sound>
+      <sound>sound\ShrineMove_snd</sound>
+      <sound>sound\UmbrellaCombo_swing01_snd</sound>
+      <sound>sound\UmbrellaCombo_swing02_snd</sound>
+      <sound>sound\UmbrellaCombo_swing03_snd</sound>
+      <sound>sound\ChamberRotate_snd</sound>
+      <sound>sound\Gunshot_option01_snd</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">

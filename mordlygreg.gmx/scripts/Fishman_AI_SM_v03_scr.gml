@@ -54,7 +54,7 @@ switch(ds_stack_top(StateStack))
         ds_stack_push(StateStack, s_ATTACK1);
     }
     else if (distance_to_object(target) <= 3 * 32)
-    { ds_stack_push(StateStack, s_MOVE); audio_play_sound(Fishman_Cry_snd, 30, false); }
+    { ds_stack_push(StateStack, s_MOVE); /*audio_play_sound(Fishman_Cry_snd, 30, false);*/ }
     
     break;
     

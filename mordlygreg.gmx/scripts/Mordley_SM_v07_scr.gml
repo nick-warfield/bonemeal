@@ -67,7 +67,7 @@ switch (ds_stack_top(StateStack))
     {
         ds_stack_push(StateStack, s_ATTACK1);
         timeStamp[2] = current_time + 200;
-        audio_play_sound(Swing_Umbrella_snd, 50, false);
+        audio_play_sound(UmbrellaCombo_swing02_snd, 50, false);
         stamina -= 10;
     }
     
@@ -88,7 +88,7 @@ switch (ds_stack_top(StateStack))
         ds_stack_push(StateStack, s_ATTACK4);
         timeStamp[4] = current_time + 750;
         spd = 1;
-        audio_play_sound(Reload_Gun_snd, 50, false);
+        audio_play_sound(Reload_snd, 50, false);
     }
     
     else if (Input[ATTACK5])    //cycle
@@ -142,7 +142,7 @@ switch (ds_stack_top(StateStack))
         if (current_time >= timeStamp[2] && ds_stack_top(StateStack) == s_PARRY)    //set the timer for how long the parry window is
         {
             timeStamp[2] = current_time + 50;
-            audio_play_sound(Swing_Umbrella_snd, 50, false);
+            audio_play_sound(UmbrellaCombo_swing02_snd, 50, false);
         }
     }
     
