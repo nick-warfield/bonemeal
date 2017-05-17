@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="BPuzzle_v05_bkg" x="500" y="100" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="lastroomV2" x="500" y="100" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="BPuzzle_04_obj_bkg" x="500" y="100" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -133,10 +133,6 @@
     <instance objName="Small_Gate_obj" x="1332" y="808" name="inst_BB38E0BD" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="1428" y="740" name="inst_EFACB97A" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="90"/>
     <instance objName="Small_Gate_obj" x="1412" y="516" name="inst_6D5B51EA" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="90"/>
-    <instance objName="Floor2_Wall_obj" x="1332" y="484" name="inst_9EB4CADC" locked="0" code="" scaleX="1" scaleY="10.125" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Wall_obj" x="1332" y="936" name="inst_EA01C1BD" locked="0" code="" scaleX="1" scaleY="7.375" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Wall_obj" x="1604" y="932" name="inst_D010A967" locked="0" code="" scaleX="1" scaleY="7.5" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Wall_obj" x="1604" y="484" name="inst_11265531" locked="0" code="" scaleX="1" scaleY="10" colour="4294967295" rotation="0"/>
     <instance objName="Gate_Puzzle_06_obj" x="452" y="160" name="inst_FB120BF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Crate02_obj" x="1420" y="1108" name="inst_98839347" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Crate02_obj" x="1548" y="1108" name="inst_BBD843DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -197,6 +193,10 @@
     <instance objName="Fishman_obj" x="612" y="1064" name="inst_64304213" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Switch_Pit_obj" x="484" y="580" name="inst_A3C8C807" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Switch_Storage_obj" x="1152" y="84" name="inst_D856BD48" locked="0" code="" scaleX="4.125" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="1040" y="440" name="inst_E610CEB2" locked="0" code="" scaleX="4.5" scaleY="1.29032254219055" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="1128" y="408" name="inst_D904715B" locked="0" code="" scaleX="0.75" scaleY="1.03225803375244" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="1100" y="424" name="inst_946F9C1F" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="1168" y="428" name="inst_FF18EC7B" locked="0" code="" scaleX="0.5" scaleY="0.375" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
