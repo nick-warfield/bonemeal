@@ -204,6 +204,8 @@ switch (ds_stack_top(StateStack))
     
   //Fire Gun
   case (s_ATTACK2):
+    Attack_Mordley_Ani_scr(Mordley_Gun_Side_03_spr, Mordley_Gun_Back_03_spr, Mordley_Gun_Front_03_spr, 9);
+  
     script_execute(Shoot_Revolver_scr);   //Spawn bullet if the current chamber is loaded, then empty it
     //script_execute(Cycle_scr);          //Cycle the cylinder after shooting, even if the chamber was empty
     
