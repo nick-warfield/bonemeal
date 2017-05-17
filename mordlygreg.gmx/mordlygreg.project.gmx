@@ -333,6 +333,14 @@
       <background>background\pit_04_bkg</background>
       <background>background\Pit_03_bkg</background>
       <background>background\Bullet_Puzzle_03_bkg</background>
+      <backgrounds name="Floor2_v06">
+        <background>background\background47</background>
+        <background>background\background48</background>
+        <background>background\background49</background>
+        <background>background\background50</background>
+        <background>background\background51</background>
+        <background>background\background52</background>
+      </backgrounds>
     </backgrounds>
     <backgrounds name="Tiles">
       <background>background\Floor2_floor_bkg</background>
