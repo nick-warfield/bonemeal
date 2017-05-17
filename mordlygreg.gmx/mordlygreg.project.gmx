@@ -42,6 +42,32 @@
       <sound>sound\Floor2_trk</sound>
       <sound>sound\Boss_trk</sound>
     </sounds>
+    <sounds name="NEW">
+      <sound>sound\Boss2_trk</sound>
+      <sound>sound\Main_trk</sound>
+      <sound>sound\Floor1_v2_trk</sound>
+      <sound>sound\Floor1_v2no_piano</sound>
+      <sound>sound\ArrowTrap_collide_snd</sound>
+      <sound>sound\ArrowTrap_shoot_snd</sound>
+      <sound>sound\Bat_attack_snd</sound>
+      <sound>sound\Bat_die_snd</sound>
+      <sound>sound\Body_hit_snd</sound>
+      <sound>sound\Boss_Attack_sword_snd</sound>
+      <sound>sound\Boss_die_snd</sound>
+      <sound>sound\Boss_tentacle_v1_snd</sound>
+      <sound>sound\Boos_tentacle_v2_snd</sound>
+      <sound>sound\Bullet_split_snd</sound>
+      <sound>sound\Candle_light_snd</sound>
+      <sound>sound\Chamber_rotate_snd</sound>
+      <sound>sound\Crate_break_snd</sound>
+      <sound>sound\Crate_push_snd</sound>
+      <sound>sound\Dodge_snd</sound>
+      <sound>sound\Door_locked_snd</sound>
+      <sound>sound\Door_open_snd</sound>
+      <sound>sound\File_cabinet_snd</sound>
+      <sound>sound\Fish_Die_snd</sound>
+      <sound>sound\Fish_spit_snd</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Mordley">
