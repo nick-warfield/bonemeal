@@ -2,23 +2,23 @@
 <sprite>
   <type>0</type>
   <xorig>0</xorig>
-  <yorigin>0</yorigin>
+  <yorigin>30</yorigin>
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>97</bbox_left>
-  <bbox_right>202</bbox_right>
-  <bbox_top>43</bbox_top>
-  <bbox_bottom>57</bbox_bottom>
+  <bbox_left>0</bbox_left>
+  <bbox_right>105</bbox_right>
+  <bbox_top>0</bbox_top>
+  <bbox_bottom>14</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>300</width>
-  <height>100</height>
+  <width>106</width>
+  <height>15</height>
   <frames>
     <frame index="0">images\interact_ctrl_wrd_0.png</frame>
   </frames>
