@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(Pit_03_rm);
+            <string>room_goto(Pit_04_rm);
 
 other.x = 648+200;
 other.y = 1332+400;

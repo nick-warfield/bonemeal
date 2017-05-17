@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>room_goto(Combat_Prototype_rm);
 
-other.x = 320;
-other.y = 592;
+other.x = 500;
+other.y = 775;
 </string>
           </argument>
         </arguments>
