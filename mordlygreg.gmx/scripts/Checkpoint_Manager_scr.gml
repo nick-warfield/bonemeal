@@ -17,7 +17,7 @@ else if (global.checkpoint == 2)
 else if (global.checkpoint == 3)
 {
     room_goto(Pit_03_rm);
-    audio_play_sound(Floor2_trk, 75, true);
+    audio_play_sound(Main_trk, 75, true);
     rmx = 248;
     rmy = 432;
 }

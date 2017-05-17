@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_sound(Floor2_trk);
+            <string>audio_stop_sound(Main_trk);
 
 room_goto(Laceys_Room);
 

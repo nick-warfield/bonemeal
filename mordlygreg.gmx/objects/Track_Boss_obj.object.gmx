@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>track = audio_play_sound(Boss_trk, 75, true);
+            <string>track = audio_play_sound(Boss2_trk, 75, true);
 audio_sound_gain(track, 0.2, 0);
 </string>
           </argument>

@@ -1,6 +1,6 @@
-var a = audio_play_sound(Floor1_trk, 75, true);
-var b = audio_play_sound(Floor2_trk, 75, true);
-var c = audio_play_sound(Boss_trk, 75, true);
+var a = audio_play_sound(Floor1_v2_trk, 75, true);
+var b = audio_play_sound(Main_trk, 75, true);
+var c = audio_play_sound(Boss2_trk, 75, true);
 
 if (room == Start_Menu)
 {

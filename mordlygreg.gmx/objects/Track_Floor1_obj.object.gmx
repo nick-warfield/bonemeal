@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!audio_is_playing(Floor1_trk))
+            <string>if (!audio_is_playing(Floor1_v2_trk))
 {
-    track = audio_play_sound(Floor1_trk, 75, true);
+    track = audio_play_sound(Floor1_v2_trk, 75, true);
     audio_sound_gain(track, 0.2, 0);
 }
 </string>
