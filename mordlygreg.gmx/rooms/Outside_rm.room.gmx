@@ -32,7 +32,7 @@
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="Floor1_bot_02_bkg" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="-1"/>
-    <background visible="-1" foreground="-1" name="Floor1_top_02_bkg" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="-1"/>
+    <background visible="-1" foreground="-1" name="background56" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="-1"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="-1"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -64,10 +64,10 @@
     <instance objName="Invisible_Wall_obj" x="1032" y="-8" name="inst_52607CB3" locked="0" code="" scaleX="1" scaleY="49" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="748" y="1132" name="inst_75BE008F" locked="0" code="" scaleX="4.90000009536743" scaleY="2.32258057594299" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="20" y="-24" name="inst_65022BCD" locked="0" code="" scaleX="32.1300010681152" scaleY="1.41935479640961" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="684" y="1296" name="inst_C76A7480" locked="0" code="" scaleX="3.5" scaleY="1.41935479640961" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="564" y="1360" name="inst_733E2584" locked="0" code="" scaleX="3.61290311813354" scaleY="1.54838705062866" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="384" y="1360" name="inst_D7DF6498" locked="0" code="" scaleX="3.5" scaleY="1.54838705062866" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="264" y="1300" name="inst_F7F8716F" locked="0" code="" scaleX="3.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="684" y="1296" name="inst_C76A7480" locked="0" code="" scaleX="3.51999998092651" scaleY="1.1875" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="558" y="1369" name="inst_733E2584" locked="0" code="" scaleX="3.71000003814697" scaleY="0.90625" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="384" y="1360" name="inst_D7DF6498" locked="0" code="" scaleX="3.48387098312378" scaleY="1.22000002861023" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="264" y="1300" name="inst_F7F8716F" locked="0" code="" scaleX="3.54999995231628" scaleY="1.1612902879715" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="760" y="1084" name="inst_BFB3331F" locked="0" code="" scaleX="0.875" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="796" y="1100" name="inst_C6DFE569" locked="0" code="" scaleX="1.54838705062866" scaleY="0.625" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="852" y="1088" name="inst_DF92B5F3" locked="0" code="" scaleX="0.875" scaleY="0.875" colour="4294967295" rotation="0"/>
@@ -144,10 +144,11 @@
     <instance objName="Invisible_Wall_obj" x="826" y="580" name="inst_1EF60741" locked="0" code="" scaleX="0.625" scaleY="2.25" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="808" y="534" name="inst_BCC076D6" locked="0" code="" scaleX="0.5625" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="Door_Start_obj" x="506" y="1552" name="inst_52AF2778" locked="0" code="" scaleX="1.4375" scaleY="0.6875" colour="4294967295" rotation="0"/>
-    <instance objName="Pond_obj" x="830" y="399" name="inst_827AF904" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pond_obj" x="913" y="683" name="inst_827AF904" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fishman_obj" x="726" y="329" name="inst_6AE43A33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fishman_obj" x="853" y="294" name="inst_ADAB499A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="338" y="95" name="inst_FAED8F62" locked="0" code="" scaleX="4.34999990463257" scaleY="1.1612902879715" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="808" y="1299" name="inst_7F7058A1" locked="0" code="" scaleX="5.63000011444092" scaleY="1.87096774578094" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
