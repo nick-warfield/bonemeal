@@ -72,7 +72,6 @@
     <instance objName="Invisible_Wall_obj" x="796" y="1100" name="inst_C6DFE569" locked="0" code="" scaleX="1.54838705062866" scaleY="0.625" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="852" y="1088" name="inst_DF92B5F3" locked="0" code="" scaleX="0.875" scaleY="0.875" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="20" y="1468" name="inst_F7747D07" locked="0" code="" scaleX="15.125" scaleY="2.5806450843811" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_obj" x="-40" y="32" name="inst_79C92180" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Crate01_obj" x="120" y="1204" name="inst_CC351833" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Crate_Key_obj" x="156" y="1168" name="inst_EC197BCE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Crate02_obj" x="176" y="1208" name="inst_650E4B67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -727,8 +727,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\RunFirstALWAYS</room>
     <rooms name="Beta Demo">
-      <room>rooms\Init_rm</room>
       <room>rooms\Start_Menu</room>
       <room>rooms\Outside_rm</room>
       <rooms name="Floor2">

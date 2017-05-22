@@ -51,7 +51,6 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="Camera_obj" x="96" y="1088" name="inst_F9EDF6F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Boss_obj" x="616" y="1216" name="inst_819CF14B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Door_obj" x="576" y="1060" name="inst_44CC886A" locked="0" code="" scaleX="2.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Door_obj" x="576" y="1728" name="inst_1B08CEC2" locked="0" code="" scaleX="2.5" scaleY="1" colour="4294967295" rotation="0"/>

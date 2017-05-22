@@ -2,7 +2,7 @@
 
 Input[INTERACT] = false;
 
-var cam = instance_find(Camera_obj, 1);
+var cam = instance_find(Game_Manager_obj, 1);
 cam.done = true;
 
 var thing = 0;
