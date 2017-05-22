@@ -694,6 +694,7 @@
       <object>objects\SlowMo_Bullet_obj</object>
     </objects>
     <objects name="Utility">
+      <object>objects\Game_Manager_obj</object>
       <object>objects\Camera_obj</object>
       <objects name="Menu Jazz">
         <object>objects\Init_Game_obj</object>
