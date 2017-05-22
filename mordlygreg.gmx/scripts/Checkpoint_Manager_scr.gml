@@ -10,14 +10,15 @@ if (global.checkpoint == 1)
 }
 else if (global.checkpoint == 2)
 {
-    room_goto(Start_Flr2_rm);
+    room_goto(Office_rm);
+    audio_play_sound(Main_trk, 75, true);
     rmx = 764;
     rmy = 172;
 }
 else if (global.checkpoint == 3)
 {
-    room_goto(Pit_03_rm);
-    audio_play_sound(Floor2_trk, 75, true);
+    room_goto(Pit_04_rm);
+    audio_play_sound(Main_trk, 75, true);
     rmx = 248;
     rmy = 432;
 }

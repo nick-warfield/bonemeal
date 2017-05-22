@@ -9,6 +9,6 @@ else
 //show_debug_message(temp);
 
 
-audio_play_sound(Reload_Gun_02_snd, 50, false);
+audio_play_sound(Reload_snd, 50, false);
 
 

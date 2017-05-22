@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!audio_is_playing(Crate_Smash_02_snd))
+            <string>if (!audio_is_playing(Crate_break_snd))
 {
-    audio_play_sound(Crate_Smash_02_snd, 30, false);
+    audio_play_sound(Crate_break_snd, 30, false);
 }
 </string>
           </argument>

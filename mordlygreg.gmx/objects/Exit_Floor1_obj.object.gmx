@@ -25,12 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_sound(Floor2_trk);
+            <string>audio_stop_sound(Main_trk);
 
 room_goto(Outside_rm);
 
 other.x = 910;
-other.y = 1332;
+other.y = 1396;
 
 global.checkpoint = 1;
 </string>

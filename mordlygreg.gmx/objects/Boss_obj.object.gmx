@@ -71,7 +71,7 @@ var d1 = instance_find(Floor2_Door_obj, 0);
 with (d1) {instance_destroy();}
 //with (d2) {instance_destroy();}
 
-audio_stop_sound(Boss_trk);
+audio_stop_sound(Boss2_trk);
 </string>
           </argument>
         </arguments>

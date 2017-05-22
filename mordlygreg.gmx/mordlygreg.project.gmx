@@ -67,7 +67,14 @@
       <sound>sound\File_cabinet_snd</sound>
       <sound>sound\Fish_Die_snd</sound>
       <sound>sound\Fish_spit_snd</sound>
-      <sound>sound\Gunshot_snd</sound>
+      <sound>sound\Gunshot_option02_snd</sound>
+      <sound>sound\Reload_snd</sound>
+      <sound>sound\ShrineMove_snd</sound>
+      <sound>sound\UmbrellaCombo_swing01_snd</sound>
+      <sound>sound\UmbrellaCombo_swing02_snd</sound>
+      <sound>sound\UmbrellaCombo_swing03_snd</sound>
+      <sound>sound\ChamberRotate_snd</sound>
+      <sound>sound\Gunshot_option01_snd</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -261,40 +268,6 @@
       <sprite>sprites\TileWall_spr</sprite>
     </sprites>
     <sprites name="GUI">
-      <sprites name="Menu">
-        <sprites name="Word">
-          <sprite>sprites\controls_wrd</sprite>
-          <sprite>sprites\credits_wrd</sprite>
-          <sprite>sprites\specialThanks_wrd</sprite>
-          <sprite>sprites\team_wrd</sprite>
-          <sprite>sprites\exitdemo_wrd</sprite>
-          <sprite>sprites\options_wrd</sprite>
-          <sprite>sprites\startdemo_wrd</sprite>
-          <sprites name="keyboard">
-            <sprite>sprites\aim_kb_wrd</sprite>
-            <sprite>sprites\cycle_kb_wrd</sprite>
-            <sprite>sprites\dodge_kb_wrd</sprite>
-            <sprite>sprites\interact_kb_wrd</sprite>
-            <sprite>sprites\keyboardmouse_wrd</sprite>
-            <sprite>sprites\pause_kb_wrd</sprite>
-            <sprite>sprites\reload_kb_wrd</sprite>
-            <sprite>sprites\shoot_kb_wrd</sprite>
-          </sprites>
-          <sprites name="Controller">
-            <sprite>sprites\aim_ctrl_wrd</sprite>
-            <sprite>sprites\controller_wrd</sprite>
-            <sprite>sprites\cycle_ctrl_wrd</sprite>
-            <sprite>sprites\dodge_ctrl_wrd</sprite>
-            <sprite>sprites\interact_ctrl_wrd</sprite>
-            <sprite>sprites\melee_ctrl_wrd</sprite>
-            <sprite>sprites\pause_ctrl_wrd</sprite>
-            <sprite>sprites\reload_ctrl_wrd</sprite>
-            <sprite>sprites\shoot_ctrl_wrd</sprite>
-            <sprite>sprites\move_ctrl_wrd</sprite>
-          </sprites>
-        </sprites>
-        <sprite>sprites\Logo_spr</sprite>
-      </sprites>
       <sprite>sprites\HUD_Gun_spr</sprite>
       <sprite>sprites\Journal_spr</sprite>
       <sprite>sprites\Journal_02_spr</sprite>
@@ -354,6 +327,7 @@
       <background>background\Floor1_top_bkg</background>
       <background>background\Floor1_bot_02_bkg</background>
       <background>background\Floor1_top_02_bkg</background>
+      <background>background\background56</background>
     </backgrounds>
     <backgrounds name="Floor2">
       <backgrounds name="Floor2-v05">
@@ -410,6 +384,7 @@
         <background>background\background50</background>
         <background>background\background51</background>
         <background>background\background52</background>
+        <background>background\lastroomV2</background>
       </backgrounds>
     </backgrounds>
     <backgrounds name="Tiles">
