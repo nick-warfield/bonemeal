@@ -1,0 +1,69 @@
+Converting GML script : ${project_dir}\scripts\Player_Controller_v03_scr\Player_Controller_v03_scr.gml
+Converted string : line 8 : 'W' -> "W"
+Converted string : line 23 : 'S' -> "S"
+Converted string : line 38 : 'A' -> "A"
+Converted string : line 53 : 'D' -> "D"
+Converted string : line 66 : 'E' -> "E"
+Converted string : line 78 : 'R' -> "R"
+Converted string : line 89 : 'T' -> "T"
+Converted string : line 153 : 'P' -> "P"
+
+Converting GML script : ${project_dir}\scripts\MenuController_scr\MenuController_scr.gml
+Converted string : line 20 : 'W' -> "W"
+Converted string : line 48 : 'S' -> "S"
+Converted string : line 69 : 'E' -> "E"
+
+Converting GML script : ${project_dir}\scripts\Player_Controller_v02_scr\Player_Controller_v02_scr.gml
+Converted string : line 8 : 'W' -> "W"
+Converted string : line 23 : 'S' -> "S"
+Converted string : line 38 : 'A' -> "A"
+Converted string : line 53 : 'D' -> "D"
+Converted string : line 66 : 'E' -> "E"
+Converted string : line 77 : 'R' -> "R"
+Converted string : line 88 : 'T' -> "T"
+Converted string : line 182 : 'P' -> "P"
+
+Converting GML script : ${project_dir}\scripts\Player_Controller_v04_scr\Player_Controller_v04_scr.gml
+Converted string : line 7 : 'W' -> "W"
+Converted string : line 21 : 'S' -> "S"
+Converted string : line 35 : 'A' -> "A"
+Converted string : line 49 : 'D' -> "D"
+Converted string : line 62 : 'E' -> "E"
+Converted string : line 73 : 'R' -> "R"
+Converted string : line 74 : 'L' -> "L"
+Converted string : line 87 : 'Q' -> "Q"
+Converted string : line 88 : 'K' -> "K"
+Converted string : line 155 : 'P' -> "P"
+
+Converting GML script : ${project_dir}\scripts\Player_Controller_scr\Player_Controller_scr.gml
+Converted string : line 5 : 'W' -> "W"
+Converted string : line 18 : 'S' -> "S"
+Converted string : line 31 : 'A' -> "A"
+Converted string : line 44 : 'D' -> "D"
+Converted string : line 57 : 'E' -> "E"
+Converted string : line 69 : 'R' -> "R"
+Converted string : line 80 : 'T' -> "T"
+Converted string : line 143 : 'F' -> "F"
+Converted string : line 154 : 'V' -> "V"
+
+Converting GML script : ${project_dir}\objects\Gate_obj\Create_0.gml
+Converted string : line 6 : "It's Locked" -> "It\'s Locked"
+
+Converting GML script : ${project_dir}\objects\Gate_Txt_obj\Create_0.gml
+Converted string : line 5 : "It's Locked." -> "It\'s Locked."
+
+Converting GML script : ${project_dir}\objects\Options_Menu_obj\Step_0.gml
+Converted string : line 14 : 'A' -> "A"
+Converted string : line 35 : 'D' -> "D"
+
+Converting GML script : ${project_dir}\objects\Player02_obj\Step_0.gml
+Converted string : line 18 : '0' -> "0"
+
+macOS icon ${options_dir}\mac\icons\icon512.png written out as 32-bit.
+game speed set to 60
+added compatibility script action/action_fullscreen.gml
+added compatibility script instance/instance_create.gml
+added compatibility script object/object_get_depth.gml
+added compatibility script action/__init_action.gml
+added compatibility script __init_global.gml
+added compatibility script __global_object_depths.gml

@@ -1,0 +1,43 @@
+//collisions for projectiles
+
+//only run collisions on objects that did not spawn the projectile
+if (place_meeting(x, y, spawner) == false)
+{
+    //if character hit
+    if (place_meeting(x, y, Character_obj) == true)
+    {
+        var scrub = instance_place(x, y, Character_obj);
+        
+        if (scrub.timeStamp[0] == 0)
+        {
+            var t0 = id;
+            var t1 = frc;
+            var t2 = ktime;
+            var t3 = dmg;
+            
+            with (scrub)
+            {
+                script_execute(SetDamageVars_scr(t0, t1, t2, t3, NULL));
+                ds_stack_push(StateStack, s_DAMAGED);
+            }
+            
+            timeStamp = current_time + 5;
+        }
+        
+        /*
+        scrub.hurter = id;
+        with(scrub)
+        {
+            script_execute(TookDamage_v02_scr, 3, 10, 75);
+        }
+        if (scrub.timeStamp[0] == current_time + 1000) {instance_destroy();}
+        */
+    }
+    
+    //if solid wall hit
+    if (place_meeting(x, y, Wall_obj) || (current_time >= timeStamp && timeStamp != 0) )
+    {
+        instance_destroy();
+    }
+
+}
