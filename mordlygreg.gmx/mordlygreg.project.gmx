@@ -417,6 +417,7 @@
       <script>scripts\Menu_Init_scr.gml</script>
     </scripts>
     <scripts name="State Machines">
+      <script>scripts\Mordley_SM_v12_scr.gml</script>
       <script>scripts\Mordley_SM_v11_scr.gml</script>
       <script>scripts\Mordley_SM_v10_scr.gml</script>
       <script>scripts\Mordley_SM_v09_scr.gml</script>
@@ -543,6 +544,9 @@
     <script>scripts\DoNothing_scr.gml</script>
     <script>scripts\SetDamageVars_scr.gml</script>
     <script>scripts\Checkpoint_Manager_scr.gml</script>
+    <script>scripts\saveData_set_value.gml</script>
+    <script>scripts\saveData_get_value.gml</script>
+    <script>scripts\saveData_generate_key.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Characters">
