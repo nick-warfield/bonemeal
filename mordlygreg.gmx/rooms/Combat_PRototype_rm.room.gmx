@@ -62,7 +62,6 @@
     <instance objName="Fishman_obj" x="246" y="502" name="inst_7623190A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fishman_obj" x="520" y="516" name="inst_4201B4F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fishman_obj" x="700" y="712" name="inst_3C53F368" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_obj" x="118" y="182" name="inst_78D68DBF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pit_obj" x="696" y="652" name="inst_A3077539" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Bat_obj" x="295" y="690" name="inst_380466CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Bat_obj" x="716" y="300" name="inst_318B3F7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

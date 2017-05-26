@@ -417,6 +417,7 @@
       <script>scripts\Menu_Init_scr.gml</script>
     </scripts>
     <scripts name="State Machines">
+      <script>scripts\Mordley_SM_v12_scr.gml</script>
       <script>scripts\Mordley_SM_v11_scr.gml</script>
       <script>scripts\Mordley_SM_v10_scr.gml</script>
       <script>scripts\Mordley_SM_v09_scr.gml</script>
@@ -543,6 +544,10 @@
     <script>scripts\DoNothing_scr.gml</script>
     <script>scripts\SetDamageVars_scr.gml</script>
     <script>scripts\Checkpoint_Manager_scr.gml</script>
+    <script>scripts\saveData_set_value.gml</script>
+    <script>scripts\saveData_get_value.gml</script>
+    <script>scripts\saveData_generate_key.gml</script>
+    <script>scripts\ScreenShake_scr.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Characters">
@@ -694,6 +699,7 @@
       <object>objects\SlowMo_Bullet_obj</object>
     </objects>
     <objects name="Utility">
+      <object>objects\Game_Manager_obj</object>
       <object>objects\Camera_obj</object>
       <objects name="Menu Jazz">
         <object>objects\Init_Game_obj</object>
@@ -726,8 +732,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\RunFirstALWAYS</room>
     <rooms name="Beta Demo">
-      <room>rooms\Init_rm</room>
       <room>rooms\Start_Menu</room>
       <room>rooms\Outside_rm</room>
       <rooms name="Floor2">

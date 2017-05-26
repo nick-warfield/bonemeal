@@ -192,6 +192,8 @@ rot = 0;
 newRot = 0;
 
 image_speed = 9/60;
+
+shake = 0;
 </string>
           </argument>
         </arguments>
@@ -254,7 +256,7 @@ image_speed = 9/60;
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Mordley_SM_v11_scr</script>
+            <script>Mordley_SM_v12_scr</script>
           </argument>
           <argument>
             <kind>0</kind>
