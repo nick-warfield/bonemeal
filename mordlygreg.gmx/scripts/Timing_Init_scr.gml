@@ -7,3 +7,4 @@
     timeStamp[5] = 0;
     timeStamp[6] = 0;
     timeStamp[7] = 0;
+    timeStamp[8] = 0;

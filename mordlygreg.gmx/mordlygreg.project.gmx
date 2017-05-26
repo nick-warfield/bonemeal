@@ -547,6 +547,7 @@
     <script>scripts\saveData_set_value.gml</script>
     <script>scripts\saveData_get_value.gml</script>
     <script>scripts\saveData_generate_key.gml</script>
+    <script>scripts\ScreenShake_scr.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Characters">

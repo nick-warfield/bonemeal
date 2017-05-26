@@ -15,6 +15,9 @@ else if (ds_stack_top(StateStack) != s_STUNED && current_time <= timeStamp[0]-10
 }
 
 
+//screenshake
+shake = ScreenShake_scr(shake);
+
 switch (ds_stack_top(StateStack))
 {
   case (s_DAMAGED):
