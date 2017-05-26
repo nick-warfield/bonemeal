@@ -29,6 +29,8 @@
 {
     audio_play_sound(Crate_break_snd, 30, false);
 }
+
+Player02_obj.shake = 5;
 </string>
           </argument>
         </arguments>

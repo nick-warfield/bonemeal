@@ -25,4 +25,5 @@ if (timeStamp[0] == 0)
         }
         //polish effects
         audio_play_sound(hurtNoise, 50, false);
+        Player02_obj.shake = 10;
 
