@@ -14,6 +14,8 @@ if (cylinder[cylinderPosition] != 0)
     
     //set reference to the object that spawns the projectile
     bulletInst.spawner = id;
+    //show_debug_message(bulletInst.spawner);
+    
     //initialize the projectiles speed and direction
     bulletInst.spd = 10;
     bulletInst.image_angle = id.facing * 90;
