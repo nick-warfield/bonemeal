@@ -694,9 +694,10 @@
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>
       <object>objects\Bullet_obj</object>
-      <object>objects\Arrow_obj</object>
       <object>objects\Bullet_90_obj</object>
+      <object>objects\SpreadShot_obj</object>
       <object>objects\SlowMo_Bullet_obj</object>
+      <object>objects\Arrow_obj</object>
     </objects>
     <objects name="Utility">
       <object>objects\Game_Manager_obj</object>
