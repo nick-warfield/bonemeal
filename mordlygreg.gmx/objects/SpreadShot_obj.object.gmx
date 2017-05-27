@@ -68,7 +68,7 @@
             <string>timeStamp2 = current_time + 75;
 timeStamp3 = timeStamp2 + 750;
 
-image_blend = c_fuchsia;
+image_blend = c_red;
 </string>
           </argument>
         </arguments>
@@ -106,7 +106,7 @@ for (var i = 0; i &lt; 12; i++)
     
     bull[i].spawner = id;
     bull[i].timeStamp = current_time + 150;
-    bull[i].image_blend = c_fuchsia;
+    bull[i].image_blend = c_red;
 }
 </string>
           </argument>
