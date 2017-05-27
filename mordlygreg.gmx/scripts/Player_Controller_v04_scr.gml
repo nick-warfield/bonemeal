@@ -69,7 +69,7 @@
         }
         
     //reload command
-        if (gamepad_button_check_pressed(0, gp_face4) == true ||
+        if (gamepad_button_check_pressed(0, gp_shoulderr) == true ||
             keyboard_check_pressed(ord('R')) == true ||
             keyboard_check_pressed(ord('L')) == true ||
             mouse_check_button_pressed(mb_middle) == true)
@@ -82,7 +82,7 @@
         }
     
     //cycle cylinder command
-        if (gamepad_button_check_pressed(0, gp_shoulderr) == true ||
+        if (gamepad_button_check_pressed(0, gp_face4) == true ||
             //gamepad_button_check_pressed(0, gp_face4) == true ||
             keyboard_check_pressed(ord('Q')) == true ||
             keyboard_check_pressed(ord('K')) == true ||

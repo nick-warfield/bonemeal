@@ -122,12 +122,8 @@ switch (ds_stack_top(StateStack))
     
   //Interact with stuff
   case (s_INTERACT):
-    spd = 0;
-    if (Camera_obj.done == true)
-    {
-        ds_stack_pop(StateStack);
-    }
-    
+  
+    ds_stack_pop(StateStack);
     break;
     
   
