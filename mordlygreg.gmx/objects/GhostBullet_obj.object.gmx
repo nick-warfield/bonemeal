@@ -31,6 +31,7 @@ event_inherited();
 
 
 timeStamp2 = current_time + 300;
+timeStamp3 = timeStamp2 + 200;
 image_blend = c_aqua;
 image_alpha = 0.5;
 </string>
@@ -55,9 +56,11 @@ image_alpha = 0.5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
-if (place_meeting(x, y, spawner) == false &amp;&amp; current_time &gt;= timeStamp2)
+            <string>if (current_time &gt;= timeStamp3)
+{
+    instance_destroy();
+}
+else if (place_meeting(x, y, spawner) == false &amp;&amp; current_time &gt;= timeStamp2)
 {
     //if character hit
     if (place_meeting(x, y, Character_obj) == true)
