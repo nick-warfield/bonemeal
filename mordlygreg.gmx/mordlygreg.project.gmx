@@ -729,6 +729,8 @@
         <object>objects\GrabArm_obj</object>
         <object>objects\Door_Shut_obj</object>
       </objects>
+      <object>objects\dunPuzzle_obj</object>
+      <object>objects\bloodToggle_obj</object>
     </objects>
     <objects name="SCRATCH">
       <object>objects\floor_obj</object>

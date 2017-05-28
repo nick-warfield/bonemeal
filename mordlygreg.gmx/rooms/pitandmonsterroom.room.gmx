@@ -314,11 +314,10 @@
     <instance objName="Bat_obj" x="176" y="752" name="inst_4DDBEC1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fishman_obj" x="96" y="544" name="inst_208DCCBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fishman_obj" x="256" y="688" name="inst_85278AE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Small_Gate_obj" x="112" y="960" name="inst_A2F57873" locked="0" code="" scaleX="4.5" scaleY="2.03225803375244" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="288" y="656" name="inst_C4D4FD39" locked="0" code="" scaleX="1.54838705062866" scaleY="4.12903213500977" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="32" y="384" name="inst_B30DDC94" locked="0" code="" scaleX="9" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="528" y="304" name="inst_6CBB007A" locked="0" code="" scaleX="1.54838705062866" scaleY="2.06451606750488" colour="4294967295" rotation="0"/>
-    <instance objName="Sign_obj" x="144" y="880" name="inst_32C4691B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bloodToggle_obj" x="128" y="880" name="inst_B9C7476D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

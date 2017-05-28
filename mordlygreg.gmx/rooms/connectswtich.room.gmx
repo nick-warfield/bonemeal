@@ -61,9 +61,8 @@
     <instance objName="Floor2_Wall_obj" x="80" y="736" name="inst_521BB225" locked="0" code="" scaleX="9.80645179748535" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="384" y="736" name="inst_7CE26A28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="48" y="736" name="inst_01FB2075" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Sign_obj" x="352" y="336" name="inst_D64B1150" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Sign_obj" x="352" y="528" name="inst_2015C26D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Candle_White_obj" x="240" y="240" name="inst_25DA3494" locked="0" code="" scaleX="5.5" scaleY="5.5" colour="4294967295" rotation="0"/>
+    <instance objName="bloodToggle_obj" x="336" y="320" name="inst_33775F88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bloodToggle_obj" x="336" y="512" name="inst_0401ABB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
