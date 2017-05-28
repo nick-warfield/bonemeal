@@ -99,11 +99,11 @@ for (var i = 0; i &lt; 5; i++)
     bull[i].dmg = 2;
     bull[i].spd = 10;
     
-    bull[i].image_angle = Dir + (30 * (i-2));
-    bull[i].Dir = Dir + (30 * (i-2));
+    bull[i].image_angle = (9 * (i-2)) + Dir;
+    bull[i].Dir = (9 * (i-2)) + Dir;
     
     bull[i].spawner = spawner;
-    bull[i].timeStamp = current_time + 150;
+    bull[i].timeStamp = current_time + 200;
     bull[i].image_blend = c_fuchsia;
 }
 </string>
