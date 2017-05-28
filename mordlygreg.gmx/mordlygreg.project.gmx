@@ -736,6 +736,18 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\RunFirstALWAYS</room>
+    <rooms name="NEW-Austin and Lacey">
+      <room>rooms\New_office</room>
+      <room>rooms\gates_and_crates</room>
+      <room>rooms\storageroom2</room>
+      <room>rooms\southofoffice</room>
+      <room>rooms\togglex3</room>
+      <room>rooms\pitandmonsterroom</room>
+      <room>rooms\northofoffice</room>
+      <room>rooms\connectempty</room>
+      <room>rooms\connectswtich</room>
+      <room>rooms\New_combatroom</room>
+    </rooms>
     <rooms name="Beta Demo">
       <room>rooms\Start_Menu</room>
       <room>rooms\Outside_rm</room>
@@ -772,18 +784,6 @@
       <room>rooms\Pit_02_rm</room>
       <room>rooms\Switch_rm</room>
       <room>rooms\Switch_02_rm</room>
-    </rooms>
-    <rooms name="NEW-Austin and Lacey">
-      <room>rooms\gates_and_crates</room>
-      <room>rooms\storageroom2</room>
-      <room>rooms\southofoffice</room>
-      <room>rooms\togglex3</room>
-      <room>rooms\pitandmonsterroom</room>
-      <room>rooms\northofoffice</room>
-      <room>rooms\connectempty</room>
-      <room>rooms\connectswtich</room>
-      <room>rooms\New_combatroom</room>
-      <room>rooms\New_office</room>
     </rooms>
   </rooms>
   <help>
