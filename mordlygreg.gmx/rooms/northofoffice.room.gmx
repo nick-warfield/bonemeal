@@ -3,7 +3,7 @@
   <caption></caption>
   <width>1024</width>
   <height>1536</height>
-  <vsnap>16</vsnap>
+  <vsnap>8</vsnap>
   <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
@@ -75,10 +75,7 @@
     <instance objName="Floor2_Wall_obj" x="32" y="1008" name="inst_2A867698" locked="0" code="" scaleX="3.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="416" y="1104" name="inst_DBBB0346" locked="0" code="" scaleX="0.5" scaleY="3.09677410125732" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="544" y="1104" name="inst_E19DCDF7" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Small_Gate_obj" x="-80" y="880" name="inst_1A52D423" locked="0" code="" scaleX="16" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Small_Gate_obj" x="288" y="896" name="inst_3889B795" locked="0" code="" scaleX="14" scaleY="-0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Small_Gate_obj" x="240" y="1104" name="inst_AD079D20" locked="0" code="" scaleX="14.9677419662476" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Small_Gate_obj" x="304" y="1184" name="inst_0D514643" locked="0" code="" scaleX="11.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Small_Gate_obj" x="112" y="904" name="inst_1A52D423" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="90"/>
     <instance objName="Small_Gate_obj" x="464" y="1360" name="inst_3AF63821" locked="0" code="" scaleX="1.5" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="112" y="1136" name="inst_69D3B76A" locked="0" code="" scaleX="1.5" scaleY="3.09677410125732" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="112" y="1024" name="inst_F1403005" locked="0" code="" scaleX="1.54838705062866" scaleY="3" colour="4294967295" rotation="0"/>
@@ -100,6 +97,15 @@
     <instance objName="Bat_obj" x="64" y="1152" name="inst_3F5A1337" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Bat_obj" x="96" y="1200" name="inst_2B7E5475" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Candle_White_obj" x="80" y="1072" name="inst_89C95C9C" locked="0" code="" scaleX="3.5" scaleY="4.5" colour="4294967295" rotation="0"/>
+    <instance objName="Small_Gate_obj" x="448" y="904" name="inst_7C728FE2" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="90"/>
+    <instance objName="Small_Gate_obj" x="432" y="1128" name="inst_4EC73CA5" locked="0" code="" scaleX="1" scaleY="3.5" colour="4294967295" rotation="90"/>
+    <instance objName="Small_Gate_obj" x="432" y="1208" name="inst_004D9163" locked="0" code="" scaleX="1" scaleY="3.5" colour="4294967295" rotation="90"/>
+    <instance objName="Ladder_obj" x="352" y="840" name="inst_6A39A310" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Fish2Central_obj" x="560" y="1488" name="inst_F2668109" locked="0" code="" scaleX="3" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Fish2Shrine_obj" x="320" y="784" name="inst_B985EEF7" locked="0" code="" scaleX="2" scaleY="1.75" colour="4294967295" rotation="0"/>
+    <instance objName="Fish2Storage_obj" x="688" y="896" name="inst_0823E161" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Fish2Gate_obj" x="688" y="1024" name="inst_AE762ACD" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Fish2Westwing_obj" x="-16" y="1136" name="inst_D273120E" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

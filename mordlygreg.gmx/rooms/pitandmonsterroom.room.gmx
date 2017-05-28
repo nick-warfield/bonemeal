@@ -51,7 +51,6 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="Character_obj" x="544" y="-48" name="inst_B7AEF149" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="32" y="0" name="inst_2DB1988B" locked="0" code="" scaleX="1" scaleY="28" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="32" y="1024" name="inst_99C9C6F4" locked="0" code="" scaleX="21.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="688" y="768" name="inst_9C078251" locked="0" code="" scaleX="1" scaleY="8.22999954223633" colour="4294967295" rotation="0"/>
@@ -322,6 +321,10 @@
     <instance objName="Small_Gate_obj" x="416" y="832" name="inst_B486D6C6" locked="0" code="" scaleX="12.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="672" y="832" name="inst_C5035456" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="544" y="832" name="inst_E3B98780" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Pit2Northwing_obj" x="720" y="144" name="inst_2CBC94E0" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Pit2Central_obj" x="720" y="672" name="inst_520FB68E" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Ladder_obj" x="96" y="1008" name="inst_FACFF7B7" locked="0" code="" scaleX="1" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="Pit2Study_obj" x="80" y="960" name="inst_70B58095" locked="0" code="" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

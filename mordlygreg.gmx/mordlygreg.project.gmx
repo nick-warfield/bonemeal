@@ -295,6 +295,7 @@
       <sprite>sprites\GreyBox_spr</sprite>
       <sprite>sprites\Dialogue_spr</sprite>
       <sprite>sprites\Sign_spr</sprite>
+      <sprite>sprites\Ladder_spr</sprite>
     </sprites>
     <sprites name="SCRATCH">
       <sprite>sprites\Player_spr</sprite>
@@ -606,6 +607,65 @@
       <object>objects\Flwer_Txt_04_obj</object>
     </objects>
     <objects name="Doors">
+      <objects name="Dungeon">
+        <objects name="Office">
+          <object>objects\Central2Northwing_obj</object>
+          <object>objects\Central2Eastwing_obj</object>
+          <object>objects\Central2Westwing_obj</object>
+          <object>objects\Central2Southwing_obj</object>
+        </objects>
+        <objects name="Northwing">
+          <objects name="Fish Room">
+            <object>objects\Fish2Central_obj</object>
+            <object>objects\Fish2Shrine_obj</object>
+            <object>objects\Fish2Storage_obj</object>
+            <object>objects\Fish2Gate_obj</object>
+            <object>objects\Fish2Westwing_obj</object>
+          </objects>
+          <objects name="Storage">
+            <object>objects\Storage2Fish_obj</object>
+            <object>objects\Storage2Shrine_obj</object>
+          </objects>
+          <objects name="Shrine Grounds">
+            <object>objects\Shrine2Fish_obj</object>
+            <object>objects\Shrine2Storage_obj</object>
+          </objects>
+        </objects>
+        <objects name="Eastwing">
+          <objects name="Combat Room">
+            <object>objects\Combat2Central_obj</object>
+            <object>objects\Combat2Gate_obj</object>
+            <object>objects\Combat2Toggle_obj</object>
+          </objects>
+          <objects name="Gate Room">
+            <object>objects\Gate2Combat_obj</object>
+            <object>objects\Gate2Northwing_obj</object>
+          </objects>
+        </objects>
+        <objects name="Southwing">
+          <objects name="South of Office">
+            <object>objects\Southwing2Central_obj</object>
+            <object>objects\Southwing2Study_obj</object>
+            <object>objects\Southwing2Toggle_obj</object>
+          </objects>
+          <objects name="Study">
+            <object>objects\Study2Westwing_obj</object>
+            <object>objects\Study2Southwing_obj</object>
+            <object>objects\Study2Boss_obj</object>
+          </objects>
+          <objects name="Toggle Puzzle">
+            <object>objects\Toggle2Southwing_obj</object>
+            <object>objects\Toggle2Eastwing_obj</object>
+          </objects>
+        </objects>
+        <objects name="Westwing">
+          <objects name="Pit n Monsters">
+            <object>objects\Pit2Central_obj</object>
+            <object>objects\Pit2Northwing_obj</object>
+            <object>objects\Pit2Study_obj</object>
+          </objects>
+        </objects>
+      </objects>
       <objects name="Floor2">
         <objects name="Start">
           <object>objects\Start_Exit_obj</object>
@@ -690,6 +750,7 @@
       <object>objects\Pit_obj</object>
       <object>objects\BloodPrint_obj</object>
       <object>objects\Combat_Lock_obj</object>
+      <object>objects\Ladder_obj</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>
@@ -740,6 +801,8 @@
     <room>rooms\RunFirstALWAYS</room>
     <rooms name="NEW-Austin and Lacey">
       <room>rooms\New_office</room>
+      <room>rooms\shrineArea</room>
+      <room>rooms\study</room>
       <room>rooms\gates_and_crates</room>
       <room>rooms\storageroom2</room>
       <room>rooms\southofoffice</room>
