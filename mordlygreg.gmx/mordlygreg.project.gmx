@@ -749,6 +749,7 @@
       <room>rooms\connectempty</room>
       <room>rooms\connectswtich</room>
       <room>rooms\New_combatroom</room>
+      <room>rooms\CombatRoom_Flipped</room>
     </rooms>
     <rooms name="Beta Demo">
       <room>rooms\Start_Menu</room>

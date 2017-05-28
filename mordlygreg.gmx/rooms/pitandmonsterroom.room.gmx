@@ -318,6 +318,10 @@
     <instance objName="Small_Gate_obj" x="32" y="384" name="inst_B30DDC94" locked="0" code="" scaleX="9" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="528" y="304" name="inst_6CBB007A" locked="0" code="" scaleX="1.54838705062866" scaleY="2.06451606750488" colour="4294967295" rotation="0"/>
     <instance objName="bloodToggle_obj" x="128" y="880" name="inst_B9C7476D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Key_obj" x="272" y="800" name="inst_6824D4BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Small_Gate_obj" x="416" y="832" name="inst_B486D6C6" locked="0" code="" scaleX="12.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Floor2_Wall_obj" x="672" y="832" name="inst_C5035456" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Floor2_Wall_obj" x="544" y="832" name="inst_E3B98780" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
