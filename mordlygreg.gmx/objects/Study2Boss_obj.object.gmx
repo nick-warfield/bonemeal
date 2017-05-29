@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>room_goto(Boss_rm);
 
-other.x = 544;
-other.y = 536;
+other.x = 632;
+other.y = 1656;
 </string>
           </argument>
         </arguments>

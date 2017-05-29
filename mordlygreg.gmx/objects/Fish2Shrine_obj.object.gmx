@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>room_goto(shrineArea);
 
-other.x = 544;
-other.y = 536;
+other.x = 260;
+other.y = 356;
 </string>
           </argument>
         </arguments>

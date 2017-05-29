@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>room_goto(pitandmonsterroom);
 
-other.x = 544;
-other.y = 536;
+other.x = 640;
+other.y = 704;
 </string>
           </argument>
         </arguments>

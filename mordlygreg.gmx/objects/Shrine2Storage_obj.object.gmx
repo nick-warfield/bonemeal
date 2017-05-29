@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>room_goto(storageroom2);
 
-other.x = 544;
-other.y = 536;
+other.x = 416;
+other.y = 288;
 </string>
           </argument>
         </arguments>

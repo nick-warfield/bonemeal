@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>room_goto(CombatRoom_Flipped);
 
-other.x = 544;
-other.y = 536;
+other.x = 864;
+other.y = 112;
 </string>
           </argument>
         </arguments>
