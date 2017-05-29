@@ -303,6 +303,7 @@
       <sprite>sprites\BlankTile_spr</sprite>
       <sprite>sprites\NOMASK</sprite>
       <sprite>sprites\Text_spr</sprite>
+      <sprite>sprites\toggle_spr</sprite>
       <sprite>sprites\Door_spr</sprite>
       <sprite>sprites\Pit_spr</sprite>
       <sprite>sprites\Blood_spr</sprite>
@@ -773,6 +774,10 @@
     <objects name="Utility">
       <object>objects\Game_Manager_obj</object>
       <object>objects\Camera_obj</object>
+      <objects name="Dungeon Puzzles">
+        <object>objects\bloodToggle_obj</object>
+        <object>objects\dunPuzzle_obj</object>
+      </objects>
       <objects name="Menu Jazz">
         <object>objects\Init_Game_obj</object>
         <object>objects\Menu_obj</object>
@@ -798,11 +803,11 @@
         <object>objects\GrabArm_obj</object>
         <object>objects\Door_Shut_obj</object>
       </objects>
-      <object>objects\dunPuzzle_obj</object>
-      <object>objects\bloodToggle_obj</object>
     </objects>
     <objects name="SCRATCH">
       <object>objects\floor_obj</object>
+      <object>objects\bloodToggle_off_obj</object>
+      <object>objects\bloodToggle_on_obj</object>
     </objects>
   </objects>
   <rooms name="rooms">

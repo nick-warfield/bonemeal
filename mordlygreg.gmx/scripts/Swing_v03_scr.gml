@@ -60,3 +60,34 @@ if (instance_exists(thing) && object_get_parent(thing.object_index) != Character
     with (thing) { instance_destroy(); }
 }
 
+
+//toggle switch
+if (facing == RIGHT)
+{
+    var thing = collision_ellipse(x + 64, y + 64, x, y - 64, bloodToggle_obj, false, true);
+    Dir = 0;
+}
+else if (facing == LEFT)
+{
+    var thing = collision_ellipse(x - 64, y + 64, x, y - 64, bloodToggle_obj, false, true);
+    Dir = 180;
+}
+else if (facing == UP)
+{
+    var thing = collision_ellipse(x + 64, y - 64, x - 64, y, bloodToggle_obj, false, true);
+    Dir = 90;
+}
+else if (facing == DOWN)
+{
+    var thing = collision_ellipse(x + 64, y + 64, x - 64, y, bloodToggle_obj, false, true);
+    Dir = 270;
+}
+
+if (instance_exists(thing) && thing.object_index == bloodToggle_obj)
+{
+    with (thing)
+    {
+        if (current_time >= timeStamp)
+        { active = !active; timeStamp = current_time + 500; }
+    }
+}
