@@ -296,6 +296,7 @@
       <sprite>sprites\Dialogue_spr</sprite>
       <sprite>sprites\Sign_spr</sprite>
       <sprite>sprites\Ladder_spr</sprite>
+      <sprite>sprites\sprite175</sprite>
     </sprites>
     <sprites name="SCRATCH">
       <sprite>sprites\Player_spr</sprite>
@@ -724,12 +725,19 @@
       </objects>
       <objects name="Puzzles">
         <objects name="Candles">
-          <object>objects\Combination_Puzzle_obj</object>
-          <object>objects\Candle_Blue_obj</object>
-          <object>objects\Candle_Orange_obj</object>
-          <object>objects\Candle_Red_obj</object>
-          <object>objects\Candle_White_obj</object>
-          <object>objects\Shrine_obj</object>
+          <object>objects\candle0_obj</object>
+          <object>objects\candle1_obj</object>
+          <object>objects\candle2_obj</object>
+          <object>objects\candle3_obj</object>
+          <object>objects\candle4_obj</object>
+          <objects name="Old">
+            <object>objects\Combination_Puzzle_obj</object>
+            <object>objects\Candle_Blue_obj</object>
+            <object>objects\Candle_Orange_obj</object>
+            <object>objects\Candle_Red_obj</object>
+            <object>objects\Candle_White_obj</object>
+            <object>objects\Shrine_obj</object>
+          </objects>
         </objects>
         <objects name="Gate Puzzle">
           <object>objects\Gate_Puzzle_01_obj</object>

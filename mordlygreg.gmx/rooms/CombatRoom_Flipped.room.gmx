@@ -72,7 +72,6 @@
     <instance objName="Fishman_obj" x="160" y="592" name="inst_D6FA8B37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fishman_obj" x="400" y="416" name="inst_881FC147" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fishman_obj" x="320" y="176" name="inst_D80BDC8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Candle_White_obj" x="128" y="160" name="inst_EFA2169C" locked="0" code="" scaleX="5.5" scaleY="5.5" colour="4294967295" rotation="0"/>
     <instance objName="bloodToggle_obj" x="896" y="400" name="inst_D6E29438" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="48" y="704" name="inst_52DBD23F" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="336" y="704" name="inst_23543C14" locked="0" code="" scaleX="19.5" scaleY="1" colour="4294967295" rotation="0"/>
@@ -81,6 +80,7 @@
     <instance objName="Combat2Central_obj" x="0" y="352" name="inst_4C9DCAC0" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Combat2Gate_obj" x="832" y="48" name="inst_E0181B7C" locked="0" code="" scaleX="3" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Combat2Toggle_obj" x="240" y="736" name="inst_1A5B9D4A" locked="0" code="" scaleX="3" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="candle0_obj" x="112" y="160" name="inst_E7AFA27C" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

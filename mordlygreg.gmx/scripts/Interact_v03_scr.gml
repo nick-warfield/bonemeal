@@ -20,11 +20,15 @@ else if (facing == DOWN)
 
 if (thing != 0 && instance_exists(thing))
 {
+    thing.lit = true;
+
+    /*
     if (thing.order == 0)
     {
         thing.order = thing.door.count;
         thing.door.count--;
     }
+    */
 }
 
 

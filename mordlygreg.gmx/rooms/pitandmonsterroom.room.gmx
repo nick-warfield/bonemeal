@@ -61,7 +61,6 @@
     <instance objName="Bat_obj" x="144" y="64" name="inst_4D358012" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="32" y="992" name="inst_16EAD030" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Arrow_Block_Up_obj" x="352" y="848" name="inst_7E0F9E38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Candle_White_obj" x="352" y="976" name="inst_493766A8" locked="0" code="" scaleX="4" scaleY="3.25" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="32" y="880" name="inst_B63B72AA" locked="0" code="" scaleX="1" scaleY="3.5" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="688" y="640" name="inst_2EF255CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="688" y="32" name="inst_B773BA08" locked="0" code="" scaleX="1" scaleY="3.5" colour="4294967295" rotation="0"/>
@@ -325,6 +324,7 @@
     <instance objName="Pit2Central_obj" x="720" y="672" name="inst_520FB68E" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Ladder_obj" x="96" y="1008" name="inst_FACFF7B7" locked="0" code="" scaleX="1" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="Pit2Study_obj" x="80" y="960" name="inst_70B58095" locked="0" code="" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="candle4_obj" x="304" y="976" name="inst_E2D357A2" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

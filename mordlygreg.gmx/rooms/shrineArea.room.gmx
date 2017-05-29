@@ -80,9 +80,9 @@
     <instance objName="Shrine_obj" x="404" y="144" name="inst_BEF2EAF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ladder_obj" x="192" y="424" name="inst_E567F547" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ladder_obj" x="624" y="496" name="inst_1D1464A5" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Candle_Red_obj" x="344" y="172" name="inst_BBA63FB0" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Shrine2Fish_obj" x="160" y="328" name="inst_E5BCF674" locked="0" code="" scaleX="1.875" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="Shrine2Storage_obj" x="592" y="400" name="inst_F759FA21" locked="0" code="" scaleX="2" scaleY="1.875" colour="4294967295" rotation="0"/>
+    <instance objName="candle3_obj" x="348" y="172" name="inst_0AA8429B" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
