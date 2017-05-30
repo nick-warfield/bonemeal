@@ -30,7 +30,12 @@
 for (var i = 0; i &lt; num; i++)
 {
     gate[i] = instance_find(Small_Gate_obj, i);
+    gate[i].opened = true;
 }
+
+
+instance_deactivate_object(Bat_obj);
+instance_deactivate_object(Fishman_obj);
 </string>
           </argument>
         </arguments>
@@ -53,11 +58,45 @@ for (var i = 0; i &lt; num; i++)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!instance_exists(Bat_obj) &amp;&amp; !instance_exists(Fishman_obj))
+            <string>//check for when the player hits the switch if they haven't beaten the room
+if (dunPuzzle_obj.combatrmVictory = false &amp;&amp; dunPuzzle_obj.bloodToggle[0] = true)
+{
+    //activate enemies
+    instance_activate_all();
+    
+    //block the exits
+    for (var i = 0; i &lt; num; i++)
+    { gate[i].opened = false; }
+}
+
+
+//if the exit is blocked and there are no more enemies alive
+if (gate[0].opened = false &amp;&amp; !instance_exists(Bat_obj) &amp;&amp; !instance_exists(Fishman_obj))
+{
+    //open the gates
+    for (var i = 0; i &lt; num; i++)
+    { gate[i].opened = true; }
+    
+    //set the room status too beaten
+    dunPuzzle_obj.combatrmVictory = true;
+}
+
+
+/*
+//block exits
+if (instance_exists(Bat_obj) || instance_exists(Fishman_obj) &amp;&amp; !dunPuzzle_obj.combatrmVictory)
 {
     for (var i = 0; i &lt; num; i++)
-    { with (gate[i]) {instance_destroy(); } }
+    { with (gate[i]) {opened = false; } }
 }
+else
+{
+    for (var i = 0; i &lt; num; i++)
+    { with (gate[i]) {opened = true; } }
+    
+    dunPuzzle_obj.combatrmVictory = true;
+}
+
 </string>
           </argument>
         </arguments>

@@ -37,6 +37,9 @@ bloodToggle[0] = false;     //changes combat room
 bloodToggle[1] = false;     //changes pit room
 bloodToggle[2] = false;     //changes southwing
 bloodToggle[3] = false;     //changes toggle room
+
+//keep track of which rooms have been beaten
+combatrmVictory = false;
 </string>
           </argument>
         </arguments>
