@@ -296,7 +296,6 @@
       <sprite>sprites\Dialogue_spr</sprite>
       <sprite>sprites\Sign_spr</sprite>
       <sprite>sprites\Ladder_spr</sprite>
-      <sprite>sprites\sprite175</sprite>
     </sprites>
     <sprites name="SCRATCH">
       <sprite>sprites\Player_spr</sprite>
@@ -313,6 +312,15 @@
       <sprite>sprites\Player_Right_spr</sprite>
       <sprite>sprites\Player_Up_Idle_spr</sprite>
       <sprite>sprites\Player_Down_spr</sprite>
+    </sprites>
+    <sprites name="Blood Pits">
+      <sprite>sprites\toggle0_off_spr</sprite>
+      <sprite>sprites\toggle1_off_spr</sprite>
+      <sprite>sprites\toggle1_on_spr</sprite>
+      <sprite>sprites\toggle2_off_spr</sprite>
+      <sprite>sprites\toggle3_1_spr</sprite>
+      <sprite>sprites\toggle3_2_spr</sprite>
+      <sprite>sprites\toggle3_3_spr</sprite>
     </sprites>
     <sprite>sprites\Crate01_spr</sprite>
     <sprite>sprites\Crate02_spr</sprite>
@@ -777,6 +785,7 @@
       <objects name="Dungeon Puzzles">
         <object>objects\bloodToggle_obj</object>
         <object>objects\dunPuzzle_obj</object>
+        <object>objects\puz_combatroom_obj</object>
       </objects>
       <objects name="Menu Jazz">
         <object>objects\Init_Game_obj</object>
