@@ -83,6 +83,7 @@
     <instance objName="bloodToggle_obj" x="880" y="400" name="inst_BEAE48D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="puz_combatroom_obj" x="-32" y="32" name="inst_8AF36B45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="0" y="352" name="inst_D08FD2C0" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="toggle0_off_obj" x="504" y="400" name="inst_AC584E75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

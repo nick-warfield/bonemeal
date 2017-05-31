@@ -786,6 +786,9 @@
         <object>objects\bloodToggle_obj</object>
         <object>objects\dunPuzzle_obj</object>
         <object>objects\puz_combatroom_obj</object>
+        <objects name="blood pits">
+          <object>objects\toggle0_off_obj</object>
+        </objects>
       </objects>
       <objects name="Menu Jazz">
         <object>objects\Init_Game_obj</object>
