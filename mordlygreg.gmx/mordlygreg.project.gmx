@@ -315,7 +315,8 @@
     </sprites>
     <sprites name="Blood Pits">
       <sprite>sprites\toggle0_off_spr</sprite>
-      <sprite>sprites\toggle1_off_spr</sprite>
+      <sprite>sprites\toggle1_1_off_spr</sprite>
+      <sprite>sprites\toggle1_2_off_spr</sprite>
       <sprite>sprites\toggle1_on_spr</sprite>
       <sprite>sprites\toggle2_off_spr</sprite>
       <sprite>sprites\toggle3_1_spr</sprite>
@@ -785,9 +786,11 @@
         <object>objects\bloodToggle_obj</object>
         <object>objects\dunPuzzle_obj</object>
         <object>objects\puz_combatroom_obj</object>
-        <object>objects\Gate_Puzzle_01_obj</object>
+        <object>objects\puz_gateRoom_obj</object>
+        <object>objects\puz_northWing_obj</object>
         <objects name="blood pits">
           <object>objects\toggle0_off_obj</object>
+          <object>objects\toggle1_2_off_obj</object>
         </objects>
       </objects>
       <objects name="Menu Jazz">
