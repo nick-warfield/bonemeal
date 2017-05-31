@@ -791,11 +791,13 @@
         <object>objects\puz_northWing_obj</object>
         <object>objects\puz_Storage_obj</object>
         <object>objects\puz_westWing_obj</object>
+        <object>objects\puz_southWing_obj</object>
         <objects name="blood pits">
           <object>objects\toggle0_off_obj</object>
           <object>objects\toggle1_2_off_obj</object>
           <object>objects\toggle1_1_off_obj</object>
           <object>objects\toggle1_on_obj</object>
+          <object>objects\toggle2_off_obj</object>
         </objects>
       </objects>
       <objects name="Menu Jazz">
