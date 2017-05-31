@@ -74,7 +74,7 @@ if (!dunPuzzle_obj.combatrmVictory)
     }
     
     //are the gates closed and monsters gone?
-    if (!gate[0].opened &amp;&amp; !instance_exists(Bat_obj) &amp;&amp; instance_exists(Fishman_obj))
+    if (!gate[0].opened &amp;&amp; !instance_exists(Bat_obj) &amp;&amp; !instance_exists(Fishman_obj))
     {
         //set room to beaten
         dunPuzzle_obj.combatrmVictory = true;
@@ -125,6 +125,34 @@ else
     dunPuzzle_obj.combatrmVictory = true;
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///ensure gates are open on room start
+
+for (var i = 0; i &lt; num; i++)
+{
+    gate[i].opened = true;
+}
 </string>
           </argument>
         </arguments>

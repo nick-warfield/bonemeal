@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if (instance_number(dunPuzzle_obj &gt; 1) ) {instance_destroy(); } 
+
 for (var i = 0; i &lt; 5; i++)
 {
     candle[i] = false;
