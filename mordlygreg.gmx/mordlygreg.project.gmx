@@ -749,7 +749,6 @@
           </objects>
         </objects>
         <objects name="Gate Puzzle">
-          <object>objects\Gate_Puzzle_01_obj</object>
           <object>objects\Gate_Puzzle_02_obj</object>
           <object>objects\Gate_Puzzle_03_obj</object>
           <object>objects\Gate_Puzzle_05_obj</object>
@@ -786,6 +785,7 @@
         <object>objects\bloodToggle_obj</object>
         <object>objects\dunPuzzle_obj</object>
         <object>objects\puz_combatroom_obj</object>
+        <object>objects\Gate_Puzzle_01_obj</object>
         <objects name="blood pits">
           <object>objects\toggle0_off_obj</object>
         </objects>
@@ -826,18 +826,28 @@
     <room>rooms\RunFirstALWAYS</room>
     <rooms name="NEW-Austin and Lacey">
       <room>rooms\New_office</room>
-      <room>rooms\shrineArea</room>
-      <room>rooms\study</room>
-      <room>rooms\gates_and_crates</room>
-      <room>rooms\storageroom2</room>
-      <room>rooms\southofoffice</room>
-      <room>rooms\togglex3</room>
-      <room>rooms\pitandmonsterroom</room>
-      <room>rooms\northofoffice</room>
-      <room>rooms\connectempty</room>
-      <room>rooms\connectswtich</room>
-      <room>rooms\New_combatroom</room>
-      <room>rooms\CombatRoom_Flipped</room>
+      <rooms name="North Wing">
+        <room>rooms\northofoffice</room>
+        <room>rooms\shrineArea</room>
+        <room>rooms\storageroom2</room>
+      </rooms>
+      <rooms name="East Wing">
+        <room>rooms\CombatRoom_Flipped</room>
+        <room>rooms\gates_and_crates</room>
+      </rooms>
+      <rooms name="South Wing">
+        <room>rooms\southofoffice</room>
+        <room>rooms\study</room>
+        <room>rooms\togglex3</room>
+      </rooms>
+      <rooms name="West Wing">
+        <room>rooms\pitandmonsterroom</room>
+      </rooms>
+      <rooms name="SCRATCH">
+        <room>rooms\connectempty</room>
+        <room>rooms\connectswtich</room>
+        <room>rooms\New_combatroom</room>
+      </rooms>
     </rooms>
     <rooms name="Beta Demo">
       <room>rooms\Start_Menu</room>
