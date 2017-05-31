@@ -788,6 +788,7 @@
         <object>objects\puz_combatroom_obj</object>
         <object>objects\puz_gateRoom_obj</object>
         <object>objects\puz_northWing_obj</object>
+        <object>objects\puz_Storage_obj</object>
         <objects name="blood pits">
           <object>objects\toggle0_off_obj</object>
           <object>objects\toggle1_2_off_obj</object>
