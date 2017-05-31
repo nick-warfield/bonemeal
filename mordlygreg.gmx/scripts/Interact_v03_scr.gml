@@ -49,7 +49,7 @@ if (thing != 0 && instance_exists(thing))
     if (keys > 0)
     {
       thing.locked = false;
-      thing.gatetxt.message[0] = "It Opened!";
+      //thing.gatetxt.message[0] = "It Opened!";
       keys--;
     }
 }

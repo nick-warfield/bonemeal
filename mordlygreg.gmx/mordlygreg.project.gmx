@@ -758,6 +758,7 @@
           <object>objects\Gate_Puzzle_07_obj</object>
           <object>objects\Pressure_Plate_obj</object>
           <object>objects\Small_Gate_obj</object>
+          <object>objects\Key_Gate_obj</object>
         </objects>
       </objects>
       <object>objects\Crate01_obj</object>
@@ -789,9 +790,12 @@
         <object>objects\puz_gateRoom_obj</object>
         <object>objects\puz_northWing_obj</object>
         <object>objects\puz_Storage_obj</object>
+        <object>objects\puz_westWing_obj</object>
         <objects name="blood pits">
           <object>objects\toggle0_off_obj</object>
           <object>objects\toggle1_2_off_obj</object>
+          <object>objects\toggle1_1_off_obj</object>
+          <object>objects\toggle1_on_obj</object>
         </objects>
       </objects>
       <objects name="Menu Jazz">
