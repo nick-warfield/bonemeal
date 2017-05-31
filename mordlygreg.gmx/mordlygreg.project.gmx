@@ -319,9 +319,9 @@
       <sprite>sprites\toggle1_2_off_spr</sprite>
       <sprite>sprites\toggle1_on_spr</sprite>
       <sprite>sprites\toggle2_off_spr</sprite>
-      <sprite>sprites\toggle3_1_spr</sprite>
-      <sprite>sprites\toggle3_2_spr</sprite>
-      <sprite>sprites\toggle3_3_spr</sprite>
+      <sprite>sprites\toggle3_1_off_spr</sprite>
+      <sprite>sprites\toggle3_2_on_spr</sprite>
+      <sprite>sprites\toggle3_3_off_spr</sprite>
     </sprites>
     <sprite>sprites\Crate01_spr</sprite>
     <sprite>sprites\Crate02_spr</sprite>
@@ -793,12 +793,16 @@
         <object>objects\puz_Storage_obj</object>
         <object>objects\puz_westWing_obj</object>
         <object>objects\puz_southWing_obj</object>
+        <object>objects\puz_toggleRoom_obj</object>
         <objects name="blood pits">
           <object>objects\toggle0_off_obj</object>
           <object>objects\toggle1_2_off_obj</object>
           <object>objects\toggle1_1_off_obj</object>
           <object>objects\toggle1_on_obj</object>
           <object>objects\toggle2_off_obj</object>
+          <object>objects\toggle3_1_off_obj</object>
+          <object>objects\toggle3_3_off_obj</object>
+          <object>objects\toggle3_2_on_obj</object>
         </objects>
       </objects>
       <objects name="Menu Jazz">
