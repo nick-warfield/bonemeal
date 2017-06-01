@@ -25,8 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>opened = false;
-locked = true;
+            <string>key = saveData_generate_key();
+
+if (!is_undefined(saveData_get_value(key) ) )
+{locked = saveData_get_value(key); }
+else
+{locked = true; }
+opened = false;
+
+
+//locked = true;
 
 
 image_blend = c_lime;
@@ -81,7 +89,7 @@ if(opened)
 {
     visible = false;
     mask_index = NOMASK;
-    
+    saveData_set_value(key, false);
     //if (y &gt; openy)
     //{y -= 4;}
 }

@@ -25,7 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>opened = false;
+            <string>key = saveData_generate_key();
+
+if (!is_undefined(saveData_get_value(key) ) )
+{ opened = true; }
+else
+{ opened = false; }
 
 image_blend = c_aqua;
 </string>
@@ -77,6 +82,7 @@ if (global.paused) {exit;}
 {
     visible = false;
     mask_index = NOMASK;
+    saveData_set_value(key, true);
     
     //if (y &gt; openy)
     //{y -= 4;}
