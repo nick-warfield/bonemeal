@@ -47,7 +47,7 @@
             <kind>1</kind>
             <string>///Initialize Global Variables and other stuff
 
-/*
+
 //setup save data
 saveData = ds_map_create();
 saveFile = "SaveData.sav";
@@ -55,7 +55,7 @@ saveData_set_value("Current Room", room_get_name(room));
 saveData_set_value("isPaused", false);
 saveData_set_value("GUI Scaling", 1.5);
 saveData_set_value("Volume", 0.75);
-*/
+
 
 global.paused = false;
 global.scaleFactor = 1.5;
