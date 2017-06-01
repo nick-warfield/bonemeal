@@ -66,7 +66,7 @@
           <argument>
             <kind>1</kind>
             <string>timeStamp2 = current_time + 75;
-timeStamp3 = timeStamp2 + 750;
+timeStamp3 = timeStamp2 + 1250;
 
 image_blend = c_red;
 </string>
@@ -133,6 +133,12 @@ for (var i = 0; i &lt; 12; i++)
             <string>if (current_time &gt;= timeStamp3)
 {  
     instance_destroy();
+}
+else if (place_meeting(x, y, Projectile_obj))
+{
+    var bull = instance_place(x, y, Projectile_obj)
+    Dir = bull.Dir;
+    spd = bull.spd;
 }
 else if (current_time &gt;= timeStamp2 || instance_place(x, y, Character_obj) || instance_place(x, y, Wall_obj))
 {
