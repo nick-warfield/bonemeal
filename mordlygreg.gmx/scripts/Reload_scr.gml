@@ -7,7 +7,8 @@ else if (temp == 3)
 { cylinder[temp] = SpreadShot02_obj; }
 else if (temp = 0)
 { cylinder[temp] = SpreadShot_obj; }
-//else if (temp = 2)
+else if (temp = 2)
+{ cylinder[temp] = Zapper_obj; }
 //{ cylinder[temp] = GhostBullet_obj; }
 else
 { cylinder[temp] = Bullet_obj; }

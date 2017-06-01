@@ -774,6 +774,7 @@
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>
       <object>objects\Bullet_obj</object>
+      <object>objects\Zapper_obj</object>
       <object>objects\GhostBullet_obj</object>
       <object>objects\Bullet_90_obj</object>
       <object>objects\SpreadShot_obj</object>
