@@ -28,11 +28,11 @@
             <string>plate1 = instance_find(Pressure_Plate_obj, 0);
 plate2 = instance_find(Pressure_Plate_obj, 1);
 
-plate3 = instance_find(Pressure_Plate_obj, 2);
+//plate3 = instance_find(Pressure_Plate_obj, 2);
 
 
 gate1 = instance_find(Small_Gate_obj, 0);
-gate2 = instance_find(Small_Gate_obj, 1);
+//gate2 = instance_find(Small_Gate_obj, 1);
 </string>
           </argument>
         </arguments>
@@ -65,6 +65,7 @@ else
 }
 
 
+/*
 if (plate3.active)
 {
     gate2.opened = false;

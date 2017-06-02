@@ -28,7 +28,7 @@
             <string>room_goto(northofoffice);
 
 other.x = 624;
-other.y = 1064;
+other.y = 1136;
 </string>
           </argument>
         </arguments>

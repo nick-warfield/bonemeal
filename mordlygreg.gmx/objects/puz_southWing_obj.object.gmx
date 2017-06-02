@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>plate1 = instance_find(Pressure_Plate_obj, 0);
+            <string>/*
+plate1 = instance_find(Pressure_Plate_obj, 0);
 plate2 = instance_find(Pressure_Plate_obj, 1);
 
 plate3 = instance_find(Pressure_Plate_obj, 2);
@@ -35,7 +36,7 @@ gate1 = instance_find(Small_Gate_obj, 0);
 gate2 = instance_find(Small_Gate_obj, 1);
 
 gate3 = instance_find(Small_Gate_obj, 2);
-
+*/
 
 
 instance_deactivate_object(Bat_obj);
@@ -63,7 +64,7 @@ instance_deactivate_object(Fishman_obj);
           <argument>
             <kind>1</kind>
             <string>///control gates and plates
-
+/*
 if (plate1.active &amp;&amp; plate2.active)
 {
     gate1.opened = true;

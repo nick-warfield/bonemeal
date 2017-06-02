@@ -84,9 +84,9 @@
     <instance objName="Small_Gate_obj" x="176" y="1360" name="inst_995A7A58" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="112" y="1248" name="inst_07ECFACB" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="112" y="1008" name="inst_AB8BB66A" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Small_Gate_obj" x="288" y="1240" name="inst_A5733BCF" locked="0" code="" scaleX="1" scaleY="3.5" colour="4294967295" rotation="90"/>
+    <instance objName="Small_Gate_obj" x="272" y="1128" name="inst_A5733BCF" locked="0" code="" scaleX="1" scaleY="4.5" colour="4294967295" rotation="90"/>
     <instance objName="Small_Gate_obj" x="112" y="1120" name="inst_5DA0183C" locked="0" code="" scaleX="1" scaleY="3.5" colour="4294967295" rotation="0"/>
-    <instance objName="Pressure_Plate_obj" x="336" y="1304" name="inst_69068A28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pressure_Plate_obj" x="296" y="1232" name="inst_69068A28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pressure_Plate_obj" x="96" y="1392" name="inst_E7C9ADFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="puz_northWing_obj" x="-16" y="0" name="inst_468E1830" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="toggle1_2_off_obj" x="64" y="944" name="inst_B9821003" locked="0" code="" scaleX="1.33333337306976" scaleY="1" colour="4294967295" rotation="0"/>
@@ -107,13 +107,11 @@
     <instance objName="Floor2_Wall_obj" x="496" y="1024" name="inst_F7F79A2D" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="512" y="1008" name="inst_AB35FC2E" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="528" y="992" name="inst_D03C1FBB" locked="0" code="" scaleX="4" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Wall_obj" x="400" y="1104" name="inst_23DF1882" locked="0" code="" scaleX="0.5" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="528" y="880" name="inst_EF793E65" locked="0" code="" scaleX="4" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="32" y="992" name="inst_8C1BFCEA" locked="0" code="" scaleX="4" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Wall_obj" x="272" y="1104" name="inst_96AD2748" locked="0" code="" scaleX="0.5" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Wall_obj" x="280" y="976" name="inst_5C6DE4C7" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Floor2_Wall_obj" x="280" y="1008" name="inst_5C6DE4C7" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="432" y="864" name="inst_029184F5" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Wall_obj" x="280" y="960" name="inst_E397CC73" locked="0" code="" scaleX="1.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Floor2_Wall_obj" x="280" y="992" name="inst_E397CC73" locked="0" code="" scaleX="1.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="376" y="880" name="inst_1DCD9670" locked="0" code="" scaleX="2.25" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Bat_obj" x="616" y="912" name="inst_BF59A7E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Bat_obj" x="552" y="824" name="inst_690B2C13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
