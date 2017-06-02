@@ -276,6 +276,7 @@
       <sprite>sprites\hud_revolver_02_spr</sprite>
       <sprite>sprites\hud_revolver_reloadIndicator_spr</sprite>
       <sprite>sprites\hud_revolver_01_spr</sprite>
+      <sprite>sprites\hp_pickup_spr</sprite>
       <sprite>sprites\hud_revolver_03_empty_spr</sprite>
       <sprite>sprites\hud_revolver_03_full_spr</sprite>
       <sprite>sprites\HUD_Card_spr</sprite>
@@ -770,6 +771,7 @@
       <object>objects\BloodPrint_obj</object>
       <object>objects\Combat_Lock_obj</object>
       <object>objects\Ladder_obj</object>
+      <object>objects\HP_Pickup_obj</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>
@@ -843,24 +845,24 @@
     <rooms name="NEW-Austin and Lacey">
       <room>rooms\New_office</room>
       <rooms name="North Wing">
-        <room>rooms\northofoffice</room>
-        <room>rooms\North_Of_Office_V2</room>
+        <room>rooms\northofoffice_old</room>
         <room>rooms\shrineArea</room>
         <room>rooms\storageroom2</room>
+        <room>rooms\North_Of_Office_V2</room>
       </rooms>
       <rooms name="East Wing">
         <room>rooms\CombatRoom_Flipped</room>
         <room>rooms\gates_and_crates</room>
       </rooms>
       <rooms name="South Wing">
-        <room>rooms\southofoffice</room>
-        <room>rooms\South_Of_Office_V2</room>
+        <room>rooms\southofoffice_old</room>
         <room>rooms\study</room>
-        <room>rooms\togglex3</room>
+        <room>rooms\togglex3_old</room>
+        <room>rooms\South_Of_Office_V2</room>
         <room>rooms\ToggleX3_V2</room>
       </rooms>
       <rooms name="West Wing">
-        <room>rooms\pitandmonsterroom</room>
+        <room>rooms\pitandmonsterroom_old</room>
         <room>rooms\Pit_Monster_V2</room>
       </rooms>
       <rooms name="SCRATCH">
