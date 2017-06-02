@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1024</width>
   <height>1088</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>4</vsnap>
+  <hsnap>4</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -236,8 +236,8 @@
     <instance objName="candle2_obj" x="648" y="364" name="inst_32862FE6" locked="0" code="" scaleX="2" scaleY="2" colour="4286611648" rotation="0"/>
     <instance objName="bloodToggle_obj" x="96" y="592" name="inst_AE72860C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="toggle3_1_off_obj" x="472" y="848" name="inst_09638D6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="toggle3_3_off_obj" x="520" y="96" name="inst_0D74A9FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="toggle3_2_on_obj" x="336" y="384" name="inst_E8A6B55E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="toggle3_3_off_obj" x="552" y="96" name="inst_0D74A9FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="toggle3_2_on_obj" x="392" y="768" name="inst_E8A6B55E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pressure_Plate_obj" x="96" y="960" name="inst_5A3CC00F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pressure_Plate_obj" x="596" y="720" name="inst_B7FBC091" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pressure_Plate_obj" x="60" y="328" name="inst_DA8D6D20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
