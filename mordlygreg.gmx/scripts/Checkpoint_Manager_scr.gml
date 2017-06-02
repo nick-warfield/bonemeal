@@ -10,11 +10,12 @@ if (global.checkpoint == 1)
 }
 else if (global.checkpoint == 2)
 {
-    room_goto(Office_rm);
-    audio_play_sound(Main_trk, 75, true);
-    rmx = 764;
-    rmy = 172;
+    room_goto(New_office);
+    //audio_play_sound(Main_trk, 75, true);
+    rmx = 400;
+    rmy = 424;
 }
+/*
 else if (global.checkpoint == 3)
 {
     room_goto(Pit_04_rm);
@@ -22,7 +23,7 @@ else if (global.checkpoint == 3)
     rmx = 248;
     rmy = 432;
 }
-
+*/
 
 with (playerRef)
 {
