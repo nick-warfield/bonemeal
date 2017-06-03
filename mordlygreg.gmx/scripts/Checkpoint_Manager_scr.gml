@@ -44,3 +44,6 @@ with (playerRef)
     ds_stack_push(StateStack, s_MOVE);
 }
 
+
+var tempmap = saveData_get_value("EMPTY ON RESPAWN");
+ds_map_clear(tempmap);

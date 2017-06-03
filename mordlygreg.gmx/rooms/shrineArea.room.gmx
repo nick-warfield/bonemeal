@@ -83,6 +83,8 @@
     <instance objName="Shrine2Fish_obj" x="160" y="328" name="inst_E5BCF674" locked="0" code="" scaleX="1.875" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="Shrine2Storage_obj" x="592" y="400" name="inst_F759FA21" locked="0" code="" scaleX="2" scaleY="1.875" colour="4294967295" rotation="0"/>
     <instance objName="candle3_obj" x="348" y="172" name="inst_0AA8429B" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="HP_Pickup_obj" x="188" y="568" name="inst_59188432" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="HP_Pickup_obj" x="240" y="588" name="inst_A3393B60" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

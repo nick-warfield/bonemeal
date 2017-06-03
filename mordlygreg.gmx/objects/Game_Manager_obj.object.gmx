@@ -55,6 +55,7 @@ saveData_set_value("Current Room", room_get_name(room));
 saveData_set_value("isPaused", false);
 saveData_set_value("GUI Scaling", 1.5);
 saveData_set_value("Volume", 0.75);
+saveData_set_value("EMPTY ON RESPAWN", ds_map_create());
 
 
 global.paused = false;
