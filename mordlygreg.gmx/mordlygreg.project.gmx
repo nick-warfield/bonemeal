@@ -728,6 +728,7 @@
         </objects>
       </objects>
       <object>objects\Door_Next_obj</object>
+      <object>objects\Door_Dungeon_obj</object>
       <object>objects\Door_Start_obj</object>
       <object>objects\Door_Boss_obj</object>
     </objects>
