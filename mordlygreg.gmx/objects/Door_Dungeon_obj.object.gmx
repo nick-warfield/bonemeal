@@ -30,8 +30,8 @@
     state = Trans_State.out;
     trans_dir = Trans_Dir.down;
     target_room = New_office;
-    playerx = 544;
-    playery = 536;
+    playerx = 400;
+    playery = 424;
 }
 
 /*
