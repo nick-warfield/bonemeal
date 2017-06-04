@@ -846,6 +846,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\RunFirstALWAYS</room>
+    <room>rooms\Start_Menu</room>
+    <room>rooms\Outside_rm</room>
     <rooms name="Dungeon">
       <room>rooms\New_office</room>
       <rooms name="North Wing">
@@ -876,8 +878,6 @@
         <room>rooms\pitandmonsterroom_old</room>
       </rooms>
     </rooms>
-    <room>rooms\Start_Menu</room>
-    <room>rooms\Outside_rm</room>
     <rooms name="Options/Menus/Utility">
       <room>rooms\Controls_rm</room>
       <room>rooms\Options_rm</room>
