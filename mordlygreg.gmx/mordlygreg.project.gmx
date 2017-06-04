@@ -561,6 +561,9 @@
     <script>scripts\saveData_get_value.gml</script>
     <script>scripts\saveData_generate_key.gml</script>
     <script>scripts\ScreenShake_scr.gml</script>
+    <script>scripts\arc.gml</script>
+    <script>scripts\bias.gml</script>
+    <script>scripts\interpolate.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Characters">
