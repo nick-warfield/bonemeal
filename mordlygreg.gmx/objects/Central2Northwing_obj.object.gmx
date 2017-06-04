@@ -33,6 +33,7 @@
     playerx = 608;
     playery = 1440;
 }
+instance_destroy();
 </string>
           </argument>
         </arguments>

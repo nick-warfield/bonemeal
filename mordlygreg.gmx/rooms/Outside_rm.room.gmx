@@ -76,7 +76,6 @@
     <instance objName="Crate02_obj" x="176" y="1208" name="inst_650E4B67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Crate02_obj" x="204" y="1156" name="inst_5B5AA1ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Crate01_obj" x="112" y="1136" name="inst_3DC4D8D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Track_Floor1_obj" x="-64" y="31" name="inst_9BCB8FF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="552" y="1468" name="inst_768ED9C1" locked="0" code="" scaleX="15.125" scaleY="2.75" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="716" y="1132" name="inst_1DC8EA07" locked="0" code="" scaleX="1" scaleY="1.75" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="680" y="1112" name="inst_979CC0D5" locked="0" code="" scaleX="1.1612902879715" scaleY="1.41935479640961" colour="4294967295" rotation="0"/>

@@ -33,7 +33,7 @@
     playerx = 544;
     playery = 536;
 }
-
+instance_destroy();
 /*
 room_goto(study);
 

@@ -33,7 +33,7 @@
     playerx = 260;
     playery = 356;
 }
-
+instance_destroy();
 /*
 room_goto(shrineArea);
 
