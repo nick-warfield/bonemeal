@@ -33,7 +33,7 @@
     playerx = 160;
     playery = 304;
 }
-
+instance_destroy();
 /*
 room_goto(storageroom2);
 

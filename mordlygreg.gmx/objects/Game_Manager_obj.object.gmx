@@ -87,13 +87,13 @@ audio_set_master_gain(0, 0.75);
             <kind>1</kind>
             <string>///Transition Stuff
 enum Trans_Dir{left,right,up,down};
-enum Trans_State{none,out,in}
+enum Trans_State{none, out, in, change, start };
 state=Trans_State.none;
 trans_dir = Trans_Dir.up; //Doesn't matter.
 activate = false;
 
 timer=0;
-transition_length=room_speed/2;
+transition_length=30;
 target_room=noone;
 playerx = 0;
 playery = 0;
@@ -161,58 +161,114 @@ newRot = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>var h = view_yview[0] + display_get_height();
+var w = view_xview[0] + display_get_width();
+//transition_x=0; 
+//transition_y=0;
+var _bias=.5;
+
 ///Change rooms
 switch(state)
 {
   case Trans_State.none:
-  {
-    /*
-    var _left=keyboard_check_pressed(vk_left);
-    var _right=keyboard_check_pressed(vk_right);
-    var _up=keyboard_check_pressed(vk_up);
-    var _down=keyboard_check_pressed(vk_down);
+    transition_x = -w;
+    transition_y = -h;
+    break;
     
-    if(_left || _right || _up || _down)
+  case Trans_State.out:
+    //show_debug_message("trans_state = out");
+    global.paused = true;    
+    draw_set_color(c_black);
+    
+    _bias=.8; 
+    timer++;
+    
+    
+    //if (timer &gt; transition_length) {timer = transition_length; }
+      
+    switch(trans_dir)
     {
-        state = Trans_State.out;
+      case Trans_Dir.up:    transition_y=interpolate(h,view_yview[0],timer/transition_length,_bias);
+                            transition_x = 0;
+                            break;
+      case Trans_Dir.down:  transition_y=interpolate(-h,view_yview[0],timer/transition_length,_bias);
+                            transition_x = 0;
+                            break;
+      case Trans_Dir.left:  transition_x=interpolate(w,view_xview[0],timer/transition_length,_bias);
+                            transition_y = 0;
+                            break;
+      case Trans_Dir.right: transition_x=interpolate(-w,view_xview[0],timer/transition_length,_bias);
+                            transition_y = 0;
+                            break;
+    }
+    
+    //We done yet?
+    if(timer &gt;= transition_length)
+    {
+      timer=transition_length;
+      state = Trans_State.change;
+    }
+    
+    break;
+    
+  case Trans_State.in:
+    //show_debug_message("trans_state = in");
+    
+    _bias=.2;
+    timer--;
 
-        /*
-        if (_left)
-        {trans_dir=Trans_Dir.left; }
-        else if (_right)
-        {trans_dir=Trans_Dir.right; }
-        else if (_up)
-        {trans_dir=Trans_Dir.up; }
-        else
-        {trans_dir=Trans_Dir.down; }
-        
-    }
-     /*
-    switch(room)
+    switch(trans_dir)
     {
-      case rm_middle:
-        if(_left){ target_room=rm_left; trans_dir=Trans_Dir.left; break;}
-        if(_right){ target_room=rm_right; trans_dir=Trans_Dir.right; break;}
-        if(_up){ target_room=rm_up; trans_dir=Trans_Dir.up; break;}
-        if(_down){ target_room=rm_down; trans_dir=Trans_Dir.down; break;}
-        break;
-      case rm_up:
-        if(_down){ target_room=rm_middle; trans_dir=Trans_Dir.down;}
-        break;
-      case rm_left:
-        if(_right){ target_room=rm_middle; trans_dir=Trans_Dir.right;}
-        break;
-      case rm_right:
-        if(_left){ target_room=rm_middle; trans_dir=Trans_Dir.left;}
-        break;
-      case rm_down:
-        if(_up){ target_room=rm_middle; trans_dir=Trans_Dir.up;}
-        break;
+      case Trans_Dir.down:  transition_y=interpolate(h,view_yview[0],timer/transition_length,_bias);
+                            transition_x = 0;
+                            break;
+      case Trans_Dir.up:    transition_y=interpolate(-h,view_yview[0],timer/transition_length,_bias);
+                            transition_x = 0;
+                            break;
+      case Trans_Dir.right: transition_x=interpolate(w,view_xview[0],timer/transition_length,_bias);
+                            transition_y = 0;
+                            break;
+      case Trans_Dir.left:  transition_x=interpolate(-w,view_xview[0],timer/transition_length,_bias);
+                            transition_y = 0;
+                            break;
     }
-    */
-  }break;
-  
+    
+    //We done yet?
+    if(timer &lt;= 0)
+    {
+      timer=0;
+      state = Trans_State.none;
+      global.paused = false;
+    }
+    
+    break;
+    
+  case Trans_State.change:
+    show_debug_message("trans_state = change");
+    show_debug_message("current: " + room_get_name(room));
+    show_debug_message("target:  " + room_get_name(target_room));
+    
+    if (room == target_room)
+    {
+      state = Trans_State.in;
+      transition_x = view_xview[0];
+      transitoin_y = view_yview[0];
+    }
+    else
+    {
+      room_goto(target_room);
+      Player02_obj.x = playerx;
+      Player02_obj.y = playery;
+    }
+    
+    break;
+    
+  default:
+    show_debug_message("Defaulting");
+    break;
+}
+
+/* 
   default:
   { ///Handle in and out transitions
     global.paused = true;
@@ -221,6 +277,7 @@ switch(state)
     transition_x=0; 
     transition_y=0;
     var _bias=.5;
+    
     if(state == Trans_State.out)
     {
       _bias=.8; 
@@ -240,10 +297,11 @@ switch(state)
       if(timer &gt;= transition_length)
       {
         timer=transition_length;
-        room_goto(target_room);
-        Player02_obj.x = playerx;
-        Player02_obj.y = playery;
-        state = Trans_State.in;
+        //room_goto(target_room);
+        //Player02_obj.x = playerx;
+        //Player02_obj.y = playery;
+        state = Trans_State.wait;
+        //show_debug_message(state);
       }
     }
     else if(state == Trans_State.in)
@@ -257,9 +315,9 @@ switch(state)
       switch(trans_dir)
       {
         case Trans_Dir.down:    transition_y=interpolate(h,view_yview[0],timer/transition_length,_bias); break;
-        case Trans_Dir.up:  transition_y=interpolate(-h,view_yview[0],timer/transition_length,_bias);  break;
-        case Trans_Dir.right:  transition_x=interpolate(w,view_xview[0],timer/transition_length,_bias);  break;
-        case Trans_Dir.left: transition_x=interpolate(-w,view_xview[0],timer/transition_length,_bias);   break;
+        case Trans_Dir.up:      transition_y=interpolate(-h,view_yview[0],timer/transition_length,_bias);  break;
+        case Trans_Dir.right:   transition_x=interpolate(w,view_xview[0],timer/transition_length,_bias);  break;
+        case Trans_Dir.left:    transition_x=interpolate(-w,view_xview[0],timer/transition_length,_bias);   break;
       }
       //We done yet?
       if(timer &lt;= 0)
@@ -269,7 +327,25 @@ switch(state)
         global.paused = false;
       }
     }
-    
+    else //if(state == Trans_State.wait)
+    {
+        show_debug_message("HEYO");
+        show_debug_message("current: " + string(room));
+        show_debug_message("target:  " + string(target_room));
+        
+        if (room == target_room)
+          {
+            state = Trans_State.in;
+            transition_x = view_xview[0];
+            transitoin_y = view_yview[0];
+          }
+        else
+          {
+            room_goto(target_room);
+            Player02_obj.x = playerx;
+            Player02_obj.y = playery;
+          }
+    }
     
   }
 }
@@ -421,7 +497,10 @@ switch (room)
 var h = display_get_height();
 
 if(state == Trans_State.out || state == Trans_State.in)
-  draw_rectangle(transition_x,transition_y,transition_x+w,transition_y+h, false);
+  {draw_rectangle(transition_x,transition_y,transition_x+w,transition_y+h, false); }
+else if(state == Trans_State.change)
+  {draw_rectangle(-w, -h, room_width+w, room_height+h, false); }
+
 
 /*
 var oldA = image_alpha;

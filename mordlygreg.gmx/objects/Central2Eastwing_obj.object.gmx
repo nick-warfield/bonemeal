@@ -33,6 +33,7 @@
     playerx = 80;
     playery = 400;
 }
+instance_destroy();
 
 /*
 room_goto(CombatRoom_Flipped);

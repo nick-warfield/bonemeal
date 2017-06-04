@@ -33,7 +33,7 @@
     playerx = 640;
     playery = 704;
 }
-
+instance_destroy();
 /*
 room_goto(pitandmonsterroom);
 

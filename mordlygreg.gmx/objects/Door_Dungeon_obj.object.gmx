@@ -33,7 +33,7 @@
     playerx = 400;
     playery = 424;
 }
-
+instance_destroy();
 /*
 audio_stop_sound(Floor1_v2no_piano);
 audio_play_sound(Main_trk, 90, true);

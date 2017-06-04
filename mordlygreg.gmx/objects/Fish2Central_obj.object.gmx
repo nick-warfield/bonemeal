@@ -33,7 +33,7 @@
     playerx = 640;
     playery = 96;
 }
-
+instance_destroy();
 /*
 room_goto(New_office);
 

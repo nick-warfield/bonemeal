@@ -33,7 +33,7 @@
     playerx = 64;
     playery = 176;
 }
-
+instance_destroy();
 /*
 room_goto(gates_and_crates);
 

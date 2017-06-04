@@ -33,7 +33,7 @@
     playerx = 632;
     playery = 1656;
 }
-
+instance_destroy();
 /*
 room_goto(Boss_rm);
 

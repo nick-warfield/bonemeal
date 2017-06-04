@@ -33,7 +33,7 @@
     playerx = 368;
     playery = 48;
 }
-
+instance_destroy();
 /*
 room_goto(southofoffice);
 
