@@ -180,12 +180,21 @@ else if (current_time &gt;= timeStamp3)
     {
       //Start Game
       case 0:
-        room_goto_next();
-        instance_create(535, 1460, Player02_obj);
+        //room_goto_next();
+        instance_create(-100, -100, Player02_obj);
         //instance_create(0, 0, Player02_obj);
         
         global.checkpoint = 1;
         global.paused = false;
+        
+        with (Game_Manager_obj)
+        {
+            state = Trans_State.out;
+            trans_dir = Trans_Dir.up;
+            target_room = room_next(room);
+            playerx = 535;
+            playery = 1460
+        }
         break;
         
       //Controls
@@ -237,7 +246,7 @@ else if (current_time &gt;= timeStamp3)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var version = "version: 2.2.6";
+            <string>var version = "version: 2.3.0";
 
 //xoffsets
 var leftPage = room_width/4;
