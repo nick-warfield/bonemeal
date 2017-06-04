@@ -72,6 +72,8 @@ with (d1) {instance_destroy();}
 //with (d2) {instance_destroy();}
 
 audio_stop_sound(Boss2_trk);
+
+saveData_set_value(key, 0);
 </string>
           </argument>
         </arguments>

@@ -276,6 +276,7 @@
       <sprite>sprites\hud_revolver_02_spr</sprite>
       <sprite>sprites\hud_revolver_reloadIndicator_spr</sprite>
       <sprite>sprites\hud_revolver_01_spr</sprite>
+      <sprite>sprites\hp_pickup_spr</sprite>
       <sprite>sprites\hud_revolver_03_empty_spr</sprite>
       <sprite>sprites\hud_revolver_03_full_spr</sprite>
       <sprite>sprites\HUD_Card_spr</sprite>
@@ -295,12 +296,14 @@
       <sprite>sprites\GreyBox_spr</sprite>
       <sprite>sprites\Dialogue_spr</sprite>
       <sprite>sprites\Sign_spr</sprite>
+      <sprite>sprites\Ladder_spr</sprite>
     </sprites>
     <sprites name="SCRATCH">
       <sprite>sprites\Player_spr</sprite>
       <sprite>sprites\BlankTile_spr</sprite>
       <sprite>sprites\NOMASK</sprite>
       <sprite>sprites\Text_spr</sprite>
+      <sprite>sprites\toggle_spr</sprite>
       <sprite>sprites\Door_spr</sprite>
       <sprite>sprites\Pit_spr</sprite>
       <sprite>sprites\Blood_spr</sprite>
@@ -310,6 +313,16 @@
       <sprite>sprites\Player_Right_spr</sprite>
       <sprite>sprites\Player_Up_Idle_spr</sprite>
       <sprite>sprites\Player_Down_spr</sprite>
+    </sprites>
+    <sprites name="Blood Pits">
+      <sprite>sprites\toggle0_off_spr</sprite>
+      <sprite>sprites\toggle1_1_off_spr</sprite>
+      <sprite>sprites\toggle1_2_off_spr</sprite>
+      <sprite>sprites\toggle1_on_spr</sprite>
+      <sprite>sprites\toggle2_off_spr</sprite>
+      <sprite>sprites\toggle3_1_off_spr</sprite>
+      <sprite>sprites\toggle3_2_on_spr</sprite>
+      <sprite>sprites\toggle3_3_off_spr</sprite>
     </sprites>
     <sprite>sprites\Crate01_spr</sprite>
     <sprite>sprites\Crate02_spr</sprite>
@@ -548,6 +561,9 @@
     <script>scripts\saveData_get_value.gml</script>
     <script>scripts\saveData_generate_key.gml</script>
     <script>scripts\ScreenShake_scr.gml</script>
+    <script>scripts\arc.gml</script>
+    <script>scripts\bias.gml</script>
+    <script>scripts\interpolate.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Characters">
@@ -606,6 +622,65 @@
       <object>objects\Flwer_Txt_04_obj</object>
     </objects>
     <objects name="Doors">
+      <objects name="Dungeon">
+        <objects name="Office">
+          <object>objects\Central2Northwing_obj</object>
+          <object>objects\Central2Eastwing_obj</object>
+          <object>objects\Central2Westwing_obj</object>
+          <object>objects\Central2Southwing_obj</object>
+        </objects>
+        <objects name="Northwing">
+          <objects name="Fish Room">
+            <object>objects\Fish2Central_obj</object>
+            <object>objects\Fish2Shrine_obj</object>
+            <object>objects\Fish2Storage_obj</object>
+            <object>objects\Fish2Gate_obj</object>
+            <object>objects\Fish2Westwing_obj</object>
+          </objects>
+          <objects name="Storage">
+            <object>objects\Storage2Fish_obj</object>
+            <object>objects\Storage2Shrine_obj</object>
+          </objects>
+          <objects name="Shrine Grounds">
+            <object>objects\Shrine2Fish_obj</object>
+            <object>objects\Shrine2Storage_obj</object>
+          </objects>
+        </objects>
+        <objects name="Eastwing">
+          <objects name="Combat Room">
+            <object>objects\Combat2Central_obj</object>
+            <object>objects\Combat2Gate_obj</object>
+            <object>objects\Combat2Toggle_obj</object>
+          </objects>
+          <objects name="Gate Room">
+            <object>objects\Gate2Combat_obj</object>
+            <object>objects\Gate2Northwing_obj</object>
+          </objects>
+        </objects>
+        <objects name="Southwing">
+          <objects name="South of Office">
+            <object>objects\Southwing2Central_obj</object>
+            <object>objects\Southwing2Study_obj</object>
+            <object>objects\Southwing2Toggle_obj</object>
+          </objects>
+          <objects name="Study">
+            <object>objects\Study2Westwing_obj</object>
+            <object>objects\Study2Southwing_obj</object>
+            <object>objects\Study2Boss_obj</object>
+          </objects>
+          <objects name="Toggle Puzzle">
+            <object>objects\Toggle2Southwing_obj</object>
+            <object>objects\Toggle2Eastwing_obj</object>
+          </objects>
+        </objects>
+        <objects name="Westwing">
+          <objects name="Pit n Monsters">
+            <object>objects\Pit2Central_obj</object>
+            <object>objects\Pit2Northwing_obj</object>
+            <object>objects\Pit2Study_obj</object>
+          </objects>
+        </objects>
+      </objects>
       <objects name="Floor2">
         <objects name="Start">
           <object>objects\Start_Exit_obj</object>
@@ -653,6 +728,7 @@
         </objects>
       </objects>
       <object>objects\Door_Next_obj</object>
+      <object>objects\Door_Dungeon_obj</object>
       <object>objects\Door_Start_obj</object>
       <object>objects\Door_Boss_obj</object>
     </objects>
@@ -664,15 +740,21 @@
       </objects>
       <objects name="Puzzles">
         <objects name="Candles">
-          <object>objects\Combination_Puzzle_obj</object>
-          <object>objects\Candle_Blue_obj</object>
-          <object>objects\Candle_Orange_obj</object>
-          <object>objects\Candle_Red_obj</object>
-          <object>objects\Candle_White_obj</object>
-          <object>objects\Shrine_obj</object>
+          <object>objects\candle0_obj</object>
+          <object>objects\candle1_obj</object>
+          <object>objects\candle2_obj</object>
+          <object>objects\candle3_obj</object>
+          <object>objects\candle4_obj</object>
+          <objects name="Old">
+            <object>objects\Combination_Puzzle_obj</object>
+            <object>objects\Candle_Blue_obj</object>
+            <object>objects\Candle_Orange_obj</object>
+            <object>objects\Candle_Red_obj</object>
+            <object>objects\Candle_White_obj</object>
+            <object>objects\Shrine_obj</object>
+          </objects>
         </objects>
         <objects name="Gate Puzzle">
-          <object>objects\Gate_Puzzle_01_obj</object>
           <object>objects\Gate_Puzzle_02_obj</object>
           <object>objects\Gate_Puzzle_03_obj</object>
           <object>objects\Gate_Puzzle_05_obj</object>
@@ -681,6 +763,8 @@
           <object>objects\Gate_Puzzle_07_obj</object>
           <object>objects\Pressure_Plate_obj</object>
           <object>objects\Small_Gate_obj</object>
+          <object>objects\Key_Gate_obj</object>
+          <object>objects\BigKey_Gate_obj</object>
         </objects>
       </objects>
       <object>objects\Crate01_obj</object>
@@ -690,10 +774,13 @@
       <object>objects\Pit_obj</object>
       <object>objects\BloodPrint_obj</object>
       <object>objects\Combat_Lock_obj</object>
+      <object>objects\Ladder_obj</object>
+      <object>objects\HP_Pickup_obj</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>
       <object>objects\Bullet_obj</object>
+      <object>objects\Zapper_obj</object>
       <object>objects\GhostBullet_obj</object>
       <object>objects\Bullet_90_obj</object>
       <object>objects\SpreadShot_obj</object>
@@ -704,6 +791,27 @@
     <objects name="Utility">
       <object>objects\Game_Manager_obj</object>
       <object>objects\Camera_obj</object>
+      <objects name="Dungeon Puzzles">
+        <object>objects\bloodToggle_obj</object>
+        <object>objects\dunPuzzle_obj</object>
+        <object>objects\puz_combatroom_obj</object>
+        <object>objects\puz_gateRoom_obj</object>
+        <object>objects\puz_northWing_obj</object>
+        <object>objects\puz_Storage_obj</object>
+        <object>objects\puz_westWing_obj</object>
+        <object>objects\puz_southWing_obj</object>
+        <object>objects\puz_toggleRoom_obj</object>
+        <objects name="blood pits">
+          <object>objects\toggle0_off_obj</object>
+          <object>objects\toggle1_2_off_obj</object>
+          <object>objects\toggle1_1_off_obj</object>
+          <object>objects\toggle1_on_obj</object>
+          <object>objects\toggle2_off_obj</object>
+          <object>objects\toggle3_1_off_obj</object>
+          <object>objects\toggle3_3_off_obj</object>
+          <object>objects\toggle3_2_on_obj</object>
+        </objects>
+      </objects>
       <objects name="Menu Jazz">
         <object>objects\Init_Game_obj</object>
         <object>objects\Menu_obj</object>
@@ -732,10 +840,41 @@
     </objects>
     <objects name="SCRATCH">
       <object>objects\floor_obj</object>
+      <object>objects\bloodToggle_off_obj</object>
+      <object>objects\bloodToggle_on_obj</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\RunFirstALWAYS</room>
+    <rooms name="NEW-Austin and Lacey">
+      <room>rooms\New_office</room>
+      <rooms name="North Wing">
+        <room>rooms\northofoffice</room>
+        <room>rooms\shrineArea</room>
+        <room>rooms\storageroom2</room>
+      </rooms>
+      <rooms name="East Wing">
+        <room>rooms\CombatRoom_Flipped</room>
+        <room>rooms\gates_and_crates</room>
+      </rooms>
+      <rooms name="South Wing">
+        <room>rooms\study</room>
+        <room>rooms\southofoffice</room>
+        <room>rooms\togglex3</room>
+      </rooms>
+      <rooms name="West Wing">
+        <room>rooms\pitandmonsterroom</room>
+      </rooms>
+      <rooms name="SCRATCH">
+        <room>rooms\connectempty</room>
+        <room>rooms\connectswtich</room>
+        <room>rooms\New_combatroom</room>
+        <room>rooms\northofoffice_old</room>
+        <room>rooms\southofoffice_old</room>
+        <room>rooms\togglex3_old</room>
+        <room>rooms\pitandmonsterroom_old</room>
+      </rooms>
+    </rooms>
     <rooms name="Beta Demo">
       <room>rooms\Start_Menu</room>
       <room>rooms\Outside_rm</room>

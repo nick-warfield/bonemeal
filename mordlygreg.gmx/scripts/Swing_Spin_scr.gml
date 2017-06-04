@@ -24,3 +24,16 @@ if (instance_exists(thing) && object_get_parent(thing.object_index) != Character
     with (thing) { instance_destroy(); }
 }
 
+
+
+var thing = collision_circle(x, y , 64, bloodToggle_obj, false, true);
+
+if (instance_exists(thing) && thing.object_index == bloodToggle_obj)
+{
+    with (thing)
+    {
+        if (current_time >= timeStamp)
+        { active = !active; timeStamp = current_time + 600; }
+    }
+}
+

@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>opened = false;
 
+
 closey = y;
 openy = y - 112;
 </string>

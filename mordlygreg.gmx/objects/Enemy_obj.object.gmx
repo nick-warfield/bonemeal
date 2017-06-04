@@ -109,6 +109,22 @@
 
 healthPoints = 3;
 spd = 5;
+
+
+key = saveData_generate_key();
+x_key = saveData_generate_key()+"x";
+y_key = saveData_generate_key()+"y";
+
+var hpCheck = saveData_get_value(key);
+if (hpCheck &lt;= 0)
+{ instance_destroy(); }
+
+var xx = saveData_get_value(x_key);
+var yy = saveData_get_value(y_key);
+if (xx &gt; 0 &amp;&amp; yy &gt; 0)
+{ x = xx; y = yy; }
+
+
 /*
 //AI stuff
 target = instance_find(Player02_obj, 1)

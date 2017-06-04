@@ -2,8 +2,8 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
-  <depth>0</depth>
+  <visible>-1</visible>
+  <depth>-100</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -47,7 +47,7 @@
             <kind>1</kind>
             <string>///Initialize Global Variables and other stuff
 
-/*
+
 //setup save data
 saveData = ds_map_create();
 saveFile = "SaveData.sav";
@@ -55,7 +55,8 @@ saveData_set_value("Current Room", room_get_name(room));
 saveData_set_value("isPaused", false);
 saveData_set_value("GUI Scaling", 1.5);
 saveData_set_value("Volume", 0.75);
-*/
+saveData_set_value("EMPTY ON RESPAWN", ds_map_create());
+
 
 global.paused = false;
 global.scaleFactor = 1.5;
@@ -84,8 +85,47 @@ audio_set_master_gain(0, 0.75);
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Transition Stuff
+enum Trans_Dir{left,right,up,down};
+enum Trans_State{none,out,in}
+state=Trans_State.none;
+trans_dir = Trans_Dir.up; //Doesn't matter.
+activate = false;
+
+timer=0;
+transition_length=room_speed/2;
+target_room=noone;
+playerx = 0;
+playery = 0;
+transition_x=0;
+transition_y=0;
+
+
+///Transition Jazz
+
+//transition = "none";
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Window Resize
-window_set_size(1440, 768);
+//window_set_size(1440, 768);
 
 //display_set_gui_size(view_wview[0], view_hview[0]);
 //display_set_gui_maximise(global.scaleFactor, global.scaleFactor, 0, 0);
@@ -99,6 +139,164 @@ messageEnd = 0;
 lerpI = 1;
 rot = 0;
 newRot = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+///Change rooms
+switch(state)
+{
+  case Trans_State.none:
+  {
+    /*
+    var _left=keyboard_check_pressed(vk_left);
+    var _right=keyboard_check_pressed(vk_right);
+    var _up=keyboard_check_pressed(vk_up);
+    var _down=keyboard_check_pressed(vk_down);
+    
+    if(_left || _right || _up || _down)
+    {
+        state = Trans_State.out;
+
+        /*
+        if (_left)
+        {trans_dir=Trans_Dir.left; }
+        else if (_right)
+        {trans_dir=Trans_Dir.right; }
+        else if (_up)
+        {trans_dir=Trans_Dir.up; }
+        else
+        {trans_dir=Trans_Dir.down; }
+        
+    }
+     /*
+    switch(room)
+    {
+      case rm_middle:
+        if(_left){ target_room=rm_left; trans_dir=Trans_Dir.left; break;}
+        if(_right){ target_room=rm_right; trans_dir=Trans_Dir.right; break;}
+        if(_up){ target_room=rm_up; trans_dir=Trans_Dir.up; break;}
+        if(_down){ target_room=rm_down; trans_dir=Trans_Dir.down; break;}
+        break;
+      case rm_up:
+        if(_down){ target_room=rm_middle; trans_dir=Trans_Dir.down;}
+        break;
+      case rm_left:
+        if(_right){ target_room=rm_middle; trans_dir=Trans_Dir.right;}
+        break;
+      case rm_right:
+        if(_left){ target_room=rm_middle; trans_dir=Trans_Dir.left;}
+        break;
+      case rm_down:
+        if(_up){ target_room=rm_middle; trans_dir=Trans_Dir.up;}
+        break;
+    }
+    */
+  }break;
+  
+  default:
+  { ///Handle in and out transitions
+    global.paused = true;
+  
+    draw_set_color(c_black);
+    transition_x=0; 
+    transition_y=0;
+    var _bias=.5;
+    if(state == Trans_State.out)
+    {
+      _bias=.8; 
+      timer++;
+      
+      var h = view_yview[0] + display_get_height();
+      var w = view_xview[0] + display_get_width();
+      
+      switch(trans_dir)
+      {
+        case Trans_Dir.up:    transition_y=interpolate(h,view_yview[0],timer/transition_length,_bias); break;
+        case Trans_Dir.down:  transition_y=interpolate(-h,view_yview[0],timer/transition_length,_bias);  break;
+        case Trans_Dir.left:  transition_x=interpolate(w,view_xview[0],timer/transition_length,_bias);  break;
+        case Trans_Dir.right: transition_x=interpolate(-w,view_xview[0],timer/transition_length,_bias);   break;
+      }
+      //We done yet?
+      if(timer &gt;= transition_length)
+      {
+        timer=transition_length;
+        room_goto(target_room);
+        Player02_obj.x = playerx;
+        Player02_obj.y = playery;
+        state = Trans_State.in;
+      }
+    }
+    else if(state == Trans_State.in)
+    {
+      _bias=.2;
+      timer--;
+      
+      var h = view_yview[0] + display_get_height();
+      var w = view_xview[0] + display_get_width();
+      
+      switch(trans_dir)
+      {
+        case Trans_Dir.down:    transition_y=interpolate(h,view_yview[0],timer/transition_length,_bias); break;
+        case Trans_Dir.up:  transition_y=interpolate(-h,view_yview[0],timer/transition_length,_bias);  break;
+        case Trans_Dir.right:  transition_x=interpolate(w,view_xview[0],timer/transition_length,_bias);  break;
+        case Trans_Dir.left: transition_x=interpolate(-w,view_xview[0],timer/transition_length,_bias);   break;
+      }
+      //We done yet?
+      if(timer &lt;= 0)
+      {
+        timer=0;
+        state = Trans_State.none;
+        global.paused = false;
+      }
+    }
+    
+    
+  }
+}
+
+/*
+///Transition Rooms
+
+switch (transition)
+{
+  case "t_up":
+    
+    break;
+    
+  case "t_down":
+    
+    break;
+    
+  case "t_left":
+    
+    break;
+    
+  case "t_right":
+    
+    break;
+}
+
+
 </string>
           </argument>
         </arguments>
@@ -146,6 +344,38 @@ display_set_gui_maximise(global.scaleFactor, global.scaleFactor, 0, 0);
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Update checkpoint
+
+switch (room)
+{
+  case Outside_rm:
+    global.checkpoint = 1;
+    break;
+    
+  case (New_office):
+    global.checkpoint = 2;
+    break;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Update Room in SaveData
 
 //saveData_set_value("Current Room", room_get_name(room));
@@ -168,6 +398,41 @@ display_set_gui_maximise(global.scaleFactor, global.scaleFactor, 0, 0);
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var w = display_get_width();
+var h = display_get_height();
+
+if(state == Trans_State.out || state == Trans_State.in)
+  draw_rectangle(transition_x,transition_y,transition_x+w,transition_y+h, false);
+
+/*
+var oldA = image_alpha;
+
+image_alpha = 1;
+draw_rectangle(view_xview[0], view_yview[0], view_xview[0] + view_wport[0], view_yview[0] + view_hport[0], false);
+
+image_alpha = oldA;
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="9" enumb="8">
