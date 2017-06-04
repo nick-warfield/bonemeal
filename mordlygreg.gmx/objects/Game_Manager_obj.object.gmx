@@ -184,20 +184,20 @@ switch(state)
     timer++;
     
     
-    //if (timer &gt; transition_length) {timer = transition_length; }
+    if (timer &gt; transition_length) {timer = transition_length; }
       
     switch(trans_dir)
     {
-      case Trans_Dir.up:    transition_y=interpolate(h,view_yview[0],timer/transition_length,_bias);
+      case Trans_Dir.up:    transition_y=interpolate(h,view_yport,timer/transition_length,_bias);
                             transition_x = 0;
                             break;
-      case Trans_Dir.down:  transition_y=interpolate(-h,view_yview[0],timer/transition_length,_bias);
+      case Trans_Dir.down:  transition_y=interpolate(-h,view_yport,timer/transition_length,_bias);
                             transition_x = 0;
                             break;
-      case Trans_Dir.left:  transition_x=interpolate(w,view_xview[0],timer/transition_length,_bias);
+      case Trans_Dir.left:  transition_x=interpolate(w,view_xport,timer/transition_length,_bias);
                             transition_y = 0;
                             break;
-      case Trans_Dir.right: transition_x=interpolate(-w,view_xview[0],timer/transition_length,_bias);
+      case Trans_Dir.right: transition_x=interpolate(-w,view_xport,timer/transition_length,_bias);
                             transition_y = 0;
                             break;
     }
@@ -219,16 +219,16 @@ switch(state)
 
     switch(trans_dir)
     {
-      case Trans_Dir.down:  transition_y=interpolate(h,view_yview[0],timer/transition_length,_bias);
+      case Trans_Dir.down:  transition_y=interpolate(h,view_yport,timer/transition_length,_bias);
                             transition_x = 0;
                             break;
-      case Trans_Dir.up:    transition_y=interpolate(-h,view_yview[0],timer/transition_length,_bias);
+      case Trans_Dir.up:    transition_y=interpolate(-h,view_yport,timer/transition_length,_bias);
                             transition_x = 0;
                             break;
-      case Trans_Dir.right: transition_x=interpolate(w,view_xview[0],timer/transition_length,_bias);
+      case Trans_Dir.right: transition_x=interpolate(w,view_xport,timer/transition_length,_bias);
                             transition_y = 0;
                             break;
-      case Trans_Dir.left:  transition_x=interpolate(-w,view_xview[0],timer/transition_length,_bias);
+      case Trans_Dir.left:  transition_x=interpolate(-w,view_xport,timer/transition_length,_bias);
                             transition_y = 0;
                             break;
     }
@@ -244,15 +244,15 @@ switch(state)
     break;
     
   case Trans_State.change:
-    show_debug_message("trans_state = change");
-    show_debug_message("current: " + room_get_name(room));
-    show_debug_message("target:  " + room_get_name(target_room));
+    //show_debug_message("trans_state = change");
+    //show_debug_message("current: " + room_get_name(room));
+    //show_debug_message("target:  " + room_get_name(target_room));
     
     if (room == target_room)
     {
       state = Trans_State.in;
-      transition_x = view_xview[0];
-      transitoin_y = view_yview[0];
+      //transition_x = 500;
+      //transitoin_y = 500;
     }
     else
     {
