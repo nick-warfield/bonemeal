@@ -124,6 +124,34 @@ transition_y=0;
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Sound Stuff
+
+track[0] = Floor1_v2no_piano;
+track[1] = Main_trk;
+track[2] = Boss_trk;
+
+for (var i = 0; i &lt; 3; i++)
+{ audio_sound_gain(track[i], 0, 0); }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Window Resize
 //window_set_size(1440, 768);
 
@@ -161,7 +189,9 @@ newRot = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var h = view_yview[0] + display_get_height();
+            <string>///Room Transitions
+
+var h = view_yview[0] + display_get_height();
 var w = view_xview[0] + display_get_width();
 //transition_x=0; 
 //transition_y=0;
@@ -373,6 +403,113 @@ switch (transition)
 }
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Sound Manager
+
+switch (target_room)
+{
+  //track 1 areas
+  case Outside_rm:
+  case shrineArea:
+    
+    if (!audio_is_playing(track[0]))
+    {
+        //quite currently playing track
+        if (audio_is_playing(track[1]))
+        { audio_sound_gain(track[1], 0, 300); }
+        else if (audio_is_playing(track[2]))
+        { audio_sound_gain(track[2], 0, 300); }
+        
+        //bring in new track
+        audio_play_sound(track[0], 90, true);
+        audio_sound_gain(track[0], 1, 1000);
+    }
+    break;
+    
+  //track 2 areas
+  case New_office:
+  case northofoffice:
+  case storageroom2:
+  case CombatRoom_Flipped:
+  case gates_and_crates:
+  case southofoffice:
+  case togglex3:
+  case pitandmonsterroom:
+  
+    if (!audio_is_playing(track[1]))
+    {
+        //quite currently playing track
+        if (audio_is_playing(track[0]))
+        { audio_sound_gain(track[0], 0, 300); }
+        else if (audio_is_playing(track[2]))
+        { audio_sound_gain(track[2], 0, 300); }
+        
+        //bring in new track
+        audio_play_sound(track[1], 90, true);
+        //audio_sound_gain(track[1], 2, 0);
+        audio_sound_gain(track[1], 1, 1000);
+    }
+    break;
+  
+  //no music areas
+  case study:
+ 
+    //quite currently playing track
+    if (audio_is_playing(track[0]))
+    { audio_sound_gain(track[0], 0, 300); }
+    else if (audio_is_playing(track[1]))
+    { audio_sound_gain(track[1], 0, 300); }
+    else if (audio_is_playing(track[2]))
+    { audio_sound_gain(track2, 0, 300); }
+
+    break;
+    
+  //boss track area
+  case Boss_rm:
+    
+    if (!audio_is_playing(track[2]) &amp;&amp; instance_exists(Boss_obj))
+    {
+        //quite currently playing track
+        if (audio_is_playing(track[0]))
+        { audio_sound_gain(track[0], 0, 300); }
+        else if (audio_is_playing(track[1]))
+        { audio_sound_gain(track[1], 0, 300); }
+        
+        //bring in new track
+        audio_play_sound(track[2], 90, true);
+        //audio_sound_gain(track[1], 2, 0);
+        audio_sound_gain(track[2], 1, 1000);
+    }
+    else if (!instance_exists(Boss_obj))
+    {
+        audio_sound_gain(track[2], 0, 500);
+    }
+    break;
+}
+
+
+//stop sounds that are muted
+for (var i = 0; i &lt; 3; i++)
+{ if (audio_sound_get_gain(track[i]) &lt;= 0.025) { audio_stop_sound(track[i]); } }
 </string>
           </argument>
         </arguments>
