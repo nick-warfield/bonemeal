@@ -25,7 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(CombatRoom_Flipped);
+            <string>with (Game_Manager_obj)
+{
+    state = Trans_State.out;
+    trans_dir = Trans_Dir.up;
+    target_room = CombatRoom_Flipped;
+    playerx = 288;
+    playery = 688;
+}
+
+/*
+room_goto(CombatRoom_Flipped);
 
 other.x = 288;
 other.y = 688;

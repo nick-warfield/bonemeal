@@ -25,7 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(storageroom2);
+            <string>with (Game_Manager_obj)
+{
+    state = Trans_State.out;
+    trans_dir = Trans_Dir.down;
+    target_room = storageroom2;
+    playerx = 416;
+    playery = 288;
+}
+
+/*
+room_goto(storageroom2);
 
 other.x = 416;
 other.y = 288;

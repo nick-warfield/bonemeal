@@ -90,10 +90,13 @@ enum Trans_Dir{left,right,up,down};
 enum Trans_State{none,out,in}
 state=Trans_State.none;
 trans_dir = Trans_Dir.up; //Doesn't matter.
+activate = false;
 
 timer=0;
-transition_length=room_speed/2.5;
+transition_length=room_speed/2;
 target_room=noone;
+playerx = 0;
+playery = 0;
 transition_x=0;
 transition_y=0;
 
@@ -164,6 +167,7 @@ switch(state)
 {
   case Trans_State.none:
   {
+    /*
     var _left=keyboard_check_pressed(vk_left);
     var _right=keyboard_check_pressed(vk_right);
     var _up=keyboard_check_pressed(vk_up);
@@ -172,7 +176,8 @@ switch(state)
     if(_left || _right || _up || _down)
     {
         state = Trans_State.out;
-    
+
+        /*
         if (_left)
         {trans_dir=Trans_Dir.left; }
         else if (_right)
@@ -181,6 +186,7 @@ switch(state)
         {trans_dir=Trans_Dir.up; }
         else
         {trans_dir=Trans_Dir.down; }
+        
     }
      /*
     switch(room)
@@ -234,7 +240,9 @@ switch(state)
       if(timer &gt;= transition_length)
       {
         timer=transition_length;
-        //room_goto(target_room);
+        room_goto(target_room);
+        Player02_obj.x = playerx;
+        Player02_obj.y = playery;
         state = Trans_State.in;
       }
     }
