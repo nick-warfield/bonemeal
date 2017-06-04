@@ -20,11 +20,15 @@ else if (facing == DOWN)
 
 if (thing != 0 && instance_exists(thing))
 {
+    thing.lit = true;
+
+    /*
     if (thing.order == 0)
     {
         thing.order = thing.door.count;
         thing.door.count--;
     }
+    */
 }
 
 
@@ -42,10 +46,14 @@ else if (facing == DOWN)
 
 if (thing != 0 && instance_exists(thing))
 {
-    if (keys > 0)
+    if (thing.object_index == BigKey_Gate_obj)
+    {
+        if (bigKey > 0) { thing.opened = true;}
+    }
+    else if (keys > 0)
     {
       thing.locked = false;
-      thing.gatetxt.message[0] = "It Opened!";
+      //thing.gatetxt.message[0] = "It Opened!";
       keys--;
     }
 }

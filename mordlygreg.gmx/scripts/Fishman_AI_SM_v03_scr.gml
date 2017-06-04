@@ -17,7 +17,7 @@ switch(ds_stack_top(StateStack))
     ds_stack_pop(StateStack)
     
     if (timeStamp[0] == 0)
-    { script_execute(TookDamage_v03_scr); }
+    { script_execute(TookDamage_v03_scr); saveData_set_value(key, healthPoints); }
     
     break;
     

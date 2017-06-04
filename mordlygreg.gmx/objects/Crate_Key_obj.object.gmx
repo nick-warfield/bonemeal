@@ -32,6 +32,7 @@
 
 instance_create(x, y, Key_obj);
 Player02_obj.shake = 5;
+saveData_set_value(alive_key, false);
 </string>
           </argument>
         </arguments>

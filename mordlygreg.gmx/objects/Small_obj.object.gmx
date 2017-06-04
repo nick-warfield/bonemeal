@@ -25,7 +25,27 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>spd = 0;
+            <string>alive_key = saveData_generate_key();
+x_key = saveData_generate_key()+"x";
+y_key = saveData_generate_key()+"y";
+
+
+if (saveData_get_value(alive_key) == false)
+{ 
+    saveData_set_value(alive_key, true);
+    saveData_set_value(x_key, 0);
+    saveData_set_value(y_key, 0);
+}
+
+
+var xx = saveData_get_value(x_key);
+var yy = saveData_get_value(y_key);
+if (xx &gt; 0 &amp;&amp; yy &gt; 0)
+{ x = xx; y = yy; }
+
+
+
+spd = 0;
 Dir = 0;
 
 debug = false;
@@ -260,6 +280,29 @@ if (place_meeting(x + newX, y + newY, Small_obj))
           <argument>
             <kind>0</kind>
             <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//update x &amp; y save data
+saveData_set_value(x_key, x);
+saveData_set_value(y_key, y);
+</string>
           </argument>
         </arguments>
       </action>
