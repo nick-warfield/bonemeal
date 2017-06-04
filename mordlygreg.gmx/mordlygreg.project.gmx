@@ -846,7 +846,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\RunFirstALWAYS</room>
-    <rooms name="NEW-Austin and Lacey">
+    <room>rooms\Start_Menu</room>
+    <room>rooms\Outside_rm</room>
+    <rooms name="Dungeon">
       <room>rooms\New_office</room>
       <rooms name="North Wing">
         <room>rooms\northofoffice</room>
@@ -865,6 +867,7 @@
       <rooms name="West Wing">
         <room>rooms\pitandmonsterroom</room>
       </rooms>
+      <room>rooms\Boss_rm</room>
       <rooms name="SCRATCH">
         <room>rooms\connectempty</room>
         <room>rooms\connectswtich</room>
@@ -875,9 +878,13 @@
         <room>rooms\pitandmonsterroom_old</room>
       </rooms>
     </rooms>
+    <rooms name="Options/Menus/Utility">
+      <room>rooms\Controls_rm</room>
+      <room>rooms\Options_rm</room>
+      <room>rooms\Credits_rm</room>
+      <room>rooms\Room_Transition</room>
+    </rooms>
     <rooms name="Beta Demo">
-      <room>rooms\Start_Menu</room>
-      <room>rooms\Outside_rm</room>
       <rooms name="Floor2">
         <room>rooms\Office_rm</room>
         <room>rooms\Gate_Room_rm</room>
@@ -886,13 +893,6 @@
         <room>rooms\Switch_03_rm</room>
         <room>rooms\Storage_rm</room>
       </rooms>
-      <room>rooms\Boss_rm</room>
-    </rooms>
-    <rooms name="Options/Menus/Utility">
-      <room>rooms\Controls_rm</room>
-      <room>rooms\Options_rm</room>
-      <room>rooms\Credits_rm</room>
-      <room>rooms\Room_Transition</room>
     </rooms>
     <room>rooms\Pit_03_rm</room>
     <room>rooms\Enemy2_rm</room>

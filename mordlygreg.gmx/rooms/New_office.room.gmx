@@ -79,7 +79,6 @@
     <instance objName="Floor2_Wall_obj" x="704" y="464" name="inst_CC0B3A24" locked="0" code="" scaleX="1" scaleY="8.25806427001953" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="704" y="672" name="inst_BCAFF602" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="704" y="688" name="inst_A0133349" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Player02_obj" x="400" y="416" name="inst_8F4EB415" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="dunPuzzle_obj" x="0" y="0" name="inst_8B2E6D4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="BigKey_obj" x="400" y="176" name="inst_047B5B74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="272" y="96" name="inst_DB4C3D8A" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
