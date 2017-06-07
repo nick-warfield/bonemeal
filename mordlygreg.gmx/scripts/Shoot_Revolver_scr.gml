@@ -10,7 +10,7 @@ if (cylinder[cylinderPosition] != 0)
     if (facing == 0) { bulletInst.y -= 8; bulletInst.x += 32; }
     else if (facing == 2) { bulletInst.y -= 8; bulletInst.x -= 32; }
     else if (facing == 1) { bulletInst.y -= 32; }
-    else if (facing == 3) { bulletInst.y += 32; }
+    else if (facing == 3) { bulletInst.y += 40; }
     
     //set reference to the object that spawns the projectile
     bulletInst.spawner = id;
