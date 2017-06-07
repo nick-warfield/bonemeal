@@ -481,6 +481,7 @@
         <script>scripts\Move_Mordley_Ani_scr.gml</script>
         <script>scripts\Aim_Mordley_Ani_scr.gml</script>
         <script>scripts\Attack_Mordley_Ani_scr.gml</script>
+        <script>scripts\Hurt_Mordley_Ani_scr.gml</script>
         <script>scripts\Attack_Old_Mordley_Ani_scr.gml</script>
       </scripts>
       <script>scripts\Move_Fishman_Ani_scr.gml</script>

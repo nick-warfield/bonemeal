@@ -26,7 +26,10 @@ switch (ds_stack_top(StateStack))
     
     //check to see if charater can be damaged
     if (timeStamp[0] == 0 && ds_stack_top(StateStack) != s_DODGE)
-    { script_execute(TookDamage_v03_scr); }
+    {
+        script_execute(TookDamage_v03_scr);
+        script_execute(Hurt_Mordley_Ani_scr(Mordley_Hurt_Side_spr, Mordley_Hurt_Back_spr, Mordley_Hurt_Front_spr) );
+    }
     
     if (healthPoints <= 0) {script_execute(Checkpoint_Manager_scr(id));}
     
