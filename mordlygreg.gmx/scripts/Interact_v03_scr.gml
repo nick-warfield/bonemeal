@@ -10,13 +10,13 @@ var thing = 0;
 
 //check puzzle interact
 if (facing == RIGHT)
-{ thing = collision_rectangle(x, y, x + 36, y, Combination_Puzzle_obj, false, true); }
+{ thing = collision_rectangle(x-5, y-10, x + 36, y+10, Combination_Puzzle_obj, false, true); }
 else if (facing == LEFT)
-{ thing = collision_rectangle(x - 36, y, x, y, Combination_Puzzle_obj, false, true); }
+{ thing = collision_rectangle(x - 36, y-10, x+5, y+10, Combination_Puzzle_obj, false, true); }
 else if (facing == UP)
-{ thing = collision_rectangle(x, y - 48, x, y, Combination_Puzzle_obj, false, true); }
+{ thing = collision_rectangle(x-5, y - 48, x+5, y+10, Combination_Puzzle_obj, false, true); }
 else if (facing == DOWN)
-{ thing = collision_rectangle(x, y, x, y + 48, Combination_Puzzle_obj, false, true); }
+{ thing = collision_rectangle(x-5, y-10, x+5, y + 48, Combination_Puzzle_obj, false, true); }
 
 if (thing != 0 && instance_exists(thing))
 {
@@ -36,13 +36,13 @@ thing = 0;
 
 //check gates
 if (facing == RIGHT)
-{ thing = collision_rectangle(x, y, x + 36, y, Gate_obj, false, true); }
+{ thing = collision_rectangle(x-5, y-10, x + 36, y+10, Gate_obj, false, true); }
 else if (facing == LEFT)
-{ thing = collision_rectangle(x - 36, y, x, y, Gate_obj, false, true); }
+{ thing = collision_rectangle(x - 36, y-10, x+5, y+10, Gate_obj, false, true); }
 else if (facing == UP)
-{ thing = collision_rectangle(x, y - 48, x, y, Gate_obj, false, true); }
+{ thing = collision_rectangle(x-5, y - 48, x+5, y+10, Gate_obj, false, true); }
 else if (facing == DOWN)
-{ thing = collision_rectangle(x, y, x, y + 48, Gate_obj, false, true); }
+{ thing = collision_rectangle(x-5, y-10, x+5, y + 48, Gate_obj, false, true); }
 
 if (thing != 0 && instance_exists(thing))
 {

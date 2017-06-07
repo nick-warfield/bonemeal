@@ -65,10 +65,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_all();
+            <string>//audio_stop_all();
 
 leftSide = true;
 aniCount = 6;
+
+//Game_Manager_obj.target_room = room;
 
 /*
 if (ds_exists(global.log, ds_type_stack)) {ds_stack_destroy(global.log);}

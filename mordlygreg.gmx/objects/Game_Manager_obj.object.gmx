@@ -425,7 +425,7 @@ switch (transition)
             <kind>1</kind>
             <string>///Sound Manager
 
-switch (target_room)
+switch (room)
 {
   //track 1 areas
   case Outside_rm:
@@ -471,6 +471,7 @@ switch (target_room)
     break;
   
   //no music areas
+  case Options_rm:
   case study:
  
     //quite currently playing track
@@ -479,7 +480,7 @@ switch (target_room)
     else if (audio_is_playing(track[1]))
     { audio_sound_gain(track[1], 0, 300); }
     else if (audio_is_playing(track[2]))
-    { audio_sound_gain(track2, 0, 300); }
+    { audio_sound_gain(track[2], 0, 300); }
 
     break;
     
@@ -509,7 +510,7 @@ switch (target_room)
 
 //stop sounds that are muted
 for (var i = 0; i &lt; 3; i++)
-{ if (audio_sound_get_gain(track[i]) &lt;= 0.025) { audio_stop_sound(track[i]); } }
+{ if (audio_sound_get_gain(track[i]) &lt;= 0.1) { audio_stop_sound(track[i]); } }
 </string>
           </argument>
         </arguments>

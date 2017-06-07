@@ -92,7 +92,7 @@ switch (ds_stack_top(StateStack))
         ds_stack_push(StateStack, s_ATTACK3);
     }
     
-    else if (Input[ATTACK4])    //reload
+    else if (Input[ATTACK4] && cylinder[cylinderPosition] == 0)    //reload
     {
         ds_stack_push(StateStack, s_ATTACK4);
         timeStamp[4] = current_time + 300;
