@@ -194,6 +194,9 @@ newRot = 0;
 image_speed = 9/60;
 
 shake = 0;
+
+new_wview = 0;
+new_hview = 0;
 </string>
           </argument>
         </arguments>

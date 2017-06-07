@@ -1,19 +1,36 @@
 playerRef = argument[0];
-audio_stop_all();
-
+//audio_stop_all();
 
 if (global.checkpoint == 1)
 {
-    room_goto(Outside_rm);
-    rmx = 535;
-    rmy = 1460;
+    with (Game_Manager_obj)
+    {
+        state = Trans_State.out;
+        trans_dir = Trans_Dir.up;
+        target_room = Outside_rm;
+        playerx = 535;
+        playery = 1460;
+    }
+
+    //room_goto(Outside_rm);
+    //rmx = 535;
+    //rmy = 1460;
 }
 else if (global.checkpoint == 2)
 {
-    room_goto(New_office);
+    with (Game_Manager_obj)
+    {
+        state = Trans_State.out;
+        trans_dir = Trans_Dir.up;
+        target_room = New_office;
+        playerx = 400;
+        playery = 424;
+    }
+
+    //room_goto(New_office);
     //audio_play_sound(Main_trk, 75, true);
-    rmx = 400;
-    rmy = 424;
+    //rmx = 400;
+    //rmy = 424;
 }
 /*
 else if (global.checkpoint == 3)
@@ -27,8 +44,8 @@ else if (global.checkpoint == 3)
 
 with (playerRef)
 {
-    x = rmx;
-    y = rmy;
+    //x = rmx;
+    //y = rmy;
     healthPoints = hpMax;
     
     script_execute(Gun_Init_scr);

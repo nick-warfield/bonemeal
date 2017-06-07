@@ -820,6 +820,7 @@
         <object>objects\Controls_Menu_obj</object>
         <object>objects\Options_Menu_obj</object>
         <object>objects\Credits_obj</object>
+        <object>objects\DedRoom_obj</object>
       </objects>
       <objects name="Checkpoints">
         <object>objects\Checkpoint_01_obj</object>

@@ -473,6 +473,7 @@ switch (room)
   //no music areas
   case Options_rm:
   case study:
+  case Room_Transition:
  
     //quite currently playing track
     if (audio_is_playing(track[0]))
