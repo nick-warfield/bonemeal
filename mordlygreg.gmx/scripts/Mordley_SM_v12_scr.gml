@@ -26,9 +26,12 @@ switch (ds_stack_top(StateStack))
     
     //check to see if charater can be damaged
     if (timeStamp[0] == 0 && ds_stack_top(StateStack) != s_DODGE)
-    { script_execute(TookDamage_v03_scr); }
+    {
+        script_execute(TookDamage_v03_scr);
+        script_execute(Hurt_Mordley_Ani_scr(Mordley_Hurt_Side_spr, Mordley_Hurt_Back_spr, Mordley_Hurt_Front_spr) );
+    }
     
-    if (healthPoints <= 0) {script_execute(Checkpoint_Manager_scr(id));}
+    //if (healthPoints <= 0) {script_execute(Checkpoint_Manager_scr(id));}
     
     break;
     
@@ -37,13 +40,56 @@ switch (ds_stack_top(StateStack))
   case (s_STUNED):
     if (current_time >= timeStamp[1])
     {
-        if (timeStamp[7] == 0)
+        //check if dead
+        if (healthPoints > 0)
         { ds_stack_pop(StateStack); }
         else
         {
-            timeStamp[1] = abs(timeStamp[7]-timeStamp[1]) + current_time;
-            timeStamp[7] = 0;
+            //halt movement
             spd = 0;
+            
+            //play animation
+            if (current_time >= timeStamp[1] + 1000)
+            {
+                sprite_index = Mordley_Ded_spr;
+                image_speed = 7/60;
+                
+                
+                if (image_index >= image_number - 1)
+                {
+                    image_speed = 0; 
+                    if (timeStamp[7] == 0)
+                    {
+                        timeStamp[7] = current_time + 3000;
+                        new_hview = view_hview / 2;
+                        new_wview = view_wview / 2;
+                    }
+                }
+            }
+            
+            //zoom effect
+            if (image_speed == 0)
+            {
+                if (view_hview != new_hview && view_wview != new_wview)
+                {
+                    var t = ((timeStamp[7]-1000) - current_time) / 2000;
+            
+                    view_hview = interpolate(new_hview, view_hview, t, 0.9);
+                    view_wview = interpolate(new_wview, view_wview, t, 0.9);
+                }
+                else if (room != Room_Transition)
+                {
+                    global.pauseBkg = sprite_create_from_surface(application_surface, 0, 0, surface_get_width(application_surface), surface_get_height(application_surface), 0, 1, 0, 0); 
+                    room_goto(Room_Transition);
+                }
+            }
+            
+            //respawn
+            if (current_time >= timeStamp[7] && timeStamp[7] != 0)
+            {
+                timeStamp[7] = 0;
+                script_execute(Checkpoint_Manager_scr(id) );
+            }
         }
     }
     
@@ -92,7 +138,7 @@ switch (ds_stack_top(StateStack))
         ds_stack_push(StateStack, s_ATTACK3);
     }
     
-    else if (Input[ATTACK4])    //reload
+    else if (Input[ATTACK4] && cylinder[cylinderPosition] == 0)    //reload
     {
         ds_stack_push(StateStack, s_ATTACK4);
         timeStamp[4] = current_time + 300;

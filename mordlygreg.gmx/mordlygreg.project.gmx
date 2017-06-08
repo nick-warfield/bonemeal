@@ -481,6 +481,7 @@
         <script>scripts\Move_Mordley_Ani_scr.gml</script>
         <script>scripts\Aim_Mordley_Ani_scr.gml</script>
         <script>scripts\Attack_Mordley_Ani_scr.gml</script>
+        <script>scripts\Hurt_Mordley_Ani_scr.gml</script>
         <script>scripts\Attack_Old_Mordley_Ani_scr.gml</script>
       </scripts>
       <script>scripts\Move_Fishman_Ani_scr.gml</script>
@@ -819,6 +820,7 @@
         <object>objects\Controls_Menu_obj</object>
         <object>objects\Options_Menu_obj</object>
         <object>objects\Credits_obj</object>
+        <object>objects\DedRoom_obj</object>
       </objects>
       <objects name="Checkpoints">
         <object>objects\Checkpoint_01_obj</object>

@@ -67,6 +67,16 @@ switch(ds_stack_top(StateStack))
     else if (timeStamp[2] != 0 && distance_to_object(target) > 15 * 32)
     { ds_stack_push(StateStack, s_ATTACK2); }
     
+    //check to see if the bat has been off screen for a long time
+    else if (timeStamp[2] != 0 && current_time >= timeStamp[4]+7000 && 
+            (x < view_xview || x > view_xview+view_wview || y < view_yview || y > view_yview+view_hview) )
+    { show_debug_message("Back to screen");
+        Dir = point_direction(x, y, target.x, target.y);
+        spd = 3.5;
+        timeStamp[4] = current_time + 2000;
+        ds_stack_push(StateStack, s_ATTACK1);
+    }
+    
     break;
     
     
