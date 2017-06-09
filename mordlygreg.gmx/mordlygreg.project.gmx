@@ -333,6 +333,7 @@
     <sprite>sprites\SmallGate_02_spr</sprite>
     <sprite>sprites\Plate_Pressed_spr</sprite>
     <sprite>sprites\Plate_Unpressed_spr</sprite>
+    <sprite>sprites\Potion_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Floor1">
@@ -864,6 +865,7 @@
       <rooms name="South Wing">
         <room>rooms\study</room>
         <room>rooms\southofoffice</room>
+        <room>rooms\togglex3_v2</room>
         <room>rooms\togglex3</room>
       </rooms>
       <rooms name="West Wing">
@@ -874,10 +876,11 @@
         <room>rooms\connectempty</room>
         <room>rooms\connectswtich</room>
         <room>rooms\New_combatroom</room>
-        <room>rooms\northofoffice_old</room>
-        <room>rooms\southofoffice_old</room>
-        <room>rooms\togglex3_old</room>
-        <room>rooms\pitandmonsterroom_old</room>
+        <room>rooms\northofoffice_v1</room>
+        <room>rooms\southofoffice_v1</room>
+        <room>rooms\togglex3_v1</room>
+        <room>rooms\pitandmonsterroom_v1</room>
+        <room>rooms\northofoffice_v2</room>
       </rooms>
     </rooms>
     <rooms name="Options/Menus/Utility">
