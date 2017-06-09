@@ -333,6 +333,7 @@
     <sprite>sprites\SmallGate_02_spr</sprite>
     <sprite>sprites\Plate_Pressed_spr</sprite>
     <sprite>sprites\Plate_Unpressed_spr</sprite>
+    <sprite>sprites\Potion_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Floor1">
