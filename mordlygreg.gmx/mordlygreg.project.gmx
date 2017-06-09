@@ -850,6 +850,7 @@
       <room>rooms\New_office</room>
       <rooms name="North Wing">
         <room>rooms\northofoffice</room>
+        <room>rooms\northofoffice_NEW</room>
         <room>rooms\shrineArea</room>
         <room>rooms\storageroom2</room>
       </rooms>
@@ -861,6 +862,7 @@
         <room>rooms\study</room>
         <room>rooms\southofoffice</room>
         <room>rooms\togglex3</room>
+        <room>rooms\togglex3_NEW</room>
       </rooms>
       <rooms name="West Wing">
         <room>rooms\pitandmonsterroom</room>
