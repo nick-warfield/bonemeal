@@ -854,7 +854,6 @@
       <room>rooms\New_office</room>
       <rooms name="North Wing">
         <room>rooms\northofoffice</room>
-        <room>rooms\northofoffice_NEW</room>
         <room>rooms\shrineArea</room>
         <room>rooms\storageroom2</room>
       </rooms>
@@ -865,8 +864,8 @@
       <rooms name="South Wing">
         <room>rooms\study</room>
         <room>rooms\southofoffice</room>
+        <room>rooms\togglex3_v2</room>
         <room>rooms\togglex3</room>
-        <room>rooms\togglex3_NEW</room>
       </rooms>
       <rooms name="West Wing">
         <room>rooms\pitandmonsterroom</room>
@@ -876,10 +875,11 @@
         <room>rooms\connectempty</room>
         <room>rooms\connectswtich</room>
         <room>rooms\New_combatroom</room>
-        <room>rooms\northofoffice_old</room>
-        <room>rooms\southofoffice_old</room>
-        <room>rooms\togglex3_old</room>
-        <room>rooms\pitandmonsterroom_old</room>
+        <room>rooms\northofoffice_v1</room>
+        <room>rooms\southofoffice_v1</room>
+        <room>rooms\togglex3_v1</room>
+        <room>rooms\pitandmonsterroom_v1</room>
+        <room>rooms\northofoffice_v2</room>
       </rooms>
     </rooms>
     <rooms name="Options/Menus/Utility">

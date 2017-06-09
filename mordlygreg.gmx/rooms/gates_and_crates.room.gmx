@@ -86,7 +86,8 @@
     <instance objName="Small_Gate_obj" x="376" y="224" name="inst_2094261E" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="200" y="224" name="inst_4EF669B7" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="696" y="480" name="inst_064C53FA" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="HP_Pickup_obj" x="332" y="536" name="inst_B4589A33" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="HP_Pickup_obj" x="116" y="540" name="inst_B4589A33" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="Key_obj" x="352" y="540" name="inst_FF04A73A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
