@@ -29,6 +29,7 @@
 timeStamp = 0;
 active = false;
 
+
 switch (room)
 {
   case CombatRoom_Flipped:
@@ -44,7 +45,11 @@ switch (room)
     break;
     
   case togglex3:
-    active = dunPuzzle_obj.bloodToggle[3];
+    if (id == instance_find(id.object_index, 0) )
+    { active = dunPuzzle_obj.bloodToggle[3]; }
+    else
+    { active = dunPuzzle_obj.bloodToggle[4]; }
+    
     break;
     
   default:
@@ -104,7 +109,11 @@ if (oldsprite != newsprite)
         break;
         
       case togglex3:
-        dunPuzzle_obj.bloodToggle[3] = active;
+        if (id == instance_find(id.object_index, 0) )
+        { dunPuzzle_obj.bloodToggle[3] = active; }
+        else
+        { dunPuzzle_obj.bloodToggle[4] = active; }        
+        
         break;
         
       default:

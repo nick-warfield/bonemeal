@@ -872,8 +872,9 @@
       <rooms name="South Wing">
         <room>rooms\study</room>
         <room>rooms\southofoffice</room>
+        <room>rooms\togglex3_NEWEST</room>
+        <room>rooms\togglex3_v3</room>
         <room>rooms\togglex3_v2</room>
-        <room>rooms\togglex3</room>
       </rooms>
       <rooms name="West Wing">
         <room>rooms\pitandmonsterroom</room>
