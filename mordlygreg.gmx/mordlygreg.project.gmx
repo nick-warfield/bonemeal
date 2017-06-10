@@ -863,6 +863,7 @@
         <room>rooms\southofoffice</room>
         <room>rooms\togglex3</room>
         <room>rooms\togglex3_NEW</room>
+        <room>rooms\togglex3_NEWEST</room>
       </rooms>
       <rooms name="West Wing">
         <room>rooms\pitandmonsterroom</room>
