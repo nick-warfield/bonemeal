@@ -28,13 +28,14 @@
             <string>plate1 = instance_find(Pressure_Plate_obj, 0);
 plate2 = instance_find(Pressure_Plate_obj, 1);
 plate3 = instance_find(Pressure_Plate_obj, 2);
-//plate4 = instance_find(Pressure_Plate_obj, 3);
+plate4 = instance_find(Pressure_Plate_obj, 3);
+plate5 = instance_find(Pressure_Plate_obj, 4);
 
 
 gate1 = instance_find(Small_Gate_obj, 0);
 gate2 = instance_find(Small_Gate_obj, 1);
 gate3 = instance_find(Small_Gate_obj, 2);
-
+gate4 = instance_find(Small_Gate_obj, 3);
 </string>
           </argument>
         </arguments>
@@ -65,16 +66,22 @@ else
 { gate1.opened = false;}
 
 
-if (plate2.active)
-{ gate2.opened = true;}
-else
-{ gate2.opened = false;}
-
-
-if (plate3.active)
+if (plate2.active &amp;&amp; plate3.active)
 { gate3.opened = true;}
 else
 { gate3.opened = false;}
+
+
+if (plate4.active)
+{ gate4.opened = true;}
+else
+{ gate4.opened = false;}
+
+
+if (plate5.active)
+{ gate2.opened = true; }
+else
+{ gate2.opened = false; }
 </string>
           </argument>
         </arguments>

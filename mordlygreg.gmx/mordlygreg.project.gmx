@@ -819,6 +819,11 @@
           <object>objects\toggle3_1_off_obj</object>
           <object>objects\toggle3_3_off_obj</object>
           <object>objects\toggle3_2_on_obj</object>
+          <object>objects\toggle3_4_on_obj</object>
+          <object>objects\toggle4_1_off_obj</object>
+          <object>objects\toggle4_2_off_obj</object>
+          <object>objects\toggle4_3_on_obj</object>
+          <object>objects\toggle4_4_on_obj</object>
         </objects>
       </objects>
       <objects name="Menu Jazz">
@@ -872,8 +877,8 @@
       <rooms name="South Wing">
         <room>rooms\study</room>
         <room>rooms\southofoffice</room>
-        <room>rooms\togglex3_NEWEST</room>
-        <room>rooms\togglex3_v3</room>
+        <room>rooms\togglex3</room>
+        <room>rooms\togglex3</room>
         <room>rooms\togglex3_v2</room>
       </rooms>
       <rooms name="West Wing">
