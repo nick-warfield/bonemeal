@@ -320,9 +320,16 @@
       <sprite>sprites\toggle1_2_off_spr</sprite>
       <sprite>sprites\toggle1_on_spr</sprite>
       <sprite>sprites\toggle2_off_spr</sprite>
-      <sprite>sprites\toggle3_1_off_spr</sprite>
-      <sprite>sprites\toggle3_2_on_spr</sprite>
-      <sprite>sprites\toggle3_3_off_spr</sprite>
+      <sprites name="Toggle Room">
+        <sprite>sprites\toggle3_1_off_spr</sprite>
+        <sprite>sprites\toggle3_2_on_spr</sprite>
+        <sprite>sprites\toggle3_3_off_spr</sprite>
+        <sprite>sprites\toggle3_4_on_spr</sprite>
+        <sprite>sprites\toggle4_1_off_spr</sprite>
+        <sprite>sprites\toggle4_2_off_spr</sprite>
+        <sprite>sprites\toggle4_3_on_spr</sprite>
+        <sprite>sprites\toggle4_4_on_spr</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\Crate01_spr</sprite>
     <sprite>sprites\Crate02_spr</sprite>
