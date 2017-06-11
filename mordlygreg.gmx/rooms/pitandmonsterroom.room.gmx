@@ -307,11 +307,12 @@
     <instance objName="puz_westWing_obj" x="-16" y="0" name="inst_01191A42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pressure_Plate_obj" x="304" y="160" name="inst_52E0F076" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pressure_Plate_obj" x="436" y="160" name="inst_0B6F07B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Small_Gate_obj" x="128" y="380" name="inst_1CA172EF" locked="0" code="" scaleX="-1.03225803375244" scaleY="3" colour="4294967295" rotation="90"/>
+    <instance objName="Small_Gate_obj" x="128" y="384" name="inst_1CA172EF" locked="0" code="" scaleX="3" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="toggle1_1_off_obj" x="376" y="432" name="inst_398A3719" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="toggle1_on_obj" x="468" y="920" name="inst_1AA17049" locked="0" code="" scaleX="1.02678573131561" scaleY="1.0625" colour="4294967295" rotation="0"/>
     <instance objName="Key_Gate_obj" x="560" y="856" name="inst_36F7BED5" locked="0" code="" scaleX="1" scaleY="3.5" colour="4294967295" rotation="90"/>
     <instance objName="Fishman_obj" x="492" y="332" name="inst_442C6B69" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hor_Spikes_obj" x="176" y="368" name="inst_582F8FFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -787,6 +787,8 @@
       <object>objects\Combat_Lock_obj</object>
       <object>objects\Ladder_obj</object>
       <object>objects\HP_Pickup_obj</object>
+      <object>objects\Vert_Spikes_obj</object>
+      <object>objects\Hor_Spikes_obj</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>

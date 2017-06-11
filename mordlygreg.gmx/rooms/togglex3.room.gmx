@@ -246,10 +246,10 @@
     <instance objName="bloodToggle_obj" x="608" y="480" name="inst_CDD042AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Crate01_obj" x="272" y="348" name="inst_2ABED714" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Crate01_obj" x="576" y="688" name="inst_CE8E98E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Small_Gate_obj" x="64" y="680" name="inst_5E8A5691" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="90"/>
-    <instance objName="Small_Gate_obj" x="68" y="572" name="inst_A0FAEDCC" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="90"/>
-    <instance objName="Small_Gate_obj" x="576" y="568" name="inst_896A9934" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="90"/>
-    <instance objName="Small_Gate_obj" x="552" y="448" name="inst_A47EEB20" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Small_Gate_obj" x="64" y="656" name="inst_5E8A5691" locked="0" code="" scaleX="3" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Small_Gate_obj" x="64" y="544" name="inst_A0FAEDCC" locked="0" code="" scaleX="3" scaleY="0.516129016876221" colour="4294967295" rotation="0"/>
+    <instance objName="Small_Gate_obj" x="576" y="544" name="inst_896A9934" locked="0" code="" scaleX="3" scaleY="0.516129016876221" colour="4294967295" rotation="0"/>
+    <instance objName="Small_Gate_obj" x="560" y="448" name="inst_A47EEB20" locked="0" code="" scaleX="0.5" scaleY="3.09677410125732" colour="4294967295" rotation="0"/>
     <instance objName="Pressure_Plate_obj" x="96" y="960" name="inst_497221B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pressure_Plate_obj" x="428" y="748" name="inst_CD70B929" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pressure_Plate_obj" x="608" y="752" name="inst_E171BF6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -263,6 +263,10 @@
     <instance objName="toggle4_2_off_obj" x="544" y="96" name="inst_62D26B8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="toggle4_3_on_obj" x="296" y="608" name="inst_F9576A01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="toggle4_4_on_obj" x="272" y="96" name="inst_403D12BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hor_Spikes_obj" x="92" y="640" name="inst_A1F11C6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hor_Spikes_obj" x="92" y="528" name="inst_F7931B15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Hor_Spikes_obj" x="660" y="528" name="inst_4F44DAC7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Vert_Spikes_obj" x="568" y="468" name="inst_DCFCF377" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
