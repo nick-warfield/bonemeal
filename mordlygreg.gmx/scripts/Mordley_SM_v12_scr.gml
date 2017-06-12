@@ -122,7 +122,7 @@ switch (ds_stack_top(StateStack))
         ds_stack_pop(StateStack);
         ds_stack_push(StateStack, s_ATTACK1);
         timeStamp[2] = current_time + 600;
-        audio_play_sound(UmbrellaCombo_swing02_snd, 50, false);
+        audio_play_sound(Umbrella_Swing1_snd, 50, false);
         image_index = 0;
         
         comboCount = 1;
@@ -202,7 +202,7 @@ switch (ds_stack_top(StateStack))
         if (image_index >= image_number - 2 && Input[ATTACK1])
         {
             timeStamp[2] = current_time + 600;
-            audio_play_sound(UmbrellaCombo_swing02_snd, 50, false);
+            audio_play_sound(Umbrella_Swing2_snd, 50, false);
             
             script_execute(Attack_Mordley_Ani_scr(Mordley_Swing2_Side_03_spr, Mordley_Swing2_Back_03_spr, Mordley_Swing2_Front_03_spr, 12));
             image_index = 0;
@@ -219,7 +219,7 @@ switch (ds_stack_top(StateStack))
         if (image_speed <= 0 && Input[ATTACK1])
         {
             timeStamp[2] = current_time + 600;
-            audio_play_sound(UmbrellaCombo_swing02_snd, 50, false);
+            audio_play_sound(Umbrella_Swing3_snd, 50, false);
             
             script_execute(Attack_Mordley_Ani_scr(Mordley_Swing3_Side_03_spr, Mordley_Swing3_Back_03_spr, Mordley_Swing3_Front_03_spr, 12));
             image_index = 0;
