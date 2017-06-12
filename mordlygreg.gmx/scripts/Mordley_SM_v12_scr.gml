@@ -108,6 +108,7 @@ switch (ds_stack_top(StateStack))
     {
         ds_stack_push(StateStack, s_DODGE);
         timeStamp[5] = current_time + 200;
+        audio_play_sound(Mordley_Dodge_snd, 40, false);
     }
     
     else if (Input[INTERACT])
