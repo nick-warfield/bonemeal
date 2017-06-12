@@ -49,6 +49,9 @@ else if (facing == DOWN)
 
 if (thing != 0 && instance_exists(thing))
 {
+    var snd = KeyGate_Locked_snd;
+    if (!thing.locked) {snd = 0; }
+    
     if (thing.object_index == BigKey_Gate_obj)
     {
         if (bigKey > 0) { thing.opened = true;}
@@ -56,9 +59,12 @@ if (thing != 0 && instance_exists(thing))
     else if (keys > 0)
     {
       thing.locked = false;
-      //thing.gatetxt.message[0] = "It Opened!";
       keys--;
+      
+      snd = KeyGate_Unlocked_snd;
     }
+    
+    if (snd != 0) {audio_play_sound(snd, 60, false); }
 }
 /*
 
