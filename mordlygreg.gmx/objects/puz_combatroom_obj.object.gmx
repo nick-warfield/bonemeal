@@ -82,6 +82,9 @@ if (!dunPuzzle_obj.combatrmVictory)
         //open gates
         for (var i = 0; i &lt; num; i++)
         { gate[i].opened = true; }
+        
+        //play victory noise
+        audio_play_sound(Puzzle_Solved_snd, 60, false);
     }
 }
 
