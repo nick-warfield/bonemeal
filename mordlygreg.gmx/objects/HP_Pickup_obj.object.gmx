@@ -60,6 +60,7 @@ image_yscale = 1;
           <argument>
             <kind>1</kind>
             <string>other.healthPoints += 3;
+audio_play_sound(Potion_Pickup_snd, 67, false);
 
 if (other.healthPoints &gt; other.hpMax)
 { other.healthPoints = other.hpMax; }
