@@ -76,6 +76,40 @@
       <sound>sound\ChamberRotate_snd</sound>
       <sound>sound\Gunshot_option01_snd</sound>
     </sounds>
+    <sounds name="Missing Audio">
+      <sound>sound\AT_ArrowCollide_snd</sound>
+      <sound>sound\AT_Shoot_snd</sound>
+      <sound>sound\Bat_Attack02_snd</sound>
+      <sound>sound\Bat_Dead_snd</sound>
+      <sound>sound\Candle_Lighter_snd</sound>
+      <sound>sound\Crate_Push01_snd</sound>
+      <sound>sound\Crate_Push02_snd</sound>
+      <sound>sound\Mordley_Dodge_snd</sound>
+      <sound>sound\Fish_Dead_snd</sound>
+      <sound>sound\Fish_Attack_snd</sound>
+      <sound>sound\Gate_OpenClose_snd</sound>
+      <sound>sound\Gunshot_Mine_Explode_snd</sound>
+      <sound>sound\Gunshot_Shotgun_snd</sound>
+      <sound>sound\Gunshot_Splitshot_snd</sound>
+      <sound>sound\Potion_Pickup_snd</sound>
+      <sound>sound\KeyGate_Locked_snd</sound>
+      <sound>sound\KeyGate_Unlocked_snd</sound>
+      <sound>sound\Music_Boss_trk</sound>
+      <sound>sound\Music_Dungeon_trk</sound>
+      <sound>sound\Music_Outside_trk</sound>
+      <sound>sound\Puzzle_Solved_snd</sound>
+      <sound>sound\Puzzle_Wrong_snd</sound>
+      <sound>sound\RoomTrans_Door_snd</sound>
+      <sound>sound\RoomTrans_Ladder_snd</sound>
+      <sound>sound\PressurePlate_Off_snd</sound>
+      <sound>sound\PressurePlate_On_snd</sound>
+      <sound>sound\BloodToggle_OnOff_snd</sound>
+      <sound>sound\Umbrella_Swing1_snd</sound>
+      <sound>sound\Umbrella_Swing2_snd</sound>
+      <sound>sound\Umbrella_Swing3_snd</sound>
+      <sound>sound\Boss_TentacleReach_snd</sound>
+      <sound>sound\Boss_TentacleSweep_snd</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Mordley">
@@ -320,9 +354,16 @@
       <sprite>sprites\toggle1_2_off_spr</sprite>
       <sprite>sprites\toggle1_on_spr</sprite>
       <sprite>sprites\toggle2_off_spr</sprite>
-      <sprite>sprites\toggle3_1_off_spr</sprite>
-      <sprite>sprites\toggle3_2_on_spr</sprite>
-      <sprite>sprites\toggle3_3_off_spr</sprite>
+      <sprites name="Toggle Room">
+        <sprite>sprites\toggle3_1_off_spr</sprite>
+        <sprite>sprites\toggle3_2_on_spr</sprite>
+        <sprite>sprites\toggle3_3_off_spr</sprite>
+        <sprite>sprites\toggle3_4_on_spr</sprite>
+        <sprite>sprites\toggle4_1_off_spr</sprite>
+        <sprite>sprites\toggle4_2_off_spr</sprite>
+        <sprite>sprites\toggle4_3_on_spr</sprite>
+        <sprite>sprites\toggle4_4_on_spr</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\Crate01_spr</sprite>
     <sprite>sprites\Crate02_spr</sprite>
@@ -334,6 +375,8 @@
     <sprite>sprites\Plate_Pressed_spr</sprite>
     <sprite>sprites\Plate_Unpressed_spr</sprite>
     <sprite>sprites\Potion_spr</sprite>
+    <sprite>sprites\Horizontal_SwitchGate_spr</sprite>
+    <sprite>sprites\Vertical_SwitchGate_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Floor1">
@@ -778,6 +821,8 @@
       <object>objects\Combat_Lock_obj</object>
       <object>objects\Ladder_obj</object>
       <object>objects\HP_Pickup_obj</object>
+      <object>objects\Vert_Spikes_obj</object>
+      <object>objects\Hor_Spikes_obj</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>
@@ -812,6 +857,11 @@
           <object>objects\toggle3_1_off_obj</object>
           <object>objects\toggle3_3_off_obj</object>
           <object>objects\toggle3_2_on_obj</object>
+          <object>objects\toggle3_4_on_obj</object>
+          <object>objects\toggle4_1_off_obj</object>
+          <object>objects\toggle4_2_off_obj</object>
+          <object>objects\toggle4_3_on_obj</object>
+          <object>objects\toggle4_4_on_obj</object>
         </objects>
       </objects>
       <objects name="Menu Jazz">
@@ -865,8 +915,9 @@
       <rooms name="South Wing">
         <room>rooms\study</room>
         <room>rooms\southofoffice</room>
-        <room>rooms\togglex3_v2</room>
         <room>rooms\togglex3</room>
+        <room>rooms\togglex3_v3</room>
+        <room>rooms\togglex3_v2</room>
       </rooms>
       <rooms name="West Wing">
         <room>rooms\pitandmonsterroom</room>

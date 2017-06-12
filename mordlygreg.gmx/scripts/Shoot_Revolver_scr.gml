@@ -25,7 +25,10 @@ if (cylinder[cylinderPosition] != 0)
     cylinder[cylinderPosition] = 0;
     
     //play sound
-    audio_play_sound(Gunshot_option01_snd, 50, false);
+    if (bulletInst.object_index == SpreadShot02_obj)
+    {audio_play_sound(Gunshot_Shotgun_snd, 50, false); }
+    else
+    {audio_play_sound(Gunshot_option01_snd, 50, false); }
     
     //screenshake
     shake = 15;

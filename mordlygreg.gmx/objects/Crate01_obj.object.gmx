@@ -3,11 +3,36 @@
   <spriteName>Crate01_spr</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-6</depth>
   <persistent>0</persistent>
   <parentName>Small_obj</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>event_inherited();
+
+noise = Crate_Push02_snd;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="1" enumb="0">
       <action>
         <libid>1</libid>
@@ -30,8 +55,54 @@
     audio_play_sound(Crate_break_snd, 30, false);
 }
 
+if (audio_is_playing(noise) ) {audio_stop_sound(noise); }
+
 Player02_obj.shake = 5;
 saveData_set_value(alive_key, false);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>event_inherited();
+
+var totalspd = 0;
+for (var i = 0; i &lt; instance_number(Small_obj); i++)
+{
+    var box = instance_find(Small_obj, i);    
+    totalspd += box.spd;
+}
+
+if (totalspd == 0)
+{
+    if (audio_is_playing(noise) )
+    {audio_stop_sound(noise); }
+}
+else if (!audio_is_playing(noise) )
+{audio_play_sound(noise, 20, true); }
+
+
+/*
+{ if (!audio_is_playing(noise) ) {audio_play_sound(noise, 20, true); } }
+else if (audio_is_playing(noise) )
+{ audio_stop_sound(noise); }
 </string>
           </argument>
         </arguments>

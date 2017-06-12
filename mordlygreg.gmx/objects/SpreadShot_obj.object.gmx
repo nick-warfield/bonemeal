@@ -3,7 +3,7 @@
   <spriteName>Bullet_Mord_spr</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-7</depth>
   <persistent>0</persistent>
   <parentName>Projectile_obj</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -93,6 +93,7 @@ image_blend = c_red;
             <kind>1</kind>
             <string>///Kaboom
 spawner.shake = 20;
+audio_play_sound(Gunshot_Mine_Explode_snd, 50, false);
 
 for (var i = 0; i &lt; 12; i++)
 {

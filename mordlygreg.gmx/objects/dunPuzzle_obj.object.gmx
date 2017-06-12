@@ -38,6 +38,8 @@ bloodToggle[0] = false;     //changes combat room
 bloodToggle[1] = false;     //changes pit room
 bloodToggle[2] = false;     //changes southwing
 bloodToggle[3] = false;     //changes toggle room
+bloodToggle[4] = false;     //also changes toggle room
+
 
 //keep track of which rooms have been beaten
 combatrmVictory = false;
@@ -67,10 +69,13 @@ combatrmVictory = false;
 
 if (candle[0] &amp;&amp; candle[1] &amp;&amp; candle[2] &amp;&amp; candle[3] &amp;&amp; candle[4])
 {
+    if (!candleSolved)
+    {audio_play_sound(Puzzle_Solved_snd, 40, false); }
+    
     candleSolved = true;
 }
 
-
+/*
 //open up gates if puzzle solved
 if (candleSolved &amp;&amp; room == New_office)
 {
@@ -78,6 +83,43 @@ if (candleSolved &amp;&amp; room == New_office)
     {
         with (instance_find(Small_Gate_obj, i))
         { instance_destroy(); }
+        with (instance_find(Pit_obj, 0))
+        { instance_destroy(); }
+    }
+    
+    var hiddengate = instance_create(-100, -100, Small_Gate_obj);
+    hiddengate.visible = false;
+    hiddengate.opened = true;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//open up gates if puzzle solved
+if (candleSolved &amp;&amp; room == New_office)
+{
+    for (var i = 0; i &lt; 3; i++)
+    {
+        with (instance_find(Small_Gate_obj, i))
+        { x = -100; y = -100; visible = false; opened = true; }
         with (instance_find(Pit_obj, 0))
         { instance_destroy(); }
     }

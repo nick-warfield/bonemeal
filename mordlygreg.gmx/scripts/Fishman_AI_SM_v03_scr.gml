@@ -26,7 +26,7 @@ switch(ds_stack_top(StateStack))
     if (current_time >= timeStamp[1])
     {
         spd = 0;
-        if (healthPoints <= 0) {instance_destroy();}
+        if (healthPoints <= 0) {audio_play_sound(Fish_Dead_snd, 60, false); instance_destroy();}
     }
     
     if (current_time >= timeStamp[0])
@@ -84,6 +84,8 @@ switch(ds_stack_top(StateStack))
     spitInst.Dir = thatWay;
     
     spitInst.dmg = 1;
+    
+    audio_play_sound(Fish_Attack_snd, 75, false);
     
     ds_stack_pop(StateStack);
     

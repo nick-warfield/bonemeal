@@ -30,6 +30,7 @@
     state = Trans_State.out;
     trans_dir = Trans_Dir.up;
     target_room = study;
+    trans_snd = RoomTrans_Ladder_snd;
     playerx = 544;
     playery = 536;
 }

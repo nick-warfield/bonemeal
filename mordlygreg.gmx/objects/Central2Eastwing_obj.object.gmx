@@ -30,6 +30,7 @@
     state = Trans_State.out;
     trans_dir = Trans_Dir.right;
     target_room = CombatRoom_Flipped;
+    trans_snd = RoomTrans_Door_snd;
     playerx = 80;
     playery = 400;
 }

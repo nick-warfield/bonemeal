@@ -30,6 +30,7 @@
     state = Trans_State.out;
     trans_dir = Trans_Dir.right;
     target_room = storageroom2;
+    trans_snd = RoomTrans_Door_snd;
     playerx = 160;
     playery = 304;
 }

@@ -43,7 +43,7 @@ switch(ds_stack_top(StateStack))
     if (current_time >= timeStamp[1])
     {
         spd = 0;
-        if (healthPoints <= 0) {instance_destroy();}
+        if (healthPoints <= 0) { audio_play_sound(Bat_Attack02_snd, 50, false); instance_destroy();}
     }
     
     if (current_time >= timeStamp[0])
@@ -63,6 +63,7 @@ switch(ds_stack_top(StateStack))
     {
         timeStamp[2] = current_time + random_range(1000, 2000);
         ds_stack_push(StateStack, s_MOVE);
+        audio_play_sound(Bat_Dead_snd, 50, false);
     }
     else if (timeStamp[2] != 0 && distance_to_object(target) > 15 * 32)
     { ds_stack_push(StateStack, s_ATTACK2); }
@@ -98,6 +99,8 @@ switch(ds_stack_top(StateStack))
             spd = 3.5;
             timeStamp[4] = current_time + 1000;
             ds_stack_push(StateStack, s_ATTACK1);
+            
+            audio_play_sound(Bat_Dead_snd, 50, false);
         }
     }
     

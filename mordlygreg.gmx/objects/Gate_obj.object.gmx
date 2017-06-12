@@ -101,6 +101,9 @@ if (saveData_get_value(key))
             <string>//run some code on unlock, in this case play a gate opening animation and change the collision mask
 if (locked == false)
 {
+    if (sprite_index != Gate_Open_v02_spr)
+    {audio_play_sound(Gate_OpenClose_snd, 40, false); }
+
     sprite_index = Gate_Open_v02_spr;
     mask_index = Gate_Open_v02_spr;
     
