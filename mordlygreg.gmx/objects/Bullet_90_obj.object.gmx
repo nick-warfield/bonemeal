@@ -115,6 +115,8 @@ if (current_time &gt;= timeStamp2)
     bull2.timeStamp = current_time + 300;
     bull2.image_blend = c_lime;
     
+    audio_play_sound(Gunshot_Splitshot_snd, 50, false);
+    
     instance_destroy();
     
     spawner.shake = 10;

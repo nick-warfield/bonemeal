@@ -93,6 +93,7 @@ image_blend = c_red;
             <kind>1</kind>
             <string>///Kaboom
 spawner.shake = 20;
+audio_play_sound(Gunshot_Mine_Explode_snd, 50, false);
 
 for (var i = 0; i &lt; 12; i++)
 {
