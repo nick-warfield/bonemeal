@@ -126,9 +126,9 @@ transition_y=0;
             <kind>1</kind>
             <string>///Sound Stuff
 
-track[0] = Floor1_v2no_piano;
-track[1] = Main_trk;
-track[2] = Boss_trk;
+track[0] = Music_Outside_trk;
+track[1] = Music_Dungeon_trk;
+track[2] = Music_Boss_trk;
 
 for (var i = 0; i &lt; 3; i++)
 { audio_sound_gain(track[i], 0, 0); }

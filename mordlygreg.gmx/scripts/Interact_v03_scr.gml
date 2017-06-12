@@ -50,7 +50,7 @@ else if (facing == DOWN)
 if (thing != 0 && instance_exists(thing))
 {
     var snd = KeyGate_Locked_snd;
-    if (!thing.locked) {snd = 0; }
+    if (thing.opened) {snd = 0; }
     
     if (thing.object_index == BigKey_Gate_obj)
     {
