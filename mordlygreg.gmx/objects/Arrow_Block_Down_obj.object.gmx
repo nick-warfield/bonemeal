@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>timeStamp = 0;
+            <string>timeStamp = current_time + 1500;
 image_speed = 0;
 </string>
           </argument>
@@ -61,6 +61,9 @@ image_speed = 0;
     bull.spd = 7;
     
     bull.dmg = 2;
+    
+    if (!audio_is_playing(AT_Shoot_snd) )
+    { audio_play_sound(AT_Shoot_snd, 40, false); }
 }
 </string>
           </argument>
