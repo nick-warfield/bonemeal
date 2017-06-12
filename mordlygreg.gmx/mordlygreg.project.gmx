@@ -76,6 +76,40 @@
       <sound>sound\ChamberRotate_snd</sound>
       <sound>sound\Gunshot_option01_snd</sound>
     </sounds>
+    <sounds name="Missing Audio">
+      <sound>sound\AT_ArrowCollide_snd</sound>
+      <sound>sound\AT_Shoot_snd</sound>
+      <sound>sound\Bat_Attack02_snd</sound>
+      <sound>sound\Bat_Dead_snd</sound>
+      <sound>sound\Candle_Lighter_snd</sound>
+      <sound>sound\Crate_Push01_snd</sound>
+      <sound>sound\Crate_Push02_snd</sound>
+      <sound>sound\Mordley_Dodge_snd</sound>
+      <sound>sound\Fish_Dead_snd</sound>
+      <sound>sound\Fish_Attack_snd</sound>
+      <sound>sound\Gate_OpenClose_snd</sound>
+      <sound>sound\Gunshot_Mine_Explode_snd</sound>
+      <sound>sound\Gunshot_Shotgun_snd</sound>
+      <sound>sound\Gunshot_Splitshot_snd</sound>
+      <sound>sound\Potion_Pickup_snd</sound>
+      <sound>sound\KeyGate_Locked_snd</sound>
+      <sound>sound\KeyGate_Unlocked_snd</sound>
+      <sound>sound\Music_Boss_trk</sound>
+      <sound>sound\Music_Dungeon_trk</sound>
+      <sound>sound\Music_Outside_trk</sound>
+      <sound>sound\Puzzle_Solved_snd</sound>
+      <sound>sound\Puzzle_Wrong_snd</sound>
+      <sound>sound\RoomTrans_Door_snd</sound>
+      <sound>sound\RoomTrans_Ladder_snd</sound>
+      <sound>sound\PressurePlate_Off_snd</sound>
+      <sound>sound\PressurePlate_On_snd</sound>
+      <sound>sound\BloodToggle_OnOff_snd</sound>
+      <sound>sound\Umbrella_Swing1_snd</sound>
+      <sound>sound\Umbrella_Swing2_snd</sound>
+      <sound>sound\Umbrella_Swing3_snd</sound>
+      <sound>sound\Boss_TentacleReach_snd</sound>
+      <sound>sound\Boss_TentacleSweep_snd</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Mordley">
