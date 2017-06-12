@@ -52,11 +52,17 @@ active = false;
             <kind>1</kind>
             <string>if (place_meeting(x, y, Small_obj) || place_meeting(x, y, Player02_obj))
 {
+    if (!active)
+    {audio_play_sound(PressurePlate_On_snd, 35, false); }
+    
     active = true;
     sprite_index = Plate_Pressed_spr;
 }
 else 
 {
+    if (active)
+    {audio_play_sound(PressurePlate_Off_snd, 35, false); }
+
     active = false;
     sprite_index = Plate_Unpressed_spr;
 }

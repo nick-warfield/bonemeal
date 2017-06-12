@@ -3,7 +3,7 @@
   <spriteName>Crate01_spr</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-6</depth>
   <persistent>0</persistent>
   <parentName>Small_obj</parentName>
   <maskName>&lt;undefined&gt;</maskName>
