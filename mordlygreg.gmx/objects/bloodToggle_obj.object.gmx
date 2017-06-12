@@ -94,6 +94,8 @@ newsprite = sprite_index;
 
 if (oldsprite != newsprite)
 {
+    audio_play_sound(BloodToggle_OnOff_snd, 70, false);
+
     switch (room)
     {
       case CombatRoom_Flipped:
