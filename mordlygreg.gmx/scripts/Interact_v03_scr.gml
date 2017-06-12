@@ -20,8 +20,11 @@ else if (facing == DOWN)
 
 if (thing != 0 && instance_exists(thing))
 {
-    thing.lit = true;
+    if (!thing.lit)
+    {audio_play_sound(Candle_Lighter_snd, 60, false); }
 
+    thing.lit = true;
+    
     /*
     if (thing.order == 0)
     {
