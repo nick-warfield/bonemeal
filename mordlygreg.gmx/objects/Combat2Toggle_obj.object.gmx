@@ -30,6 +30,7 @@
     state = Trans_State.out;
     trans_dir = Trans_Dir.down;
     target_room = togglex3;
+    trans_snd = RoomTrans_Door_snd;
     playerx = 112;
     playery = 48;
 }

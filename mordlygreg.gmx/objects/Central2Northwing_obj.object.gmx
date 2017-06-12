@@ -30,6 +30,7 @@
     state = Trans_State.out;
     trans_dir = Trans_Dir.up;
     target_room = northofoffice;
+    trans_snd = RoomTrans_Door_snd;
     playerx = 608;
     playery = 1440;
 }

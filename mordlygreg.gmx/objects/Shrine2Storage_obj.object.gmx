@@ -30,6 +30,7 @@
     state = Trans_State.out;
     trans_dir = Trans_Dir.down;
     target_room = storageroom2;
+    trans_snd = RoomTrans_Ladder_snd;
     playerx = 416;
     playery = 288;
 }

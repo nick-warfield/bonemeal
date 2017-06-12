@@ -90,6 +90,7 @@ enum Trans_Dir{left,right,up,down};
 enum Trans_State{none, out, in, change, start };
 state=Trans_State.none;
 trans_dir = Trans_Dir.up; //Doesn't matter.
+trans_snd = RoomTrans_Ladder_snd;
 activate = false;
 
 timer=0;
@@ -207,6 +208,9 @@ switch(state)
     
   case Trans_State.out:
     //show_debug_message("trans_state = out");
+    
+    if (!global.paused) {audio_play_sound(trans_snd, 80, false); }
+    
     global.paused = true;    
     draw_set_color(c_black);
     

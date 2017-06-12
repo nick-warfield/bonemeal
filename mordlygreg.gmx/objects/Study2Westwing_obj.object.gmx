@@ -30,6 +30,7 @@
     state = Trans_State.out;
     trans_dir = Trans_Dir.down;
     target_room = pitandmonsterroom;
+    trans_snd = RoomTrans_Ladder_snd;
     playerx = 144;
     playery = 976;
 }

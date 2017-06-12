@@ -30,6 +30,7 @@
     state = Trans_State.out;
     trans_dir = Trans_Dir.up;
     target_room = shrineArea;
+    trans_snd = RoomTrans_Ladder_snd;
     playerx = 260;
     playery = 356;
 }
