@@ -914,7 +914,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\RunFirstALWAYS</room>
-    <room>rooms\Boss_rm</room>
     <rooms name="Current Game">
       <room>rooms\Start_Menu</room>
       <room>rooms\Outside_rm</room>
@@ -949,6 +948,7 @@
           <room>rooms\pitandmonsterroom_v1</room>
           <room>rooms\northofoffice_v2</room>
         </rooms>
+        <room>rooms\Boss_rm</room>
       </rooms>
       <rooms name="Options/Menus/Utility">
         <room>rooms\Controls_rm</room>
