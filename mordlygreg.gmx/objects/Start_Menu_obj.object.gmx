@@ -185,7 +185,7 @@ else if (current_time &gt;= timeStamp3)
         //instance_create(0, 0, Player02_obj);
         
         global.checkpoint = 1;
-        global.paused = false;
+        global.paused = true;
         
         with (Game_Manager_obj)
         {
