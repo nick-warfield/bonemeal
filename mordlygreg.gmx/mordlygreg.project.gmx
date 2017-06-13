@@ -317,8 +317,41 @@
       <sprite>sprites\TileWall_spr</sprite>
     </sprites>
     <sprites name="GUI">
+      <sprites name="Menu">
+        <sprites name="Words">
+          <sprite>sprites\team_wrd</sprite>
+          <sprite>sprites\startdemo_wrd</sprite>
+          <sprite>sprites\specialThanks_wrd</sprite>
+          <sprite>sprites\shoot_kb_wrd</sprite>
+          <sprite>sprites\shoot_ctrl_wrd</sprite>
+          <sprite>sprites\reload_kb_wrd</sprite>
+          <sprite>sprites\reload_ctrl_wrd</sprite>
+          <sprite>sprites\pause_kb_wrd</sprite>
+          <sprite>sprites\pause_ctrl_wrd</sprite>
+          <sprite>sprites\options_wrd</sprite>
+          <sprite>sprites\move_ctrl_wrd</sprite>
+          <sprite>sprites\melee_ctrl_wrd</sprite>
+          <sprite>sprites\keyboardmouse_wrd</sprite>
+          <sprite>sprites\interact_kb_wrd</sprite>
+          <sprite>sprites\interact_ctrl_wrd</sprite>
+          <sprite>sprites\exitdemo_wrd</sprite>
+          <sprite>sprites\dodge_kb_wrd</sprite>
+          <sprite>sprites\dodge_ctrl_wrd</sprite>
+          <sprite>sprites\cycle_kb_wrd</sprite>
+          <sprite>sprites\cycle_ctrl_wrd</sprite>
+          <sprite>sprites\credits_wrd</sprite>
+          <sprite>sprites\controls_wrd</sprite>
+          <sprite>sprites\controller_wrd</sprite>
+          <sprite>sprites\aim_kb_wrd</sprite>
+          <sprite>sprites\aim_ctrl_wrd</sprite>
+        </sprites>
+        <sprite>sprites\Logo_spr</sprite>
+        <sprite>sprites\Alpha_Fade_spr</sprite>
+        <sprite>sprites\Icon_spr</sprite>
+        <sprite>sprites\Bullet_Ani_spr</sprite>
+        <sprite>sprites\Journal_spr</sprite>
+      </sprites>
       <sprite>sprites\HUD_Gun_spr</sprite>
-      <sprite>sprites\Journal_spr</sprite>
       <sprite>sprites\Journal_02_spr</sprite>
       <sprite>sprites\Journal_Blank_spr</sprite>
       <sprite>sprites\hud_revolver_04_spr</sprite>
@@ -329,9 +362,6 @@
       <sprite>sprites\hud_revolver_03_empty_spr</sprite>
       <sprite>sprites\hud_revolver_03_full_spr</sprite>
       <sprite>sprites\HUD_Card_spr</sprite>
-      <sprite>sprites\Icon_spr</sprite>
-      <sprite>sprites\Bullet_Ani_spr</sprite>
-      <sprite>sprites\Alpha_Fade_spr</sprite>
     </sprites>
     <sprites name="Effects">
       <sprite>sprites\Fang_Front_Effect_spr</sprite>
