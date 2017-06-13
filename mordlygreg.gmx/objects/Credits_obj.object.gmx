@@ -235,10 +235,10 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_bottom);
 
 
-//draw_sprite_ext(team_wrd, 0, leftPage, 130, 1, 1, 0, c_white, 1);
-//draw_sprite_ext(specialThanks_wrd, 0, rightPage, 130, 1.5, 1.5, 0, c_white, 1);
+draw_sprite_ext(team_wrd, 0, leftPage, 130, 1, 1, 0, c_white, 1);
+draw_sprite_ext(specialThanks_wrd, 0, rightPage, 130, 1.5, 1.5, 0, c_white, 1);
 
-
+/*
 //left page stuff
 //line 1
 draw_text_transformed_colour(leftPage, tp1, "Austin Bragger", 1, 1, 0, tc1, tc1, tc1, tc1, 1);
@@ -264,7 +264,7 @@ draw_text_transformed_colour(leftPage, tp7, "Dillon Craft", 1, 1, 0, tc2, tc2, t
 
 //Right Page Stuff
 //line 1
-draw_text_transformed_colour(rightPage, tp1, "Special Thanks To:", 1, 1, 0, tc1, tc1, tc1, tc1, 1);
+//draw_text_transformed_colour(rightPage, tp1, "Special Thanks To:", 1, 1, 0, tc1, tc1, tc1, tc1, 1);
 
 //line 2
 draw_text_transformed_colour(rightPage, tp2, "Tim Samoff", 1, 1, 0, tc2, tc2, tc2, tc2, 1);

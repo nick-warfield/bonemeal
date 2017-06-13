@@ -338,13 +338,13 @@ draw_set_valign(fa_bottom);
 draw_sprite_ext(Icon_spr, 0, leftPage*1.35, tp1, 1.75, 1.75, 0, c_white, 1);
 
 //Game name, and company
-//draw_sprite_ext(Logo_spr, 0, leftPage-12, room_height/2 - 70, 0.5, 0.5, 0, c_white, 1);
+draw_sprite_ext(Logo_spr, 0, leftPage-12, room_height/2 - 70, 0.5, 0.5, 0, c_white, 1);
 
 
-draw_text_transformed_colour(leftPage - 12, room_height/2 - 25, "MORDLEY GREG:", 1.5, 1.5, 0, c_purple, c_purple, c_purple, c_purple, 1);
-draw_text_transformed_colour(leftPage + 1, room_height/2, "PRIVATE EYE", 1.5, 1.5, 0, c_purple, c_purple, c_purple, c_purple, 1);
-draw_text_colour(leftPage + 20, room_height/2 + 30, "by: bonemeal", c_navy, c_navy, c_navy, c_navy, 1);
-draw_text_transformed_colour(leftPage + 7, room_height/2 + 123, version, 1, 1, 0, c_navy, c_navy, c_navy, c_navy, 1);
+//draw_text_transformed_colour(leftPage - 12, room_height/2 - 25, "MORDLEY GREG:", 1.5, 1.5, 0, c_purple, c_purple, c_purple, c_purple, 1);
+//draw_text_transformed_colour(leftPage + 1, room_height/2, "PRIVATE EYE", 1.5, 1.5, 0, c_purple, c_purple, c_purple, c_purple, 1);
+//draw_text_colour(leftPage + 20, room_height/2 + 30, "by: bonemeal", c_navy, c_navy, c_navy, c_navy, 1);
+//draw_text_transformed_colour(leftPage + 7, room_height/2 + 123, version, 1, 1, 0, c_navy, c_navy, c_navy, c_navy, 1);
 
 
 //Right Page Stuff
@@ -352,24 +352,24 @@ draw_sprite(Mordley_Side_Aim_spr, 0, room_width/2 + 55, my - 3);
 
 
 //line 1
-//draw_sprite_ext(startdemo_wrd, 0, tph1, tp1, ts1, ts1, 0, c_white, 1);
-draw_text_transformed_colour(tph1, tp1, "START DEMO", ts1, ts1, 0, tc1, tc1, tc1, tc1, 1);
+draw_sprite_ext(startdemo_wrd, 0, tph1, tp1, ts1, ts1, 0, c_white, 1);
+//draw_text_transformed_colour(tph1, tp1, "START DEMO", ts1, ts1, 0, tc1, tc1, tc1, tc1, 1);
 
 //line 2
-//draw_sprite_ext(controls_wrd, 0, tph2, tp2, ts2, ts2, 0, c_white, 1);
-draw_text_transformed_colour(tph2, tp2, "CONTROLS", ts2, ts2, 0, tc2, tc2, tc2, tc2, 1);
+draw_sprite_ext(controls_wrd, 0, tph2, tp2, ts2, ts2, 0, c_white, 1);
+//draw_text_transformed_colour(tph2, tp2, "CONTROLS", ts2, ts2, 0, tc2, tc2, tc2, tc2, 1);
 
 //line 3
-//draw_sprite_ext(options_wrd, 0, tph3, tp3, ts3, ts3, 0, c_white, 1);
-draw_text_transformed_colour(tph3, tp3, "OPTIONS", ts3, ts3, 0, tc3, tc3, tc3, tc3, 1);
+draw_sprite_ext(options_wrd, 0, tph3, tp3, ts3, ts3, 0, c_white, 1);
+//draw_text_transformed_colour(tph3, tp3, "OPTIONS", ts3, ts3, 0, tc3, tc3, tc3, tc3, 1);
 
 //line 4
-//draw_sprite_ext(credits_wrd, 0, tph4, tp4, ts4, ts4, 0, c_white, 1);
-draw_text_transformed_colour(tph4, tp4, "CREDITS", ts4, ts4, 0, tc4, tc4, tc4, tc4, 1);
+draw_sprite_ext(credits_wrd, 0, tph4, tp4, ts4, ts4, 0, c_white, 1);
+//draw_text_transformed_colour(tph4, tp4, "CREDITS", ts4, ts4, 0, tc4, tc4, tc4, tc4, 1);
 
 //line 5
-//draw_sprite_ext(exitdemo_wrd, 0, tph5, tp5, ts5, ts5, 0, c_white, 1);
-draw_text_transformed_colour(tph5, tp5, "EXIT DEMO", ts5, ts5, 0, tc5, tc5, tc5, tc5, 1);
+draw_sprite_ext(exitdemo_wrd, 0, tph5, tp5, ts5, ts5, 0, c_white, 1);
+//draw_text_transformed_colour(tph5, tp5, "EXIT DEMO", ts5, ts5, 0, tc5, tc5, tc5, tc5, 1);
 
 
 if (Input[INTERACT]) {aniCount = 0;}
