@@ -268,10 +268,10 @@ var ts5 = ts4;
 
 //text spacing
 var tp1 = room_height/2 - 102;
-var tp2 = tp1 + 25;
-var tp3 = tp2 + 26;
-var tp4 = tp3 + 30;
-var tp5 = tp4 + 25;
+var tp2 = tp1 + 40;
+var tp3 = tp2 + 40;
+var tp4 = tp3 + 40;
+var tp5 = tp4 + 40;
 
 var tph1 = rightPage;
 var tph2 = rightPage;
