@@ -229,6 +229,21 @@
       <sprites name="Boss">
         <sprite>sprites\Boss_Idle_spr</sprite>
         <sprite>sprites\Boss_Idle_v02_spr</sprite>
+        <sprite>sprites\Boss_Float_spr</sprite>
+        <sprites name="Grabs">
+          <sprite>sprites\Boss_Grab_Front_spr</sprite>
+          <sprite>sprites\Boss_Grab_Right_spr</sprite>
+          <sprite>sprites\Boss_Grab_Left_spr</sprite>
+          <sprite>sprites\Boss_Grab_Back_spr</sprite>
+          <sprite>sprites\Boss_Grab_Tentacle_spr</sprite>
+        </sprites>
+        <sprites name="Sword Attack">
+          <sprite>sprites\Boss_Sword_spr</sprite>
+          <sprite>sprites\Boss_Throw_Front_spr</sprite>
+          <sprite>sprites\Boss_Throw_Right_spr</sprite>
+          <sprite>sprites\Boss_Throw_Left_spr</sprite>
+          <sprite>sprites\Boss_Throw_Back_spr</sprite>
+        </sprites>
         <sprites name="Tentacle Sweep">
           <sprite>sprites\Boss_Sweep_Attack_spr</sprite>
           <sprite>sprites\Boss_Sweep_Winddown_spr</sprite>
