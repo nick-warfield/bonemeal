@@ -246,7 +246,7 @@ else if (current_time &gt;= timeStamp3)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var version = "version: 2.3.4";
+            <string>//var version = "version: 2.3.4";
 
 //xoffsets
 var leftPage = room_width/4;
@@ -333,6 +333,7 @@ draw_sprite(Journal_Blank_spr, 0, room_width/2, room_height/2 - 25);
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_bottom);
+
 
 //left page stuff
 draw_sprite_ext(Icon_spr, 0, leftPage*1.35, tp1, 1.75, 1.75, 0, c_white, 1);
