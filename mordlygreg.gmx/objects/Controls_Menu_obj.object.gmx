@@ -246,19 +246,19 @@ draw_text_transformed_colour(leftPage, tp0, "KEYBOARD &amp; MOUSE", 1, 1, 0, c_p
 draw_text_transformed_colour(leftPage, tp1, "Move: WASD/Arrow Keys", 0.75, 0.75, 0, tc1, tc1, tc1, tc1, 1);
 
 //line 2
-draw_text_transformed_colour(leftPage, tp2, "Melee: Left/Right Click", 0.75, 0.75, 0, tc2, tc2, tc2, tc2, 1);
+draw_text_transformed_colour(leftPage, tp2, "Melee: Space", 0.75, 0.75, 0, tc2, tc2, tc2, tc2, 1);
 
 //line 3
-draw_text_transformed_colour(leftPage, tp3, "Shoot: Left/Right Click", 0.75, 0.75, 0, tc3, tc3, tc3, tc3, 1);
+draw_text_transformed_colour(leftPage, tp3, "Shoot: Space", 0.75, 0.75, 0, tc3, tc3, tc3, tc3, 1);
 
 //line 4
-draw_text_transformed_colour(leftPage, tp4, "Aim: Space", 0.75, 0.75, 0, tc4, tc4, tc4, tc4, 1);
+draw_text_transformed_colour(leftPage, tp4, "Aim: /", 0.75, 0.75, 0, tc4, tc4, tc4, tc4, 1);
 
 //line 5
-draw_text_transformed_colour(leftPage, tp5, "Reload: R/Scroll Up", 0.75, 0.75, 0, tc5, tc5, tc5, tc5, 1);
+draw_text_transformed_colour(leftPage, tp5, "Reload: Enter", 0.75, 0.75, 0, tc5, tc5, tc5, tc5, 1);
 
 //line 6
-draw_text_transformed_colour(leftPage, tp6, "Cycle: Q/Scroll Up", 0.75, 0.75, 0, tc1, tc1, tc1, tc1, 1);
+draw_text_transformed_colour(leftPage, tp6, "Cycle: Right Shift", 0.75, 0.75, 0, tc1, tc1, tc1, tc1, 1);
 
 //line 7
 draw_text_transformed_colour(leftPage, tp7, "Dodge: Left Shift", 0.75, 0.75, 0, tc2, tc2, tc2, tc2, 1);
@@ -290,7 +290,7 @@ draw_text_transformed_colour(rightPage, tp4, "Aim: Left Trigger", 0.75, 0.75, 0,
 draw_text_transformed_colour(rightPage, tp5, "Reload: Right Bumper", 0.75, 0.75, 0, tc5, tc5, tc5, tc5, 1);
 
 //line 6
-draw_text_transformed_colour(rightPage, tp6, "Cycle: Left Bumper/Y Button", 0.75, 0.75, 0, tc1, tc1, tc1, tc1, 1);
+draw_text_transformed_colour(rightPage, tp6, "Cycle: Y Button", 0.75, 0.75, 0, tc1, tc1, tc1, tc1, 1);
 
 //line 7
 draw_text_transformed_colour(rightPage, tp7, "Dodge: B Button", 0.75, 0.75, 0, tc2, tc2, tc2, tc2, 1);
