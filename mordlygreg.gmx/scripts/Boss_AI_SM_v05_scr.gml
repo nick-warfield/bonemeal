@@ -72,6 +72,7 @@ switch(ds_stack_top(StateStack))
     
   //Grab Attack, everything is based around this attack
   case s_ATTACK1:
+    spd = 0;
     with (arm)
     {
         grabbed = instance_place(x, y, all);
@@ -202,7 +203,8 @@ switch(ds_stack_top(StateStack))
     
   //pull target
   case s_ATTACK3:
-  
+    spd = 0;
+    
     if (distance_to_object(target) <= 16 && timeStamp[5] == 0 && timeStamp[6] == 0)
     {
         target.spd = 0;
@@ -257,6 +259,8 @@ switch(ds_stack_top(StateStack))
     
   //Dagger attack
   case s_ATTACK4:
+    spd = 0;
+    
     if (current_time >= timeStamp[3])
     { 
         var thing = collision_line(x, y, x+lengthdir_x(5*32, Dir), y+lengthdir_y(5*32, Dir), target, false, false);
@@ -283,6 +287,8 @@ switch(ds_stack_top(StateStack))
     
   //Tentacle knockback
   case s_ATTACK5:
+    spd = 0;
+    
     if (current_time >= timeStamp[4])
     {
         ds_stack_pop(StateStack);

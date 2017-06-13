@@ -229,6 +229,21 @@
       <sprites name="Boss">
         <sprite>sprites\Boss_Idle_spr</sprite>
         <sprite>sprites\Boss_Idle_v02_spr</sprite>
+        <sprite>sprites\Boss_Float_spr</sprite>
+        <sprites name="Grabs">
+          <sprite>sprites\Boss_Grab_Front_spr</sprite>
+          <sprite>sprites\Boss_Grab_Right_spr</sprite>
+          <sprite>sprites\Boss_Grab_Left_spr</sprite>
+          <sprite>sprites\Boss_Grab_Back_spr</sprite>
+          <sprite>sprites\Boss_Grab_Tentacle_spr</sprite>
+        </sprites>
+        <sprites name="Sword Attack">
+          <sprite>sprites\Boss_Sword_spr</sprite>
+          <sprite>sprites\Boss_Throw_Front_spr</sprite>
+          <sprite>sprites\Boss_Throw_Right_spr</sprite>
+          <sprite>sprites\Boss_Throw_Left_spr</sprite>
+          <sprite>sprites\Boss_Throw_Back_spr</sprite>
+        </sprites>
         <sprites name="Tentacle Sweep">
           <sprite>sprites\Boss_Sweep_Attack_spr</sprite>
           <sprite>sprites\Boss_Sweep_Winddown_spr</sprite>
@@ -899,63 +914,51 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\RunFirstALWAYS</room>
-    <room>rooms\Start_Menu</room>
-    <room>rooms\Outside_rm</room>
-    <rooms name="Dungeon">
-      <room>rooms\New_office</room>
-      <rooms name="North Wing">
-        <room>rooms\northofoffice</room>
-        <room>rooms\shrineArea</room>
-        <room>rooms\storageroom2</room>
+    <rooms name="Current Game">
+      <room>rooms\Start_Menu</room>
+      <room>rooms\Outside_rm</room>
+      <rooms name="Dungeon">
+        <room>rooms\New_office</room>
+        <rooms name="North Wing">
+          <room>rooms\northofoffice</room>
+          <room>rooms\shrineArea</room>
+          <room>rooms\storageroom2</room>
+        </rooms>
+        <rooms name="East Wing">
+          <room>rooms\CombatRoom_Flipped</room>
+          <room>rooms\gates_and_crates</room>
+        </rooms>
+        <rooms name="South Wing">
+          <room>rooms\study</room>
+          <room>rooms\southofoffice</room>
+          <room>rooms\togglex3</room>
+          <room>rooms\togglex3_v3</room>
+          <room>rooms\togglex3_v2</room>
+        </rooms>
+        <rooms name="West Wing">
+          <room>rooms\pitandmonsterroom</room>
+        </rooms>
+        <rooms name="SCRATCH">
+          <room>rooms\connectempty</room>
+          <room>rooms\connectswtich</room>
+          <room>rooms\New_combatroom</room>
+          <room>rooms\northofoffice_v1</room>
+          <room>rooms\southofoffice_v1</room>
+          <room>rooms\togglex3_v1</room>
+          <room>rooms\pitandmonsterroom_v1</room>
+          <room>rooms\northofoffice_v2</room>
+        </rooms>
+        <room>rooms\Boss_rm</room>
       </rooms>
-      <rooms name="East Wing">
-        <room>rooms\CombatRoom_Flipped</room>
-        <room>rooms\gates_and_crates</room>
-      </rooms>
-      <rooms name="South Wing">
-        <room>rooms\study</room>
-        <room>rooms\southofoffice</room>
-        <room>rooms\togglex3</room>
-        <room>rooms\togglex3_v3</room>
-        <room>rooms\togglex3_v2</room>
-      </rooms>
-      <rooms name="West Wing">
-        <room>rooms\pitandmonsterroom</room>
-      </rooms>
-      <room>rooms\Boss_rm</room>
-      <rooms name="SCRATCH">
-        <room>rooms\connectempty</room>
-        <room>rooms\connectswtich</room>
-        <room>rooms\New_combatroom</room>
-        <room>rooms\northofoffice_v1</room>
-        <room>rooms\southofoffice_v1</room>
-        <room>rooms\togglex3_v1</room>
-        <room>rooms\pitandmonsterroom_v1</room>
-        <room>rooms\northofoffice_v2</room>
-      </rooms>
-    </rooms>
-    <rooms name="Options/Menus/Utility">
-      <room>rooms\Controls_rm</room>
-      <room>rooms\Options_rm</room>
-      <room>rooms\Credits_rm</room>
-      <room>rooms\Room_Transition</room>
-    </rooms>
-    <rooms name="Beta Demo">
-      <rooms name="Floor2">
-        <room>rooms\Office_rm</room>
-        <room>rooms\Gate_Room_rm</room>
-        <room>rooms\Combat_Prototype_rm</room>
-        <room>rooms\Pit_04_rm</room>
-        <room>rooms\Switch_03_rm</room>
-        <room>rooms\Storage_rm</room>
+      <rooms name="Options/Menus/Utility">
+        <room>rooms\Controls_rm</room>
+        <room>rooms\Options_rm</room>
+        <room>rooms\Credits_rm</room>
+        <room>rooms\Room_Transition</room>
       </rooms>
     </rooms>
-    <room>rooms\Pit_03_rm</room>
-    <room>rooms\Enemy2_rm</room>
-    <room>rooms\Enemy1_rm</room>
-    <room>rooms\Exit_Flr2_rm</room>
-    <room>rooms\Start_Flr2_rm</room>
     <rooms name="Scratch">
+      <room>rooms\Start_Flr2_rm</room>
       <room>rooms\room0_rm</room>
       <room>rooms\room1</room>
       <room>rooms\room4</room>
@@ -967,6 +970,20 @@
       <room>rooms\Pit_02_rm</room>
       <room>rooms\Switch_rm</room>
       <room>rooms\Switch_02_rm</room>
+      <room>rooms\Pit_03_rm</room>
+      <room>rooms\Enemy2_rm</room>
+      <room>rooms\Enemy1_rm</room>
+      <room>rooms\Exit_Flr2_rm</room>
+      <rooms name="Beta Demo">
+        <rooms name="Floor2">
+          <room>rooms\Office_rm</room>
+          <room>rooms\Gate_Room_rm</room>
+          <room>rooms\Combat_Prototype_rm</room>
+          <room>rooms\Pit_04_rm</room>
+          <room>rooms\Switch_03_rm</room>
+          <room>rooms\Storage_rm</room>
+        </rooms>
+      </rooms>
     </rooms>
   </rooms>
   <help>
