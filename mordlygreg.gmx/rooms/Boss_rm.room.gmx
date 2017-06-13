@@ -65,6 +65,7 @@
     <instance objName="Door_Start_obj" x="576" y="768" name="inst_C19CA767" locked="0" code="" scaleX="2.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Arrow_Block_Down_obj" x="428" y="1076" name="inst_9C46C421" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Arrow_Block_Down_obj" x="848" y="1076" name="inst_765E51E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Player02_obj" x="616" y="1688" name="inst_A7B93E8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
