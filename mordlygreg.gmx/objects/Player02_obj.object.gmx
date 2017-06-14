@@ -466,7 +466,7 @@ mask_index = Mask_Combat_Mordley_spr;
             <string>///debug jazz
 
 //stamina = 100;
-healthPoints = hpMax;
+//healthPoints = hpMax;
 
 //debug speed
 if (keyboard_check_pressed(ord('0')))
