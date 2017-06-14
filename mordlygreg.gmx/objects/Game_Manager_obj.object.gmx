@@ -63,7 +63,7 @@ global.scaleFactor = 1.5;
 global.pauseBkg = 0;
 global.oldRm = 0;
 
-audio_set_master_gain(0, 0);
+audio_set_master_gain(0, 0.75);
 
 </string>
           </argument>

@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1024</width>
   <height>1088</height>
-  <vsnap>4</vsnap>
-  <hsnap>4</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -72,7 +72,7 @@
     <instance objName="Floor2_Wall_obj" x="320" y="592" name="inst_23928787" locked="0" code="" scaleX="2.5806450843811" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="112" y="592" name="inst_0F54A34A" locked="0" code="" scaleX="4.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="176" y="528" name="inst_1FF23BF0" locked="0" code="" scaleX="0.5" scaleY="4.5" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Wall_obj" x="64" y="384" name="inst_961089DC" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Floor2_Wall_obj" x="64" y="384" name="inst_961089DC" locked="0" code="" scaleX="1.3125" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="224" y="384" name="inst_9EF1C3DA" locked="0" code="" scaleX="14.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="480" y="272" name="inst_8B7B81D3" locked="0" code="" scaleX="6.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="432" y="144" name="inst_DEC17449" locked="0" code="" scaleX="1.5" scaleY="0.5" colour="4294967295" rotation="0"/>
@@ -307,12 +307,13 @@
     <instance objName="puz_westWing_obj" x="-16" y="0" name="inst_01191A42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pressure_Plate_obj" x="304" y="160" name="inst_52E0F076" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pressure_Plate_obj" x="436" y="160" name="inst_0B6F07B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Small_Gate_obj" x="128" y="384" name="inst_1CA172EF" locked="0" code="" scaleX="3" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Small_Gate_obj" x="106" y="387" name="inst_1CA172EF" locked="0" code="" scaleX="3.67741942405701" scaleY="0.34375" colour="4294967295" rotation="0"/>
     <instance objName="toggle1_1_off_obj" x="376" y="432" name="inst_398A3719" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="toggle1_on_obj" x="468" y="920" name="inst_1AA17049" locked="0" code="" scaleX="1.02678573131561" scaleY="1.0625" colour="4294967295" rotation="0"/>
     <instance objName="Key_Gate_obj" x="560" y="856" name="inst_36F7BED5" locked="0" code="" scaleX="1" scaleY="3.5" colour="4294967295" rotation="90"/>
     <instance objName="Fishman_obj" x="492" y="332" name="inst_442C6B69" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Hor_Spikes_obj" x="176" y="368" name="inst_582F8FFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Bars_LEnd_obj" x="135" y="366" name="inst_348E8C8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Bars_REnd_obj" x="194" y="366" name="inst_3AE138F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

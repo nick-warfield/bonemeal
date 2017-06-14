@@ -252,13 +252,13 @@ draw_text_transformed_colour(leftPage, tp2, "Melee: Space", 0.75, 0.75, 0, tc2, 
 draw_text_transformed_colour(leftPage, tp3, "Shoot: Space", 0.75, 0.75, 0, tc3, tc3, tc3, tc3, 1);
 
 //line 4
-draw_text_transformed_colour(leftPage, tp4, "Aim: /", 0.75, 0.75, 0, tc4, tc4, tc4, tc4, 1);
+draw_text_transformed_colour(leftPage, tp4, "Aim: Right Shift", 0.75, 0.75, 0, tc4, tc4, tc4, tc4, 1);
 
 //line 5
 draw_text_transformed_colour(leftPage, tp5, "Reload: Enter", 0.75, 0.75, 0, tc5, tc5, tc5, tc5, 1);
 
 //line 6
-draw_text_transformed_colour(leftPage, tp6, "Cycle: Right Shift", 0.75, 0.75, 0, tc1, tc1, tc1, tc1, 1);
+draw_text_transformed_colour(leftPage, tp6, "Cycle: '/'", 0.75, 0.75, 0, tc1, tc1, tc1, tc1, 1);
 
 //line 7
 draw_text_transformed_colour(leftPage, tp7, "Dodge: Left Shift", 0.75, 0.75, 0, tc2, tc2, tc2, tc2, 1);

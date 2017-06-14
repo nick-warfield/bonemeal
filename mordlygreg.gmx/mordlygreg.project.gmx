@@ -415,13 +415,25 @@
     <sprite>sprites\Crate_Key_spr</sprite>
     <sprite>sprites\Key_spr</sprite>
     <sprite>sprites\Boss_Key_spr</sprite>
-    <sprite>sprites\SmallGate_spr</sprite>
-    <sprite>sprites\SmallGate_02_spr</sprite>
     <sprite>sprites\Plate_Pressed_spr</sprite>
     <sprite>sprites\Plate_Unpressed_spr</sprite>
     <sprite>sprites\Potion_spr</sprite>
-    <sprite>sprites\Horizontal_SwitchGate_spr</sprite>
-    <sprite>sprites\Vertical_SwitchGate_spr</sprite>
+    <sprites name="Gates">
+      <sprite>sprites\Horizontal_SwitchGate_spr</sprite>
+      <sprite>sprites\Vertical_SwitchGate_spr</sprite>
+      <sprite>sprites\SmallGate_spr</sprite>
+      <sprite>sprites\SmallGate_02_spr</sprite>
+      <sprite>sprites\Bars_BL_spr</sprite>
+      <sprite>sprites\Bars_BR_spr</sprite>
+      <sprite>sprites\Bars_TL_spr</sprite>
+      <sprite>sprites\Bars_TR_spr</sprite>
+      <sprite>sprites\Bars_Vert_spr</sprite>
+      <sprite>sprites\Bars_Hor_spr</sprite>
+      <sprite>sprites\Bars_Vert_BEnd_spr</sprite>
+      <sprite>sprites\Bars_Vert_TEnd_spr</sprite>
+      <sprite>sprites\Bars_Hor_LEnd_spr</sprite>
+      <sprite>sprites\Bars_Hor_REnd_spr</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Floor1">
@@ -935,6 +947,17 @@
         <object>objects\GrabArm_obj</object>
         <object>objects\Door_Shut_obj</object>
       </objects>
+    </objects>
+    <objects name="Bar Gates">
+      <object>objects\Bar_obj</object>
+      <object>objects\Bars_Vert_obj</object>
+      <object>objects\Bars_Hor_obj</object>
+      <object>objects\Bars_BL_obj</object>
+      <object>objects\Bars_BR_obj</object>
+      <object>objects\Bars_TEnd_obj</object>
+      <object>objects\Bars_BEnd_obj</object>
+      <object>objects\Bars_LEnd_obj</object>
+      <object>objects\Bars_REnd_obj</object>
     </objects>
     <objects name="SCRATCH">
       <object>objects\floor_obj</object>
