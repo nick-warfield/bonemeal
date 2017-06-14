@@ -26,14 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
-ani_spd = 20/60;
+ani_spd = 37/60;
 
-gate = instance_nearest(x, y, Small_Gate_obj);
+gate = instance_place(x, y, Small_Gate_obj);
 
-if (!gate.opened)
-{
-    image_index = image_number - 1;
-}
+image_index = image_number-1;
 </string>
           </argument>
         </arguments>
@@ -58,32 +55,33 @@ if (!gate.opened)
             <kind>1</kind>
             <string>///open/close gate
 
-
+//if the bars are up
 if (!gate.opened)
-{
-    if (image_index &lt; 1)
-    {
-        image_speed = 0;
-        depth = -5;
-        image_index = 0;
-    }
-    else
-    {
-        image_speed = -ani_spd;
-        depth = -20;
-    }
-}
-else
 {
     depth = -20;
     
+    if (image_index &lt; 1)
+    {
+        image_speed = 0;
+        image_index = 0;
+    }
+    else
+    {image_speed = -ani_spd; }
+}
+//else the bars are down
+else
+{
     if (image_index &gt;= image_number-1)
     {
         image_speed = 0;
         image_index = image_number-1;
+        depth = -5;
     }
     else
-    { image_speed = ani_spd; }
+    {
+        image_speed = ani_spd;
+        depth = -20;
+    }
 }
 </string>
           </argument>

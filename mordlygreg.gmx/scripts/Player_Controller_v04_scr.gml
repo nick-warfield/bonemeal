@@ -84,7 +84,7 @@
     //cycle cylinder command
         if (gamepad_button_check_pressed(0, gp_face4) == true ||
             //gamepad_button_check_pressed(0, gp_face4) == true ||
-            keyboard_check_pressed(vk_rshift) == true)
+            keyboard_check_pressed(191) == true)
             //keyboard_check_pressed(ord('K')) == true ||
             //(mouse_wheel_down() == true && lerpI >= 0.65))
         {
@@ -112,7 +112,7 @@
         if (gamepad_button_check(0, gp_shoulderlb) == true ||
             gamepad_button_check(0, gp_shoulderl) == true ||
             //mouse_check_button(mb_right) == true ||
-            keyboard_check(191) == true)
+            keyboard_check(vk_rshift) == true)
         {
             Input[ATTACK3] = true;
         }
