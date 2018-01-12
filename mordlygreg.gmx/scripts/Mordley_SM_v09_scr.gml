@@ -1,6 +1,7 @@
 //REQUIRES:
 //
 
+if (global.paused) {exit;}
 
 //Reset invulnerability timer once it has finished counting down
 if (current_time >= timeStamp[0]) 
@@ -26,7 +27,7 @@ switch (ds_stack_top(StateStack))
     if (timeStamp[0] == 0 && ds_stack_top(StateStack) != s_DODGE)
     { script_execute(TookDamage_v03_scr); }
     
-    if (healthPoints <= 0) {room_restart();}
+    if (healthPoints <= 0) {script_execute(Checkpoint_Manager_scr(id));}
     
     break;
     
@@ -64,15 +65,16 @@ switch (ds_stack_top(StateStack))
     
     else if (Input[INTERACT])
     {
-        script_execute(Interact_v02_scr);
+        script_execute(Interact_v03_scr);
         ds_stack_push(StateStack, s_INTERACT);
+        //global.paused = true;
     }
     
     else if (Input[ATTACK1])    //swing
     {
         ds_stack_push(StateStack, s_ATTACK1);
         timeStamp[2] = current_time + 200;
-        audio_play_sound(Swing_Umbrella_snd, 50, false);
+        audio_play_sound(UmbrellaCombo_swing02_snd, 50, false);
     }
     
     else if (Input[PARRY])      //parry
@@ -90,7 +92,8 @@ switch (ds_stack_top(StateStack))
     {
         ds_stack_push(StateStack, s_ATTACK4);
         timeStamp[4] = current_time + 300;
-        audio_play_sound(Reload_Gun_snd, 50, false);
+        var reload2 = audio_play_sound(Reload_Gun_02_snd, 50, false);
+        audio_sound_pitch(reload2, 0.7);
     }
     
     else if (Input[ATTACK5])    //cycle
@@ -143,7 +146,7 @@ switch (ds_stack_top(StateStack))
         if (current_time >= timeStamp[2] && ds_stack_top(StateStack) == s_PARRY)    //set the timer for how long the parry window is
         {
             timeStamp[2] = current_time + 50;
-            audio_play_sound(Swing_Umbrella_snd, 50, false);
+            audio_play_sound(UmbrellaCombo_swing02_snd, 50, false);
         }
     }
     

@@ -3,7 +3,7 @@
   <spriteName>Bullet_Mord_spr</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-7</depth>
   <persistent>0</persistent>
   <parentName>Projectile_obj</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -90,7 +90,7 @@ image_blend = c_lime;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (place_meeting(x, y, all) &amp;&amp; !place_meeting(x, y, spawner))
+            <string>if ((place_meeting(x, y, Character_obj) || place_meeting(x, y, Wall_obj)) &amp;&amp; !place_meeting(x, y, spawner))
 {
     instance_destroy();
 }
@@ -98,26 +98,70 @@ image_blend = c_lime;
 if (current_time &gt;= timeStamp2)
 {
     var bull1 = instance_create(x, y, Bullet_obj);
-    bull1.dmg = 2;
-    bull1.speed = 10;
-    bull1.image_angle = direction + 90;
-    bull1.direction = direction + 90;
+    bull1.dmg = 3;
+    bull1.spd = 10;
+    bull1.image_angle = Dir + 90;
+    bull1.Dir = Dir + 90;
     bull1.spawner = spawner;
     bull1.timeStamp = current_time + 300;
     bull1.image_blend = c_lime;
 
     var bull2 = instance_create(x, y, Bullet_obj);
-    bull2.dmg = 2;
-    bull2.speed = 10;
-    bull2.image_angle = direction - 90;
-    bull2.direction = direction - 90;
+    bull2.dmg = 3;
+    bull2.spd = 10;
+    bull2.image_angle = Dir - 90;
+    bull2.Dir = Dir - 90;
     bull2.spawner = spawner;
     bull2.timeStamp = current_time + 300;
     bull2.image_blend = c_lime;
     
+    audio_play_sound(Gunshot_Splitshot_snd, 50, false);
+    
     instance_destroy();
+    
+    spawner.shake = 10;
 }
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>Movement_Update_scr</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>

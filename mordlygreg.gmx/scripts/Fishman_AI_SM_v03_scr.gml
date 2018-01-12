@@ -1,3 +1,11 @@
+if (global.paused) {exit;}
+
+if (!instance_exists(target))
+{
+    ds_stack_clear(StateStack);
+    ds_stack_push(StateStack, -1);
+}
+
 switch(ds_stack_top(StateStack))
 {
   case -1:      //if target not found
@@ -9,7 +17,7 @@ switch(ds_stack_top(StateStack))
     ds_stack_pop(StateStack)
     
     if (timeStamp[0] == 0)
-    { script_execute(TookDamage_v03_scr); }
+    { script_execute(TookDamage_v03_scr); saveData_set_value(key, healthPoints); }
     
     break;
     
@@ -18,7 +26,7 @@ switch(ds_stack_top(StateStack))
     if (current_time >= timeStamp[1])
     {
         spd = 0;
-        if (healthPoints <= 0) {instance_destroy();}
+        if (healthPoints <= 0) {audio_play_sound(Fish_Dead_snd, 60, false); instance_destroy();}
     }
     
     if (current_time >= timeStamp[0])
@@ -46,7 +54,7 @@ switch(ds_stack_top(StateStack))
         ds_stack_push(StateStack, s_ATTACK1);
     }
     else if (distance_to_object(target) <= 3 * 32)
-    { ds_stack_push(StateStack, s_MOVE); audio_play_sound(Fishman_Cry_snd, 30, false); }
+    { ds_stack_push(StateStack, s_MOVE); /*audio_play_sound(Fishman_Cry_snd, 30, false);*/ }
     
     break;
     
@@ -71,11 +79,13 @@ switch(ds_stack_top(StateStack))
   
     spitInst = instance_create(x, y, Bullet_obj);
     spitInst.spawner = id;
-    spitInst.speed = 5;
+    spitInst.spd = 5;
     spitInst.image_angle = thatWay;
-    spitInst.direction = thatWay;
+    spitInst.Dir = thatWay;
     
     spitInst.dmg = 1;
+    
+    audio_play_sound(Fish_Attack_snd, 75, false);
     
     ds_stack_pop(StateStack);
     
@@ -98,12 +108,6 @@ else
     script_execute(Hurt_Fishman_Ani_scr);
 }
 
-
-if (!instance_exists(target))
-{
-    ds_stack_clear(StateStack);
-    ds_stack_push(StateStack, -1);
-}
 
 //if (place_meeting(x, y, target))
 {

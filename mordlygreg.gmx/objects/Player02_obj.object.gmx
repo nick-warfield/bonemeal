@@ -4,9 +4,9 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>-10</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>Character_obj</parentName>
-  <maskName>Mordley_Front_spr</maskName>
+  <maskName>Mask_Combat_Mordley_spr</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -169,6 +169,38 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///GUI init
+
+lerpI = 1;
+rot = 0;
+newRot = 0;
+
+image_speed = 9/60;
+
+shake = 0;
+
+new_wview = 0;
+new_hview = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -187,7 +219,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Player_Controller_v02_scr</script>
+            <script>Player_Controller_v04_scr</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -227,7 +259,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Mordley_SM_v09_scr</script>
+            <script>Mordley_SM_v12_scr</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -333,6 +365,28 @@
       </action>
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Wall Collision Mask
+mask_index = Mask_Wall_Mordley_spr;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>601</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -368,6 +422,67 @@
           <argument>
             <kind>0</kind>
             <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Normal Mask
+mask_index = Mask_Combat_Mordley_spr;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///debug jazz
+
+//stamina = 100;
+//healthPoints = hpMax;
+
+//debug speed
+if (keyboard_check_pressed(ord('0')))
+{
+    if (debug == false) { debug = true; }
+    else {debug = false;}
+}
+
+if (debug) {spd = 13;}
+
+/*
+for(var i = 0; i &lt; array_length_1d(cylinder); i++)
+{
+    cylinder[i] = Bullet_90_obj;
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -411,6 +526,8 @@
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -427,14 +544,127 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///debug jazz
-
-stamina = 100;
+            <string>if (global.paused) {exit;}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>Health_GUI_scr</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>GunHUD_GUI_scr</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self();
 
 /*
-for(var i = 0; i &lt; array_length_1d(cylinder); i++)
+if (facing == RIGHT)
 {
-    cylinder[i] = Bullet_90_obj;
+    draw_ellipse(x + 64, y + 64, x, y - 64, false);
+}
+else if (facing == LEFT)
+{
+    draw_ellipse(x, y - 64, x - 64, y - 64, false);
+}
+else if (facing == UP)
+{
+    draw_ellipse(x + 64, y - 64, x - 64, y, false);
+}
+else if (facing == DOWN)
+{
+    draw_ellipse(x + 64, y - 64, x - 64, y, false);
 }
 </string>
           </argument>

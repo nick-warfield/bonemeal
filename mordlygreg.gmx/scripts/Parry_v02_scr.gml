@@ -19,10 +19,10 @@ else if (facing == DOWN)
 if (instance_exists(thing))
 {
     if (thing.spawner != id)
-    { show_debug_message("Parry");
+    {
         thing.spawner = id;
-        thing.direction = point_direction(x, y, thing.x, thing.y);
-        thing.image_angle = thing.direction;
+        thing.Dir = point_direction(x, y, thing.x, thing.y);
+        thing.image_angle = thing.Dir;
         thing.x = (x + thing.x) / 2;
         thing.y = (y + thing.y) / 2;
         //stamina += 21;

@@ -17,6 +17,8 @@
       <sound>sound\Reload_Gun_snd</sound>
       <sound>sound\Shot01_Gun_snd</sound>
       <sound>sound\Shot02_Gun_snd</sound>
+      <sound>sound\Shot03_Gun_snd</sound>
+      <sound>sound\Reload_Gun_02_snd</sound>
     </sounds>
     <sounds name="Umbrella">
       <sound>sound\Hit01_Umbrella_snd</sound>
@@ -28,26 +30,162 @@
     </sounds>
     <sounds name="Misc">
       <sound>sound\Open_Shrine_snd</sound>
+      <sound>sound\Open_Shrine_02_snd</sound>
       <sound>sound\Crate_Smash_snd</sound>
+      <sound>sound\BodyHit_snd</sound>
+      <sound>sound\Crate_Smash_02_snd</sound>
+      <sound>sound\Door_snd</sound>
+      <sound>sound\FileCambinent_snd</sound>
+    </sounds>
+    <sounds name="Tracks">
+      <sound>sound\Floor1_trk</sound>
+      <sound>sound\Floor2_trk</sound>
+      <sound>sound\Boss_trk</sound>
+    </sounds>
+    <sounds name="NEW">
+      <sound>sound\Boss2_trk</sound>
+      <sound>sound\Main_trk</sound>
+      <sound>sound\Floor1_v2_trk</sound>
+      <sound>sound\Floor1_v2no_piano</sound>
+      <sound>sound\ArrowTrap_collide_snd</sound>
+      <sound>sound\ArrowTrap_shoot_snd</sound>
+      <sound>sound\Bat_attack_snd</sound>
+      <sound>sound\Bat_die_snd</sound>
+      <sound>sound\Body_hit_snd</sound>
+      <sound>sound\Boss_Attack_sword_snd</sound>
+      <sound>sound\Boss_die_snd</sound>
+      <sound>sound\Boss_tentacle_v1_snd</sound>
+      <sound>sound\Boos_tentacle_v2_snd</sound>
+      <sound>sound\Bullet_split_snd</sound>
+      <sound>sound\Candle_light_snd</sound>
+      <sound>sound\Chamber_rotate_snd</sound>
+      <sound>sound\Crate_break_snd</sound>
+      <sound>sound\Crate_push_snd</sound>
+      <sound>sound\Dodge_snd</sound>
+      <sound>sound\Door_locked_snd</sound>
+      <sound>sound\Door_open_snd</sound>
+      <sound>sound\File_cabinet_snd</sound>
+      <sound>sound\Fish_Die_snd</sound>
+      <sound>sound\Fish_spit_snd</sound>
+      <sound>sound\Gunshot_option02_snd</sound>
+      <sound>sound\Reload_snd</sound>
+      <sound>sound\ShrineMove_snd</sound>
+      <sound>sound\UmbrellaCombo_swing01_snd</sound>
+      <sound>sound\UmbrellaCombo_swing02_snd</sound>
+      <sound>sound\UmbrellaCombo_swing03_snd</sound>
+      <sound>sound\ChamberRotate_snd</sound>
+      <sound>sound\Gunshot_option01_snd</sound>
+    </sounds>
+    <sounds name="Missing Audio">
+      <sound>sound\AT_ArrowCollide_snd</sound>
+      <sound>sound\AT_Shoot_snd</sound>
+      <sound>sound\Bat_Attack02_snd</sound>
+      <sound>sound\Bat_Dead_snd</sound>
+      <sound>sound\Candle_Lighter_snd</sound>
+      <sound>sound\Crate_Push01_snd</sound>
+      <sound>sound\Crate_Push02_snd</sound>
+      <sound>sound\Mordley_Dodge_snd</sound>
+      <sound>sound\Fish_Dead_snd</sound>
+      <sound>sound\Fish_Attack_snd</sound>
+      <sound>sound\Gate_OpenClose_snd</sound>
+      <sound>sound\Gunshot_Mine_Explode_snd</sound>
+      <sound>sound\Gunshot_Shotgun_snd</sound>
+      <sound>sound\Gunshot_Splitshot_snd</sound>
+      <sound>sound\Potion_Pickup_snd</sound>
+      <sound>sound\KeyGate_Locked_snd</sound>
+      <sound>sound\KeyGate_Unlocked_snd</sound>
+      <sound>sound\Music_Boss_trk</sound>
+      <sound>sound\Music_Dungeon_trk</sound>
+      <sound>sound\Music_Outside_trk</sound>
+      <sound>sound\Puzzle_Solved_snd</sound>
+      <sound>sound\Puzzle_Wrong_snd</sound>
+      <sound>sound\RoomTrans_Door_snd</sound>
+      <sound>sound\RoomTrans_Ladder_snd</sound>
+      <sound>sound\PressurePlate_Off_snd</sound>
+      <sound>sound\PressurePlate_On_snd</sound>
+      <sound>sound\BloodToggle_OnOff_snd</sound>
+      <sound>sound\Umbrella_Swing1_snd</sound>
+      <sound>sound\Umbrella_Swing2_snd</sound>
+      <sound>sound\Umbrella_Swing3_snd</sound>
+      <sound>sound\Boss_TentacleReach_snd</sound>
+      <sound>sound\Boss_TentacleSweep_snd</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Mordley">
-      <sprites name="Idle">
-        <sprite>sprites\Mordley_Back_spr</sprite>
-        <sprite>sprites\Mordley_Side_spr</sprite>
-        <sprite>sprites\Mordley_Front_spr</sprite>
+      <sprites name="Masks">
+        <sprite>sprites\Mask_Wall_Mordley_spr</sprite>
+        <sprite>sprites\Mask_Combat_Mordley_spr</sprite>
+        <sprite>sprites\Mask_Feet_Mordley_spr</sprite>
       </sprites>
-      <sprites name="Swing">
-        <sprite>sprites\Mordley_Attk_Back_spr</sprite>
-        <sprite>sprites\Mordley_Attk_Side_spr</sprite>
-        <sprite>sprites\Mordley_Attk_Front_spr</sprite>
+      <sprites name="Idle">
+        <sprite>sprites\Mordley_Idle_Back_02_spr</sprite>
+        <sprite>sprites\Mordley_Idle_Side_02_spr</sprite>
+        <sprite>sprites\Mordley_Idle_Front_02_spr</sprite>
+      </sprites>
+      <sprites name="Swings">
+        <sprite>sprites\Mordley_Swing1_Back_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing2_Back_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing3_Back_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing1_Side_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing2_Side_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing3_Side_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing1_Front_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing2_Front_03_spr</sprite>
+        <sprite>sprites\Mordley_Swing3_Front_03_spr</sprite>
+      </sprites>
+      <sprites name="Walk">
+        <sprite>sprites\Mordley_Walk_Back_02_spr</sprite>
+        <sprite>sprites\Mordley_Walk_Side_02_spr</sprite>
+        <sprite>sprites\Mordley_Walk_Front_02_spr</sprite>
       </sprites>
       <sprites name="Gun">
-        <sprite>sprites\Mordley_Front_Aim_spr</sprite>
-        <sprite>sprites\Mordley_Side_Aim_spr</sprite>
-        <sprite>sprites\Mordley_Back_Aim_spr</sprite>
+        <sprite>sprites\Mordley_Gun_Back_02_spr</sprite>
+        <sprite>sprites\Mordley_Gun_Side_02_spr</sprite>
+        <sprite>sprites\Mordley_Gun_Front_02_spr</sprite>
+        <sprite>sprites\Mordley_Gun_Back_03_spr</sprite>
+        <sprite>sprites\Mordley_Gun_Side_03_spr</sprite>
+        <sprite>sprites\Mordley_Gun_Front_03_spr</sprite>
       </sprites>
+      <sprites name="Old">
+        <sprites name="Idle">
+          <sprite>sprites\Mordley_Back_spr</sprite>
+          <sprite>sprites\Mordley_Side_spr</sprite>
+          <sprite>sprites\Mordley_Front_spr</sprite>
+        </sprites>
+        <sprites name="Swing">
+          <sprite>sprites\Mordley_Attk_Back_spr</sprite>
+          <sprite>sprites\Mordley_Attk_Side_spr</sprite>
+          <sprite>sprites\Mordley_Attk_Front_spr</sprite>
+          <sprite>sprites\Mordley_Old_Attk_Back_spr</sprite>
+          <sprite>sprites\Mordley_Old_Attk_Side_spr</sprite>
+          <sprite>sprites\Mordley_Old_Attk_Front_spr</sprite>
+          <sprite>sprites\Mordley_Combo1_Back_spr</sprite>
+          <sprite>sprites\Mordley_Combo2_Back_spr</sprite>
+          <sprite>sprites\Mordley_Combo3_Back_spr</sprite>
+          <sprite>sprites\Mordley_Combo1_Side_spr</sprite>
+          <sprite>sprites\Mordley_Combo2_Side_spr</sprite>
+          <sprite>sprites\Mordley_Combo3_Side_spr</sprite>
+          <sprite>sprites\Mordley_Combo1_Front_spr</sprite>
+          <sprite>sprites\Mordley_Combo2_Front_spr</sprite>
+          <sprite>sprites\Mordley_Combo3_Front_spr</sprite>
+          <sprite>sprites\sprite136</sprite>
+        </sprites>
+        <sprites name="Gun">
+          <sprite>sprites\Mordley_Front_Aim_spr</sprite>
+          <sprite>sprites\Mordley_Side_Aim_spr</sprite>
+          <sprite>sprites\Mordley_Back_Aim_spr</sprite>
+        </sprites>
+        <sprites name="Walk">
+          <sprite>sprites\Mordley_Walk_Side_spr</sprite>
+          <sprite>sprites\Mordley_Walk_Down_spr</sprite>
+          <sprite>sprites\Mordley_Walk_Up_spr</sprite>
+        </sprites>
+      </sprites>
+      <sprite>sprites\Mordley_Hurt_Back_spr</sprite>
+      <sprite>sprites\Mordley_Hurt_Side_spr</sprite>
+      <sprite>sprites\Mordley_Hurt_Front_spr</sprite>
+      <sprite>sprites\Mordley_Ded_spr</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprites name="Fishman">
@@ -91,12 +229,43 @@
       <sprites name="Boss">
         <sprite>sprites\Boss_Idle_spr</sprite>
         <sprite>sprites\Boss_Idle_v02_spr</sprite>
+        <sprite>sprites\Boss_Float_spr</sprite>
+        <sprites name="Grabs">
+          <sprite>sprites\Boss_Grab_Front_spr</sprite>
+          <sprite>sprites\Boss_Grab_Right_spr</sprite>
+          <sprite>sprites\Boss_Grab_Left_spr</sprite>
+          <sprite>sprites\Boss_Grab_Back_spr</sprite>
+          <sprite>sprites\Boss_Grab_Tentacle_spr</sprite>
+        </sprites>
+        <sprites name="Sword Attack">
+          <sprite>sprites\Boss_Sword_spr</sprite>
+          <sprite>sprites\Boss_Throw_Front_spr</sprite>
+          <sprite>sprites\Boss_Throw_Right_spr</sprite>
+          <sprite>sprites\Boss_Throw_Left_spr</sprite>
+          <sprite>sprites\Boss_Throw_Back_spr</sprite>
+        </sprites>
+        <sprites name="Tentacle Sweep">
+          <sprite>sprites\Boss_Sweep_Attack_spr</sprite>
+          <sprite>sprites\Boss_Sweep_Winddown_spr</sprite>
+          <sprite>sprites\Boss_Sweep_Windup_spr</sprite>
+        </sprites>
+        <sprites name="Old">
+          <sprites name="Walk">
+            <sprite>sprites\Boss_Walk_spr</sprite>
+          </sprites>
+          <sprite>sprites\Boss_Sweep_spr</sprite>
+          <sprite>sprites\Boss_Dagger_spr</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Projectiles">
       <sprite>sprites\Spit_v01_spr</sprite>
       <sprite>sprites\Bullet_Mord_spr</sprite>
       <sprite>sprites\Bullet_spr</sprite>
+      <sprite>sprites\Arrow_Up_spr</sprite>
+      <sprite>sprites\Arrow_Down_spr</sprite>
+      <sprite>sprites\Arrow_Left_spr</sprite>
+      <sprite>sprites\Arrow_Right_spr</sprite>
     </sprites>
     <sprites name="Enviornment">
       <sprite>sprites\Chair_spr</sprite>
@@ -125,6 +294,10 @@
         <sprite>sprites\Flowerbed_Orange_spr</sprite>
         <sprite>sprites\Flowerbed_Red_spr</sprite>
         <sprite>sprites\Flowerbed_White_spr</sprite>
+        <sprite>sprites\Flowerbed_Blue_02_spr</sprite>
+        <sprite>sprites\Flowerbed_Orange_02_spr</sprite>
+        <sprite>sprites\Flowerbed_Red_02_spr</sprite>
+        <sprite>sprites\Flowerbed_White_02_spr</sprite>
       </sprites>
       <sprites name="Structures">
         <sprite>sprites\Mansion_v01_spr</sprite>
@@ -137,14 +310,55 @@
       <sprite>sprites\Floor2_Wall_spr</sprite>
       <sprite>sprites\Pond_v02_spr</sprite>
       <sprite>sprites\Manison_v02_spr</sprite>
+      <sprite>sprites\Arrow_Block_Down_spr</sprite>
+      <sprite>sprites\Arrow_Block_Up_spr</sprite>
+      <sprite>sprites\Arrow_Block_Left_spr</sprite>
+      <sprite>sprites\Arrow_Block_Right_spr</sprite>
+      <sprite>sprites\TileWall_spr</sprite>
     </sprites>
     <sprites name="GUI">
+      <sprites name="Menu">
+        <sprites name="Words">
+          <sprite>sprites\team_wrd</sprite>
+          <sprite>sprites\startdemo_wrd</sprite>
+          <sprite>sprites\specialThanks_wrd</sprite>
+          <sprite>sprites\shoot_kb_wrd</sprite>
+          <sprite>sprites\shoot_ctrl_wrd</sprite>
+          <sprite>sprites\reload_kb_wrd</sprite>
+          <sprite>sprites\reload_ctrl_wrd</sprite>
+          <sprite>sprites\pause_kb_wrd</sprite>
+          <sprite>sprites\pause_ctrl_wrd</sprite>
+          <sprite>sprites\options_wrd</sprite>
+          <sprite>sprites\move_ctrl_wrd</sprite>
+          <sprite>sprites\melee_ctrl_wrd</sprite>
+          <sprite>sprites\keyboardmouse_wrd</sprite>
+          <sprite>sprites\interact_kb_wrd</sprite>
+          <sprite>sprites\interact_ctrl_wrd</sprite>
+          <sprite>sprites\exitdemo_wrd</sprite>
+          <sprite>sprites\dodge_kb_wrd</sprite>
+          <sprite>sprites\dodge_ctrl_wrd</sprite>
+          <sprite>sprites\cycle_kb_wrd</sprite>
+          <sprite>sprites\cycle_ctrl_wrd</sprite>
+          <sprite>sprites\credits_wrd</sprite>
+          <sprite>sprites\controls_wrd</sprite>
+          <sprite>sprites\controller_wrd</sprite>
+          <sprite>sprites\aim_kb_wrd</sprite>
+          <sprite>sprites\aim_ctrl_wrd</sprite>
+        </sprites>
+        <sprite>sprites\Logo_spr</sprite>
+        <sprite>sprites\Alpha_Fade_spr</sprite>
+        <sprite>sprites\Icon_spr</sprite>
+        <sprite>sprites\Bullet_Ani_spr</sprite>
+        <sprite>sprites\Journal_spr</sprite>
+      </sprites>
       <sprite>sprites\HUD_Gun_spr</sprite>
-      <sprite>sprites\Journal_spr</sprite>
+      <sprite>sprites\Journal_02_spr</sprite>
       <sprite>sprites\Journal_Blank_spr</sprite>
       <sprite>sprites\hud_revolver_04_spr</sprite>
       <sprite>sprites\hud_revolver_02_spr</sprite>
+      <sprite>sprites\hud_revolver_reloadIndicator_spr</sprite>
       <sprite>sprites\hud_revolver_01_spr</sprite>
+      <sprite>sprites\hp_pickup_spr</sprite>
       <sprite>sprites\hud_revolver_03_empty_spr</sprite>
       <sprite>sprites\hud_revolver_03_full_spr</sprite>
       <sprite>sprites\HUD_Card_spr</sprite>
@@ -161,11 +375,17 @@
       <sprite>sprites\GreyBox_spr</sprite>
       <sprite>sprites\Dialogue_spr</sprite>
       <sprite>sprites\Sign_spr</sprite>
+      <sprite>sprites\Ladder_spr</sprite>
     </sprites>
     <sprites name="SCRATCH">
       <sprite>sprites\Player_spr</sprite>
       <sprite>sprites\BlankTile_spr</sprite>
+      <sprite>sprites\NOMASK</sprite>
+      <sprite>sprites\Text_spr</sprite>
+      <sprite>sprites\toggle_spr</sprite>
+      <sprite>sprites\Door_spr</sprite>
       <sprite>sprites\Pit_spr</sprite>
+      <sprite>sprites\Blood_spr</sprite>
       <sprite>sprites\BlankTile01_spr</sprite>
       <sprite>sprites\Player_Up_spr</sprite>
       <sprite>sprites\Player_Left_spr</sprite>
@@ -173,21 +393,124 @@
       <sprite>sprites\Player_Up_Idle_spr</sprite>
       <sprite>sprites\Player_Down_spr</sprite>
     </sprites>
+    <sprites name="Blood Pits">
+      <sprite>sprites\toggle0_off_spr</sprite>
+      <sprite>sprites\toggle1_1_off_spr</sprite>
+      <sprite>sprites\toggle1_2_off_spr</sprite>
+      <sprite>sprites\toggle1_on_spr</sprite>
+      <sprite>sprites\toggle2_off_spr</sprite>
+      <sprites name="Toggle Room">
+        <sprite>sprites\toggle3_1_off_spr</sprite>
+        <sprite>sprites\toggle3_2_on_spr</sprite>
+        <sprite>sprites\toggle3_3_off_spr</sprite>
+        <sprite>sprites\toggle3_4_on_spr</sprite>
+        <sprite>sprites\toggle4_1_off_spr</sprite>
+        <sprite>sprites\toggle4_2_off_spr</sprite>
+        <sprite>sprites\toggle4_3_on_spr</sprite>
+        <sprite>sprites\toggle4_4_on_spr</sprite>
+      </sprites>
+    </sprites>
     <sprite>sprites\Crate01_spr</sprite>
     <sprite>sprites\Crate02_spr</sprite>
     <sprite>sprites\Crate_Key_spr</sprite>
     <sprite>sprites\Key_spr</sprite>
-    <sprites name="Rooms">
-      <sprite>sprites\sprite97</sprite>
+    <sprite>sprites\Boss_Key_spr</sprite>
+    <sprite>sprites\Plate_Pressed_spr</sprite>
+    <sprite>sprites\Plate_Unpressed_spr</sprite>
+    <sprite>sprites\Potion_spr</sprite>
+    <sprites name="Gates">
+      <sprite>sprites\Horizontal_SwitchGate_spr</sprite>
+      <sprite>sprites\Vertical_SwitchGate_spr</sprite>
+      <sprite>sprites\SmallGate_spr</sprite>
+      <sprite>sprites\SmallGate_02_spr</sprite>
+      <sprite>sprites\Bars_BL_spr</sprite>
+      <sprite>sprites\Bars_BR_spr</sprite>
+      <sprite>sprites\Bars_TL_spr</sprite>
+      <sprite>sprites\Bars_TR_spr</sprite>
+      <sprite>sprites\Bars_Vert_spr</sprite>
+      <sprite>sprites\Bars_Hor_spr</sprite>
+      <sprite>sprites\Bars_Vert_BEnd_spr</sprite>
+      <sprite>sprites\Bars_Vert_TEnd_spr</sprite>
+      <sprite>sprites\Bars_Hor_LEnd_spr</sprite>
+      <sprite>sprites\Bars_Hor_REnd_spr</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
+    <backgrounds name="Floor1">
+      <background>background\Floor1_bottom_bkg</background>
+      <background>background\Floor1_top_bkg</background>
+      <background>background\Floor1_bot_02_bkg</background>
+      <background>background\Floor1_top_02_bkg</background>
+      <background>background\background56</background>
+    </backgrounds>
+    <backgrounds name="Floor2">
+      <backgrounds name="Floor2-v05">
+        <background>background\GatePuzzle_v04_bkg</background>
+        <background>background\Office_v04_bkg</background>
+        <background>background\BPuzzle_v05_bkg</background>
+        <background>background\Pit_v06_flr_bkg</background>
+      </backgrounds>
+      <backgrounds name="Floor2_v04">
+        <background>background\Pit_06_flr_bkg</background>
+        <background>background\Office_03_flr_bkg</background>
+        <background>background\Start_03_flr_bkg</background>
+        <background>background\EnemyRm_03_bkg</background>
+        <background>background\EnemyRm2_03_bkg</background>
+        <background>background\Exit_03_flr_bkg</background>
+        <background>background\Storage_03_bkg</background>
+      </backgrounds>
+      <backgrounds name="Floor2-v03">
+        <background>background\Pit_05_flr_bkg</background>
+        <background>background\Pit_05_obj_bkg</background>
+        <background>background\BPuzzle_04_flr_bkg</background>
+        <background>background\BPuzzle_04_obj_bkg</background>
+        <background>background\GatePuzzle_03_bkg</background>
+      </backgrounds>
+      <backgrounds name="Floor2-v02">
+        <background>background\Start_Flr2_02_bkg</background>
+        <background>background\Office_02_bkg</background>
+        <background>background\Gate_Rm_02_bkg</background>
+        <background>background\EnemyRm_02_bkg</background>
+        <background>background\EnemyRm02_02_bkg</background>
+        <background>background\Pit_02_bkg</background>
+        <background>background\Bullet_Puzzle_02_bkg</background>
+        <background>background\Storage_02_bkg</background>
+        <background>background\Exit_Flr2_02_bkg</background>
+      </backgrounds>
+      <backgrounds name="Floor2-v01">
+        <background>background\Gate_Room_bkg</background>
+        <background>background\Start_Flr2_bkg</background>
+        <background>background\EnemyRm_Flr2_bkg</background>
+        <background>background\EnemyRm2_Flr2_bkg</background>
+        <background>background\Office_Flr2_bkg</background>
+        <background>background\Bullet_Puzzle_Flr2_bkg</background>
+        <background>background\Storage_Flr2_bkg</background>
+        <background>background\Pit_Flr2_bkg</background>
+        <background>background\Exit_Flr2_bkg</background>
+      </backgrounds>
+      <background>background\pit_04_bkg</background>
+      <background>background\Pit_03_bkg</background>
+      <background>background\Bullet_Puzzle_03_bkg</background>
+      <backgrounds name="Floor2_v06">
+        <background>background\background47</background>
+        <background>background\background48</background>
+        <background>background\background49</background>
+        <background>background\background50</background>
+        <background>background\background51</background>
+        <background>background\background52</background>
+        <background>background\lastroomV2</background>
+      </backgrounds>
+    </backgrounds>
+    <backgrounds name="Tiles">
+      <background>background\Floor2_floor_bkg</background>
+      <background>background\Brown_bkg</background>
+    </backgrounds>
     <background>background\gb_v01_bkd</background>
     <background>background\gb_v02_bkd</background>
-    <background>background\Floor2_floor_bkg</background>
     <background>background\Floor1_Background_bkg</background>
     <background>background\Floor1_Foreground_bkg</background>
     <background>background\Floor1_Object_bkg</background>
+    <background>background\Alpha_Fade_bkg</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -205,16 +528,22 @@
       <script>scripts\Dialogue_Init_scr.gml</script>
       <script>scripts\Sign_Init_scr.gml</script>
       <script>scripts\Porjectile_Init_v02_scr.gml</script>
+      <script>scripts\Menu_Init_scr.gml</script>
     </scripts>
     <scripts name="State Machines">
+      <script>scripts\Mordley_SM_v12_scr.gml</script>
+      <script>scripts\Mordley_SM_v11_scr.gml</script>
+      <script>scripts\Mordley_SM_v10_scr.gml</script>
       <script>scripts\Mordley_SM_v09_scr.gml</script>
       <script>scripts\Mordley_SM_v08_scr.gml</script>
       <script>scripts\Mordley_SM_v07_scr.gml</script>
       <script>scripts\Mordley_SM_v06_scr.gml</script>
       <scripts name="Enemies">
+        <script>scripts\Boss_AI_SM_v05_scr.gml</script>
+        <script>scripts\Boss_AI_SM_v04_scr.gml</script>
+        <script>scripts\Boss_AI_SM_v03_scr.gml</script>
         <script>scripts\Boss_AI_SM_scr.gml</script>
         <script>scripts\Boss_AI_SM_v02_scr.gml</script>
-        <script>scripts\Boss_AI_SM_v03_scr.gml</script>
         <script>scripts\Bat_AI_SM_v02_scr.gml</script>
         <script>scripts\Fishman_AI_SM_v03_scr.gml</script>
       </scripts>
@@ -235,8 +564,12 @@
           <script>scripts\Shoot_Revolver_scr.gml</script>
           <script>scripts\Aim_v02_scr.gml</script>
         </scripts>
+        <script>scripts\Interact_v03_scr.gml</script>
         <script>scripts\Interact_v02_scr.gml</script>
         <script>scripts\Swing_scr.gml</script>
+        <script>scripts\Swing_v02_scr.gml</script>
+        <script>scripts\Swing_v03_scr.gml</script>
+        <script>scripts\Swing_Spin_scr.gml</script>
         <script>scripts\Parry_v02_scr.gml</script>
       </scripts>
       <scripts name="Boss">
@@ -249,6 +582,8 @@
         <script>scripts\Move_Mordley_Ani_scr.gml</script>
         <script>scripts\Aim_Mordley_Ani_scr.gml</script>
         <script>scripts\Attack_Mordley_Ani_scr.gml</script>
+        <script>scripts\Hurt_Mordley_Ani_scr.gml</script>
+        <script>scripts\Attack_Old_Mordley_Ani_scr.gml</script>
       </scripts>
       <script>scripts\Move_Fishman_Ani_scr.gml</script>
       <script>scripts\Hurt_Fishman_Ani_scr.gml</script>
@@ -257,6 +592,7 @@
     </scripts>
     <scripts name="GUI">
       <script>scripts\Dialogue_GUI_scr.gml</script>
+      <script>scripts\Dialogue_GUI_02_scr.gml</script>
       <script>scripts\Health_GUI_scr.gml</script>
       <script>scripts\GunHUD_GUI_scr.gml</script>
     </scripts>
@@ -272,7 +608,10 @@
       <script>scripts\Small_Object_Collision_scr.gml</script>
     </scripts>
     <scripts name="Controllers">
+      <script>scripts\Player_Controller_v04_scr.gml</script>
+      <script>scripts\Player_Controller_v03_scr.gml</script>
       <script>scripts\Player_Controller_v02_scr.gml</script>
+      <script>scripts\MenuController_scr.gml</script>
     </scripts>
     <scripts name="SCRATCH">
       <script>scripts\Character_Collision_v02_scr.gml</script>
@@ -315,9 +654,18 @@
       <script>scripts\Bat_AI_SM_v01_scr.gml</script>
     </scripts>
     <script>scripts\Sound_Director_scr.gml</script>
+    <script>scripts\Sound_Director_v02_scr.gml</script>
     <script>scripts\Pause_scr.gml</script>
     <script>scripts\DoNothing_scr.gml</script>
     <script>scripts\SetDamageVars_scr.gml</script>
+    <script>scripts\Checkpoint_Manager_scr.gml</script>
+    <script>scripts\saveData_set_value.gml</script>
+    <script>scripts\saveData_get_value.gml</script>
+    <script>scripts\saveData_generate_key.gml</script>
+    <script>scripts\ScreenShake_scr.gml</script>
+    <script>scripts\arc.gml</script>
+    <script>scripts\bias.gml</script>
+    <script>scripts\interpolate.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Characters">
@@ -333,10 +681,6 @@
     </objects>
     <objects name="Walls">
       <object>objects\Wall_obj</object>
-      <objects name="Signs">
-        <object>objects\Sign_obj</object>
-        <object>objects\Invisible_Sign_obj</object>
-      </objects>
       <objects name="Arrow Blocks">
         <object>objects\Arrow_Block_Down_obj</object>
         <object>objects\Arrow_Block_Right_obj</object>
@@ -363,75 +707,337 @@
         <object>objects\Mansion_v01_obj</object>
         <object>objects\Manison_v02_obj</object>
         <object>objects\Gate_obj</object>
-        <object>objects\object52</object>
       </objects>
       <object>objects\GreBox_Collisions_obj</object>
       <object>objects\Invisible_Wall_obj</object>
       <object>objects\Floor2_Wall_obj</object>
       <object>objects\Floor2_Door_obj</object>
     </objects>
+    <objects name="Signs">
+      <object>objects\Sign_obj</object>
+      <object>objects\Invisible_Sign_obj</object>
+      <object>objects\Shrine_Txt_obj</object>
+      <object>objects\Gate_Txt_obj</object>
+      <object>objects\Flwer_Txt_01_obj</object>
+      <object>objects\Flwer_Txt_02_obj</object>
+      <object>objects\Flwer_Txt_03_obj</object>
+      <object>objects\Flwer_Txt_04_obj</object>
+    </objects>
+    <objects name="Doors">
+      <objects name="Dungeon">
+        <objects name="Office">
+          <object>objects\Central2Northwing_obj</object>
+          <object>objects\Central2Eastwing_obj</object>
+          <object>objects\Central2Westwing_obj</object>
+          <object>objects\Central2Southwing_obj</object>
+        </objects>
+        <objects name="Northwing">
+          <objects name="Fish Room">
+            <object>objects\Fish2Central_obj</object>
+            <object>objects\Fish2Shrine_obj</object>
+            <object>objects\Fish2Storage_obj</object>
+            <object>objects\Fish2Gate_obj</object>
+            <object>objects\Fish2Westwing_obj</object>
+          </objects>
+          <objects name="Storage">
+            <object>objects\Storage2Fish_obj</object>
+            <object>objects\Storage2Shrine_obj</object>
+          </objects>
+          <objects name="Shrine Grounds">
+            <object>objects\Shrine2Fish_obj</object>
+            <object>objects\Shrine2Storage_obj</object>
+          </objects>
+        </objects>
+        <objects name="Eastwing">
+          <objects name="Combat Room">
+            <object>objects\Combat2Central_obj</object>
+            <object>objects\Combat2Gate_obj</object>
+            <object>objects\Combat2Toggle_obj</object>
+          </objects>
+          <objects name="Gate Room">
+            <object>objects\Gate2Combat_obj</object>
+            <object>objects\Gate2Northwing_obj</object>
+          </objects>
+        </objects>
+        <objects name="Southwing">
+          <objects name="South of Office">
+            <object>objects\Southwing2Central_obj</object>
+            <object>objects\Southwing2Study_obj</object>
+            <object>objects\Southwing2Toggle_obj</object>
+          </objects>
+          <objects name="Study">
+            <object>objects\Study2Westwing_obj</object>
+            <object>objects\Study2Southwing_obj</object>
+            <object>objects\Study2Boss_obj</object>
+          </objects>
+          <objects name="Toggle Puzzle">
+            <object>objects\Toggle2Southwing_obj</object>
+            <object>objects\Toggle2Eastwing_obj</object>
+          </objects>
+        </objects>
+        <objects name="Westwing">
+          <objects name="Pit n Monsters">
+            <object>objects\Pit2Central_obj</object>
+            <object>objects\Pit2Northwing_obj</object>
+            <object>objects\Pit2Study_obj</object>
+          </objects>
+        </objects>
+      </objects>
+      <objects name="Floor2">
+        <objects name="Start">
+          <object>objects\Start_Exit_obj</object>
+          <object>objects\Start_Office_obj</object>
+          <object>objects\Start_Floor1_obj</object>
+        </objects>
+        <objects name="Office">
+          <object>objects\Office_Gate_obj</object>
+          <object>objects\Office_Start_obj</object>
+          <object>objects\Office_Storage_obj</object>
+        </objects>
+        <objects name="Gates">
+          <object>objects\Gate_Office_obj</object>
+          <object>objects\Gate_Enemy1_obj</object>
+          <object>objects\Gate_Enemy2_obj</object>
+          <object>objects\Gate_Pit_obj</object>
+          <object>objects\Gate_Combat_obj</object>
+        </objects>
+        <objects name="Combat Room">
+          <object>objects\Combat_Gate_obj</object>
+          <object>objects\Combat_Pit_obj</object>
+        </objects>
+        <objects name="Enemy1">
+          <object>objects\Enemy1_Office_obj</object>
+        </objects>
+        <objects name="Enemy2">
+          <object>objects\Enemy2_Enemy1_obj</object>
+        </objects>
+        <objects name="Pit">
+          <object>objects\Pit_Gate_obj</object>
+          <object>objects\Pit_Switch_obj</object>
+          <object>objects\Pit_Combat_obj</object>
+        </objects>
+        <objects name="Switch">
+          <object>objects\Switch_Pit_obj</object>
+          <object>objects\Switch_Storage_obj</object>
+        </objects>
+        <objects name="Storage">
+          <object>objects\Storage_Switch_obj</object>
+          <object>objects\Storage_Office_obj</object>
+        </objects>
+        <objects name="Exit">
+          <object>objects\Exit_Floor1_obj</object>
+          <object>objects\Exit_Start_obj</object>
+        </objects>
+      </objects>
+      <object>objects\Door_Next_obj</object>
+      <object>objects\Door_Dungeon_obj</object>
+      <object>objects\Door_Start_obj</object>
+      <object>objects\Door_Boss_obj</object>
+    </objects>
     <objects name="Misc">
       <object>objects\Small_obj</object>
       <objects name="Keys">
         <object>objects\Key_obj</object>
+        <object>objects\BigKey_obj</object>
       </objects>
       <objects name="Puzzles">
         <objects name="Candles">
-          <object>objects\Combination_Puzzle_obj</object>
-          <object>objects\Candle_Blue_obj</object>
-          <object>objects\Candle_Orange_obj</object>
-          <object>objects\Candle_Red_obj</object>
-          <object>objects\Candle_White_obj</object>
-          <object>objects\Shrine_obj</object>
+          <object>objects\candle0_obj</object>
+          <object>objects\candle1_obj</object>
+          <object>objects\candle2_obj</object>
+          <object>objects\candle3_obj</object>
+          <object>objects\candle4_obj</object>
+          <objects name="Old">
+            <object>objects\Combination_Puzzle_obj</object>
+            <object>objects\Candle_Blue_obj</object>
+            <object>objects\Candle_Orange_obj</object>
+            <object>objects\Candle_Red_obj</object>
+            <object>objects\Candle_White_obj</object>
+            <object>objects\Shrine_obj</object>
+          </objects>
         </objects>
         <objects name="Gate Puzzle">
-          <object>objects\Gate_Puzzle_01_obj</object>
+          <object>objects\Gate_Puzzle_02_obj</object>
+          <object>objects\Gate_Puzzle_03_obj</object>
+          <object>objects\Gate_Puzzle_05_obj</object>
+          <object>objects\Gate_Puzzle_04_obj</object>
+          <object>objects\Gate_Puzzle_06_obj</object>
+          <object>objects\Gate_Puzzle_07_obj</object>
           <object>objects\Pressure_Plate_obj</object>
+          <object>objects\Small_Gate_obj</object>
+          <object>objects\Key_Gate_obj</object>
+          <object>objects\BigKey_Gate_obj</object>
         </objects>
-      </objects>
-      <objects name="Doors">
-        <object>objects\Door_Next_obj</object>
-        <object>objects\Door_Start_obj</object>
       </objects>
       <object>objects\Crate01_obj</object>
       <object>objects\Crate02_obj</object>
       <object>objects\Crate_Key_obj</object>
       <object>objects\Metal_Box_obj</object>
       <object>objects\Pit_obj</object>
+      <object>objects\BloodPrint_obj</object>
+      <object>objects\Combat_Lock_obj</object>
+      <object>objects\Ladder_obj</object>
+      <object>objects\HP_Pickup_obj</object>
+      <object>objects\Vert_Spikes_obj</object>
+      <object>objects\Hor_Spikes_obj</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>
       <object>objects\Bullet_obj</object>
+      <object>objects\Zapper_obj</object>
+      <object>objects\GhostBullet_obj</object>
       <object>objects\Bullet_90_obj</object>
+      <object>objects\SpreadShot_obj</object>
+      <object>objects\SpreadShot02_obj</object>
       <object>objects\SlowMo_Bullet_obj</object>
+      <object>objects\Arrow_obj</object>
     </objects>
     <objects name="Utility">
-      <object>objects\Dialogue_obj</object>
-      <object>objects\Speaker_obj</object>
-      <object>objects\Pause_obj</object>
-      <object>objects\EnemySpawn_obj</object>
-      <object>objects\SwingArc_obj</object>
+      <object>objects\Game_Manager_obj</object>
       <object>objects\Camera_obj</object>
-      <object>objects\GrabArm_obj</object>
-      <object>objects\Door_Shut_obj</object>
-      <object>objects\Start_Menu_obj</object>
+      <objects name="Dungeon Puzzles">
+        <object>objects\bloodToggle_obj</object>
+        <object>objects\dunPuzzle_obj</object>
+        <object>objects\puz_combatroom_obj</object>
+        <object>objects\puz_gateRoom_obj</object>
+        <object>objects\puz_northWing_obj</object>
+        <object>objects\puz_Storage_obj</object>
+        <object>objects\puz_westWing_obj</object>
+        <object>objects\puz_southWing_obj</object>
+        <object>objects\puz_toggleRoom_obj</object>
+        <objects name="blood pits">
+          <object>objects\toggle0_off_obj</object>
+          <object>objects\toggle1_2_off_obj</object>
+          <object>objects\toggle1_1_off_obj</object>
+          <object>objects\toggle1_on_obj</object>
+          <object>objects\toggle2_off_obj</object>
+          <object>objects\toggle3_1_off_obj</object>
+          <object>objects\toggle3_3_off_obj</object>
+          <object>objects\toggle3_2_on_obj</object>
+          <object>objects\toggle3_4_on_obj</object>
+          <object>objects\toggle4_1_off_obj</object>
+          <object>objects\toggle4_2_off_obj</object>
+          <object>objects\toggle4_3_on_obj</object>
+          <object>objects\toggle4_4_on_obj</object>
+        </objects>
+      </objects>
+      <objects name="Menu Jazz">
+        <object>objects\Init_Game_obj</object>
+        <object>objects\Menu_obj</object>
+        <object>objects\Start_Menu_obj</object>
+        <object>objects\Controls_Menu_obj</object>
+        <object>objects\Options_Menu_obj</object>
+        <object>objects\Credits_obj</object>
+        <object>objects\DedRoom_obj</object>
+      </objects>
+      <objects name="Checkpoints">
+        <object>objects\Checkpoint_01_obj</object>
+      </objects>
+      <objects name="Sound Players">
+        <object>objects\Track_Floor1_obj</object>
+        <object>objects\Track_Floor2_obj</object>
+        <object>objects\Track_Boss_obj</object>
+      </objects>
+      <objects name="Misc">
+        <object>objects\Dialogue_obj</object>
+        <object>objects\Speaker_obj</object>
+        <object>objects\Pause_obj</object>
+        <object>objects\EnemySpawn_obj</object>
+        <object>objects\SwingArc_obj</object>
+        <object>objects\GrabArm_obj</object>
+        <object>objects\Door_Shut_obj</object>
+      </objects>
+    </objects>
+    <objects name="Bar Gates">
+      <object>objects\Bar_obj</object>
+      <object>objects\Bars_Vert_obj</object>
+      <object>objects\Bars_Hor_obj</object>
+      <object>objects\Bars_BL_obj</object>
+      <object>objects\Bars_BR_obj</object>
+      <object>objects\Bars_TEnd_obj</object>
+      <object>objects\Bars_BEnd_obj</object>
+      <object>objects\Bars_LEnd_obj</object>
+      <object>objects\Bars_REnd_obj</object>
     </objects>
     <objects name="SCRATCH">
       <object>objects\floor_obj</object>
+      <object>objects\bloodToggle_off_obj</object>
+      <object>objects\bloodToggle_on_obj</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room8</room>
-    <rooms name="Alpha Demo">
+    <room>rooms\RunFirstALWAYS</room>
+    <rooms name="Current Game">
       <room>rooms\Start_Menu</room>
-      <room>rooms\Laceys_Room</room>
-      <room>rooms\Floor2</room>
+      <room>rooms\Outside_rm</room>
+      <rooms name="Dungeon">
+        <room>rooms\New_office</room>
+        <rooms name="North Wing">
+          <room>rooms\northofoffice</room>
+          <room>rooms\shrineArea</room>
+          <room>rooms\storageroom2</room>
+        </rooms>
+        <rooms name="East Wing">
+          <room>rooms\CombatRoom_Flipped</room>
+          <room>rooms\gates_and_crates</room>
+        </rooms>
+        <rooms name="South Wing">
+          <room>rooms\study</room>
+          <room>rooms\southofoffice</room>
+          <room>rooms\togglex3</room>
+          <room>rooms\togglex3_v3</room>
+          <room>rooms\togglex3_v2</room>
+        </rooms>
+        <rooms name="West Wing">
+          <room>rooms\pitandmonsterroom</room>
+        </rooms>
+        <rooms name="SCRATCH">
+          <room>rooms\connectempty</room>
+          <room>rooms\connectswtich</room>
+          <room>rooms\New_combatroom</room>
+          <room>rooms\northofoffice_v1</room>
+          <room>rooms\southofoffice_v1</room>
+          <room>rooms\togglex3_v1</room>
+          <room>rooms\pitandmonsterroom_v1</room>
+          <room>rooms\northofoffice_v2</room>
+        </rooms>
+        <room>rooms\Boss_rm</room>
+      </rooms>
+      <rooms name="Options/Menus/Utility">
+        <room>rooms\Controls_rm</room>
+        <room>rooms\Options_rm</room>
+        <room>rooms\Credits_rm</room>
+        <room>rooms\Room_Transition</room>
+      </rooms>
     </rooms>
-    <room>rooms\room1</room>
-    <room>rooms\room4</room>
-    <room>rooms\GreyBox_v02_rm</room>
-    <room>rooms\GreyBox_rm</room>
-    <room>rooms\room0_rm</room>
+    <rooms name="Scratch">
+      <room>rooms\Start_Flr2_rm</room>
+      <room>rooms\room0_rm</room>
+      <room>rooms\room1</room>
+      <room>rooms\room4</room>
+      <room>rooms\Laceys_Room</room>
+      <room>rooms\GreyBox_v02_rm</room>
+      <room>rooms\GreyBox_rm</room>
+      <room>rooms\Floor2</room>
+      <room>rooms\Pit_rm</room>
+      <room>rooms\Pit_02_rm</room>
+      <room>rooms\Switch_rm</room>
+      <room>rooms\Switch_02_rm</room>
+      <room>rooms\Pit_03_rm</room>
+      <room>rooms\Enemy2_rm</room>
+      <room>rooms\Enemy1_rm</room>
+      <room>rooms\Exit_Flr2_rm</room>
+      <rooms name="Beta Demo">
+        <rooms name="Floor2">
+          <room>rooms\Office_rm</room>
+          <room>rooms\Gate_Room_rm</room>
+          <room>rooms\Combat_Prototype_rm</room>
+          <room>rooms\Pit_04_rm</room>
+          <room>rooms\Switch_03_rm</room>
+          <room>rooms\Storage_rm</room>
+        </rooms>
+      </rooms>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

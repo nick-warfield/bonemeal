@@ -30,7 +30,12 @@
 sprite_index = Walk_Front_Bat_spr;
 image_speed = (1/6);
 
-healthPoints = 2;
+var hp = saveData_get_value(key);
+if (!is_undefined(hp) )
+{ healthPoints = hp; }
+else
+{ healthPoints = 2; }
+
 </string>
           </argument>
         </arguments>
@@ -114,6 +119,29 @@ healthPoints = 2;
           <argument>
             <kind>0</kind>
             <string></string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///update x and y save data
+saveData_set_value(x_key, x);
+saveData_set_value(y_key, y);
+</string>
           </argument>
         </arguments>
       </action>

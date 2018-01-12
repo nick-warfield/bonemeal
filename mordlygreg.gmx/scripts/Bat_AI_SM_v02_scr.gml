@@ -1,3 +1,12 @@
+if (global.paused) {exit;}
+
+if (!instance_exists(target))
+{
+    ds_stack_clear(StateStack);
+    ds_stack_push(StateStack, -1);
+}
+
+
 switch(ds_stack_top(StateStack))
 {
   case -1:      //if target not found
@@ -9,7 +18,7 @@ switch(ds_stack_top(StateStack))
     ds_stack_pop(StateStack);
     
     if (timeStamp[0] == 0)
-    { script_execute(TookDamage_v03_scr); }
+    { script_execute(TookDamage_v03_scr); saveData_set_value(key, healthPoints); }
     
     break;
   
@@ -34,7 +43,7 @@ switch(ds_stack_top(StateStack))
     if (current_time >= timeStamp[1])
     {
         spd = 0;
-        if (healthPoints <= 0) {instance_destroy();}
+        if (healthPoints <= 0) { audio_play_sound(Bat_Attack02_snd, 50, false); instance_destroy();}
     }
     
     if (current_time >= timeStamp[0])
@@ -54,9 +63,20 @@ switch(ds_stack_top(StateStack))
     {
         timeStamp[2] = current_time + random_range(1000, 2000);
         ds_stack_push(StateStack, s_MOVE);
+        audio_play_sound(Bat_Dead_snd, 50, false);
     }
     else if (timeStamp[2] != 0 && distance_to_object(target) > 15 * 32)
     { ds_stack_push(StateStack, s_ATTACK2); }
+    
+    //check to see if the bat has been off screen for a long time
+    else if (timeStamp[2] != 0 && current_time >= timeStamp[4]+7000 && 
+            (x < view_xview || x > view_xview+view_wview || y < view_yview || y > view_yview+view_hview) )
+    { show_debug_message("Back to screen");
+        Dir = point_direction(x, y, target.x, target.y);
+        spd = 3.5;
+        timeStamp[4] = current_time + 2000;
+        ds_stack_push(StateStack, s_ATTACK1);
+    }
     
     break;
     
@@ -76,9 +96,11 @@ switch(ds_stack_top(StateStack))
         else 
         {
             Dir = point_direction(x, y, target.x, target.y);
-            spd = 4;
+            spd = 3.5;
             timeStamp[4] = current_time + 1000;
             ds_stack_push(StateStack, s_ATTACK1);
+            
+            audio_play_sound(Bat_Dead_snd, 50, false);
         }
     }
     
@@ -131,12 +153,6 @@ else
     sprite_index = Hurt_Front_Bat_spr;
 }
 
-
-if (!instance_exists(target))
-{
-    ds_stack_clear(StateStack);
-    ds_stack_push(StateStack, -1);
-}
 
 
 if (place_meeting(x, y, target))    //damage the target

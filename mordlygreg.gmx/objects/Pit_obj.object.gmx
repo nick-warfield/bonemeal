@@ -3,7 +3,7 @@
   <spriteName>Pit_spr</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>5</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,22 +25,29 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var oops = instance_place(x, y, all);
+            <string>if (global.paused) {exit;}
+
+var oops = instance_place(x, y, Player02_obj);
 
 //use a switch statement to check for things I want to fall in pits and ignore other things
 if (instance_exists(oops) &amp;&amp; oops.object_index != Bat_obj)
 {
-    if(place_meeting(x, y, oops))
+    oops.mask_index = Mask_Feet_Mordley_spr;
+    if(place_meeting(x, y, oops) &amp;&amp; ds_stack_top(oops.StateStack) != s_DODGE &amp;&amp; oops.timeStamp[0] == 0)
     {
+        oops.damage = 2;
+        oops.hurter = id;
+        ds_stack_push(oops.StateStack, s_DAMAGED);
         //use some vector math to create a dragging sort of effect that slowly pulls object into the center of the pit
         //oops.spd -= 1;
     
-        if((oops.x &lt; x+16 &amp;&amp; oops.x &gt; x-16) &amp;&amp; (oops.y+24 &lt; y+16 &amp;&amp; oops.y+24 &gt; y-16) &amp;&amp; ds_stack_top(oops.StateStack))
-        {
-            oops.healthPoints = 0;
-            ds_stack_push(oops.StateStack, s_DAMAGED);
-        }
+        //if((oops.x &lt; x+16 &amp;&amp; oops.x &gt; x-16) &amp;&amp; (oops.y+24 &lt; y+16 &amp;&amp; oops.y+24 &gt; y-16) &amp;&amp; ds_stack_top(oops.StateStack))
+        //{
+            //oops.healthPoints -= 2;
+            //ds_stack_push(oops.StateStack, s_DAMAGED);
+        //}
     }
+    oops.mask_index = Mask_Wall_Mordley_spr;
 }
 </string>
           </argument>

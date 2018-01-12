@@ -38,7 +38,7 @@ switch (State)
     {
         State = s_ATTACK1;
         timeStamp[2] = current_time + 200;
-        audio_play_sound(Swing_Umbrella_snd, 50, false);
+        audio_play_sound(UmbrellaCombo_swing02_snd, 50, false);
         stamina -= 10;
     }
     
@@ -57,7 +57,7 @@ switch (State)
         State = s_ATTACK4;
         timeStamp[4] = current_time + 750;
         spd = 1;
-        audio_play_sound(Reload_Gun_snd, 50, false);
+        audio_play_sound(Reload_snd, 50, false);
     }
     
     else if (Input[ATTACK5])    //cycle
@@ -108,7 +108,7 @@ switch (State)
         if (current_time >= timeStamp[2] && State = s_PARRY)    //set the timer for how long the parry window is
         {
             timeStamp[2] = current_time + 50;
-            audio_play_sound(Swing_Umbrella_snd, 50, false);
+            audio_play_sound(UmbrellaCombo_swing02_snd, 50, false);
         }
     }
     

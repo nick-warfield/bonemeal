@@ -66,9 +66,8 @@
           <argument>
             <kind>1</kind>
             <string>spawner = 0;
+Dir = 0;
 spd = 0;
-
-
 </string>
           </argument>
         </arguments>
@@ -91,7 +90,7 @@ spd = 0;
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Projectile_Collision_scr</script>
+            <script>Movement_Update_scr</script>
           </argument>
           <argument>
             <kind>0</kind>

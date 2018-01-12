@@ -6,7 +6,7 @@
   <depth>-5</depth>
   <persistent>0</persistent>
   <parentName>Enemy_obj</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>Boss_Idle_v02_spr</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>event_inherited();
 
+image_speed = 15/60;
+
 count[0] = 0;
 
 cv = false;
@@ -36,6 +38,7 @@ yMaxSpd = 0;    //y destination of max velocity for dash
 
 arm = 0;
 healthPoints = 30;
+hpMax = healthPoints;
 triggered = true;
 State = -10;
 </string>
@@ -62,11 +65,15 @@ State = -10;
             <kind>1</kind>
             <string>event_inherited();
 
-var d1 = instance_position(864, 1632, Wall_obj);
-var d2 = instance_position(896, 1632, Wall_obj);
+var d1 = instance_find(Floor2_Door_obj, 0);
+//var d2 = instance_find(Floor2_Door_obj, 0);
 
 with (d1) {instance_destroy();}
-with (d2) {instance_destroy();}
+//with (d2) {instance_destroy();}
+
+//audio_stop_sound(Boss2_trk);
+
+saveData_set_value(key, 0);
 </string>
           </argument>
         </arguments>
@@ -89,7 +96,7 @@ with (d2) {instance_destroy();}
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Boss_AI_SM_v03_scr</script>
+            <script>Boss_AI_SM_v05_scr</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -234,6 +241,44 @@ with (d2) {instance_destroy();}
         </arguments>
       </action>
     </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Draw hpbar while fighing the boss
+var h = display_get_height()/global.scaleFactor;
+var w = display_get_width()/global.scaleFactor;
+var num = healthPoints/hpMax * 100;
+draw_set_halign(fa_center);
+
+
+//draw_rectangle_colour(198, h-77, w-198, h-48, c_white, c_white, c_white, c_white, false);
+
+draw_line_width_colour(199, h-77, w-201, h-77, 2, c_white, c_white);
+draw_line_width_colour(199, h-49, w-201, h-49, 2, c_white, c_white);
+draw_triangle_colour(200, h-77, 200, h-47, 187.5, h-62.5, c_white, c_white, c_white, false);
+draw_triangle_colour(w-200, h-77, w-200, h-47, w-187.5, h-62.5, c_white, c_white, c_white, false);
+
+
+draw_healthbar(200, h-75, w-200, h-50, num, c_navy, c_maroon, c_maroon, 0, false, false);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -253,6 +298,10 @@ with (d2) {instance_destroy();}
             <kind>1</kind>
             <string>draw_self();
 
+//reset color to white
+draw_set_colour(c_white);
+
+//draw melee attack
 if (ds_stack_top(StateStack) == s_ATTACK4)
 {
     if (current_time &lt;= timeStamp[3] - 300)
@@ -260,6 +309,9 @@ if (ds_stack_top(StateStack) == s_ATTACK4)
     else
     { draw_line_width_colour(x, y, x+lengthdir_x(5*32, Dir), y+lengthdir_y(5*32, Dir), 10, c_red, c_red); }
 }
+
+/*
+//draw knockback telegraph
 else if (ds_stack_top(StateStack) == s_ATTACK5)
 {
     //var elipx = lengthdir_x(6*32, Dir);
@@ -281,6 +333,9 @@ else if (ds_stack_top(StateStack) == s_ATTACK5)
     
     draw_ellipse(elipx1, elipy1, elipx2, elipy2, false);
 }
+
+
+
 </string>
           </argument>
         </arguments>
