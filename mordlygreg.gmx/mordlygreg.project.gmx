@@ -440,6 +440,7 @@
       <background>background\StorageRoom_bkg</background>
       <background>background\NorthRoom_btm_bkg</background>
       <background>background\NorthRoom_top_bkg</background>
+      <background>background\GateRoom_bkg</background>
     </backgrounds>
     <backgrounds name="Floor1">
       <background>background\Floor1_bottom_bkg</background>

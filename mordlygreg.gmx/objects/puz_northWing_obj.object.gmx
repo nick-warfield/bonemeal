@@ -36,7 +36,7 @@ gate2 = instance_find(Small_Gate_obj, 1);
 gate3 = instance_find(Small_Gate_obj, 2);
 gate4 = instance_find(Small_Gate_obj, 3);
 gate5 = instance_find(Small_Gate_obj, 4);
-//gate6 = instance_find(Small_Gate_obj, 5);
+gate6 = instance_find(Small_Gate_obj, 5);
 
 //gate7 = instance_find(Small_Gate_obj, 6);
 //gate8 = instance_find(Small_Gate_obj, 7);
@@ -79,14 +79,14 @@ if (plate2.active)
     gate3.opened = false;
     gate4.opened = false;
     gate5.opened = false;
-    //gate6.opened = false;
+    gate6.opened = false;
 }
 else
 {
     gate3.opened = true;
     gate4.opened = true;
     gate5.opened = true;
-    //gate6.opened = true;
+    gate6.opened = true;
 }
 
 /*
