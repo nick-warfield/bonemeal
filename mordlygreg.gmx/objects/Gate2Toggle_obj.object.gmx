@@ -28,18 +28,18 @@
             <string>with (Game_Manager_obj)
 {
     state = Trans_State.out;
-    trans_dir = Trans_Dir.left;
-    target_room = pitandmonsterroom;
+    trans_dir = Trans_Dir.down;
+    target_room = togglex3;
     trans_snd = RoomTrans_Door_snd;
-    playerx = 640;
-    playery = 704;
+    playerx = 864;
+    playery = 112;
 }
 instance_destroy();
 /*
-room_goto(pitandmonsterroom);
+room_goto(CombatRoom_Flipped);
 
-other.x = 640;
-other.y = 704;
+other.x = 864;
+other.y = 112;
 </string>
           </argument>
         </arguments>
