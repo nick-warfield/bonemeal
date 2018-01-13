@@ -440,7 +440,12 @@
       <background>background\StorageRoom_bkg</background>
       <background>background\NorthRoom_btm_bkg</background>
       <background>background\NorthRoom_top_bkg</background>
-      <background>background\GateRoom_bkg</background>
+      <background>background\GateRoom_btm_bkg</background>
+      <background>background\GateRoom_top_bkg</background>
+      <background>background\CombatRoom_btm_bkg</background>
+      <background>background\CombatRoom_top_bkg</background>
+      <background>background\CombatRoom2_btm_bkg</background>
+      <background>background\CombatRoom2_top_bkg</background>
     </backgrounds>
     <backgrounds name="Floor1">
       <background>background\Floor1_bottom_bkg</background>
