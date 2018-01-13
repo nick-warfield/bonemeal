@@ -436,6 +436,11 @@
     </sprites>
   </sprites>
   <backgrounds name="background">
+    <backgrounds name="Dungeon Revamp">
+      <background>background\StorageRoom_bkg</background>
+      <background>background\NorthRoom_btm_bkg</background>
+      <background>background\NorthRoom_top_bkg</background>
+    </backgrounds>
     <backgrounds name="Floor1">
       <background>background\Floor1_bottom_bkg</background>
       <background>background\Floor1_top_bkg</background>
