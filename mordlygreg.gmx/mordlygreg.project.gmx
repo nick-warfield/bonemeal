@@ -755,7 +755,7 @@
             <object>objects\DNU_Combat2Toggle_obj</object>
           </objects>
           <objects name="Gate Room">
-            <object>objects\Gate2Toggle_obj</object>
+            <object>objects\Gate2North_obj</object>
             <object>objects\Gate2ToggleRoom_obj</object>
           </objects>
         </objects>
