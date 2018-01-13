@@ -87,8 +87,8 @@
     <instance objName="Pit_obj" x="400" y="176" name="inst_6E1653D0" locked="0" code="" scaleX="10.34375" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="Central2Northwing_obj" x="608" y="48" name="inst_C302AC13" locked="0" code="" scaleX="3" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Central2Eastwing_obj" x="736" y="368" name="inst_77DA181C" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Central2Westwing_obj" x="48" y="368" name="inst_A7F6717C" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Central2Southwing_obj" x="352" y="720" name="inst_02A19303" locked="0" code="" scaleX="3" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Central2ToggleRoom_obj" x="48" y="368" name="inst_A7F6717C" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Central2Outside_obj" x="352" y="720" name="inst_02A19303" locked="0" code="" scaleX="3" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="candle3_obj" x="432" y="120" name="inst_0DC07F98" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="candle0_obj" x="336" y="112" name="inst_52E5C1B8" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="candle1_obj" x="368" y="120" name="inst_8F509FF7" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>

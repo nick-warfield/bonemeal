@@ -86,9 +86,9 @@
     <instance objName="Bat_obj" x="448" y="864" name="inst_8BB2E2F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Bat_obj" x="496" y="880" name="inst_4EB35C4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ladder_obj" x="128" y="176" name="inst_CC524D71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Southwing2Central_obj" x="320" y="-16" name="inst_501E8C43" locked="0" code="" scaleX="3" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Southwing2Study_obj" x="112" y="112" name="inst_9B3843BC" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="Southwing2Toggle_obj" x="704" y="912" name="inst_7A07A05A" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="DNU_Southwing2Central_obj" x="320" y="-16" name="inst_501E8C43" locked="0" code="" scaleX="3" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="DNU_Southwing2Study_obj" x="112" y="112" name="inst_9B3843BC" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="LockedCombat2Combat_obj" x="704" y="912" name="inst_7A07A05A" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="toggle2_off_obj" x="368" y="664" name="inst_46977859" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pit_obj" x="624" y="496" name="inst_C2A6F507" locked="0" code="" scaleX="3.13000011444092" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pit_obj" x="544" y="176" name="inst_A050507F" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>

@@ -90,8 +90,8 @@
     <instance objName="Fish2Central_obj" x="560" y="1488" name="inst_F2668109" locked="0" code="" scaleX="3" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Fish2Shrine_obj" x="320" y="784" name="inst_B985EEF7" locked="0" code="" scaleX="2" scaleY="1.75" colour="4294967295" rotation="0"/>
     <instance objName="Fish2Storage_obj" x="688" y="896" name="inst_0823E161" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Fish2Gate_obj" x="688" y="1024" name="inst_AE762ACD" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Fish2Westwing_obj" x="-16" y="1136" name="inst_D273120E" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Fish2LockedCombat_obj" x="688" y="1024" name="inst_AE762ACD" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Fish2GateRoom_obj" x="-16" y="1136" name="inst_D273120E" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="candle1_obj" x="80" y="1072" name="inst_9D03C2F7" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="400" y="1360" name="inst_4458460A" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="176" y="1360" name="inst_995A7A58" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>

@@ -28,23 +28,18 @@
             <string>with (Game_Manager_obj)
 {
     state = Trans_State.out;
-    trans_dir = Trans_Dir.down;
-    target_room = New_office;
+    trans_dir = Trans_Dir.left;
+    target_room = gates_and_crates;
     trans_snd = RoomTrans_Door_snd;
-    playerx = 400;
-    playery = 640;
+    playerx = 656;
+    playery = 176;
 }
 instance_destroy();
 /*
-audio_stop_sound(Floor1_v2no_piano);
-audio_play_sound(Main_trk, 90, true);
+room_goto(pitandmonsterroom);
 
-room_goto_next();
-
-other.x = 544;
-other.y = 536;
-
-global.checkpoint = 2;
+other.x = 656;
+other.y = 176;
 </string>
           </argument>
         </arguments>
