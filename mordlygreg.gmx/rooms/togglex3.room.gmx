@@ -53,9 +53,9 @@
   <instances>
     <instance objName="Toggle2Gate_obj" x="51" y="0" name="inst_E9CE6244" locked="0" code="" scaleX="3" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Toggle2Central_obj" x="1072" y="64" name="inst_0B864708" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="bloodToggle_obj" x="400" y="96" name="inst_AE72860C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bloodToggle_obj" x="416" y="96" name="inst_AE72860C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="puz_toggleRoom_obj" x="-17" y="-4" name="inst_E787AE87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="bloodToggle_obj" x="528" y="624" name="inst_CDD042AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bloodToggle_obj" x="544" y="632" name="inst_CDD042AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="352" y="96" name="inst_5E8A5691" locked="0" code="" scaleX="0.5" scaleY="3.5" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="464" y="96" name="inst_A0FAEDCC" locked="0" code="" scaleX="0.5" scaleY="3.5" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="464" y="592" name="inst_896A9934" locked="0" code="" scaleX="0.5" scaleY="3.5" colour="4294967295" rotation="0"/>

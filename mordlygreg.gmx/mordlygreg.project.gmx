@@ -409,6 +409,7 @@
         <sprite>sprites\toggle4_3_on_spr</sprite>
         <sprite>sprites\toggle4_4_on_spr</sprite>
       </sprites>
+      <sprite>sprites\CombatRoomBlood_spr</sprite>
     </sprites>
     <sprite>sprites\Crate01_spr</sprite>
     <sprite>sprites\Crate02_spr</sprite>
@@ -434,6 +435,8 @@
       <sprite>sprites\Bars_Hor_LEnd_spr</sprite>
       <sprite>sprites\Bars_Hor_REnd_spr</sprite>
     </sprites>
+    <sprite>sprites\LeverSwitch_spr</sprite>
+    <sprite>sprites\StatueDown_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Dungeon Revamp">
