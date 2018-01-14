@@ -28,11 +28,11 @@
             <string>with (Game_Manager_obj)
 {
     state = Trans_State.out;
-    trans_dir = Trans_Dir.up;
+    trans_dir = Trans_Dir.left;
     target_room = New_office;
     trans_snd = RoomTrans_Door_snd;
-    playerx = 400;
-    playery = 656;
+    playerx = 646;
+    playery = 1154;
 }
 instance_destroy();
 /*

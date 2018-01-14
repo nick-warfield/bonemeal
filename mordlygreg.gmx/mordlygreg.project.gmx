@@ -436,6 +436,21 @@
     </sprites>
   </sprites>
   <backgrounds name="background">
+    <backgrounds name="Dungeon Revamp">
+      <background>background\StorageRoom_bkg</background>
+      <background>background\NorthRoom_btm_bkg</background>
+      <background>background\NorthRoom_top_bkg</background>
+      <background>background\GateRoom_btm_bkg</background>
+      <background>background\GateRoom_top_bkg</background>
+      <background>background\CombatRoom_btm_bkg</background>
+      <background>background\CombatRoom_top_bkg</background>
+      <background>background\CombatRoom2_btm_bkg</background>
+      <background>background\CombatRoom2_top_bkg</background>
+      <background>background\ToggleRoom_btm_bkg</background>
+      <background>background\ToggleRoom_top_bkg</background>
+      <background>background\Foyer_btm_bkg</background>
+      <background>background\Foyer_top_bkg</background>
+    </backgrounds>
     <backgrounds name="Floor1">
       <background>background\Floor1_bottom_bkg</background>
       <background>background\Floor1_top_bkg</background>
@@ -755,7 +770,7 @@
             <object>objects\DNU_Combat2Toggle_obj</object>
           </objects>
           <objects name="Gate Room">
-            <object>objects\Gate2Toggle_obj</object>
+            <object>objects\Gate2North_obj</object>
             <object>objects\Gate2ToggleRoom_obj</object>
           </objects>
         </objects>
