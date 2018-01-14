@@ -186,6 +186,11 @@
       <sprite>sprites\Mordley_Hurt_Side_spr</sprite>
       <sprite>sprites\Mordley_Hurt_Front_spr</sprite>
       <sprite>sprites\Mordley_Ded_spr</sprite>
+      <sprites name="Dodge">
+        <sprite>sprites\Mordley_Dodge_Back_spr</sprite>
+        <sprite>sprites\Mordley_Dodge_Side_spr</sprite>
+        <sprite>sprites\Mordley_Dodge_Front_spr</sprite>
+      </sprites>
     </sprites>
     <sprites name="Enemies">
       <sprites name="Fishman">
@@ -437,6 +442,8 @@
     </sprites>
     <sprite>sprites\LeverSwitch_spr</sprite>
     <sprite>sprites\StatueDown_spr</sprite>
+    <sprite>sprites\Gear_spr</sprite>
+    <sprite>sprites\PondFinal_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Dungeon Revamp">
@@ -453,6 +460,8 @@
       <background>background\ToggleRoom_top_bkg</background>
       <background>background\Foyer_btm_bkg</background>
       <background>background\Foyer_top_bkg</background>
+      <background>background\Patio_btm_bkg</background>
+      <background>background\Patio_top_bkg</background>
     </backgrounds>
     <backgrounds name="Floor1">
       <background>background\Floor1_bottom_bkg</background>

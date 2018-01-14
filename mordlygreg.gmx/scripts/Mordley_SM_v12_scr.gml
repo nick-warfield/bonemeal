@@ -158,7 +158,11 @@ switch (ds_stack_top(StateStack))
   //dodge
   case (s_DODGE):
     spd = 9;
-
+    if (facing == LEFT) { sprite_index = Mordley_Dodge_Side_spr; image_xscale = -1; }
+    else if (facing == RIGHT) { sprite_index = Mordley_Dodge_Side_spr; image_xscale = 1; }
+    else if (facing == UP) { sprite_index = Mordley_Dodge_Back_spr; image_xscale = 1; }
+    else if (facing == DOWN) { sprite_index = Mordley_Dodge_Front_spr; image_xscale = 1; }
+            
     if (current_time >= timeStamp[5])
     {
         ds_stack_pop(StateStack);
