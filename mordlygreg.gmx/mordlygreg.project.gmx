@@ -446,6 +446,8 @@
       <background>background\CombatRoom_top_bkg</background>
       <background>background\CombatRoom2_btm_bkg</background>
       <background>background\CombatRoom2_top_bkg</background>
+      <background>background\ToggleRoom_btm_bkg</background>
+      <background>background\ToggleRoom_top_bkg</background>
     </backgrounds>
     <backgrounds name="Floor1">
       <background>background\Floor1_bottom_bkg</background>
