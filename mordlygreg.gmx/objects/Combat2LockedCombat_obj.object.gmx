@@ -31,7 +31,7 @@
     trans_dir = Trans_Dir.up;
     target_room = southofoffice;
     trans_snd = RoomTrans_Door_snd;
-    playerx = 928;
+    playerx = 940;
     playery = 800;
 }
 instance_destroy();

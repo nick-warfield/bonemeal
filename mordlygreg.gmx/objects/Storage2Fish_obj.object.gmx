@@ -32,7 +32,7 @@
     target_room = northofoffice;
     trans_snd = RoomTrans_Door_snd;
     playerx = 624;
-    playery = 944;
+    playery = 988;
 }
 instance_destroy();
 /*

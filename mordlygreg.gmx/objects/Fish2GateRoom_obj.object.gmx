@@ -31,8 +31,8 @@
     trans_dir = Trans_Dir.left;
     target_room = gates_and_crates;
     trans_snd = RoomTrans_Door_snd;
-    playerx = 608;
-    playery = 208;
+    playerx = 624;
+    playery = 160;
 }
 instance_destroy();
 /*
