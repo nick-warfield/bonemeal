@@ -444,6 +444,8 @@
     <sprite>sprites\StatueDown_spr</sprite>
     <sprite>sprites\Gear_spr</sprite>
     <sprite>sprites\PondFinal_spr</sprite>
+    <sprite>sprites\DoorWood_spr</sprite>
+    <sprite>sprites\sprite249</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Dungeon Revamp">
@@ -908,6 +910,7 @@
       <object>objects\HP_Pickup_obj</object>
       <object>objects\Vert_Spikes_obj</object>
       <object>objects\Hor_Spikes_obj</object>
+      <object>objects\DoorArt_obj</object>
     </objects>
     <objects name="Projectiles">
       <object>objects\Projectile_obj</object>
