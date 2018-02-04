@@ -107,7 +107,7 @@ switch (ds_stack_top(StateStack))
     if (Input[DODGE] && current_time >= timeStamp[6])
     {
         ds_stack_push(StateStack, s_DODGE);
-        timeStamp[5] = current_time + 200;
+        timeStamp[5] = current_time + 250;
         audio_play_sound(Mordley_Dodge_snd, 40, false);
     }
     
@@ -157,7 +157,7 @@ switch (ds_stack_top(StateStack))
     
   //dodge
   case (s_DODGE):
-    spd = 9;
+    spd = 8;
     if (facing == LEFT) { sprite_index = Mordley_Dodge_Side_spr; image_xscale = -1; }
     else if (facing == RIGHT) { sprite_index = Mordley_Dodge_Side_spr; image_xscale = 1; }
     else if (facing == UP) { sprite_index = Mordley_Dodge_Back_spr; image_xscale = 1; }
@@ -270,7 +270,7 @@ switch (ds_stack_top(StateStack))
 
     if (Input[DODGE] && current_time >= timeStamp[6]) 
     {
-        timeStamp[5] = current_time + 200;
+        timeStamp[5] = current_time + 250;
         ds_stack_push(StateStack, s_DODGE);
     }
     
