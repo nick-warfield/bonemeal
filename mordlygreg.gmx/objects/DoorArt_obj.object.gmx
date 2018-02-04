@@ -56,6 +56,8 @@ image_index = dunPuzzle_obj.gearsPlaced;
         other.keys--;
         dunPuzzle_obj.gearsPlaced++;
     }
+    var sound = audio_play_sound(RoomTrans_Ladder_snd, 50, false);
+    audio_sound_set_track_position(sound, 1.10);
 }
 
 image_index = dunPuzzle_obj.gearsPlaced;
