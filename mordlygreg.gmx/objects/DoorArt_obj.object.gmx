@@ -49,11 +49,11 @@ image_index = dunPuzzle_obj.gearsPlaced;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (other.keys &gt; 0)
+            <string>if (other.bigKey &gt; 0)
 {
     for (i = 0; i &lt; other.keys; i++)
     {
-        other.keys--;
+        other.bigKey--;
         dunPuzzle_obj.gearsPlaced++;
     }
     var sound = audio_play_sound(RoomTrans_Ladder_snd, 50, false);
