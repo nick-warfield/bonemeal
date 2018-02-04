@@ -36,6 +36,9 @@ gate1 = instance_find(Small_Gate_obj, 0);
 gate2 = instance_find(Small_Gate_obj, 1);
 gate3 = instance_find(Small_Gate_obj, 2);
 gate4 = instance_find(Small_Gate_obj, 3);
+
+if (dunPuzzle_obj.keysCollected &gt;= 2)
+{ with(instance_find(Key_obj, 0)) { instance_destroy(); } }
 </string>
           </argument>
         </arguments>

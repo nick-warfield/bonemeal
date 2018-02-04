@@ -93,6 +93,8 @@
     <instance objName="Floor2_Wall_obj" x="0" y="336" name="inst_1AA52CE2" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="32" y="416" name="inst_E5C60196" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="LockedCombat2Northwing_rm" x="-16" y="208" name="inst_915C94FF" locked="0" code="" scaleX="0.5" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="BigKey_obj" x="848" y="144" name="inst_297CE6B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Key_obj" x="896" y="176" name="inst_17178AD8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

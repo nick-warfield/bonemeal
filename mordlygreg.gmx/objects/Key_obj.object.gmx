@@ -52,6 +52,7 @@ if (!is_undefined(saveData_get_value(key) ) )
           <argument>
             <kind>1</kind>
             <string>other.keys++;
+dunPuzzle_obj.keysCollected++;
 saveData_set_value(key, true);
 instance_destroy();
 </string>

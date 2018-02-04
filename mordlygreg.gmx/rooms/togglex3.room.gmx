@@ -109,6 +109,8 @@
     <instance objName="Bars_LEnd_obj" x="512" y="536" name="inst_E715866E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Bars_REnd_obj" x="571" y="536" name="inst_0CFF29F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pit_obj" x="616" y="200" name="inst_5491DDFC" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="BigKey_obj" x="720" y="672" name="inst_B6509150" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Key_obj" x="680" y="248" name="inst_0DA3E42B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
