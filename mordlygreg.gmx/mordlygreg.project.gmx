@@ -445,7 +445,7 @@
     <sprite>sprites\Gear_spr</sprite>
     <sprite>sprites\PondFinal_spr</sprite>
     <sprite>sprites\DoorWood_spr</sprite>
-    <sprite>sprites\sprite249</sprite>
+    <sprite>sprites\BossDoor_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Dungeon Revamp">

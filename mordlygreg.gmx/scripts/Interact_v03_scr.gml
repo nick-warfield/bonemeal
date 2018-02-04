@@ -39,22 +39,45 @@ thing = 0;
 
 //check gates
 if (facing == RIGHT)
-{ thing = collision_rectangle(x-5, y-10, x + 36, y+10, Gate_obj, false, true); }
+{
+    thing = collision_rectangle(x-5, y-10, x + 36, y+10, Gate_obj, false, true);
+    if (!instance_exists(thing))
+    { thing = collision_rectangle(x-5, y-10, x + 36, y+10, DoorArt_obj, false, true); }
+}
 else if (facing == LEFT)
-{ thing = collision_rectangle(x - 36, y-10, x+5, y+10, Gate_obj, false, true); }
+{
+    thing = collision_rectangle(x - 36, y-10, x+5, y+10, Gate_obj, false, true);
+    if (!instance_exists(thing))
+    { thing = collision_rectangle(x - 36, y-10, x+5, y+10, DoorArt_obj, false, true); }
+}
 else if (facing == UP)
-{ thing = collision_rectangle(x-5, y - 48, x+5, y+10, Gate_obj, false, true); }
+{
+    thing = collision_rectangle(x-5, y - 48, x+5, y+10, Gate_obj, false, true);
+    if (!instance_exists(thing))
+    { thing = collision_rectangle(x-5, y - 48, x+5, y+10, DoorArt_obj, false, true); }
+}
 else if (facing == DOWN)
-{ thing = collision_rectangle(x-5, y-10, x+5, y + 48, Gate_obj, false, true); }
+{
+    thing = collision_rectangle(x-5, y-10, x+5, y + 48, Gate_obj, false, true);
+    if (!instance_exists(thing))
+    { thing = collision_rectangle(x-5, y-10, x+5, y + 48, DoorArt_obj, false, true); }
+}
 
 if (thing != 0 && instance_exists(thing))
 {
     var snd = KeyGate_Locked_snd;
     if (thing.opened) {snd = 0; }
     
-    if (thing.object_index == BigKey_Gate_obj)
+    if (thing.object_index == DoorArt_obj)
     {
-        if (bigKey > 0) { thing.opened = true;}
+        if (bigKey > 0 && dunPuzzle_obj.gearsPlaced < 3)
+        {
+            bigKey--;
+            dunPuzzle_obj.gearsPlaced++;
+            snd = audio_play_sound(RoomTrans_Ladder_snd, 50, false);
+            audio_sound_set_track_position(snd, 1.10);
+            thing.image_index = dunPuzzle_obj.gearsPlaced;
+        }
     }
     else if (keys > 0)
     {
