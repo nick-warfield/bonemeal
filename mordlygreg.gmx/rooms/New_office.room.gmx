@@ -4,7 +4,7 @@
   <width>1024</width>
   <height>768</height>
   <vsnap>1</vsnap>
-  <hsnap>1</hsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -75,6 +75,7 @@
     <instance objName="DoorArt_obj" x="399" y="64" name="inst_8BC27FCD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Study2Boss_obj" x="353" y="40" name="inst_2D25FE38" locked="0" code="" scaleX="2.64516139030457" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="335" y="72" name="inst_CD3D66BC" locked="0" code="" scaleX="4" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="OneWayDoor" x="80" y="368" name="inst_0A647FD2" locked="0" code="" scaleX="0.516129016876221" scaleY="3" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

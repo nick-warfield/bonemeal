@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (Game_Manager_obj)
+            <string>dunPuzzle_obj.isOneWayDoorOpened[1] = true;
+
+with (Game_Manager_obj)
 {
     state = Trans_State.out;
     trans_dir = Trans_Dir.left;

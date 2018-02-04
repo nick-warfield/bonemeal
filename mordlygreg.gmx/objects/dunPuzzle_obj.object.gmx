@@ -28,6 +28,8 @@
             <string>if (instance_number(dunPuzzle_obj &gt; 1) ) {instance_destroy(); } 
 
 gearsPlaced = 0;
+isOneWayDoorOpened[0] = false;
+isOneWayDoorOpened[1] = false;
 
 for (var i = 0; i &lt; 5; i++)
 {
