@@ -26,7 +26,47 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
-image_index = 0;
+image_index = dunPuzzle_obj.gearsPlaced;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Player02_obj">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (other.keys &gt; 0)
+{
+    for (i = 0; i &lt; other.keys; i++)
+    {
+        other.keys--;
+        dunPuzzle_obj.gearsPlaced++;
+    }
+}
+
+image_index = dunPuzzle_obj.gearsPlaced;
+
+if (dunPuzzle_obj.gearsPlaced &gt;= 3 &amp;&amp; instance_find(Small_Gate_obj, 0).opened == false)
+{
+    audio_play_sound(File_cabinet_snd, 70, false);
+    audio_play_sound(Door_locked_snd, 70, false);
+    with (instance_find(Small_Gate_obj, 0))
+    { x = -100; y = -100; visible = false; opened = true; }
+}
 </string>
           </argument>
         </arguments>

@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>if (instance_number(dunPuzzle_obj &gt; 1) ) {instance_destroy(); } 
 
+gearsPlaced = 0;
+
 for (var i = 0; i &lt; 5; i++)
 {
     candle[i] = false;
@@ -120,8 +122,6 @@ if (candleSolved &amp;&amp; room == New_office)
     {
         with (instance_find(Small_Gate_obj, i))
         { x = -100; y = -100; visible = false; opened = true; }
-        with (instance_find(Pit_obj, 0))
-        { instance_destroy(); }
     }
 }
 </string>
