@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (dunPuzzle_obj.bloodToggle[4])
+            <string>/*
+if (dunPuzzle_obj.bloodToggle[4])
 {
     visible = false;
 }

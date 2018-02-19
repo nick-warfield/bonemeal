@@ -50,7 +50,7 @@ active = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (place_meeting(x, y, Small_obj) || place_meeting(x, y, Player02_obj))
+            <string>if (place_meeting(x, y, Small_obj) || place_meeting(x, y, Player02_obj) || place_meeting(x, y, BigKey_obj))
 {
     if (!active)
     {audio_play_sound(PressurePlate_On_snd, 35, false); }

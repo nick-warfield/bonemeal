@@ -864,6 +864,7 @@
       <object>objects\Door_Dungeon_obj</object>
       <object>objects\Door_Start_obj</object>
       <object>objects\Door_Boss_obj</object>
+      <object>objects\Door_obj</object>
     </objects>
     <objects name="Misc">
       <object>objects\Small_obj</object>
@@ -937,6 +938,7 @@
         <object>objects\puz_westWing_obj</object>
         <object>objects\puz_southWing_obj</object>
         <object>objects\puz_toggleRoom_obj</object>
+        <object>objects\puz_toggleRoom2_obj</object>
         <objects name="blood pits">
           <object>objects\toggle0_off_obj</object>
           <object>objects\toggle1_2_off_obj</object>
@@ -999,6 +1001,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\RunFirstALWAYS</room>
+    <room>rooms\room53</room>
     <rooms name="Current Game">
       <room>rooms\Start_Menu</room>
       <room>rooms\Outside_rm</room>
