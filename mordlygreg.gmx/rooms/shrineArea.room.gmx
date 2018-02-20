@@ -85,6 +85,13 @@
     <instance objName="Wall_obj" x="924" y="204" name="inst_7E31B89B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_obj" x="956" y="204" name="inst_C3A66D1B" locked="0" code="" scaleX="1.75" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_obj" x="1008" y="236" name="inst_6B844694" locked="0" code="" scaleX="1" scaleY="5.5" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="48" y="292" name="inst_9E022F49" locked="0" code="" scaleX="5.54838705062866" scaleY="1.80645155906677" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="416" y="292" name="inst_C66027B0" locked="0" code="" scaleX="3.5" scaleY="1.875" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="684" y="296" name="inst_4C7203D7" locked="0" code="" scaleX="3.61290311813354" scaleY="1.80645155906677" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="880" y="296" name="inst_6A48572A" locked="0" code="" scaleX="4" scaleY="1.75" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="592" y="136" name="inst_2A1B2477" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="232" y="208" name="inst_A9200ABB" locked="0" code="" scaleX="5.625" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="328" y="176" name="inst_D8795B7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

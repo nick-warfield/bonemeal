@@ -1001,7 +1001,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\RunFirstALWAYS</room>
-    <room>rooms\room53</room>
     <rooms name="Current Game">
       <room>rooms\Start_Menu</room>
       <room>rooms\Outside_rm</room>
@@ -1014,8 +1013,8 @@
         </rooms>
         <rooms name="East Wing">
           <room>rooms\CombatRoom_Flipped</room>
+          <room>rooms\gates_and_crates3</room>
           <room>rooms\gates_and_crates</room>
-          <room>rooms\gates_and_crates2</room>
         </rooms>
         <rooms name="South Wing">
           <room>rooms\study</room>
@@ -1041,6 +1040,7 @@
         </rooms>
         <room>rooms\Boss_rm</room>
       </rooms>
+      <room>rooms\room53</room>
       <rooms name="Options/Menus/Utility">
         <room>rooms\Controls_rm</room>
         <room>rooms\Options_rm</room>
