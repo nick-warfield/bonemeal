@@ -25,7 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
+            <string>if (visible)
+{
+    event_inherited();
+}
+
+/*
 if (dunPuzzle_obj.bloodToggle[4])
 {
     visible = false;

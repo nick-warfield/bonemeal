@@ -31,13 +31,12 @@
 toggleSwitch1 = instance_find(bloodToggle_obj, 0);
 toggleSwitch2 = instance_find(bloodToggle_obj, 1);
 
-bloodPit = instance_find(toggle4_2_off_obj, 0);
+bloodPit1 = instance_find(toggle4_2_off_obj, 0);
+bloodPit2 = instance_find(toggle4_2_off_obj, 1);
+bloodPit3 = instance_find(toggle4_2_off_obj, 2);
 
 gate1 = instance_find(Small_Gate_obj, 0);
 gate2 = instance_find(Small_Gate_obj, 1);
-
-oldX = bloodPit.x;
-oldY = bloodPit.y;
 </string>
           </argument>
         </arguments>
@@ -61,9 +60,17 @@ oldY = bloodPit.y;
           <argument>
             <kind>1</kind>
             <string>if (toggleSwitch1.active)
-{ bloodPit.x = oldX; bloodPit.y = oldY; }
+{
+    bloodPit1.visible = true;
+    bloodPit2.visible = false;
+    bloodPit3.visible = true;
+}
 else
-{ bloodPit.x = -100; bloodPit.y = -100; }
+{
+    bloodPit1.visible = false;
+    bloodPit2.visible = true;
+    bloodPit3.visible = false;
+}
 
 if (toggleSwitch2.active)
 {
