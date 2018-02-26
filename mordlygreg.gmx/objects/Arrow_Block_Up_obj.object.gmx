@@ -53,7 +53,7 @@ image_speed = 0;
 {
     timeStamp = current_time + 1500;
     
-    var bull = instance_create(x, y, Bullet_obj);
+    var bull = instance_create(x, y - 24, SpreadShot_obj);
     bull.spawner = id;
         
     bull.image_index = Arrow_Up_spr;
