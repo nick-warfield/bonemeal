@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>timeStamp = current_time + 1500;
 image_speed = 0;
+
+active = false;
 </string>
           </argument>
         </arguments>
@@ -49,7 +51,7 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (current_time &gt;= timeStamp)
+            <string>if (current_time &gt;= timeStamp &amp;&amp; active)
 {
     timeStamp = current_time + 1500;
     
