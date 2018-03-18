@@ -446,6 +446,8 @@
     <sprite>sprites\PondFinal_spr</sprite>
     <sprite>sprites\DoorWood_spr</sprite>
     <sprite>sprites\BossDoor_spr</sprite>
+    <sprite>sprites\KeyGate_spr</sprite>
+    <sprite>sprites\KeyGate2_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Dungeon Revamp">
@@ -899,6 +901,7 @@
           <object>objects\Pressure_Plate_obj</object>
           <object>objects\Small_Gate_obj</object>
           <object>objects\Key_Gate_obj</object>
+          <object>objects\Key_Gate2_obj</object>
           <object>objects\BigKey_Gate_obj</object>
         </objects>
       </objects>

@@ -38,6 +38,7 @@ gate4 = instance_find(Small_Gate_obj, 3);
 gate5 = instance_find(Small_Gate_obj, 4);
 gate6 = instance_find(Small_Gate_obj, 5);
 
+
 //gate7 = instance_find(Small_Gate_obj, 6);
 //gate8 = instance_find(Small_Gate_obj, 7);
 </string>
