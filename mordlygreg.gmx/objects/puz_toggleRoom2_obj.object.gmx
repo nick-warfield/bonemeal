@@ -30,18 +30,18 @@
 
 toggleSwitch1 = instance_find(bloodToggle_obj, 0);
 toggleSwitch2 = instance_find(bloodToggle_obj, 1);
-toggleSwitch3 = instance_find(bloodToggle_obj, 2);
+//toggleSwitch3 = instance_find(bloodToggle_obj, 2);
 
-bloodPit1 = instance_find(toggle4_2_off_obj, 0);
-bloodPit2 = instance_find(toggle4_2_off_obj, 1);
+//bloodPit1 = instance_find(toggle4_2_off_obj, 0);
+//bloodPit2 = instance_find(toggle4_2_off_obj, 1);
 //bloodPit3 = instance_find(toggle4_2_off_obj, 2);
 
 gate1 = instance_find(Small_Gate_obj, 0);
-gate2 = instance_find(Small_Gate_obj, 1);
-gate3 = instance_find(Small_Gate_obj, 2);
+//gate2 = instance_find(Small_Gate_obj, 1);
+//gate3 = instance_find(Small_Gate_obj, 2);
 
-plate = instance_find(Pressure_Plate_obj, 0);
-trap = instance_find(Arrow_Block_Up_obj, 0);
+//plate = instance_find(Pressure_Plate_obj, 0);
+//trap = instance_find(Arrow_Block_Up_obj, 0);
 </string>
           </argument>
         </arguments>
@@ -64,7 +64,18 @@ trap = instance_find(Arrow_Block_Up_obj, 0);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (toggleSwitch1.active)
+            <string>if (toggleSwitch1.active || toggleSwitch2.active)
+{
+    gate1.opened = true;
+}
+else
+{
+    gate1.opened = false;
+}
+
+
+/*
+if (toggleSwitch1.active)
 {
     bloodPit1.visible = false;
     bloodPit2.visible = false;

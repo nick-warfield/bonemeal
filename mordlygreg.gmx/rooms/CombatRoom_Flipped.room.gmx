@@ -33,7 +33,7 @@
   <backgrounds>
     <background visible="-1" foreground="0" name="CombatRoom_btm_bkg" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="-1" foreground="-1" name="CombatRoom_top_bkg" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="CombatRoomBlood_btm_bkg" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -54,10 +54,6 @@
     <instance objName="Floor2_Wall_obj" x="16" y="64" name="inst_98A14677" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="16" y="512" name="inst_33ED698F" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="960" y="64" name="inst_A92ADFDE" locked="0" code="" scaleX="1" scaleY="21" colour="4294967295" rotation="0"/>
-    <instance objName="Pit_obj" x="202" y="213" name="inst_4ABBF432" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
-    <instance objName="Pit_obj" x="133" y="304" name="inst_20DEC2E6" locked="0" code="" scaleX="5.29032278060913" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Pit_obj" x="224" y="592" name="inst_88000CFD" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
-    <instance objName="Pit_obj" x="560" y="448" name="inst_A5EE3293" locked="0" code="" scaleX="0.5" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="227" y="263" name="inst_AB14ADD2" locked="0" code="" scaleX="10.1612901687622" scaleY="1.06451618671417" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="552" y="263" name="inst_74A1564D" locked="0" code="" scaleX="0.5" scaleY="3.08999991416931" colour="4294967295" rotation="0"/>
     <instance objName="Floor2_Wall_obj" x="447" y="509" name="inst_7D91A3AD" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
@@ -78,7 +74,7 @@
     <instance objName="bloodToggle_obj" x="880" y="400" name="inst_BEAE48D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="puz_combatroom_obj" x="-32" y="32" name="inst_8AF36B45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="48" y="384" name="inst_D08FD2C0" locked="0" code="" scaleX="0.469999998807907" scaleY="4.12903213500977" colour="4294967295" rotation="0"/>
-    <instance objName="toggle0_off_obj" x="512" y="373" name="inst_AC584E75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="toggle0_off_obj" x="504" y="384" name="inst_AC584E75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Small_Gate_obj" x="304" y="-80" name="inst_9153B68A" locked="0" code="" scaleX="3.65625" scaleY="0.419354826211929" colour="4294967295" rotation="0"/>
     <instance objName="Bars_BEnd_obj" x="56" y="464" name="inst_F477A613" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Bars_Vert_obj" x="56" y="432" name="inst_84F896DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -88,6 +84,8 @@
     <instance objName="Bars_Vert_obj" x="56" y="400" name="inst_3B8F8386" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="BigKey_obj" x="120" y="152" name="inst_B375AA2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Key_Gate_obj" x="808" y="96" name="inst_41B38A22" locked="0" code="" scaleX="1" scaleY="3.75" colour="4294967295" rotation="90"/>
+    <instance objName="Invisible_Wall_obj" x="-16" y="344" name="inst_0B3187CE" locked="0" code="" scaleX="1" scaleY="6.25" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="776" y="16" name="inst_F69BB47D" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

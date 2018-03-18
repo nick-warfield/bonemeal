@@ -88,6 +88,15 @@ if (!dunPuzzle_obj.combatrmVictory)
     }
 }
 
+if (dunPuzzle_obj.bloodToggle[0])
+{
+    room.background_visible[2] = false;
+}
+else
+{
+    room.background_visible[2] = true;
+}
+
 /*
 //check for when the player hits the switch if they haven't beaten the room
 if (dunPuzzle_obj.combatrmVictory = false &amp;&amp; dunPuzzle_obj.bloodToggle[0] = true)

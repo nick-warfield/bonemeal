@@ -2,7 +2,7 @@
 <object>
   <spriteName>CombatRoomBlood_spr</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>5</depth>
   <persistent>0</persistent>
   <parentName>Pit_obj</parentName>
@@ -31,7 +31,7 @@
 }
 else
 {
-    visible = true;
+    visible = false;
     event_inherited();
 }
 </string>

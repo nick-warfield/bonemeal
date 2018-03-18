@@ -54,7 +54,7 @@ openy = y - 112;
             <kind>1</kind>
             <string>if(opened)
 {
-    visible = false;
+    //visible = false;
     mask_index = NOMASK;
     
     //if (y &gt; openy)
@@ -62,7 +62,7 @@ openy = y - 112;
 }
 else
 {
-    visible = true;
+    //visible = true;
     mask_index = BlankTile01_spr;
     
     //if (y &lt; closey)

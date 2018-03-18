@@ -94,6 +94,8 @@
     <instance objName="Pit_obj" x="960" y="464" name="inst_99F8AB49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Pit_obj" x="960" y="240" name="inst_E8AD1853" locked="0" code="" scaleX="2" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="Pit_obj" x="320" y="208" name="inst_834E6380" locked="0" code="" scaleX="1.5" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="-48" y="192" name="inst_77B31D4C" locked="0" code="" scaleX="1" scaleY="4.5" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="896" y="864" name="inst_D34A5A34" locked="0" code="" scaleX="3.5" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
