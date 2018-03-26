@@ -8,7 +8,7 @@
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
-  <colour>4210816</colour>
+  <colour>0</colour>
   <showcolour>-1</showcolour>
   <code></code>
   <enableViews>-1</enableViews>
@@ -31,8 +31,8 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="0" foreground="0" name="ToggleRoom_btm_bkg" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="-1" name="ToggleRoom_top_bkg" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="ToggleRoom_btm_bkg" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="-1" name="ToggleRoom_top_bkg" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -52,29 +52,30 @@
   </views>
   <instances>
     <instance objName="puz_toggleRoom2_obj" x="-24" y="8" name="inst_39BBBB1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Door_obj" x="1056" y="80" name="inst_B71099ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Door_obj" x="16" y="704" name="inst_980CB4F0" locked="0" code="" scaleX="32.5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Door_obj" x="0" y="48" name="inst_5747C4A5" locked="0" code="" scaleX="1" scaleY="20.6451606750488" colour="4294967295" rotation="0"/>
-    <instance objName="Arrow_Block_Down_obj" x="416" y="88" name="inst_9B7B84DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Door_obj" x="208" y="80" name="inst_4C2975D6" locked="0" code="" scaleX="1" scaleY="5.25" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Door_obj" x="240" y="216" name="inst_1F0C5441" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Door_obj" x="496" y="216" name="inst_A124B0C7" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Door_obj" x="720" y="80" name="inst_7734FD77" locked="0" code="" scaleX="1" scaleY="5.25" colour="4294967295" rotation="0"/>
-    <instance objName="Small_Gate_obj" x="307" y="217" name="inst_CD04C73E" locked="0" code="" scaleX="5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="BigKey_obj" x="544" y="144" name="inst_6663A4B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="bloodToggle_obj" x="424" y="616" name="inst_9470B4D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="bloodToggle_obj" x="648" y="144" name="inst_AC180019" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Toggle2Gate_obj" x="64" y="24" name="inst_47286F41" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Toggle2Central_obj" x="1088" y="112" name="inst_5562F16F" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Door_obj" x="32" y="48" name="inst_AEE52699" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Door_obj" x="160" y="48" name="inst_7CC15F1F" locked="0" code="" scaleX="29" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floor2_Door_obj" x="1056" y="208" name="inst_C5BE6ADA" locked="0" code="" scaleX="1" scaleY="16.5" colour="4294967295" rotation="0"/>
-    <instance objName="Key_obj" x="888" y="544" name="inst_7CAC0BB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Bars_LEnd_obj" x="369" y="207" name="inst_5543A343" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Bars_REnd_obj" x="461" y="207" name="inst_4166A2F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Bars_Hor_obj" x="415" y="207" name="inst_C1D6E751" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="48" y="8" name="inst_E631D6D3" locked="0" code="" scaleX="3.75" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Invisible_Wall_obj" x="1104" y="80" name="inst_AC0D018F" locked="0" code="" scaleX="1" scaleY="4.75" colour="4294967295" rotation="0"/>
+    <instance objName="Arrow_Block_Down_obj" x="464" y="160" name="inst_9B7B84DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Small_Gate_obj" x="383" y="320" name="inst_CD04C73E" locked="0" code="" scaleX="5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="BigKey_obj" x="568" y="232" name="inst_6663A4B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bloodToggle_obj" x="464" y="576" name="inst_9470B4D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bloodToggle_obj" x="368" y="224" name="inst_AC180019" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Toggle2Gate_obj" x="80" y="80" name="inst_47286F41" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Toggle2Central_obj" x="816" y="200" name="inst_5562F16F" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="Key_obj" x="248" y="440" name="inst_7CAC0BB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Bars_LEnd_obj" x="416" y="301" name="inst_5543A343" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Bars_REnd_obj" x="508" y="301" name="inst_4166A2F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Bars_Hor_obj" x="462" y="301" name="inst_C1D6E751" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="64" y="48" name="inst_E631D6D3" locked="0" code="" scaleX="3.75" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="848" y="168" name="inst_AC0D018F" locked="0" code="" scaleX="1" scaleY="4.75" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="176" y="80" name="inst_7050B66A" locked="0" code="" scaleX="20" scaleY="1.54838705062866" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="624" y="128" name="inst_FF273A54" locked="0" code="" scaleX="5.5" scaleY="1.25" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="800" y="128" name="inst_7B1B8739" locked="0" code="" scaleX="1.5" scaleY="2.25" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="800" y="288" name="inst_26212558" locked="0" code="" scaleX="1" scaleY="11.5" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="48" y="640" name="inst_A77EE66A" locked="0" code="" scaleX="23.5" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="48" y="80" name="inst_68AC3A99" locked="0" code="" scaleX="1" scaleY="1.75" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="32" y="136" name="inst_E21EBE44" locked="0" code="" scaleX="1" scaleY="15.75" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="304" y="128" name="inst_DB6DF3F8" locked="0" code="" scaleX="0.5" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="608" y="128" name="inst_6B0101C8" locked="0" code="" scaleX="0.5" scaleY="5.5" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="304" y="288" name="inst_319B365F" locked="0" code="" scaleX="2.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Invisible_Wall_obj" x="544" y="288" name="inst_FB7E7FE7" locked="0" code="" scaleX="2.5" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

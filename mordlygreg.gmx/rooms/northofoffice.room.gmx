@@ -103,7 +103,7 @@
     <instance objName="Small_Gate_obj" x="263" y="960" name="inst_11F91D9C" locked="0" code="" scaleX="3.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Bars_LEnd_obj" x="298" y="942" name="inst_B0D2C001" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Bars_REnd_obj" x="341" y="942" name="inst_18BDEB7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="OneWayDoor" x="656" y="1106" name="inst_ECD96644" locked="0" code="" scaleX="0.5" scaleY="2.375" colour="4294967295" rotation="0"/>
+    <instance objName="OneWayDoor" x="672" y="1152" name="inst_ECD96644" locked="0" code="" scaleX="-1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="416" y="1456" name="inst_6346AF1A" locked="0" code="" scaleX="5.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="256" y="696" name="inst_30824895" locked="0" code="" scaleX="3.75" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="Invisible_Wall_obj" x="680" y="904" name="inst_F40D64D6" locked="0" code="" scaleX="1.25" scaleY="4.5" colour="4294967295" rotation="0"/>

@@ -69,8 +69,8 @@
         }
         
     //reload command
-        if (gamepad_button_check_pressed(0, gp_shoulderr) == true ||
-            keyboard_check_pressed(vk_enter) == true)
+        if (gamepad_button_check(0, gp_face4) == true ||
+            keyboard_check(vk_enter) == true)
             //keyboard_check_pressed(ord('L')) == true ||
             //mouse_check_button_pressed(mb_middle) == true)
         {
@@ -80,7 +80,7 @@
         {
             Input[ATTACK4] = false;
         }
-    
+/*    
     //cycle cylinder command
         if (gamepad_button_check_pressed(0, gp_face4) == true ||
             //gamepad_button_check_pressed(0, gp_face4) == true ||
@@ -94,7 +94,7 @@
         {
             Input[ATTACK5] = false;
         }
-        
+*/        
     
     //dodge command
         if (gamepad_button_check_pressed(0, gp_face2) == true ||
@@ -124,6 +124,7 @@
     
     //fire gun command
         if (gamepad_button_check_pressed(0, gp_shoulderrb) == true ||
+            gamepad_button_check_pressed(0, gp_shoulderr) == true ||
             //mouse_check_button_pressed(mb_right) == true ||
             //mouse_check_button_pressed(mb_left) == true ||
             keyboard_check(vk_space) == true)

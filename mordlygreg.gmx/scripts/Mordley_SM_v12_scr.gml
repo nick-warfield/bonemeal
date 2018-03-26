@@ -139,12 +139,20 @@ switch (ds_stack_top(StateStack))
         ds_stack_push(StateStack, s_ATTACK3);
     }
     
-    else if (Input[ATTACK4] && cylinder[cylinderPosition] == 0)    //reload
+    else if (Input[ATTACK4])    //reload
     {
-        ds_stack_push(StateStack, s_ATTACK4);
-        timeStamp[4] = current_time + 300;
-        var reload2 = audio_play_sound(Reload_snd, 50, false);
-        audio_sound_pitch(reload2, 0.7);
+        if (cylinder[cylinderPosition] == 0)
+        {
+            ds_stack_push(StateStack, s_ATTACK4);
+            timeStamp[4] = current_time + 300;
+            var reload2 = audio_play_sound(Reload_snd, 50, false);
+            audio_sound_pitch(reload2, 0.7);
+        }
+        else if (current_time >= timeStamp[3] - 450)
+        {
+            ds_stack_push(StateStack, s_ATTACK5);
+            timeStamp[3] = current_time + 750;
+        }
     }
     
     else if (Input[ATTACK5])    //cycle
@@ -274,20 +282,24 @@ switch (ds_stack_top(StateStack))
         ds_stack_push(StateStack, s_DODGE);
     }
     
-    else if (Input[ATTACK4])    //reload
+/*    else if (Input[ATTACK4])    //reload
     {
         ds_stack_push(StateStack, s_ATTACK4);
         timeStamp[4] = current_time + 300;
         var reload2 = audio_play_sound(Reload_snd, 50, false);
         audio_sound_pitch(reload2, 0.7);
     }
-    
+*/    
     else if (Input[ATTACK2] && current_time >= timeStamp[3])
     {
         ds_stack_push(StateStack, s_ATTACK2);    //go to shooting state on fire input
         timeStamp[3] = current_time + 750;
     }
-    if (Input[ATTACK5]) { script_execute(Cycle_scr); }
+    if (Input[ATTACK4] && current_time >= timeStamp[3] - 450)
+    {
+        timeStamp[3] = current_time + 750;
+        script_execute(Cycle_scr);
+    }
     if (!Input[ATTACK3])    //go back to moving state on aim input release
     {
         ds_stack_pop(StateStack);
@@ -301,6 +313,9 @@ switch (ds_stack_top(StateStack))
     if (current_time >= timeStamp[4])   //reload at the end of the timer
     {
         script_execute(Reload_scr);     //fills the next chamber with bullet
+        script_execute(Cycle_scr);
+        audio_stop_sound(ChamberRotate_snd);
+        timeStamp[3] = current_time + 750;
         ds_stack_pop(StateStack);                 //revert back to move state
     }
     

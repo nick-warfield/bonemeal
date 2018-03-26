@@ -448,6 +448,7 @@
     <sprite>sprites\BossDoor_spr</sprite>
     <sprite>sprites\KeyGate_spr</sprite>
     <sprite>sprites\KeyGate2_spr</sprite>
+    <sprite>sprites\FakeWall_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Dungeon Revamp">

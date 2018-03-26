@@ -1,0 +1,83 @@
+;Auto-generated Diamond Directive File. Can be deleted without harm.
+.Set CabinetNameTemplate=C:\Users\Nick\Documents\GitHub\bonemeal\EXPORT\Beta\~mordlygreg-2.4.`1.CAB
+.Set CompressionType=LZX
+.Set CompressionLevel=7
+.Set InfFileName=C:\Users\Nick\Documents\GitHub\bonemeal\EXPORT\Beta\~mordlygreg-2.4.`1_LAYOUT.INF
+.Set RptFileName=C:\Users\Nick\Documents\GitHub\bonemeal\EXPORT\Beta\~mordlygreg-2.4.`1.RPT
+.Set MaxDiskSize=CDROM
+.Set ReservePerCabinetSize=0
+.Set InfCabinetLineFormat=*cab#*=Application Source Media,*cabfile*,0
+.Set Compress=on
+.Set CompressionMemory=21
+.Set DiskDirectoryTemplate=
+.Set Cabinet=ON
+.Set MaxCabinetSize=999999999
+.Set InfDiskHeader=
+.Set InfDiskLineFormat=
+.Set InfCabinetHeader=[SourceDisksNames]
+.Set InfFileHeader=
+.Set InfFileHeader1=[SourceDisksFiles]
+.Set InfFileLineFormat=*file*=*cab#*,,*size*,*csum*
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\ArrowTrap_collide_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\ArrowTrap_shoot_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\AT_ArrowCollide_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\AT_Shoot_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Bat_Attack02_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Bat_attack_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Bat_Dead_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Bat_die_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\BloodToggle_OnOff_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Body_hit_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Boos_tentacle_v2_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Boss2_trk.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Boss_Attack_sword_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Boss_die_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Boss_TentacleReach_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Boss_TentacleSweep_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Boss_tentacle_v1_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Boss_trk.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Bullet_split_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Candle_Lighter_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Candle_light_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Chamber_rotate_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Crate_break_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Crate_Push01_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Crate_Push02_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Crate_push_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\D3DX9_43.dll"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\data.win"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Dodge_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Door_locked_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Door_open_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\File_cabinet_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Fish_Attack_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Fish_Dead_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Fish_Die_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Fish_spit_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Floor1_trk.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Floor1_v2no_piano.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Floor1_v2_trk.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Floor2_trk.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Gate_OpenClose_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Gunshot_Mine_Explode_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Gunshot_Shotgun_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Gunshot_Splitshot_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\KeyGate_Locked_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\KeyGate_Unlocked_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Main_trk.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Mordley_Dodge_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\mordlygreg.exe"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Music_Boss_trk.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Music_Dungeon_trk.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Music_Outside_trk.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\options.ini"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Potion_Pickup_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\PressurePlate_Off_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\PressurePlate_On_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Puzzle_Solved_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Puzzle_Wrong_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\RoomTrans_Door_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\RoomTrans_Ladder_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Umbrella_Swing1_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Umbrella_Swing2_snd.ogg"
+"C:\Users\Nick\AppData\Local\gm_ttt_23277\gm_ttt_72450\Umbrella_Swing3_snd.ogg"
