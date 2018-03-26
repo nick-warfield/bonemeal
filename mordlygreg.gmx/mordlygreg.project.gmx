@@ -441,7 +441,6 @@
       <sprite>sprites\Bars_Hor_REnd_spr</sprite>
     </sprites>
     <sprite>sprites\LeverSwitch_spr</sprite>
-    <sprite>sprites\StatueDown_spr</sprite>
     <sprite>sprites\Gear_spr</sprite>
     <sprite>sprites\PondFinal_spr</sprite>
     <sprite>sprites\DoorWood_spr</sprite>
@@ -449,6 +448,8 @@
     <sprite>sprites\KeyGate_spr</sprite>
     <sprite>sprites\KeyGate2_spr</sprite>
     <sprite>sprites\FakeWall_spr</sprite>
+    <sprite>sprites\StatueDown_spr</sprite>
+    <sprite>sprites\StatueLeft_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Dungeon Revamp">
@@ -1003,6 +1004,7 @@
       <object>objects\bloodToggle_off_obj</object>
       <object>objects\bloodToggle_on_obj</object>
     </objects>
+    <object>objects\KnockbackWall_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\RunFirstALWAYS</room>

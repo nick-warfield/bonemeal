@@ -45,6 +45,9 @@ switch (ds_stack_top(StateStack))
         { ds_stack_pop(StateStack); }
         else
         {
+            //prevent Mordley from taking damage
+            timeStamp[0] = current_time + 1000;
+            
             //halt movement
             spd = 0;
             
